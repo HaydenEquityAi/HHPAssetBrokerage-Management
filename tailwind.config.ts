@@ -13,12 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Crimson Text', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        'hhp-navy': "hsl(var(--hhp-navy))",
+        'hhp-accent': "hsl(var(--hhp-accent-blue))",
+        'hhp-charcoal': "hsl(var(--hhp-charcoal))",
+        'hhp-white': "hsl(var(--hhp-white))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +65,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      boxShadow: {
+        'elegant': 'var(--shadow-elegant)',
+        'premium': 'var(--shadow-premium)',
+        'subtle': 'var(--shadow-subtle)',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '20': '5rem',
+        '24': '6rem',
+        '28': '7rem',
+        '32': '8rem',
       },
       borderRadius: {
         lg: "var(--radius)",
