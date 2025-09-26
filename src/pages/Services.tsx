@@ -3,6 +3,7 @@ import { Building, Home, Shield, Briefcase, CheckCircle } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import multifamilyImage from '@/assets/multifamily-property.webp';
 import commercialImage from '@/assets/commercial-building.webp';
+import rentalImage from '@/assets/hero-property.jpg';
 
 const Services = () => {
   return (
@@ -179,23 +180,11 @@ const Services = () => {
             </div>
             
             <div>
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6 text-center">Why Choose HHP for Residential?</h3>
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">95%+</div>
-                    <div className="text-hhp-charcoal">Average Occupancy Rate</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">24/7</div>
-                    <div className="text-hhp-charcoal">Emergency Response</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">Local</div>
-                    <div className="text-hhp-charcoal">Oklahoma Expertise</div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src={rentalImage} 
+                alt="Beautiful rental property" 
+                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
+              />
             </div>
           </div>
         </div>

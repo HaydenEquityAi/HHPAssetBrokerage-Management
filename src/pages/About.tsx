@@ -9,14 +9,14 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-hhp-navy section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-hhp-navy mb-8">
-              Meet the visionary leadership driving Oklahoma's property management revolution
+            <h1 className="hero-title text-white mb-8">
+              Leadership Excellence in Oklahoma Property Management
             </h1>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              Our experienced team combines decades of real estate expertise with cutting-edge technology to deliver unmatched results for property owners across Oklahoma.
+            <p className="text-xl leading-relaxed text-white/90 mb-12">
+              Our seasoned leadership team brings together decades of real estate expertise, financial acumen, and innovative technology to deliver exceptional results for property owners across Oklahoma.
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Home = () => {
         <div className="relative z-10 flex items-center justify-center min-h-[50vh] py-12 md:min-h-[55vh] sm:min-h-[60vh]">
           <div className="container-premium">
             <div className="max-w-4xl mx-auto text-center fade-in">
-              <h1 className="hero-title text-white mb-8">
+              <h1 className="hero-headline text-white mb-8">
                 Vertically integrated. Data driven. Forward thinking.
               </h1>
               <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">

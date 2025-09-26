@@ -98,7 +98,7 @@ const Footer = () => {
                   Serving Oklahoma including<br />
                   Tulsa, Owasso, Bixby, Jenks,<br />
                   Sapulpa, Glenpool, Pryor,<br />
-                  Sand Springs & surrounding areas
+                  Sand Springs, Broken Arrow & surrounding areas
                 </div>
               </div>
 

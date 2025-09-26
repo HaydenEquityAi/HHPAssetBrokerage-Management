@@ -162,14 +162,28 @@
   }
 
   .team-box {
-    @apply bg-white rounded-lg p-8;
+    @apply bg-white rounded-lg p-8 border-2 border-hhp-navy;
     box-shadow: var(--shadow-elegant);
     transition: var(--transition-elegant);
   }
 
-  .team-box:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-premium);
+  .hero-headline {
+    font-weight: 800;
+    font-size: 3.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+  }
+
+  @media (max-width: 768px) {
+    .hero-headline {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-headline {
+      font-size: 2rem;
+    }
   }
 
   .icon-accent {

@@ -78,22 +78,22 @@ const RentalAi = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-hhp-navy section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <Bot className="h-16 w-16 icon-accent" />
-              <h1 className="hero-title text-hhp-navy">
+              <Bot className="h-16 w-16 text-hhp-accent" />
+              <h1 className="hero-title text-white">
                 The Future of Property Management, Built with AI
               </h1>
             </div>
             
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
+            <p className="text-xl leading-relaxed text-white/90 mb-12">
               RentalAi is the first AI-native property management platform designed to handle everything — multifamily, HUD, residential, and mixed-use portfolios. Unlike outdated systems that require endless manual input, RentalAi automates the entire workflow. From leasing and compliance to maintenance and accounting, RentalAi eliminates inefficiency, empowers owners with real-time insights, and frees managers to focus on growth.
             </p>
             
             <div className="bg-hhp-accent/20 border border-hhp-accent rounded-lg p-6 mb-12">
-              <p className="text-lg font-medium text-hhp-navy">
+              <p className="text-lg font-medium text-white">
                 🚀 Now in Beta - Reserve Your Demo Today
               </p>
             </div>

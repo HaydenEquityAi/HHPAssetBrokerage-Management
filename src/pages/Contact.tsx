@@ -76,13 +76,13 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-hhp-navy section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-hhp-navy mb-8">
+            <h1 className="hero-title text-white mb-8">
               Contact HHP Asset Management
             </h1>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
+            <p className="text-xl leading-relaxed text-white/90 mb-12">
               Ready to transform your property management experience? Our team is here to provide expert guidance and customized solutions for your Oklahoma real estate portfolio.
             </p>
           </div>
