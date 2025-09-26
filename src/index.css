@@ -183,20 +183,18 @@
 
   /* Hero section background control */
   .hero-background {
-    min-height: 60vh;
-    background-attachment: fixed;
+    min-height: 50vh;
   }
 
   @media (max-width: 768px) {
     .hero-background {
-      background-attachment: scroll;
-      min-height: 70vh;
+      min-height: 55vh;
     }
   }
 
   @media (max-width: 480px) {
     .hero-background {
-      min-height: 80vh;
+      min-height: 60vh;
     }
   }
 }

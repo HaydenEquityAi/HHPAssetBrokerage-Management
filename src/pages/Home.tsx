@@ -9,22 +9,9 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden hero-background">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="absolute inset-0 bg-hhp-navy/55"></div>
-        </div>
-        
+      <section className="relative bg-hhp-navy overflow-hidden hero-background">
         {/* Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-[60vh] py-12 md:min-h-[70vh] sm:min-h-[80vh]">
+        <div className="relative z-10 flex items-center justify-center min-h-[50vh] py-12 md:min-h-[55vh] sm:min-h-[60vh]">
           <div className="container-premium">
             <div className="max-w-4xl mx-auto text-center fade-in">
               <h1 className="hero-title text-white mb-8">
