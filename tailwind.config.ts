@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
+        'display': ['Montserrat', 'sans-serif'],
         'body': ['Crimson Text', 'serif'],
       },
       colors: {

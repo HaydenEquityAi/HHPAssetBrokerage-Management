@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -56,7 +56,7 @@
 
   /* HHP Premium Typography System */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     color: hsl(var(--hhp-navy));
     line-height: 1.2;
     font-weight: 600;
@@ -174,5 +174,29 @@
 
   .icon-accent {
     color: hsl(var(--hhp-accent-blue));
+  }
+
+  /* Force trust badges to be white */
+  .trust-badge-text {
+    color: white !important;
+  }
+
+  /* Hero section background control */
+  .hero-background {
+    min-height: 60vh;
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 768px) {
+    .hero-background {
+      background-attachment: scroll;
+      min-height: 70vh;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-background {
+      min-height: 80vh;
+    }
   }
 }

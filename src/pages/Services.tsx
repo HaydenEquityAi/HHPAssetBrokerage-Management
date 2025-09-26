@@ -117,19 +117,19 @@ const Services = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-hhp-accent flex-shrink-0" />
-                    <span>100% Audit Compliance Record</span>
+                    <span className="text-white">100% Audit Compliance Record</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-hhp-accent flex-shrink-0" />
-                    <span>Expert HUD Reporting</span>
+                    <span className="text-white">Expert HUD Reporting</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-hhp-accent flex-shrink-0" />
-                    <span>LIHTC Specialization</span>
+                    <span className="text-white">LIHTC Specialization</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-hhp-accent flex-shrink-0" />
-                    <span>Fair Housing Certified</span>
+                    <span className="text-white">Fair Housing Certified</span>
                   </div>
                 </div>
               </div>

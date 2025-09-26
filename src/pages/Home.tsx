@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Users, Zap, TrendingUp, ArrowRight } from 'lucide-react';
+import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import multifamilyImage from '@/assets/multifamily-property.webp';
 import commercialImage from '@/assets/commercial-building.webp';
@@ -9,19 +9,22 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden">
+      <section className="relative bg-white overflow-hidden hero-background">
         {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src={heroImage} 
-            alt="Luxury property management in Oklahoma" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="absolute inset-0 bg-hhp-navy/55"></div>
         </div>
         
         {/* Content */}
-        <div className="relative z-10 section-spacing">
+        <div className="relative z-10 flex items-center justify-center min-h-[60vh] py-12 md:min-h-[70vh] sm:min-h-[80vh]">
           <div className="container-premium">
             <div className="max-w-4xl mx-auto text-center fade-in">
               <h1 className="hero-title text-white mb-8">
@@ -44,19 +47,19 @@ const Home = () => {
               <div className="flex flex-wrap justify-center items-center gap-8 text-white font-medium">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span>Licensed</span>
+                  <span className="text-white trust-badge-text">Licensed</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span>Insured</span>
+                  <span className="text-white trust-badge-text">Insured</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span>Locally Owned</span>
+                  <span className="text-white trust-badge-text">Locally Owned</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span>Technology-Powered</span>
+                  <span className="text-white trust-badge-text">Technology-Powered</span>
                 </div>
               </div>
             </div>
@@ -64,64 +67,115 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Value Propositions - Alternating Sections */}
-      {/* Section 1: Local Market Mastery */}
+      {/* Strategic Expertise & Solutions */}
       <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Strategic Expertise */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
-                <Users className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Local Market Mastery</h2>
+                <Building2 className="h-12 w-12 icon-accent" />
+                <h2 className="section-title text-hhp-navy">Strategic Expertise</h2>
               </div>
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Deep understanding of Oklahoma real estate markets, rental trends, and regulatory requirements across Tulsa, Owasso, Bixby, Jenks, Sapulpa, Glenpool, Pryor, Sand Springs, and surrounding communities.
+              <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
+                Deep knowledge of Oklahoma real estate markets, HUD compliance, and investment strategies. We align market insight with owner objectives to maximize property value.
               </p>
-              <Link 
-                to="/about" 
-                className="inline-flex items-center text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200 font-medium"
-              >
-                Learn about our team
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              <ul className="space-y-3 text-hhp-charcoal">
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>In-depth understanding of multifamily, residential, and commercial assets</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Regulatory expertise in HUD, Section 8, and LIHTC programs</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Proven strategies for long-term appreciation and stable cash flow</span>
+                </li>
+              </ul>
             </div>
-            <div className="lg:order-first">
-              <img 
-                src={multifamilyImage} 
-                alt="Modern multifamily property with pool" 
-                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
-              />
+
+            {/* Comprehensive Solutions */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4 mb-6">
+                <BarChart3 className="h-12 w-12 icon-accent" />
+                <h2 className="section-title text-hhp-navy">Comprehensive Solutions</h2>
+              </div>
+              <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
+                Full-service property management built to handle every detail.
+              </p>
+              <ul className="space-y-3 text-hhp-charcoal">
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Tenant screening, leasing, and renewals</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Maintenance coordination and vendor management</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Compliance, accounting, and investor reporting</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2: AI-Powered Innovation */}
+      {/* Client-Centered Service & AI-Powered Innovation */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Client-Centered Service */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
-                <Zap className="h-12 w-12 icon-accent" />
+                <HeadphonesIcon className="h-12 w-12 icon-accent" />
+                <h2 className="section-title text-hhp-navy">Client-Centered Service</h2>
+              </div>
+              <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
+                We operate with the mindset that every property is unique and every client deserves tailored service.
+              </p>
+              <ul className="space-y-3 text-hhp-charcoal">
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Dedicated account managers with local expertise</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>24/7 support for owners and residents</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Transparent communication every step of the way</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* AI-Powered Innovation */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4 mb-6">
+                <Bot className="h-12 w-12 icon-accent" />
                 <h2 className="section-title text-hhp-navy">AI-Powered Innovation</h2>
               </div>
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                State-of-the-art property management software, owner portals, and our proprietary RentalAi system deliver transparency and efficiency unmatched in Oklahoma.
+              <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
+                State-of-the-art property management software, owner portals, and our proprietary <strong>RentalAi</strong> system deliver transparency and efficiency unmatched in Oklahoma.
               </p>
-              <Link 
-                to="/rental-ai" 
-                className="inline-flex items-center text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200 font-medium"
-              >
-                Discover RentalAi
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
-            <div>
-              <img 
-                src={commercialImage} 
-                alt="Modern commercial building" 
-                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
-              />
+              <ul className="space-y-3 text-hhp-charcoal">
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Real-time financial dashboards for owners</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Predictive analytics to optimize rent and reduce vacancies</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
+                  <span>Automated compliance tracking and reporting</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -142,15 +196,15 @@ const Home = () => {
             {/* Results Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="premium-card text-center">
-                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">$2.0B+</div>
-                <p className="text-hhp-charcoal">Real Estate Facilitated</p>
+                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">15+ Oklahoma Cities Served</div>
+                <p className="text-hhp-charcoal">Cities Served Statewide</p>
               </div>
               <div className="premium-card text-center">
-                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">4.0 GPA</div>
-                <p className="text-hhp-charcoal">MBA Academic Excellence</p>
+                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">24/7 Emergency Response</div>
+                <p className="text-hhp-charcoal">Emergency Response Available</p>
               </div>
               <div className="premium-card text-center">
-                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">40+ Years</div>
+                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">40+ Years Combined Experience</div>
                 <p className="text-hhp-charcoal">Combined Team Experience</p>
               </div>
             </div>

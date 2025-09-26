@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import hhpLogo from '@/assets/hhp-logo.png';
@@ -6,6 +6,8 @@ import hhpLogo from '@/assets/hhp-logo.png';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [servicesTimeout, setServicesTimeout] = useState<NodeJS.Timeout | null>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const navigation = [
@@ -24,6 +26,31 @@ const Header = () => {
     { name: 'RentalAi', href: '/rental-ai' },
     { name: 'Contact', href: '/contact' }
   ];
+
+  // Services dropdown hover handlers
+  const handleServicesMouseEnter = () => {
+    if (servicesTimeout) {
+      clearTimeout(servicesTimeout);
+      setServicesTimeout(null);
+    }
+    setIsServicesOpen(true);
+  };
+
+  const handleServicesMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsServicesOpen(false);
+    }, 200); // Small delay before closing
+    setServicesTimeout(timeout);
+  };
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (servicesTimeout) {
+        clearTimeout(servicesTimeout);
+      }
+    };
+  }, [servicesTimeout]);
 
   return (
     <header className="bg-white shadow-subtle relative z-50">
@@ -44,9 +71,10 @@ const Header = () => {
               <div key={item.name} className="relative">
                 {item.submenu ? (
                   <div
+                    ref={servicesRef}
                     className="relative"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
+                    onMouseEnter={handleServicesMouseEnter}
+                    onMouseLeave={handleServicesMouseLeave}
                   >
                     <button className="flex items-center text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium">
                       {item.name}
@@ -54,12 +82,17 @@ const Header = () => {
                     </button>
                     
                     {isServicesOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-premium py-4 z-50">
+                      <div 
+                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-premium py-4 z-50"
+                        onMouseEnter={handleServicesMouseEnter}
+                        onMouseLeave={handleServicesMouseLeave}
+                      >
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.name}
                             to={subItem.href}
                             className="block px-6 py-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200"
+                            onClick={() => setIsServicesOpen(false)}
                           >
                             {subItem.name}
                           </Link>
@@ -79,6 +112,22 @@ const Header = () => {
                 )}
               </div>
             ))}
+            
+            {/* Login Buttons */}
+            <div className="flex items-center space-x-3 ml-6">
+              <Link 
+                to="/resident-login" 
+                className="bg-hhp-navy text-white px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+              >
+                Resident Login
+              </Link>
+              <Link 
+                to="/owner-login" 
+                className="bg-hhp-navy text-white px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+              >
+                Owner Login
+              </Link>
+            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -119,6 +168,24 @@ const Header = () => {
                   )}
                 </div>
               ))}
+              
+              {/* Mobile Login Buttons */}
+              <div className="flex flex-col space-y-3 mt-6 pt-6 border-t border-gray-200">
+                <Link 
+                  to="/resident-login" 
+                  className="bg-hhp-navy text-white px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Resident Login
+                </Link>
+                <Link 
+                  to="/owner-login" 
+                  className="bg-hhp-navy text-white px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Owner Login
+                </Link>
+              </div>
             </div>
           </div>
         )}

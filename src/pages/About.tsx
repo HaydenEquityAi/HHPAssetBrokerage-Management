@@ -3,7 +3,7 @@ import haydenImage from '@/assets/hayden-ashley.webp';
 import philImage from '@/assets/phil-ashley.webp';
 import jenniImage from '@/assets/jenni-pollard.webp';
 import hannahImage from '@/assets/hannah-fanning.png';
-import { Award, Target, Users, Zap } from 'lucide-react';
+import { Award, Target, Users, Zap, Building2, TrendingUp, DollarSign, Briefcase } from 'lucide-react';
 
 const About = () => {
   return (
@@ -29,45 +29,41 @@ const About = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="section-title text-hhp-navy mb-4">Hayden Ashley</h2>
-                <h3 className="text-xl font-medium text-hhp-accent mb-6">Managing Principal</h3>
+                <h3 className="text-xl font-medium text-hhp-navy mb-6">Managing Principal</h3>
               </div>
               
               <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Hayden Ashley founded HHP Asset Management after facilitating over $2.0B in real estate across all 50 states with Newmark and Colliers. He began his career at Ernst & Young, auditing Tulsa's largest public companies.
-              </p>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Hayden holds an MBA and 4.0 GPA from Oklahoma Baptist University, where he was an NCAA All-American in the Decathlon. His unique combination of financial expertise, athletic discipline, and real estate acumen drives HHP's strategic vision.
+                Hayden Ashley is the founder and Managing Principal of HHP Asset Management, built on the belief that property owners deserve proactive, performance-focused management. After facilitating over $2.0B in real estate across all 50 states with Newmark and Colliers, he saw firsthand how better property-level execution unlocks value. He launched HHP to bring a vertically integrated, data-driven approach rooted in financial discipline, drawing on his background auditing public companies at Ernst & Young.
               </p>
 
               {/* Achievements */}
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="flex items-center space-x-3">
-                  <Award className="h-6 w-6 icon-accent" />
+                  <Building2 className="h-6 w-6 icon-accent" />
                   <div>
                     <div className="font-semibold text-hhp-navy">$2.0B+</div>
                     <div className="text-sm text-hhp-charcoal">Real Estate Facilitated</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Target className="h-6 w-6 icon-accent" />
+                  <TrendingUp className="h-6 w-6 icon-accent" />
                   <div>
-                    <div className="font-semibold text-hhp-navy">4.0 GPA</div>
-                    <div className="text-sm text-hhp-charcoal">MBA Excellence</div>
+                    <div className="font-semibold text-hhp-navy">Data-Driven</div>
+                    <div className="text-sm text-hhp-charcoal">Performance Focus</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Users className="h-6 w-6 icon-accent" />
+                  <DollarSign className="h-6 w-6 icon-accent" />
                   <div>
-                    <div className="font-semibold text-hhp-navy">All-American</div>
-                    <div className="text-sm text-hhp-charcoal">NCAA Decathlon</div>
+                    <div className="font-semibold text-hhp-navy">Financial</div>
+                    <div className="text-sm text-hhp-charcoal">Discipline</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Zap className="h-6 w-6 icon-accent" />
+                  <Briefcase className="h-6 w-6 icon-accent" />
                   <div>
                     <div className="font-semibold text-hhp-navy">Ernst & Young</div>
-                    <div className="text-sm text-hhp-charcoal">Financial Expert</div>
+                    <div className="text-sm text-hhp-charcoal">Audit Experience</div>
                   </div>
                 </div>
               </div>
@@ -101,10 +97,10 @@ const About = () => {
               <img 
                 src={philImage} 
                 alt="Phil Ashley, Director of Operations" 
-                className="w-48 h-48 object-cover rounded-lg mx-auto mb-6 shadow-subtle"
+                className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Phil Ashley</h3>
-              <h4 className="text-lg font-medium text-hhp-accent mb-4 text-center">Director of Operations</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Operations</h4>
               <p className="text-hhp-charcoal leading-relaxed">
                 Phil Ashley brings four decades of operations and real estate experience to HHP. He owned the largest janitorial company in Tulsa for 10+ years and has specialized in investment property acquisition for 20 years. As a CCIM candidate, he combines technical expertise with hands-on experience.
               </p>
@@ -115,10 +111,10 @@ const About = () => {
               <img 
                 src={jenniImage} 
                 alt="Jenni Pollard, Portfolio Manager" 
-                className="w-48 h-48 object-cover rounded-lg mx-auto mb-6 shadow-subtle"
+                className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Jenni Pollard</h3>
-              <h4 className="text-lg font-medium text-hhp-accent mb-4 text-center">Portfolio Manager</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Portfolio Manager</h4>
               <p className="text-hhp-charcoal leading-relaxed">
                 Jenni Pollard drives operational excellence and strategic marketing across HHP's entire portfolio. She manages tenant relations, vendor coordination, and comprehensive reporting while serving as the primary liaison for owners and investors with transparent dashboards and strategic recommendations.
               </p>
@@ -129,10 +125,10 @@ const About = () => {
               <img 
                 src={hannahImage} 
                 alt="Hannah Fanning, Property Manager" 
-                className="w-48 h-48 object-cover rounded-lg mx-auto mb-6 shadow-subtle"
+                className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Hannah Fanning</h3>
-              <h4 className="text-lg font-medium text-hhp-accent mb-4 text-center">Property Manager</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Property Manager</h4>
               <p className="text-hhp-charcoal leading-relaxed">
                 Hannah Fanning oversees daily operations ensuring smooth property management and responsive client support. With 10 years at Melton Truck Lines and a Communications degree from Oklahoma Baptist University, she brings logistical expertise and a people-first approach.
               </p>
@@ -144,7 +140,7 @@ const About = () => {
                 <Users className="h-16 w-16 text-hhp-accent" />
               </div>
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Growing Team</h3>
-              <h4 className="text-lg font-medium text-hhp-accent mb-4 text-center">Future Team Member</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Future Team Member</h4>
               <p className="text-hhp-charcoal leading-relaxed text-center">
                 As HHP continues to expand across Oklahoma, we're building our team with the best talent in property management and real estate.
               </p>
