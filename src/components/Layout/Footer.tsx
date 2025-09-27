@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-display font-semibold text-white">HHP Asset Management</h3>
             <p className="text-white/90 leading-relaxed">
-              Vertically integrated. Data driven. Forward thinking. Oklahoma's premier property management company.
+              Vertically integrated. AI-powered. Performance-driven. America's premier AI-native property management platform.
             </p>
             <div className="flex items-center space-x-4">
               <img 
@@ -59,18 +59,33 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/services/office" className="text-white/90 hover:text-white transition-colors duration-200">
+                  Office Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/industrial" className="text-white/90 hover:text-white transition-colors duration-200">
+                  Industrial & Warehouse
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/retail" className="text-white/90 hover:text-white transition-colors duration-200">
+                  Retail Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/mixed-use" className="text-white/90 hover:text-white transition-colors duration-200">
+                  Mixed-Use Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/senior-living" className="text-white/90 hover:text-white transition-colors duration-200">
+                  Senior Living
+                </Link>
+              </li>
+              <li>
                 <Link to="/services/hud-housing" className="text-white/90 hover:text-white transition-colors duration-200">
                   HUD & Specialized Housing
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/residential" className="text-white/90 hover:text-white transition-colors duration-200">
-                  Residential Management
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/commercial" className="text-white/90 hover:text-white transition-colors duration-200">
-                  Commercial & Office
                 </Link>
               </li>
             </ul>
@@ -95,18 +110,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
                 <div className="text-white/90">
-                  Serving Oklahoma including<br />
-                  Tulsa, Owasso, Bixby, Jenks,<br />
-                  Sapulpa, Glenpool, Pryor,<br />
-                  Sand Springs, Broken Arrow & surrounding areas
+                  Full-Stack Multi-Asset Management Nationwide
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
                 <div className="text-white/90">
-                  Monday-Friday 8:00 AM - 6:00 PM CST<br />
-                  24/7 Emergency Support
+                  Institutional-Grade Service Delivery<br />
+                  AI-Powered Platform Operations
                 </div>
               </div>
             </div>
@@ -117,7 +129,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/80 text-center md:text-left">
-              © 2024 HHP Asset Management. All rights reserved. Licensed • Insured • Locally Owned • Technology-Powered
+              © 2024 HHP Asset Management. All rights reserved. Licensed • Insured • Institutionally Owned • AI-Powered
             </p>
             <p className="text-white/80 text-center md:text-right">
               Hayden Ashley, Managing Principal

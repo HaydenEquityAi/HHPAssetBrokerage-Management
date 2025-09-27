@@ -84,12 +84,12 @@ const RentalAi = () => {
             <div className="flex items-center justify-center space-x-4 mb-8">
               <Bot className="h-16 w-16 text-hhp-accent" />
               <h1 className="hero-title text-white">
-                The Future of Property Management, Built with AI
+                Property Management, Reinvented by AI
               </h1>
             </div>
             
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              RentalAi is the first AI-native property management platform designed to handle everything — multifamily, HUD, residential, and mixed-use portfolios. Unlike outdated systems that require endless manual input, RentalAi automates the entire workflow. From leasing and compliance to maintenance and accounting, RentalAi eliminates inefficiency, empowers owners with real-time insights, and frees managers to focus on growth.
+              RentalAi is the only AI-native property management platform engineered for institutional performance — unifying leasing, compliance, operations, and financials across multifamily, office, industrial, retail, mixed-use, senior living, and specialized housing assets.
             </p>
             
             <div className="bg-hhp-accent/20 border border-hhp-accent rounded-lg p-6 mb-12">
@@ -105,9 +105,9 @@ const RentalAi = () => {
       <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
           <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">Breakthrough Features</h2>
+            <h2 className="section-title text-hhp-navy mb-6">The RentalAi Operating System</h2>
             <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-              RentalAi doesn't just digitize old processes — it reimagines property management from the ground up with artificial intelligence.
+              While traditional property management companies react to problems, RentalAi predicts and prevents them. Our AI-native approach transforms property management from a cost center into a national performance engine—delivering institutional-grade results at scale.
             </p>
           </div>
 
@@ -116,14 +116,21 @@ const RentalAi = () => {
             <div className="premium-card">
               <div className="flex items-center space-x-4 mb-6">
                 <Bot className="h-12 w-12 icon-accent" />
-                <h3 className="text-xl font-display font-semibold text-hhp-navy">AI Leasing Concierge</h3>
+                <h3 className="text-xl font-display font-semibold text-hhp-navy">Leasing & Resident Experience</h3>
               </div>
-              <p className="text-hhp-charcoal leading-relaxed mb-4">
-                Automates lead responses, tour scheduling, applications, and screenings — instantly and 24/7. Never lose another prospect to slow response times.
-              </p>
-              <div className="flex items-center space-x-2 text-hhp-accent font-medium">
-                <Clock className="h-4 w-4" />
-                <span>Response time: Under 30 seconds</span>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Autonomous Leasing Intelligence</h4>
+                  <p className="text-hhp-charcoal text-sm">24/7 AI-powered leasing that engages prospects instantly, qualifies leads with precision, and drives higher conversion without additional staff.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Intelligent Tenant Communications</h4>
+                  <p className="text-hhp-charcoal text-sm">Always-on enterprise chat and messaging that increases resident satisfaction while reducing staff workload.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Resident Retention Engine</h4>
+                  <p className="text-hhp-charcoal text-sm">Predictive analytics identify at-risk residents and trigger automated engagement strategies to reduce turnover and increase renewals.</p>
+                </div>
               </div>
             </div>
 
@@ -131,14 +138,17 @@ const RentalAi = () => {
             <div className="premium-card">
               <div className="flex items-center space-x-4 mb-6">
                 <Shield className="h-12 w-12 icon-accent" />
-                <h3 className="text-xl font-display font-semibold text-hhp-navy">Built-In Compliance Engine</h3>
+                <h3 className="text-xl font-display font-semibold text-hhp-navy">Compliance & Risk Management</h3>
               </div>
-              <p className="text-hhp-charcoal leading-relaxed mb-4">
-                HUD and LIHTC compliance handled automatically, with audit-ready reporting. Eliminate compliance stress and human error.
-              </p>
-              <div className="flex items-center space-x-2 text-hhp-accent font-medium">
-                <CheckCircle className="h-4 w-4" />
-                <span>100% audit-ready reports</span>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Advanced Compliance Automation</h4>
+                  <p className="text-hhp-charcoal text-sm">Built-in HUD, LIHTC, and regulatory compliance that generates audit-ready documentation automatically.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Fraud & Risk Detection</h4>
+                  <p className="text-hhp-charcoal text-sm">AI-driven anomaly detection flags financial irregularities, fraudulent applications, and compliance risks before they become problems.</p>
+                </div>
               </div>
             </div>
 
@@ -146,14 +156,21 @@ const RentalAi = () => {
             <div className="premium-card">
               <div className="flex items-center space-x-4 mb-6">
                 <Brain className="h-12 w-12 icon-accent" />
-                <h3 className="text-xl font-display font-semibold text-hhp-navy">Conversational AI for Tenants</h3>
+                <h3 className="text-xl font-display font-semibold text-hhp-navy">Asset & Operations Optimization</h3>
               </div>
-              <p className="text-hhp-charcoal leading-relaxed mb-4">
-                Smart chatbots manage tenant requests, updates, and communication around the clock. Reduce workload while improving satisfaction.
-              </p>
-              <div className="flex items-center space-x-2 text-hhp-accent font-medium">
-                <Zap className="h-4 w-4" />
-                <span>24/7 instant support</span>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Predictive Asset Management</h4>
+                  <p className="text-hhp-charcoal text-sm">AI-driven maintenance forecasting that prevents costly breakdowns, extends asset life, and protects NOI.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Automated Vendor & Procurement Optimization</h4>
+                  <p className="text-hhp-charcoal text-sm">Intelligent vendor scorecards and procurement workflows that ensure cost savings, compliance, and accountability.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Dynamic Rent & Market Pricing</h4>
+                  <p className="text-hhp-charcoal text-sm">Machine learning algorithms continuously adjust rents to market demand, maximizing occupancy and revenue.</p>
+                </div>
               </div>
             </div>
 
@@ -161,14 +178,21 @@ const RentalAi = () => {
             <div className="premium-card">
               <div className="flex items-center space-x-4 mb-6">
                 <TrendingUp className="h-12 w-12 icon-accent" />
-                <h3 className="text-xl font-display font-semibold text-hhp-navy">Predictive Property Care</h3>
+                <h3 className="text-xl font-display font-semibold text-hhp-navy">Financial & Portfolio Intelligence</h3>
               </div>
-              <p className="text-hhp-charcoal leading-relaxed mb-4">
-                AI-driven maintenance forecasting to prevent failures and extend asset life. Transform reactive maintenance into proactive care.
-              </p>
-              <div className="flex items-center space-x-2 text-hhp-accent font-medium">
-                <TrendingUp className="h-4 w-4" />
-                <span>Prevent 80% of emergency repairs</span>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Institutional Financial Intelligence</h4>
+                  <p className="text-hhp-charcoal text-sm">Automated accounting, analytics, and investor reporting that meet institutional standards for transparency and performance.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Portfolio Intelligence & Benchmarking</h4>
+                  <p className="text-hhp-charcoal text-sm">Real-time AI benchmarking across multifamily, office, industrial, retail, mixed-use, senior living, and specialized housing assets against market comps and KPIs.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-hhp-navy mb-1">Technology Infrastructure</h4>
+                  <p className="text-hhp-charcoal text-sm">Scalable API & system integration with Yardi, RealPage, MRI, Entrata, and accounting systems ensure RentalAi plugs seamlessly into existing infrastructure.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -179,9 +203,9 @@ const RentalAi = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-white mb-8">Why RentalAi Wins</h2>
+            <h2 className="section-title text-white mb-8">Competitive Advantage</h2>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              "Property management software today reacts. RentalAi predicts. It learns, adapts, and executes — turning management from a reactive chore into a proactive advantage. With RentalAi, owners unlock efficiency, compliance, and performance no legacy system can match."
+              "While traditional property management companies react to problems, RentalAi predicts and prevents them. Our AI-native approach transforms property management from a cost center into a national performance engine—delivering institutional-grade results at scale."
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

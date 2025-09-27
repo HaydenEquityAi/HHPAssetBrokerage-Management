@@ -83,7 +83,7 @@ const Contact = () => {
               Contact HHP Asset Management
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Ready to transform your property management experience? Our team is here to provide expert guidance and customized solutions for your Oklahoma real estate portfolio.
+              Experience the future of property management. Schedule a consultation to see how our AI-native platform delivers institutional-grade results.
             </p>
           </div>
         </div>
@@ -216,9 +216,9 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Service Areas</h4>
+                      <h4 className="font-medium text-hhp-navy mb-1">Market Coverage</h4>
                       <p className="text-hhp-charcoal">
-                        Serving Oklahoma including Tulsa, Owasso, Bixby, Jenks, Sapulpa, Glenpool, Pryor, Sand Springs, and surrounding communities
+                        Full-Stack Multi-Asset Management Nationwide
                       </p>
                     </div>
                   </div>
@@ -226,10 +226,9 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Business Hours</h4>
+                      <h4 className="font-medium text-hhp-navy mb-1">Specialization</h4>
                       <p className="text-hhp-charcoal">
-                        Monday-Friday: 8:00 AM - 6:00 PM CST<br />
-                        24/7 Emergency Support Available
+                        AI-Native Property Management Platform
                       </p>
                     </div>
                   </div>
@@ -237,9 +236,29 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <Users className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Leadership</h4>
+                      <h4 className="font-medium text-hhp-navy mb-1">Platform</h4>
                       <p className="text-hhp-charcoal">
-                        Hayden Ashley, Managing Principal
+                        RentalAi - America's First AI-Native Property Management System
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <Building className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-medium text-hhp-navy mb-1">Client Base</h4>
+                      <p className="text-hhp-charcoal">
+                        REITs, Private Equity, Family Offices, Institutional Investors
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <TrendingUp className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-medium text-hhp-navy mb-1">Expansion</h4>
+                      <p className="text-hhp-charcoal">
+                        Actively expanding across the Midwest and Southwest, with national licensing opportunities for RentalAi technology
                       </p>
                     </div>
                   </div>
@@ -257,7 +276,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Home className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Real Estate Investors: Explore Oklahoma Investment Management</span>
+                    <span className="text-hhp-charcoal">Real Estate Investors: Explore National Investment Management</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Users className="h-5 w-5 icon-accent" />
@@ -301,7 +320,7 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-8 max-w-3xl mx-auto">
-            Join the Oklahoma property owners who trust HHP Asset Management for professional, technology-driven property management solutions.
+            Join sophisticated investors nationwide who trust HHP Asset Management for institutional-grade, technology-driven property management solutions.
           </p>
           <p className="text-lg text-hhp-accent font-medium">
             We typically respond within 2 hours during business hours

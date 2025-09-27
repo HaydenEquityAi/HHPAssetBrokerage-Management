@@ -13,11 +13,31 @@ const About = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Leadership Excellence in Oklahoma Property Management
+              National Leadership in AI-Native Property Management
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Our seasoned leadership team brings together decades of real estate expertise, financial acumen, and innovative technology to deliver exceptional results for property owners across Oklahoma.
+              Our institutional leadership team brings together decades of Big Four, Fortune 500, and $2B+ transaction experience to deliver enterprise-grade solutions for sophisticated investors nationwide.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Description */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="section-title text-hhp-navy mb-8">About HHP Asset Management</h2>
+            <div className="space-y-6 text-lg leading-relaxed text-hhp-charcoal">
+              <p>
+                HHP Asset Management is a full-stack, multi-asset property management firm pioneering AI-native solutions that deliver institutional-grade performance for investors and property owners across national markets. Through our proprietary RentalAi platform and vertically integrated approach, we manage diversified portfolios across multifamily, office, industrial, retail, mixed-use, senior living, and specialized housing with enterprise-level efficiency and transparency.
+              </p>
+              <p>
+                Our systematic methodology combines advanced technology with deep market expertise across every major asset class, enabling us to optimize property performance while reducing operational overhead. We serve sophisticated investors, institutions, REITs, private equity funds, and family offices nationwide who demand both innovation and results.
+              </p>
+              <p>
+                In addition to direct property management, HHP provides licensing opportunities for its proprietary RentalAi platform, enabling institutions and operators nationwide to integrate enterprise-grade AI into their own portfolios.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -29,11 +49,14 @@ const About = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="section-title text-hhp-navy mb-4">Hayden Ashley</h2>
-                <h3 className="text-xl font-medium text-hhp-navy mb-6">Managing Principal</h3>
+                <h3 className="text-xl font-medium text-hhp-navy mb-6">Founder & Managing Principal</h3>
               </div>
               
               <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Hayden Ashley is the founder and Managing Principal of HHP Asset Management, built on the belief that property owners deserve proactive, performance-focused management. After facilitating over $2.0B in real estate across all 50 states with Newmark and Colliers, he saw firsthand how better property-level execution unlocks value. He launched HHP to bring a vertically integrated, data-driven approach rooted in financial discipline, drawing on his background auditing public companies at Ernst & Young.
+                Hayden Ashley drives HHP Asset Management's national growth and technology strategy. As Founder & Managing Principal, he leads the development of RentalAi—America's first AI-native property management platform—while overseeing enterprise operations across multiple markets.
+              </p>
+              <p className="text-lg leading-relaxed text-hhp-charcoal">
+                With a background spanning institutional real estate, Big Four accounting, and advanced technology, Hayden has positioned HHP as a national leader in property management innovation. His experience auditing Fortune 500 companies at Ernst & Young, combined with facilitating over $2.0B in real estate transactions with Newmark and Colliers, informs HHP's disciplined, institutional-grade approach. His vision of uniting enterprise systems with proprietary AI has made HHP a trusted partner for sophisticated investors and institutions seeking performance beyond the limits of traditional firms.
               </p>
 
               {/* Achievements */}
@@ -100,9 +123,12 @@ const About = () => {
                 className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Phil Ashley</h3>
-              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Operations</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of National Operations</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Phil Ashley brings four decades of operations and real estate experience to HHP. He owned the largest janitorial company in Tulsa for 10+ years and has specialized in investment property acquisition for 20 years. As a CCIM candidate, he combines technical expertise with hands-on experience.
+                Phil Ashley serves as Director of National Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution.
+              </p>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across national markets. His systematic approach to property operations and investor relations makes him an invaluable strategic resource for HHP's sophisticated client base.
               </p>
             </div>
 
@@ -114,9 +140,12 @@ const About = () => {
                 className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Jenni Pollard</h3>
-              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Portfolio Manager</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Portfolio Strategy & Marketing</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Jenni Pollard drives operational excellence and strategic marketing across HHP's entire portfolio. She manages tenant relations, vendor coordination, and comprehensive reporting while serving as the primary liaison for owners and investors with transparent dashboards and strategic recommendations.
+                Jenni Pollard directs portfolio strategy and marketing at HHP Asset Management, integrating advanced analytics, market intelligence, and strategic communications to optimize performance across multi-market operations.
+              </p>
+              <p className="text-hhp-charcoal leading-relaxed">
+                She leads marketing initiatives, investor reporting, and client engagement strategies that position portfolios for long-term success. As the primary liaison for institutional clients, Jenni delivers transparent dashboards, tailored insights, and strategic recommendations that strengthen HHP's reputation as a national leader in sophisticated property management.
               </p>
             </div>
 
@@ -128,9 +157,12 @@ const About = () => {
                 className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Hannah Fanning</h3>
-              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Property Manager</h4>
+              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Client Operations</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Hannah Fanning oversees daily operations ensuring smooth property management and responsive client support. With 10 years at Melton Truck Lines and a Communications degree from Oklahoma Baptist University, she brings logistical expertise and a people-first approach.
+                Hannah Fanning directs client operations at HHP Asset Management, ensuring seamless execution of service standards and administrative oversight across all portfolios. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
+              </p>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Her leadership ensures transparent reporting, efficient processes, and client-focused service that align with the institutional standards investors expect from HHP.
               </p>
             </div>
 
@@ -142,7 +174,7 @@ const About = () => {
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Growing Team</h3>
               <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Future Team Member</h4>
               <p className="text-hhp-charcoal leading-relaxed text-center">
-                As HHP continues to expand across Oklahoma, we're building our team with the best talent in property management and real estate.
+                As HHP continues to expand across national markets, we're building our team with the best talent in property management and real estate.
               </p>
             </div>
           </div>
