@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Building, CheckCircle, TrendingUp, Users, Shield, BarChart3, Download } from 'lucide-react';
+import { Building, TrendingUp, CheckCircle, BarChart3, Users, Target, Download } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import { useSEO } from '@/hooks/useSEO';
 
-const ManagementMultifamily = () => {
+const ManagementRetail = () => {
   useSEO({
-    title: 'Multifamily Property Management | HHP Asset Management',
-    description: 'Institutional-grade multifamily management across Oklahoma. We deliver occupancy growth, retention, and NOI performance for apartment communities.'
+    title: 'Retail Property Management | HHP Asset Management',
+    description: 'Retail property management built for performance. Tenant mix, CAM precision, and marketing strategies that drive occupancy and sales.'
   });
 
   return (
@@ -17,13 +16,13 @@ const ManagementMultifamily = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Multifamily Property Management
+              Retail Property Management
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-8">
-              Institutional-grade operations that maximize occupancy, retention, and NOI for large-scale apartment communities.
+              Tenant-mix strategy, CAM precision, and marketing execution for centers that perform.
             </p>
             <div className="text-white/80 mb-8">
-              <span className="font-semibold">15%+ NOI Lift</span> | <span className="font-semibold">Executive Dashboards</span> | <span className="font-semibold">Predictive Maintenance</span>
+              <span className="font-semibold">Optimized CAM</span> | <span className="font-semibold">Faster Re-Tenanting</span> | <span className="font-semibold">Sales Uplift</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
@@ -42,7 +41,7 @@ const ManagementMultifamily = () => {
       <section className="bg-gray-50 py-4">
         <div className="container-premium">
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <Link to="/management/multifamily" className="text-hhp-navy font-semibold hover:text-hhp-accent transition-colors">
+            <Link to="/management/multifamily" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
               Multifamily
             </Link>
             <Link to="/management/hud" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
@@ -51,7 +50,7 @@ const ManagementMultifamily = () => {
             <Link to="/management/office" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
               Office
             </Link>
-            <Link to="/management/retail" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+            <Link to="/management/retail" className="text-hhp-navy font-semibold hover:text-hhp-accent transition-colors">
               Retail
             </Link>
             <Link to="/management/industrial" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
@@ -70,47 +69,57 @@ const ManagementMultifamily = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-hhp-charcoal mb-8">
-                We specialize in managing large-scale apartment communities with the same sophistication institutional investors expect. Our systems are engineered to maximize occupancy, streamline operations, and deliver consistent NOI growth. Whether a 50-unit community or a 500-unit asset, HHP ensures every property operates at peak performance.
+                Retail properties demand a unique focus on tenant mix, marketing, and operational execution. HHP provides specialized retail management that maximizes foot traffic, drives tenant performance, and keeps the property a vibrant destination.
               </p>
 
               <h2 className="text-2xl font-display font-semibold text-hhp-navy mb-6">Core Services</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Full-Service Operations</h3>
-                  <p className="text-hhp-charcoal">Complete day-to-day management including leasing, maintenance, and resident services.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Day-to-day operations for centers and mixed-use</h3>
+                  <p className="text-hhp-charcoal">Comprehensive operational management for retail centers and mixed-use properties.</p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Amenity & Community Management</h3>
-                  <p className="text-hhp-charcoal">Strategic oversight of amenities and community programs to enhance resident satisfaction.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Lease administration & co-tenancy enforcement</h3>
+                  <p className="text-hhp-charcoal">Precise lease management with co-tenancy clause enforcement and compliance.</p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Advanced Leasing Strategies</h3>
-                  <p className="text-hhp-charcoal">Data-driven leasing approaches that optimize occupancy and rental rates.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Tenant-mix strategy</h3>
+                  <p className="text-hhp-charcoal">Strategic tenant selection and mix optimization to maximize foot traffic and sales.</p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Financial Performance</h3>
-                  <p className="text-hhp-charcoal">Comprehensive budgeting, forecasting, and financial reporting for optimal NOI.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Property marketing & community engagement</h3>
+                  <p className="text-hhp-charcoal">Comprehensive marketing strategies and community engagement programs.</p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Resident Lifecycle Management</h3>
-                  <p className="text-hhp-charcoal">From move-in to renewal, we optimize the entire resident experience.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">CAM oversight & reconciliation</h3>
+                  <p className="text-hhp-charcoal">Accurate CAM calculations, billing, and reconciliation processes.</p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Maintenance Excellence</h3>
-                  <p className="text-hhp-charcoal">Predictive maintenance programs that minimize costs and maximize resident satisfaction.</p>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Vendor coordination (landscaping, cleaning, security)</h3>
+                  <p className="text-hhp-charcoal">Strategic vendor management for all property services and maintenance.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Capital improvements & re-tenanting</h3>
+                  <p className="text-hhp-charcoal">Strategic capital planning and efficient re-tenanting processes.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Real-time performance tracking</h3>
+                  <p className="text-hhp-charcoal">Comprehensive performance monitoring and reporting for optimal results.</p>
                 </div>
               </div>
 
               <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Owner Benefits</h3>
                 <p className="text-hhp-charcoal text-lg">
-                  Higher occupancy, improved retention, reduced operating risk, stronger long-term value.
+                  Stronger tenant performance, optimized CAM recoveries, reduced vacancy, enhanced competitiveness.
                 </p>
               </div>
             </div>
@@ -122,10 +131,10 @@ const ManagementMultifamily = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Ready to Maximize Your Multifamily Performance?
+            Ready to Drive Retail Performance?
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Experience institutional-grade multifamily management that delivers measurable results and long-term value growth.
+            Experience specialized retail management that maximizes foot traffic, drives tenant performance, and keeps your property competitive.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -149,4 +158,4 @@ const ManagementMultifamily = () => {
   );
 };
 
-export default ManagementMultifamily;
+export default ManagementRetail;

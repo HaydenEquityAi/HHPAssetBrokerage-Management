@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
-import { Building, TrendingUp, CheckCircle, BarChart3, Users, Target } from 'lucide-react';
+import { Building, TrendingUp, CheckCircle, BarChart3, Users, Target, Download } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import commercialImage from '@/assets/commercial-building.webp';
+import { useSEO } from '@/hooks/useSEO';
 
 const ManagementCommercial = () => {
+  useSEO({
+    title: 'Office Property Management | HHP Asset Management',
+    description: 'Professional management for Class A/B and medical office buildings. Tenant experience, renewals, and operational excellence.'
+  });
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -11,141 +17,111 @@ const ManagementCommercial = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Office / Industrial / Retail Management — Powered by LeaseAi
+              Office Property Management
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Advanced leasing and property management for office, industrial, and retail properties powered by LeaseAi. Our platform delivers lease compliance, CAM reconciliation, and predictive occupancy analytics across diverse commercial portfolios.
+            <p className="text-xl leading-relaxed text-white/90 mb-8">
+              Tenant-experience-driven operations for Class A/B and medical office assets to increase renewals and value.
             </p>
-            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
-              Schedule Consultation
+            <div className="text-white/80 mb-8">
+              <span className="font-semibold">Higher Renewal Rates</span> | <span className="font-semibold">Cost Optimization</span> | <span className="font-semibold">Transparent Reporting</span>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+                Schedule Consultation
+              </Link>
+              <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 flex items-center justify-center">
+                <Download className="h-5 w-5 mr-2" />
+                Download Owner Brochure
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Sub-Navigation */}
+      <section className="bg-gray-50 py-4">
+        <div className="container-premium">
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <Link to="/management/multifamily" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+              Multifamily
+            </Link>
+            <Link to="/management/hud" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+              HUD
+            </Link>
+            <Link to="/management/office" className="text-hhp-navy font-semibold hover:text-hhp-accent transition-colors">
+              Office
+            </Link>
+            <Link to="/management/retail" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+              Retail
+            </Link>
+            <Link to="/management/industrial" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+              Industrial
+            </Link>
+            <Link to="/management/senior" className="text-hhp-charcoal hover:text-hhp-accent transition-colors">
+              Senior Housing
             </Link>
           </div>
         </div>
       </section>
 
-      {/* LeaseAi Capabilities */}
+      {/* Main Content */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Building className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">LeaseAi Platform</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Specialized SaaS platform for office, industrial, and retail leasing operations. LeaseAi streamlines lease administration, provides predictive occupancy analytics, and optimizes tenant relationships with AI-powered insights.
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-xl leading-relaxed text-hhp-charcoal mb-8">
+                At HHP, we deliver comprehensive management solutions that improve tenant satisfaction, optimize building operations, and safeguard long-term asset value.
               </p>
 
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">Leasing Solutions:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Automated lease abstraction and analysis',
-                    'Renewal probability scoring',
-                    'Vacancy forecasting and prevention',
-                    'CAM reconciliation automation',
-                    'Tenant retention optimization',
-                    'Market rent benchmarking'
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/contact" className="btn-hero inline-block">
-                Schedule Commercial Consultation
-              </Link>
-            </div>
-            
-            <div>
-              <img 
-                src={commercialImage} 
-                alt="Commercial property management" 
-                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Asset Classes */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="section-title text-hhp-navy mb-6">Asset Classes We Manage</h2>
-              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-4xl mx-auto">
-                Comprehensive management solutions across all major commercial asset types.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-8 rounded-lg">
-                  <Building className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-xl font-display font-semibold text-white mb-4">Office Buildings</h3>
-                  <p className="text-white/90">Class A, B, and C office properties with strategic leasing and tenant retention</p>
-                </div>
-              </div>
+              <h2 className="text-2xl font-display font-semibold text-hhp-navy mb-6">Core Services</h2>
               
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-8 rounded-lg">
-                  <TrendingUp className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-xl font-display font-semibold text-white mb-4">Industrial Properties</h3>
-                  <p className="text-white/90">Warehouses, distribution centers, and manufacturing facilities</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Full-service management for Class A, B, and medical office</h3>
+                  <p className="text-hhp-charcoal">Comprehensive management tailored to each office building class and tenant needs.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Tenant relations & retention programs</h3>
+                  <p className="text-hhp-charcoal">Strategic programs designed to enhance tenant satisfaction and increase renewal rates.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Lease administration & escalations</h3>
+                  <p className="text-hhp-charcoal">Precise lease management with accurate escalations and compliance tracking.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Facility management & building systems oversight</h3>
+                  <p className="text-hhp-charcoal">Comprehensive oversight of all building systems and facility operations.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Vendor coordination & performance tracking</h3>
+                  <p className="text-hhp-charcoal">Strategic vendor management with performance monitoring and optimization.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Budgeting/forecasting & financial reporting</h3>
+                  <p className="text-hhp-charcoal">Detailed financial planning and transparent reporting for optimal performance.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Capital planning & project management</h3>
+                  <p className="text-hhp-charcoal">Strategic capital planning and project execution for long-term value.</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy">Safety/accessibility compliance</h3>
+                  <p className="text-hhp-charcoal">Full compliance with safety regulations and accessibility requirements.</p>
                 </div>
               </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-8 rounded-lg">
-                  <BarChart3 className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-xl font-display font-semibold text-white mb-4">Retail Properties</h3>
-                  <p className="text-white/90">Shopping centers, strip malls, and standalone retail buildings</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Performance Metrics */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="section-title text-hhp-navy mb-6">LeaseAi Impact</h2>
-              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-4xl mx-auto">
-                Measurable results from our AI-powered commercial leasing platform.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-gray-50 p-8 rounded-lg">
-                  <TrendingUp className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-2">90% Faster</h3>
-                  <p className="text-hhp-charcoal">Lease Processing</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-gray-50 p-8 rounded-lg">
-                  <Users className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-2">25% Higher</h3>
-                  <p className="text-hhp-charcoal">Tenant Retention</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-gray-50 p-8 rounded-lg">
-                  <Target className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-2">AI-Driven</h3>
-                  <p className="text-hhp-charcoal">Occupancy Optimization</p>
-                </div>
+              <div className="bg-gray-50 p-8 rounded-lg">
+                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Owner Benefits</h3>
+                <p className="text-hhp-charcoal text-lg">
+                  Higher renewal rates, optimized costs, executive dashboards, increased long-term value.
+                </p>
               </div>
             </div>
           </div>
@@ -156,10 +132,10 @@ const ManagementCommercial = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Ready to Optimize Your Commercial Portfolio?
+            Ready to Optimize Your Office Building Performance?
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Experience the future of commercial property management with our AI-native LeaseAi platform and institutional-grade expertise.
+            Experience tenant-experience-driven office management that increases renewals and maximizes long-term value.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -170,10 +146,11 @@ const ManagementCommercial = () => {
               Schedule a Consultation
             </Link>
             <Link 
-              to="/technology" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
+              to="/contact" 
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block flex items-center justify-center"
             >
-              Explore LeaseAi Platform
+              <Download className="h-5 w-5 mr-2" />
+              Download Owner Brochure
             </Link>
           </div>
         </div>

@@ -25,13 +25,16 @@ const Header = () => {
         { name: 'Valuations & Advisory', href: '/brokerage/valuations' }
       ]
     },
-    { 
-      name: 'Management', 
+    {
+      name: 'Management',
       href: '/management',
       submenu: [
-        { name: 'Multifamily / HUD (RentalAi)', href: '/management/multifamily' },
-        { name: 'Office / Industrial / Retail (LeaseAi)', href: '/management/commercial' },
-        { name: 'Senior & Specialized Housing', href: '/management/senior' }
+        { name: 'Multifamily', href: '/management/multifamily' },
+        { name: 'HUD', href: '/management/hud' },
+        { name: 'Office', href: '/management/office' },
+        { name: 'Retail', href: '/management/retail' },
+        { name: 'Industrial', href: '/management/industrial' },
+        { name: 'Senior Housing', href: '/management/senior' }
       ]
     },
     { name: 'Technology', href: '/technology' },

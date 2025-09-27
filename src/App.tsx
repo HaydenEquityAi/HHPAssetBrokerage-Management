@@ -8,7 +8,10 @@ import Home from "./pages/Home";
 import Brokerage from "./pages/Brokerage";
 import Services from "./pages/Services";
 import ManagementMultifamily from "./pages/ManagementMultifamily";
+import ManagementHUD from "./pages/ManagementHUD";
 import ManagementCommercial from "./pages/ManagementCommercial";
+import ManagementRetail from "./pages/ManagementRetail";
+import ManagementIndustrial from "./pages/ManagementIndustrial";
 import ManagementSenior from "./pages/ManagementSenior";
 import Technology from "./pages/Technology";
 import About from "./pages/About";
@@ -34,7 +37,10 @@ const App = () => (
           <Route path="/brokerage/valuations" element={<Brokerage />} />
           <Route path="/management" element={<Services />} />
           <Route path="/management/multifamily" element={<ManagementMultifamily />} />
-          <Route path="/management/commercial" element={<ManagementCommercial />} />
+          <Route path="/management/hud" element={<ManagementHUD />} />
+          <Route path="/management/office" element={<ManagementCommercial />} />
+          <Route path="/management/retail" element={<ManagementRetail />} />
+          <Route path="/management/industrial" element={<ManagementIndustrial />} />
           <Route path="/management/senior" element={<ManagementSenior />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
