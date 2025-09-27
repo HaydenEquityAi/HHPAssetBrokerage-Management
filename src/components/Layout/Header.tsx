@@ -5,52 +5,84 @@ import hhpLogo from '@/assets/hhp-logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [servicesTimeout, setServicesTimeout] = useState<NodeJS.Timeout | null>(null);
-  const servicesRef = useRef<HTMLDivElement>(null);
+  const [isBrokerageOpen, setIsBrokerageOpen] = useState(false);
+  const [isManagementOpen, setIsManagementOpen] = useState(false);
+  const [brokerageTimeout, setBrokerageTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [managementTimeout, setManagementTimeout] = useState<NodeJS.Timeout | null>(null);
+  const brokerageRef = useRef<HTMLDivElement>(null);
+  const managementRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
     { 
-      name: 'Services', 
-      href: '/services',
+      name: 'Brokerage', 
+      href: '/brokerage',
       submenu: [
-        { name: 'Multifamily Management', href: '/services/multifamily' },
-        { name: 'HUD & Specialized Housing', href: '/services/hud-housing' },
-        { name: 'Residential Management', href: '/services/residential' },
-        { name: 'Commercial & Office', href: '/services/commercial' }
+        { name: 'Investment Sales', href: '/brokerage/investment-sales' },
+        { name: 'Leasing Services', href: '/brokerage/leasing' },
+        { name: 'Capital Markets', href: '/brokerage/capital-markets' },
+        { name: 'Valuations & Advisory', href: '/brokerage/valuations' }
       ]
     },
-    { name: 'RentalAi', href: '/rental-ai' },
+    { 
+      name: 'Management', 
+      href: '/management',
+      submenu: [
+        { name: 'Multifamily / HUD (RentalAi)', href: '/management/multifamily' },
+        { name: 'Office / Industrial / Retail (LeaseAi)', href: '/management/commercial' },
+        { name: 'Senior & Specialized Housing', href: '/management/senior' }
+      ]
+    },
+    { name: 'Technology', href: '/technology' },
+    { name: 'About', href: '/about' },
+    { name: 'Insights', href: '/insights' },
     { name: 'Contact', href: '/contact' }
   ];
 
-  // Services dropdown hover handlers
-  const handleServicesMouseEnter = () => {
-    if (servicesTimeout) {
-      clearTimeout(servicesTimeout);
-      setServicesTimeout(null);
+  // Brokerage dropdown hover handlers
+  const handleBrokerageMouseEnter = () => {
+    if (brokerageTimeout) {
+      clearTimeout(brokerageTimeout);
+      setBrokerageTimeout(null);
     }
-    setIsServicesOpen(true);
+    setIsBrokerageOpen(true);
   };
 
-  const handleServicesMouseLeave = () => {
+  const handleBrokerageMouseLeave = () => {
     const timeout = setTimeout(() => {
-      setIsServicesOpen(false);
-    }, 200); // Small delay before closing
-    setServicesTimeout(timeout);
+      setIsBrokerageOpen(false);
+    }, 200);
+    setBrokerageTimeout(timeout);
   };
 
-  // Cleanup timeout on unmount
+  // Management dropdown hover handlers
+  const handleManagementMouseEnter = () => {
+    if (managementTimeout) {
+      clearTimeout(managementTimeout);
+      setManagementTimeout(null);
+    }
+    setIsManagementOpen(true);
+  };
+
+  const handleManagementMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsManagementOpen(false);
+    }, 200);
+    setManagementTimeout(timeout);
+  };
+
+  // Cleanup timeouts on unmount
   useEffect(() => {
     return () => {
-      if (servicesTimeout) {
-        clearTimeout(servicesTimeout);
+      if (brokerageTimeout) {
+        clearTimeout(brokerageTimeout);
+      }
+      if (managementTimeout) {
+        clearTimeout(managementTimeout);
       }
     };
-  }, [servicesTimeout]);
+  }, [brokerageTimeout, managementTimeout]);
 
   return (
     <header className="bg-white shadow-subtle relative z-50">
@@ -71,28 +103,31 @@ const Header = () => {
               <div key={item.name} className="relative">
                 {item.submenu ? (
                   <div
-                    ref={servicesRef}
+                    ref={item.name === 'Brokerage' ? brokerageRef : managementRef}
                     className="relative"
-                    onMouseEnter={handleServicesMouseEnter}
-                    onMouseLeave={handleServicesMouseLeave}
+                    onMouseEnter={item.name === 'Brokerage' ? handleBrokerageMouseEnter : handleManagementMouseEnter}
+                    onMouseLeave={item.name === 'Brokerage' ? handleBrokerageMouseLeave : handleManagementMouseLeave}
                   >
                     <button className="flex items-center text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium">
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                     
-                    {isServicesOpen && (
+                    {(item.name === 'Brokerage' ? isBrokerageOpen : isManagementOpen) && (
                       <div 
                         className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-premium py-4 z-50"
-                        onMouseEnter={handleServicesMouseEnter}
-                        onMouseLeave={handleServicesMouseLeave}
+                        onMouseEnter={item.name === 'Brokerage' ? handleBrokerageMouseEnter : handleManagementMouseEnter}
+                        onMouseLeave={item.name === 'Brokerage' ? handleBrokerageMouseLeave : handleManagementMouseLeave}
                       >
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.name}
                             to={subItem.href}
                             className="block px-6 py-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200"
-                            onClick={() => setIsServicesOpen(false)}
+                            onClick={() => {
+                              setIsBrokerageOpen(false);
+                              setIsManagementOpen(false);
+                            }}
                           >
                             {subItem.name}
                           </Link>
@@ -113,19 +148,13 @@ const Header = () => {
               </div>
             ))}
             
-            {/* Login Buttons */}
+            {/* CTA Button */}
             <div className="flex items-center space-x-3 ml-6">
               <Link 
-                to="/resident-login" 
-                className="bg-hhp-navy text-white px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+                to="/contact" 
+                className="bg-hhp-navy text-white px-6 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
               >
-                Resident Login
-              </Link>
-              <Link 
-                to="/owner-login" 
-                className="bg-hhp-navy text-white px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
-              >
-                Owner Login
+                Schedule Consultation
               </Link>
             </div>
           </nav>
@@ -169,21 +198,14 @@ const Header = () => {
                 </div>
               ))}
               
-              {/* Mobile Login Buttons */}
+              {/* Mobile CTA Button */}
               <div className="flex flex-col space-y-3 mt-6 pt-6 border-t border-gray-200">
                 <Link 
-                  to="/resident-login" 
+                  to="/contact" 
                   className="bg-hhp-navy text-white px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
-                  Resident Login
-                </Link>
-                <Link 
-                  to="/owner-login" 
-                  className="bg-hhp-navy text-white px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Owner Login
+                  Schedule Consultation
                 </Link>
               </div>
             </div>

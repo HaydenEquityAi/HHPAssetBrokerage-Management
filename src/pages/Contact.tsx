@@ -21,13 +21,14 @@ const Contact = () => {
   const { toast } = useToast();
 
   const inquiryTypes = [
-    'Property Analysis',
-    'Consultation',
-    'Multifamily Management',
-    'Residential Management', 
-    'Commercial Management',
-    'HUD & Specialized Housing',
-    'RentalAi Demo',
+    'Brokerage Services',
+    'Management Services',
+    'Technology Platform',
+    'Investment Sales',
+    'Leasing Services',
+    'Capital Markets',
+    'Valuations & Advisory',
+    'SaaS Licensing',
     'General Inquiry'
   ];
 
@@ -80,10 +81,10 @@ const Contact = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Contact HHP Asset Management
+              Contact HHP Asset Group
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Experience the future of property management. Schedule a consultation to see how our AI-native platform delivers institutional-grade results.
+              Let's transform your portfolio. Schedule a consultation today and discover how our AI-native platform delivers institutional-grade results for sophisticated investors nationwide.
             </p>
           </div>
         </div>
@@ -214,31 +215,24 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
+                    <Phone className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-medium text-hhp-navy mb-1">Phone</h4>
+                      <a 
+                        href="tel:+19188991650" 
+                        className="text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
+                      >
+                        (918) 899-1650
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Market Coverage</h4>
+                      <h4 className="font-medium text-hhp-navy mb-1">Headquarters</h4>
                       <p className="text-hhp-charcoal">
-                        Full-Stack Multi-Asset Management Nationwide
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <Clock className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Specialization</h4>
-                      <p className="text-hhp-charcoal">
-                        AI-Native Property Management Platform
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <Users className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Platform</h4>
-                      <p className="text-hhp-charcoal">
-                        RentalAi - America's First AI-Native Property Management System
+                        Tulsa, OK
                       </p>
                     </div>
                   </div>
@@ -246,41 +240,31 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <Building className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Client Base</h4>
+                      <h4 className="font-medium text-hhp-navy mb-1">National Coverage</h4>
                       <p className="text-hhp-charcoal">
-                        REITs, Private Equity, Family Offices, Institutional Investors
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <TrendingUp className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Expansion</h4>
-                      <p className="text-hhp-charcoal">
-                        Actively expanding across the Midwest and Southwest, with national licensing opportunities for RentalAi technology
+                        Brokerage, management, and advisory across U.S. markets
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Engagement Options */}
+              {/* Service Areas */}
               <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6">How We Can Help</h3>
+                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6">Our Services</h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Building className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Property Owners: Schedule Your Free Property Consultation</span>
+                    <span className="text-hhp-charcoal">Brokerage: Investment Sales, Leasing, Capital Markets</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Home className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Real Estate Investors: Explore National Investment Management</span>
+                    <span className="text-hhp-charcoal">Management: Multifamily, Office, Industrial, Retail</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Users className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Current Tenants: Access Tenant Services & Support</span>
+                    <span className="text-hhp-charcoal">Technology: BrokerAi, RentalAi, LeaseAi Platforms</span>
                   </div>
                 </div>
               </div>
@@ -291,20 +275,20 @@ const Contact = () => {
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">$2.0B+</div>
-                    <div className="text-sm text-hhp-charcoal">Real Estate Experience</div>
+                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">$2B+</div>
+                    <div className="text-sm text-hhp-charcoal">Transactions Facilitated</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">40+</div>
-                    <div className="text-sm text-hhp-charcoal">Years Combined Experience</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">24/7</div>
-                    <div className="text-sm text-hhp-charcoal">Emergency Support</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">AI</div>
+                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">AI-Native</div>
                     <div className="text-sm text-hhp-charcoal">Technology Platform</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">National</div>
+                    <div className="text-sm text-hhp-charcoal">Market Coverage</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">Institutional</div>
+                    <div className="text-sm text-hhp-charcoal">Grade Service</div>
                   </div>
                 </div>
               </div>
@@ -317,10 +301,10 @@ const Contact = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Ready to Get Started?
+            Get Started Today
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-8 max-w-3xl mx-auto">
-            Join sophisticated investors nationwide who trust HHP Asset Management for institutional-grade, technology-driven property management solutions.
+            Join sophisticated investors nationwide who trust HHP Asset Group for institutional-grade, AI-native real estate solutions.
           </p>
           <p className="text-lg text-hhp-accent font-medium">
             We typically respond within 2 hours during business hours

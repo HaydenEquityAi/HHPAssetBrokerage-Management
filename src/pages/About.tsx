@@ -13,10 +13,10 @@ const About = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              National Leadership in AI-Native Property Management
+              About HHP Asset Group
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Our institutional leadership team brings together decades of Big Four, Fortune 500, and $2B+ transaction experience to deliver enterprise-grade solutions for sophisticated investors nationwide.
+              America's first AI-native, full-service commercial real estate firm. We deliver institutional-grade brokerage, management, and advisory solutions through proprietary platforms BrokerAi, RentalAi, and LeaseAi.
             </p>
           </div>
         </div>
@@ -26,16 +26,19 @@ const About = () => {
       <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-8">About HHP Asset Management</h2>
+            <h2 className="section-title text-hhp-navy mb-8">Our Mission</h2>
             <div className="space-y-6 text-lg leading-relaxed text-hhp-charcoal">
-              <p>
-                HHP Asset Management is a full-stack, multi-asset property management firm pioneering AI-native solutions that deliver institutional-grade performance for investors and property owners across national markets. Through our proprietary RentalAi platform and vertically integrated approach, we manage diversified portfolios across multifamily, office, industrial, retail, mixed-use, senior living, and specialized housing with enterprise-level efficiency and transparency.
+              <p className="text-xl font-medium text-hhp-navy mb-8">
+                "To redefine real estate with institutional expertise and proprietary AI platforms that maximize performance for investors nationwide."
               </p>
               <p>
-                Our systematic methodology combines advanced technology with deep market expertise across every major asset class, enabling us to optimize property performance while reducing operational overhead. We serve sophisticated investors, institutions, REITs, private equity funds, and family offices nationwide who demand both innovation and results.
+                HHP Asset Group is America's first AI-native, full-service commercial real estate firm. We deliver institutional-grade brokerage, management, and advisory solutions through proprietary platforms BrokerAi, RentalAi, and LeaseAi across all major asset classes nationwide.
               </p>
               <p>
-                In addition to direct property management, HHP provides licensing opportunities for its proprietary RentalAi platform, enabling institutions and operators nationwide to integrate enterprise-grade AI into their own portfolios.
+                Our systematic methodology combines advanced AI technology with deep market expertise across multifamily, office, industrial, retail, mixed-use, and senior housing. We serve sophisticated investors, institutions, REITs, private equity funds, and family offices who demand both innovation and proven results.
+              </p>
+              <p>
+                In addition to direct services, HHP provides SaaS licensing opportunities for our proprietary AI platforms, enabling institutions and operators nationwide to integrate enterprise-grade technology into their own portfolios.
               </p>
             </div>
           </div>
@@ -53,10 +56,10 @@ const About = () => {
               </div>
               
               <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Hayden Ashley drives HHP Asset Management's national growth and technology strategy. As Founder & Managing Principal, he leads the development of RentalAi—America's first AI-native property management platform—while overseeing enterprise operations across multiple markets.
+                Hayden Ashley drives HHP Asset Group's national growth and technology strategy. As Founder & Managing Principal, he leads the development of our proprietary AI ecosystem—BrokerAi, RentalAi, and LeaseAi—while overseeing enterprise operations across multiple markets nationwide.
               </p>
               <p className="text-lg leading-relaxed text-hhp-charcoal">
-                With a background spanning institutional real estate, Big Four accounting, and advanced technology, Hayden has positioned HHP as a national leader in property management innovation. His experience auditing Fortune 500 companies at Ernst & Young, combined with facilitating over $2.0B in real estate transactions with Newmark and Colliers, informs HHP's disciplined, institutional-grade approach. His vision of uniting enterprise systems with proprietary AI has made HHP a trusted partner for sophisticated investors and institutions seeking performance beyond the limits of traditional firms.
+                With a background spanning institutional real estate, Big Four accounting, and advanced technology, Hayden has positioned HHP as America's first AI-native real estate firm. His experience auditing Fortune 500 companies at Ernst & Young, combined with facilitating over $2.0B in real estate transactions with Newmark and Colliers, informs HHP's disciplined, institutional-grade approach. His vision of uniting enterprise systems with proprietary AI has made HHP a trusted partner for sophisticated investors and institutions seeking performance beyond the limits of traditional firms.
               </p>
 
               {/* Achievements */}
@@ -125,10 +128,10 @@ const About = () => {
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Phil Ashley</h3>
               <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of National Operations</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Phil Ashley serves as Director of National Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution.
+                Phil Ashley serves as Director of National Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution across all major asset classes.
               </p>
               <p className="text-hhp-charcoal leading-relaxed">
-                Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across national markets. His systematic approach to property operations and investor relations makes him an invaluable strategic resource for HHP's sophisticated client base.
+                Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across national markets. His systematic approach to property operations and investor relations makes him an invaluable strategic resource for HHP's sophisticated client base nationwide.
               </p>
             </div>
 
@@ -142,10 +145,10 @@ const About = () => {
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Jenni Pollard</h3>
               <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Portfolio Strategy & Marketing</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Jenni Pollard directs portfolio strategy and marketing at HHP Asset Management, integrating advanced analytics, market intelligence, and strategic communications to optimize performance across multi-market operations.
+                Jenni Pollard directs portfolio strategy and marketing at HHP Asset Group, integrating advanced analytics, market intelligence, and strategic communications to optimize performance across multi-market operations nationwide.
               </p>
               <p className="text-hhp-charcoal leading-relaxed">
-                She leads marketing initiatives, investor reporting, and client engagement strategies that position portfolios for long-term success. As the primary liaison for institutional clients, Jenni delivers transparent dashboards, tailored insights, and strategic recommendations that strengthen HHP's reputation as a national leader in sophisticated property management.
+                She leads marketing initiatives, investor reporting, and client engagement strategies that position portfolios for long-term success. As the primary liaison for institutional clients, Jenni delivers transparent dashboards, tailored insights, and strategic recommendations that strengthen HHP's reputation as America's first AI-native real estate firm.
               </p>
             </div>
 
@@ -159,10 +162,10 @@ const About = () => {
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Hannah Fanning</h3>
               <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Director of Client Operations</h4>
               <p className="text-hhp-charcoal leading-relaxed">
-                Hannah Fanning directs client operations at HHP Asset Management, ensuring seamless execution of service standards and administrative oversight across all portfolios. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
+                Hannah Fanning directs client operations at HHP Asset Group, ensuring seamless execution of service standards and administrative oversight across all portfolios nationwide. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
               </p>
               <p className="text-hhp-charcoal leading-relaxed">
-                Her leadership ensures transparent reporting, efficient processes, and client-focused service that align with the institutional standards investors expect from HHP.
+                Her leadership ensures transparent reporting, efficient processes, and client-focused service that align with the institutional standards investors expect from HHP's AI-native platform.
               </p>
             </div>
 
@@ -174,8 +177,46 @@ const About = () => {
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Growing Team</h3>
               <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center">Future Team Member</h4>
               <p className="text-hhp-charcoal leading-relaxed text-center">
-                As HHP continues to expand across national markets, we're building our team with the best talent in property management and real estate.
+                As HHP continues to expand across national markets, we're building our team with the best talent in commercial real estate and AI-native technology.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* National Expansion Strategy */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="section-title text-hhp-navy mb-8">National Expansion Strategy</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
+              "Scaling across U.S. markets with consistent institutional performance, supported by SaaS licensing opportunities for operators nationwide."
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <Building2 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">Multi-Market Operations</h3>
+                  <p className="text-white/90">Expanding across key U.S. markets with consistent institutional-grade service delivery</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <TrendingUp className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">SaaS Licensing</h3>
+                  <p className="text-white/90">Enabling operators nationwide to integrate our AI platforms into their portfolios</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <DollarSign className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">Proven Performance</h3>
+                  <p className="text-white/90">Maintaining institutional standards and measurable results across all markets</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -187,28 +228,36 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title text-white mb-12">Our Values Drive Excellence</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="space-y-4">
                 <Award className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Vertically Integrated</h3>
+                <h3 className="text-xl font-display font-semibold text-white">Performance-Driven</h3>
                 <p className="text-white/90 leading-relaxed">
-                  Complete control over every aspect of property management from acquisition to optimization.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <Target className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Data Driven</h3>
-                <p className="text-white/90 leading-relaxed">
-                  Every decision backed by comprehensive market analysis and performance metrics.
+                  Delivering measurable results and institutional-grade performance across all portfolios.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <Zap className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Forward Thinking</h3>
+                <h3 className="text-xl font-display font-semibold text-white">Technology-Forward</h3>
                 <p className="text-white/90 leading-relaxed">
-                  Pioneering AI-native solutions that transform property management efficiency.
+                  Pioneering AI-native solutions that transform real estate operations and efficiency.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <Target className="h-12 w-12 text-hhp-accent mx-auto" />
+                <h3 className="text-xl font-display font-semibold text-white">Institutionally Disciplined</h3>
+                <p className="text-white/90 leading-relaxed">
+                  Every decision backed by comprehensive market analysis and institutional standards.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <Users className="h-12 w-12 text-hhp-accent mx-auto" />
+                <h3 className="text-xl font-display font-semibold text-white">Client-Aligned</h3>
+                <p className="text-white/90 leading-relaxed">
+                  Strategies and solutions that align directly with investor objectives and goals.
                 </p>
               </div>
             </div>

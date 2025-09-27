@@ -4,9 +4,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Brokerage from "./pages/Brokerage";
 import Services from "./pages/Services";
-import RentalAi from "./pages/RentalAi";
+import Technology from "./pages/Technology";
+import About from "./pages/About";
+import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -20,14 +22,25 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/brokerage" element={<Brokerage />} />
+          <Route path="/brokerage/investment-sales" element={<Brokerage />} />
+          <Route path="/brokerage/leasing" element={<Brokerage />} />
+          <Route path="/brokerage/capital-markets" element={<Brokerage />} />
+          <Route path="/brokerage/valuations" element={<Brokerage />} />
+          <Route path="/management" element={<Services />} />
+          <Route path="/management/multifamily" element={<Services />} />
+          <Route path="/management/commercial" element={<Services />} />
+          <Route path="/management/senior" element={<Services />} />
+          <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Legacy routes for backward compatibility */}
           <Route path="/services" element={<Services />} />
           <Route path="/services/multifamily" element={<Services />} />
           <Route path="/services/hud-housing" element={<Services />} />
           <Route path="/services/residential" element={<Services />} />
           <Route path="/services/commercial" element={<Services />} />
-          <Route path="/rental-ai" element={<RentalAi />} />
-          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

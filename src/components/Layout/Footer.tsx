@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-display font-semibold text-white">HHP Asset Management</h3>
+            <h3 className="text-xl font-display font-semibold text-white">HHP Asset Group</h3>
             <p className="text-white/90 leading-relaxed">
-              Vertically integrated. AI-powered. Performance-driven. America's premier AI-native property management platform.
+              America's first AI-native, full-service commercial real estate firm. Delivering institutional-grade brokerage, management, and advisory solutions.
             </p>
             <div className="flex items-center space-x-4">
               <img 

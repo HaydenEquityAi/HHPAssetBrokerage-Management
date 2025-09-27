@@ -15,18 +15,21 @@ const Home = () => {
           <div className="container-premium">
             <div className="max-w-4xl mx-auto text-center fade-in">
               <h1 className="hero-headline text-white mb-8">
-                Vertically Integrated. AI-Powered. Performance-Driven.
+                Full-Service Commercial Real Estate. AI-Native Performance.
               </h1>
               <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-                Enterprise-level property management powered by proprietary AI technology
+                A national real estate services firm delivering brokerage, management, and advisory solutions — powered by proprietary AI platforms BrokerAi, RentalAi, and LeaseAi.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-                <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
-                  Get Free Property Analysis
+                <Link to="/brokerage" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+                  Explore Brokerage
                 </Link>
-                <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300">
-                  Schedule Consultation
+                <Link to="/management" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+                  Explore Management
+                </Link>
+                <Link to="/technology" className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300">
+                  Explore Technology
                 </Link>
               </div>
 
@@ -34,19 +37,19 @@ const Home = () => {
               <div className="flex flex-wrap justify-center items-center gap-8 text-white font-medium">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span className="text-white trust-badge-text">Licensed</span>
+                  <span className="text-white trust-badge-text">National Leader</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span className="text-white trust-badge-text">Insured</span>
+                  <span className="text-white trust-badge-text">AI-Native</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span className="text-white trust-badge-text">Institutionally Owned</span>
+                  <span className="text-white trust-badge-text">Institutional Grade</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-hhp-accent" />
-                  <span className="text-white trust-badge-text">Technology-Powered</span>
+                  <span className="text-white trust-badge-text">Proven Performance</span>
                 </div>
               </div>
             </div>
@@ -54,56 +57,56 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Strategic Expertise & Solutions */}
+      {/* Brokerage & Management Services */}
       <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Strategic Expertise */}
+            {/* Brokerage Services */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
                 <Building2 className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Strategic Expertise</h2>
+                <h2 className="section-title text-hhp-navy">Brokerage Services</h2>
               </div>
               <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
-                Institutional knowledge across multifamily, office, industrial, retail, mixed-use, senior living, and specialized housing assets—combined with proprietary AI systems—to maximize portfolio performance across every major asset class.
+                Institutional-grade investment sales, leasing, and capital markets solutions across multifamily, office, industrial, retail, mixed-use, and senior housing — powered by BrokerAi.
               </p>
               <ul className="space-y-3 text-hhp-charcoal">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Full-stack, multi-asset management expertise across diverse property types</span>
+                  <span>Investment Sales: $5M–$500M+ transactions with AI underwriting and predictive buyer matching</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Institutional-grade compliance across all asset classes including HUD, Section 8, and LIHTC programs</span>
+                  <span>Leasing Services: Tenant & landlord representation with AI vacancy forecasting and rent benchmarking</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Performance strategies designed for scalable NOI growth and long-term value creation across REITs, private equity, and family office portfolios</span>
+                  <span>Capital Markets: Debt & equity placement with AI risk modeling and capital optimization</span>
                 </li>
               </ul>
             </div>
 
-            {/* Comprehensive Solutions */}
+            {/* Management Services */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
                 <BarChart3 className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Enterprise Solutions</h2>
+                <h2 className="section-title text-hhp-navy">Asset Management</h2>
               </div>
               <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
-                End-to-end property management engineered for sophisticated investors, supported by vertically integrated systems across every major asset class.
+                Enterprise-level property management and asset services powered by RentalAi and LeaseAi platforms across all major asset classes.
               </p>
               <ul className="space-y-3 text-hhp-charcoal">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>AI-driven leasing, tenant lifecycle management, and renewals across multifamily, office, industrial, and retail portfolios</span>
+                  <span>Multifamily/HUD (RentalAi): Compliance automation, NOI optimization, resident lifecycle AI</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Predictive maintenance coordination and vendor performance tracking for complex multi-asset environments</span>
+                  <span>Office/Industrial/Retail (LeaseAi): Lease compliance, CAM reconciliation, predictive occupancy analytics</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Enterprise-level accounting, compliance, and institutional reporting tailored to REITs, private equity, and family offices</span>
+                  <span>Senior & Specialized Housing: Institutional-grade compliance and retention-focused operations</span>
                 </li>
               </ul>
             </div>
@@ -111,56 +114,56 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Client-Centered Service & AI-Powered Innovation */}
+      {/* Technology Ecosystem & National Scale */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Client-Centered Service */}
+            {/* Technology Ecosystem */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
-                <HeadphonesIcon className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Investor Alignment</h2>
+                <Bot className="h-12 w-12 icon-accent" />
+                <h2 className="section-title text-hhp-navy">AI-Native Technology</h2>
               </div>
               <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
-                Every portfolio is unique. Our systems and people deliver tailored strategies that align directly with ownership objectives.
+                Our proprietary SaaS ecosystem delivers institutional-grade performance and sets us apart from traditional firms.
               </p>
               <ul className="space-y-3 text-hhp-charcoal">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Dedicated relationship managers with institutional expertise</span>
+                  <span>BrokerAi: Transaction cycle platform for investment sales, leasing, and capital markets</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Executive-level dashboards and investor communication</span>
+                  <span>RentalAi: Multifamily/HUD property management with compliance automation and predictive operations</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Scalable solutions that flex across markets and asset classes</span>
+                  <span>LeaseAi: Office, industrial, retail leasing SaaS with lease abstraction and renewal scoring</span>
                 </li>
               </ul>
             </div>
 
-            {/* AI-Powered Innovation */}
+            {/* National Scale */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
-                <Bot className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">AI-Native Innovation</h2>
+                <HeadphonesIcon className="h-12 w-12 icon-accent" />
+                <h2 className="section-title text-hhp-navy">National Leadership</h2>
               </div>
               <p className="text-xl leading-relaxed text-hhp-charcoal mb-6">
-                Our proprietary RentalAi platform transforms property management into a performance engine.
+                Scaling across U.S. markets with consistent institutional performance, supported by SaaS licensing opportunities for operators nationwide.
               </p>
               <ul className="space-y-3 text-hhp-charcoal">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Real-time financial dashboards with institutional reporting standards</span>
+                  <span>Proven expertise from Newmark, Colliers, and Big Four firms</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Predictive analytics to reduce vacancy and optimize rents</span>
+                  <span>Multi-market operations with institutional-grade consistency</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-hhp-accent mt-1 flex-shrink-0" />
-                  <span>Automated compliance, audit-ready documentation, and risk management</span>
+                  <span>SaaS licensing opportunities for operators nationwide</span>
                 </li>
               </ul>
             </div>
@@ -168,7 +171,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section 3: Proven Results */}
+      {/* Proven Results */}
       <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
@@ -187,8 +190,8 @@ const Home = () => {
                 <p className="text-hhp-charcoal">Reduced vacancies, enhanced long-term asset value</p>
               </div>
               <div className="premium-card text-center">
-                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">Multi-Market</div>
-                <p className="text-hhp-charcoal">Portfolio oversight across expanding U.S. regions</p>
+                <div className="text-3xl font-display font-bold text-hhp-navy mb-2">National Scale</div>
+                <p className="text-hhp-charcoal">Portfolio oversight across expanding U.S. markets</p>
               </div>
               <div className="premium-card text-center">
                 <div className="text-3xl font-display font-bold text-hhp-navy mb-2">Institutional Trust</div>
@@ -196,8 +199,8 @@ const Home = () => {
               </div>
             </div>
 
-            <Link to="/services" className="btn-hero">
-              Explore Our Services
+            <Link to="/brokerage" className="btn-hero">
+              Explore Brokerage Services
             </Link>
           </div>
         </div>
@@ -210,24 +213,24 @@ const Home = () => {
             <div className="text-center">
               <div className="bg-hhp-navy text-white p-8 rounded-lg">
                 <Building2 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                <h3 className="text-lg font-display font-semibold text-white mb-2">Full-Stack Multi-Asset Platform</h3>
-                <p className="text-white/90">Comprehensive management across all major property types nationwide</p>
+                <h3 className="text-lg font-display font-semibold text-white mb-2">Full-Service Platform</h3>
+                <p className="text-white/90">Brokerage, management, and advisory across all major property types nationwide</p>
               </div>
             </div>
 
             <div className="text-center">
               <div className="bg-hhp-navy text-white p-8 rounded-lg">
                 <Bot className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                <h3 className="text-lg font-display font-semibold text-white mb-2">AI-Native Technology</h3>
-                <p className="text-white/90">Proprietary RentalAi powering institutional portfolios across every asset class</p>
+                <h3 className="text-lg font-display font-semibold text-white mb-2">AI-Native Ecosystem</h3>
+                <p className="text-white/90">Proprietary BrokerAi, RentalAi, and LeaseAi platforms powering institutional portfolios</p>
               </div>
             </div>
 
             <div className="text-center">
               <div className="bg-hhp-navy text-white p-8 rounded-lg">
                 <TrendingUp className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                <h3 className="text-lg font-display font-semibold text-white mb-2">Institutional Leadership</h3>
-                <p className="text-white/90">Decades of Big Four, Fortune 500, and $2B+ transaction experience</p>
+                <h3 className="text-lg font-display font-semibold text-white mb-2">National Leadership</h3>
+                <p className="text-white/90">Proven expertise from Newmark, Colliers, and Big Four firms with $2B+ transaction experience</p>
               </div>
             </div>
           </div>
@@ -238,10 +241,10 @@ const Home = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Experience the Future of Property Management
+            Experience the Future of Real Estate
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Join sophisticated investors nationwide who trust HHP Asset Management's AI-native platform to deliver institutional-grade results.
+            Schedule a consultation today and discover how our AI-native platform delivers institutional-grade results for sophisticated investors nationwide.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -249,13 +252,13 @@ const Home = () => {
               to="/contact" 
               className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-block"
             >
-              Schedule Free Property Analysis
+              Schedule a Consultation
             </Link>
             <Link 
-              to="/rental-ai" 
+              to="/technology" 
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
             >
-              See Our Technology Platform
+              Explore Our Platforms
             </Link>
           </div>
         </div>
