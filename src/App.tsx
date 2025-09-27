@@ -3,9 +3,13 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Brokerage from "./pages/Brokerage";
 import Services from "./pages/Services";
+import ManagementMultifamily from "./pages/ManagementMultifamily";
+import ManagementCommercial from "./pages/ManagementCommercial";
+import ManagementSenior from "./pages/ManagementSenior";
 import Technology from "./pages/Technology";
 import About from "./pages/About";
 import Insights from "./pages/Insights";
@@ -20,6 +24,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/brokerage" element={<Brokerage />} />
@@ -28,9 +33,9 @@ const App = () => (
           <Route path="/brokerage/capital-markets" element={<Brokerage />} />
           <Route path="/brokerage/valuations" element={<Brokerage />} />
           <Route path="/management" element={<Services />} />
-          <Route path="/management/multifamily" element={<Services />} />
-          <Route path="/management/commercial" element={<Services />} />
-          <Route path="/management/senior" element={<Services />} />
+          <Route path="/management/multifamily" element={<ManagementMultifamily />} />
+          <Route path="/management/commercial" element={<ManagementCommercial />} />
+          <Route path="/management/senior" element={<ManagementSenior />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
           <Route path="/insights" element={<Insights />} />
