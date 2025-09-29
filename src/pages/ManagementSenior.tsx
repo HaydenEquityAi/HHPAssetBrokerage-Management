@@ -77,7 +77,7 @@ const ManagementSenior = () => {
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
+          style={{ backgroundImage: 'url(/images/senior-hero.png)' }}
         />
         <div className="absolute inset-0 bg-hhp-navy/40" />
         
