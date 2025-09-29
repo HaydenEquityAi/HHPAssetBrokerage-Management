@@ -85,10 +85,7 @@ const ManagementMultifamily = () => {
           aria-label="Modern multifamily apartment building"
         />
         {/* Navy Overlay Layer */}
-        <div 
-          className="absolute inset-0"
-          style={{ backgroundColor: 'rgba(30, 58, 138, 0.38)' }}
-        />
+        <div className="absolute inset-0 bg-hhp-navy/40" />
         {/* Content Layer */}
         <div className="relative z-10 container-premium text-center">
           <div className="max-w-4xl mx-auto">
@@ -98,7 +95,7 @@ const ManagementMultifamily = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-8">
               Institutional-grade operations that maximize occupancy, retention, and NOI for large-scale apartment communities.
             </p>
-            <div className="text-white/80 mb-8">
+            <div className="text-white mb-8">
               <span className="font-semibold">15%+ NOI Lift</span> | <span className="font-semibold">Executive Dashboards</span> | <span className="font-semibold">Predictive Maintenance</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
