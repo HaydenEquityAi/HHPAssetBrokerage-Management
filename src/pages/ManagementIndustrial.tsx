@@ -5,7 +5,6 @@ import ServicesSubNav from '@/components/ServicesSubNav';
 import IconGrid from '@/components/IconGrid';
 import BenefitsCards from '@/components/BenefitsCards';
 import PremiumCTABanner from '@/components/PremiumCTABanner';
-import commercialImage from '@/assets/commercial-building.webp';
 import { useSEO } from '@/hooks/useSEO';
 
 const ManagementIndustrial = () => {
@@ -88,7 +87,7 @@ const ManagementIndustrial = () => {
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${commercialImage})` }}
+          style={{ backgroundImage: 'url(/images/industrial-hero.png)' }}
         />
         <div className="absolute inset-0 bg-hhp-navy/40" />
         
@@ -100,9 +99,7 @@ const ManagementIndustrial = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-8">
               Operational precision for warehouse, distribution, and flex assets focused on uptime and cost control.
             </p>
-            <div className="text-white/80 mb-8">
-              <span className="font-semibold">Reduced Downtime</span> | <span className="font-semibold">Predictive Maintenance</span> | <span className="font-semibold">NNN Expertise</span>
-            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
                 Schedule Consultation

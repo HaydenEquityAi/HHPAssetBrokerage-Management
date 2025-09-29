@@ -95,9 +95,7 @@ const ManagementMultifamily = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-8">
               Institutional-grade operations that maximize occupancy, retention, and NOI for large-scale apartment communities.
             </p>
-            <div className="text-white mb-8">
-              <span className="font-semibold">15%+ NOI Lift</span> | <span className="font-semibold">Executive Dashboards</span> | <span className="font-semibold">Predictive Maintenance</span>
-            </div>
+           
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
                 Schedule Consultation

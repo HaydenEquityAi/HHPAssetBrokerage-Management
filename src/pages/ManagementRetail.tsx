@@ -5,7 +5,6 @@ import ServicesSubNav from '@/components/ServicesSubNav';
 import IconGrid from '@/components/IconGrid';
 import BenefitsCards from '@/components/BenefitsCards';
 import PremiumCTABanner from '@/components/PremiumCTABanner';
-import commercialImage from '@/assets/commercial-building.webp';
 import { useSEO } from '@/hooks/useSEO';
 
 const ManagementRetail = () => {
@@ -88,7 +87,7 @@ const ManagementRetail = () => {
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${commercialImage})` }}
+          style={{ backgroundImage: 'url(/images/retail-hero.png)' }}
         />
         <div className="absolute inset-0 bg-hhp-navy/40" />
         

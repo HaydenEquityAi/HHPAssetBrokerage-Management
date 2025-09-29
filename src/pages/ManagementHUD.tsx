@@ -89,9 +89,7 @@ const ManagementHUD = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-8">
               Precision compliance and resident-focused operations for HUD and Section 8 properties.
             </p>
-            <div className="text-white/80 mb-8">
-              <span className="font-semibold">99%+ Compliance</span> | <span className="font-semibold">MOR/REAC Ready</span> | <span className="font-semibold">EIV/50059 Accuracy</span>
-            </div>
+                        
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
                 Schedule Consultation

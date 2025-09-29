@@ -89,9 +89,7 @@ const ManagementSenior = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-8">
               Compassionate resident experience with institutional-grade operations for senior living and specialized communities.
             </p>
-            <div className="text-white/80 mb-8">
-              <span className="font-semibold">100% Compliance</span> | <span className="font-semibold">24/7 Coordination</span> | <span className="font-semibold">Institutional Standards</span>
-            </div>
+           
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
                 Schedule Consultation
