@@ -5,7 +5,6 @@ import ServicesSubNav from '@/components/ServicesSubNav';
 import IconGrid from '@/components/IconGrid';
 import BenefitsCards from '@/components/BenefitsCards';
 import PremiumCTABanner from '@/components/PremiumCTABanner';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import { useSEO } from '@/hooks/useSEO';
 
 const ManagementSenior = () => {
@@ -78,7 +77,7 @@ const ManagementSenior = () => {
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${multifamilyImage})` }}
+          style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
         />
         <div className="absolute inset-0 bg-hhp-navy/40" />
         

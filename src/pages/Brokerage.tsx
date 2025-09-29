@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Building, TrendingUp, DollarSign, BarChart3, CheckCircle, ArrowRight, Target, Users, Zap } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import commercialImage from '@/assets/commercial-building.webp';
 
 const Brokerage = () => {
@@ -81,8 +80,9 @@ const Brokerage = () => {
             
             <div>
               <img 
-                src={multifamilyImage} 
-                alt="Investment sales property" 
+                src="/images/multifamily-hero.jpg" 
+                alt="Modern multifamily apartment building" 
+                loading="eager"
                 className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
               />
             </div>

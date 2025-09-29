@@ -5,7 +5,6 @@ import ServicesSubNav from '@/components/ServicesSubNav';
 import IconGrid from '@/components/IconGrid';
 import BenefitsCards from '@/components/BenefitsCards';
 import PremiumCTABanner from '@/components/PremiumCTABanner';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import { useSEO } from '@/hooks/useSEO';
 
 const ManagementMultifamily = () => {
@@ -76,12 +75,21 @@ const ManagementMultifamily = () => {
     <Layout>
       {/* Hero Section with Image Overlay */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Background Image Layer */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${multifamilyImage})` }}
+          className="absolute inset-0 bg-cover bg-no-repeat multifamily-hero-bg"
+          style={{ 
+            backgroundImage: 'url(/images/multifamily-hero.jpg)'
+          }}
+          role="img"
+          aria-label="Modern multifamily apartment building"
         />
-        <div className="absolute inset-0 bg-hhp-navy/40" />
-        
+        {/* Navy Overlay Layer */}
+        <div 
+          className="absolute inset-0"
+          style={{ backgroundColor: 'rgba(30, 58, 138, 0.38)' }}
+        />
+        {/* Content Layer */}
         <div className="relative z-10 container-premium text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-8">

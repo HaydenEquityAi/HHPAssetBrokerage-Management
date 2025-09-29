@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 

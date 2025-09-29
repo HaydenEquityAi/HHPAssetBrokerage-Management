@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Building, Home, Shield, Briefcase, CheckCircle } from 'lucide-react';
+import { Building, Home, Shield, Briefcase, CheckCircle, TrendingUp, BarChart3 } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
-import multifamilyImage from '@/assets/multifamily-property.webp';
 import commercialImage from '@/assets/commercial-building.webp';
 import rentalImage from '@/assets/hero-property.jpg';
 
@@ -65,8 +64,9 @@ const Services = () => {
             
             <div>
               <img 
-                src={multifamilyImage} 
-                alt="Modern multifamily property" 
+                src="/images/multifamily-hero.jpg" 
+                alt="Modern multifamily apartment building" 
+                loading="eager"
                 className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
               />
             </div>

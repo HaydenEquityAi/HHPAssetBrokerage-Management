@@ -212,3 +212,16 @@
     }
   }
 }
+
+/* Responsive Background Positioning for Multifamily Hero */
+@layer utilities {
+  .multifamily-hero-bg {
+    background-position: center right;
+  }
+  
+  @media (max-width: 768px) {
+    .multifamily-hero-bg {
+      background-position: center top;
+    }
+  }
+}
