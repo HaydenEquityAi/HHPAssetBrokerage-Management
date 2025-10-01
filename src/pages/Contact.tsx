@@ -200,17 +200,17 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3"
+                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3 font-medium"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center space-x-2">
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span>Sending...</span>
+                      <span className="text-white">Sending...</span>
                     </div>
                   ) : (
                     <div className="flex items-center space-x-2">
-                      <Send className="w-4 h-4" />
-                      <span>Send Message</span>
+                      <Send className="w-4 h-4 text-white" />
+                      <span className="text-white">Send Message</span>
                     </div>
                   )}
                 </Button>
