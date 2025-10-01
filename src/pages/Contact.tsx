@@ -64,6 +64,7 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
         description: "Something went wrong. Please try again.",
@@ -81,68 +82,79 @@ const Contact = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Contact HHP Asset Group
+              Get in Touch
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Let's transform your portfolio. Schedule a consultation today and discover how our AI-native platform delivers institutional-grade results for sophisticated investors nationwide.
+              Ready to transform your real estate operations? Let's discuss how HHP Asset Group can help you achieve your goals.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="bg-gray-50 section-spacing">
+      <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="premium-card">
-              <h2 className="section-title text-hhp-navy mb-8">Get Started Today</h2>
-              
+            <div className="space-y-8">
+              <div>
+                <h2 className="section-title text-hhp-navy mb-6">Send Us a Message</h2>
+                <p className="text-hhp-charcoal leading-relaxed mb-8">
+                  Fill out the form below and we'll get back to you within 24 hours.
+                </p>
+              </div>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-hhp-navy mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Full Name *
                     </label>
                     <Input
+                      id="name"
                       type="text"
                       required
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full"
+                      placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-hhp-navy mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Email Address *
                     </label>
                     <Input
+                      id="email"
                       type="email"
                       required
                       value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full"
+                      placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-hhp-navy mb-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Phone Number
                     </label>
                     <Input
+                      id="phone"
                       type="tel"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full"
+                      placeholder="(555) 123-4567"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-hhp-navy mb-2">
+                    <label htmlFor="inquiry_type" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Inquiry Type
                     </label>
-                    <Select value={formData.inquiry_type} onValueChange={(value) => setFormData({...formData, inquiry_type: value})}>
+                    <Select value={formData.inquiry_type} onValueChange={(value) => setFormData({ ...formData, inquiry_type: value })}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select inquiry type" />
                       </SelectTrigger>
@@ -158,138 +170,124 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-hhp-navy mb-2">
-                    Property Address (Optional)
+                  <label htmlFor="property_address" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                    Property Address (if applicable)
                   </label>
                   <Input
+                    id="property_address"
                     type="text"
                     value={formData.property_address}
-                    onChange={(e) => setFormData({...formData, property_address: e.target.value})}
-                    placeholder="Property address for analysis or management"
+                    onChange={(e) => setFormData({ ...formData, property_address: e.target.value })}
                     className="w-full"
+                    placeholder="123 Main St, City, State"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-hhp-navy mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-hhp-charcoal mb-2">
                     Message *
                   </label>
                   <Textarea
+                    id="message"
                     required
                     value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    placeholder="Tell us about your property management needs..."
-                    className="w-full h-32"
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="w-full min-h-[120px]"
+                    placeholder="Tell us about your real estate needs..."
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-hero"
+                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3"
                 >
-                  {isSubmitting ? 'Sending Message...' : 'Send Message'}
-                  <Send className="ml-2 h-5 w-5" />
+                  {isSubmitting ? (
+                    <div className="flex items-center space-x-2">
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>Sending...</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center space-x-2">
+                      <Send className="w-4 h-4" />
+                      <span>Send Message</span>
+                    </div>
+                  )}
                 </Button>
               </form>
             </div>
 
             {/* Contact Information */}
             <div className="space-y-8">
-              {/* Contact Details */}
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6">Contact Information</h3>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <Mail className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Email</h4>
-                      <a 
-                        href="mailto:info@hhpasset.com" 
-                        className="text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
-                      >
-                        info@hhpasset.com
-                      </a>
-                    </div>
-                  </div>
+              <div>
+                <h2 className="section-title text-hhp-navy mb-6">Contact Information</h2>
+                <p className="text-hhp-charcoal leading-relaxed mb-8">
+                  Reach out to us through any of these channels for immediate assistance.
+                </p>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Phone</h4>
-                      <a 
-                        href="tel:+19188991650" 
-                        className="text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
-                      >
-                        (918) 899-1650
-                      </a>
-                    </div>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
+                    <Mail className="h-6 w-6 text-hhp-navy" />
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">Headquarters</h4>
-                      <p className="text-hhp-charcoal">
-                        Tulsa, OK
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-semibold text-hhp-navy mb-1">Email</h3>
+                    <p className="text-hhp-charcoal">info@hhpassetgroup.com</p>
+                    <p className="text-sm text-gray-600">We respond within 24 hours</p>
                   </div>
+                </div>
 
-                  <div className="flex items-start space-x-4">
-                    <Building className="h-6 w-6 icon-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium text-hhp-navy mb-1">National Coverage</h4>
-                      <p className="text-hhp-charcoal">
-                        Brokerage, management, and advisory across U.S. markets
-                      </p>
-                    </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
+                    <Phone className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-hhp-navy mb-1">Phone</h3>
+                    <p className="text-hhp-charcoal">(918) 555-0123</p>
+                    <p className="text-sm text-gray-600">Mon-Fri, 8AM-6PM CST</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-hhp-navy mb-1">Office</h3>
+                    <p className="text-hhp-charcoal">123 Business District<br />Tulsa, OK 74101</p>
+                    <p className="text-sm text-gray-600">By appointment only</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
+                    <Clock className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-hhp-navy mb-1">Business Hours</h3>
+                    <p className="text-hhp-charcoal">Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 2:00 PM</p>
+                    <p className="text-sm text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
 
-              {/* Service Areas */}
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6">Our Services</h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Building className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Brokerage: Investment Sales, Leasing, Capital Markets</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Home className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Management: Multifamily, Office, Industrial, Retail</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Users className="h-5 w-5 icon-accent" />
-                    <span className="text-hhp-charcoal">Technology: BrokerAi, RentalAi, LeaseAi Platforms</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6">Why Choose HHP?</h3>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">$2B+</div>
-                    <div className="text-sm text-hhp-charcoal">Transactions Facilitated</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">AI-Native</div>
-                    <div className="text-sm text-hhp-charcoal">Technology Platform</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">National</div>
-                    <div className="text-sm text-hhp-charcoal">Market Coverage</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-1">Institutional</div>
-                    <div className="text-sm text-hhp-charcoal">Grade Service</div>
-                  </div>
+              {/* Quick Contact Options */}
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="font-semibold text-hhp-navy mb-4">Quick Contact</h3>
+                <div className="space-y-3">
+                  <Button variant="outline" className="w-full justify-start">
+                    <Building className="w-4 h-4 mr-2" />
+                    Schedule Property Tour
+                  </Button>
+                  <Button variant="outline" className="w-full justify-start">
+                    <Home className="w-4 h-4 mr-2" />
+                    Request Management Quote
+                  </Button>
+                  <Button variant="outline" className="w-full justify-start">
+                    <Users className="w-4 h-4 mr-2" />
+                    Join Our Network
+                  </Button>
                 </div>
               </div>
             </div>
@@ -301,14 +299,27 @@ const Contact = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Get Started Today
+            Ready to Get Started?
           </h2>
-          <p className="text-xl leading-relaxed text-white/90 mb-8 max-w-3xl mx-auto">
-            Join sophisticated investors nationwide who trust HHP Asset Group for institutional-grade, AI-native real estate solutions.
+          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
+            Don't wait to transform your real estate operations. Contact us today for a personalized consultation.
           </p>
-          <p className="text-lg text-hhp-accent font-medium">
-            We typically respond within 2 hours during business hours
-          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              size="lg"
+              className="bg-white text-hhp-navy hover:bg-white/90"
+            >
+              Schedule Consultation
+            </Button>
+            <Button 
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-hhp-navy"
+            >
+              Download Brochure
+            </Button>
+          </div>
         </div>
       </section>
     </Layout>

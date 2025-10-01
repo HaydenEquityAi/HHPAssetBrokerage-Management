@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building, CheckCircle, TrendingUp, Users, Shield, BarChart3, Download, Home, Wrench, DollarSign, Heart, Settings } from 'lucide-react';
+import { Building, CheckCircle, Shield, FileText, Users, Download, ClipboardCheck, Scale, Handshake, BarChart3, AlertTriangle, FileSearch, Target, TrendingUp, Database, Zap, Home, Wrench, DollarSign, Heart, Settings } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import ServicesSubNav from '@/components/ServicesSubNav';
 import IconGrid from '@/components/IconGrid';
@@ -9,96 +9,120 @@ import { useSEO } from '@/hooks/useSEO';
 
 const ManagementMultifamily = () => {
   useSEO({
-    title: 'Multifamily Property Management | HHP Asset Management',
-    description: 'Institutional-grade multifamily management across Oklahoma. We deliver occupancy growth, retention, and NOI performance for apartment communities.'
+    title: 'Multifamily Asset Management | HHP Asset Group',
+    description: 'Scalable operations with resident-first focus. Institutional-quality multifamily management enhanced by RentalAi automation.'
   });
 
-  const coreServices = [
+  const coreCapabilities = [
     {
-      icon: Home,
-      title: 'Full-Service Operations',
-      description: 'Complete day-to-day management including leasing, maintenance, and resident services.'
+      icon: DollarSign,
+      title: 'Rent Collection & Renewal Optimization',
+      description: 'Predictive analytics to maximize revenue and tenant retention'
     },
     {
       icon: Users,
-      title: 'Amenity & Community Management',
-      description: 'Strategic oversight of amenities and community programs to enhance resident satisfaction.'
+      title: 'Resident Lifecycle Management',
+      description: 'Comprehensive programs to drive retention and satisfaction'
     },
     {
       icon: TrendingUp,
-      title: 'Advanced Leasing Strategies',
-      description: 'Data-driven leasing approaches that optimize occupancy and rental rates.'
-    },
-    {
-      icon: DollarSign,
-      title: 'Financial Performance',
-      description: 'Comprehensive budgeting, forecasting, and financial reporting for optimal NOI.'
-    },
-    {
-      icon: Heart,
-      title: 'Resident Lifecycle Management',
-      description: 'From move-in to renewal, we optimize the entire resident experience.'
+      title: 'Capital Planning & Long-Term Expense Forecasting',
+      description: 'Data-driven forecasting to protect NOI and plan investments'
     },
     {
       icon: Wrench,
-      title: 'Maintenance Excellence',
-      description: 'Predictive maintenance programs that minimize costs and maximize resident satisfaction.'
+      title: 'Maintenance, Landscaping & Janitorial Oversight',
+      description: 'SLA-controlled vendor management with performance tracking'
+    },
+    {
+      icon: BarChart3,
+      title: 'Variance Reporting & Financial Packages',
+      description: 'Board-ready financial reporting designed for ownership review'
     }
   ];
 
   const ownerBenefits = [
     {
-      title: 'Higher Occupancy',
-      description: 'Data-driven leasing strategies that consistently achieve optimal occupancy rates.'
+      title: 'Higher Occupancy & Renewals',
+      description: 'Predictive retention analytics improve tenant stability'
     },
     {
-      title: 'Improved Retention',
-      description: 'Resident-focused programs that reduce turnover and increase lease renewals.'
+      title: 'Lower OPEX',
+      description: 'Integrated in-house services reduce vendor markups'
     },
     {
-      title: 'Reduced Operating Risk',
-      description: 'Predictive maintenance and operational excellence minimize unexpected costs.'
+      title: 'Transparent Reporting',
+      description: 'Financials designed for boards and investors'
     },
     {
-      title: 'Stronger Long-Term Value',
-      description: 'Institutional-grade management that enhances property value and investor returns.'
+      title: 'Proactive Capital Planning',
+      description: 'Data-driven forecasting to protect NOI'
     }
   ];
 
-  const testimonial = {
-    quote: 'HHP\'s multifamily management has transformed our portfolio performance with their data-driven approach and resident-focused operations.',
-    author: 'Sarah Johnson',
-    title: 'Portfolio Manager, Regional Investment Group'
-  };
+  const dataInsights = [
+    {
+      icon: AlertTriangle,
+      title: 'Predictive Vacancy & Turnover Risk Alerts',
+      description: 'Early warning system for potential tenant departures'
+    },
+    {
+      icon: BarChart3,
+      title: 'Renewal Pipeline Dashboards',
+      description: 'Real-time tracking of lease renewal opportunities'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Expense Variance Tracking',
+      description: 'Real-time monitoring of budget vs. actual expenses'
+    },
+    {
+      icon: Target,
+      title: 'Occupancy Benchmarking',
+      description: 'Market-wide performance comparison and optimization'
+    }
+  ];
+
+  const technologyFeatures = [
+    {
+      icon: Users,
+      title: 'Automated Leasing Workflows',
+      description: 'Streamlined resident communication and application processing'
+    },
+    {
+      icon: Wrench,
+      title: 'Smart Maintenance Dispatch',
+      description: 'Vendor scorecards and automated work order management'
+    },
+    {
+      icon: BarChart3,
+      title: 'Real-Time Dashboards',
+      description: 'Live cash flow and NOI monitoring for instant insights'
+    }
+  ];
 
   return (
     <Layout>
-      {/* Hero Section with Image Overlay */}
+      {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Background Image Layer */}
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat multifamily-hero-bg"
-          style={{ 
-            backgroundImage: 'url(/images/multifamily-hero.jpg)'
-          }}
-          role="img"
-          aria-label="Modern multifamily apartment building"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
         />
-        {/* Navy Overlay Layer */}
         <div className="absolute inset-0 bg-hhp-navy/40" />
-        {/* Content Layer */}
+        
         <div className="relative z-10 container-premium text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-8">
-              Multifamily Property Management
+              Multifamily Asset Management
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-8">
-              Institutional-grade operations that maximize occupancy, retention, and NOI for large-scale apartment communities.
+              Scalable operations. Resident-first focus.
             </p>
-           
+                        
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
-                Schedule Consultation
+                Request a Consultation
               </Link>
               <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 flex items-center justify-center">
                 <Download className="h-5 w-5 mr-2" />
@@ -112,27 +136,102 @@ const ManagementMultifamily = () => {
       {/* Services Sub-Navigation */}
       <ServicesSubNav />
 
-      {/* Core Services Icon Grid */}
-      <IconGrid 
-        title="Core Services"
-        services={coreServices}
-        columns={6}
-      />
+      {/* Market Context */}
+      <section className="bg-gray-50 section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="section-title text-hhp-navy mb-6">Market Context</h2>
+            <p className="text-lg leading-relaxed text-hhp-charcoal mb-8">
+              The multifamily sector is experiencing unprecedented pressure. Insurance and labor costs are climbing, tenants demand digital experiences, and competition for renewals is fierce. Owners must deliver consistent returns while protecting NOI from inflationary expense creep.
+            </p>
+            <p className="text-lg leading-relaxed text-hhp-charcoal">
+              HHP Asset Group delivers institutional-quality management enhanced by RentalAi automation — reducing OPEX, strengthening tenant retention, and providing board-ready transparency.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Owner Benefits Cards */}
-      <BenefitsCards 
-        benefits={ownerBenefits}
-        testimonial={testimonial}
-      />
+      {/* Core Capabilities */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <IconGrid 
+            title="Core Capabilities"
+            services={coreCapabilities}
+            columns={3}
+          />
+        </div>
+      </section>
+
+      {/* Owner Benefits */}
+      <section className="bg-gray-50 section-spacing">
+        <div className="container-premium">
+          <div className="text-center mb-12">
+            <h2 className="section-title text-hhp-navy mb-6">Owner Benefits</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {ownerBenefits.map((benefit, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-hhp-navy w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-hhp-navy mb-4">{benefit.title}</h3>
+                <p className="text-hhp-charcoal leading-relaxed">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Data & Insights */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <h2 className="section-title text-hhp-navy mb-6 text-center">Data & Insights</h2>
+          <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto text-center mb-12">
+            Turning Data Into Action with RentalAi
+          </p>
+          <IconGrid 
+            title="Data & Insights"
+            services={dataInsights}
+            columns={3}
+          />
+        </div>
+      </section>
+
+      {/* Technology Edge */}
+      <section className="bg-hhp-navy text-white section-spacing">
+        <div className="container-premium">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-white mb-6">Technology Edge</h2>
+            <p className="text-xl leading-relaxed text-white/90 max-w-3xl mx-auto">
+              RentalAi powers smarter multifamily operations with:
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {technologyFeatures.map((feature, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white/20 p-3 rounded-lg">
+                    <feature.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                    <p className="text-white/90 leading-relaxed">{feature.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Premium CTA Banner */}
       <PremiumCTABanner
-        title="Ready to Maximize Your Multifamily Performance?"
-        description="Experience institutional-grade multifamily management that delivers measurable results and long-term value growth."
-        primaryCTA="Schedule a Consultation"
+        title="Maximize multifamily performance with institutional discipline and AI-driven insights."
+        description="Trust HHP Asset Group for scalable multifamily management with predictive analytics and resident-first operations."
+        primaryCTA="Contact Us"
         primaryLink="/contact"
         secondaryCTA="See All Services"
-        secondaryLink="/management"
+        secondaryLink="/asset-management"
       />
     </Layout>
   );

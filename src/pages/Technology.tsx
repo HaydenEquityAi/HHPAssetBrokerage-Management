@@ -10,10 +10,10 @@ const Technology = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              The HHP AI Ecosystem
+              Technology That Lowers Cost and Increases Control
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Our proprietary SaaS platforms deliver institutional-grade performance and set us apart from traditional firms. Experience the future of real estate with BrokerAi, RentalAi, and LeaseAi.
+              Our proprietary AI platforms deliver institutional-grade performance and set us apart from traditional firms. Experience the future of real estate with BrokerAi, RentalAi, and LeaseAi.
             </p>
             <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
               Explore Our Platforms
@@ -301,8 +301,94 @@ const Technology = () => {
         </div>
       </section>
 
-      {/* SaaS Licensing */}
+      {/* Technology Integration */}
       <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-hhp-navy mb-6">How Technology Integrates with Our Services</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+              Our technology platforms seamlessly integrate with asset management and brokerage services to deliver comprehensive solutions.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Zap className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                Work-Order Automation Systems
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Automated work order generation, vendor dispatch, and completion tracking with predictive maintenance scheduling.
+              </p>
+            </div>
+
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <BarChart3 className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                Vendor Scorecard Tracking
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Real-time vendor performance monitoring with automated scoring and quality assurance protocols.
+              </p>
+            </div>
+
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Bot className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                AI-Powered Document Abstraction
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Automated lease abstraction, contract analysis, and document processing with 99%+ accuracy.
+              </p>
+            </div>
+
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <CheckCircle className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                Compliance Dashboards
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Real-time compliance monitoring with automated reporting and audit preparation for HUD and LIHTC properties.
+              </p>
+            </div>
+
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <TrendingUp className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                Real-Time P&L Rollups
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                Automated financial reporting with real-time P&L consolidation and performance analytics across portfolios.
+              </p>
+            </div>
+
+            <div className="premium-card text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Target className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
+                Predictive Analytics
+              </h3>
+              <p className="text-hhp-charcoal leading-relaxed">
+                AI-driven insights for vacancy forecasting, rent optimization, and tenant retention strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SaaS Licensing */}
+      <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title text-hhp-navy mb-8">SaaS Licensing Opportunities</h2>
@@ -347,7 +433,7 @@ const Technology = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            Ready to Experience AI-Native Real Estate?
+            Ready to Transform Your Operations?
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
             Discover how our proprietary AI ecosystem can transform your real estate operations and deliver institutional-grade performance.
@@ -358,13 +444,13 @@ const Technology = () => {
               to="/contact" 
               className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-block"
             >
-              Schedule a Demo
+              Talk to HHP
             </Link>
             <Link 
-              to="/brokerage" 
+              to="/asset-management" 
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
             >
-              Explore Our Services
+              Explore Services
             </Link>
           </div>
         </div>
