@@ -121,13 +121,13 @@ const Header = () => {
   return (
     <header className="bg-white shadow-subtle relative z-50">
       <div className="container-premium">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center -ml-32">
+          <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32">
             <img 
               src="/brand/HHP Asset Group Logo.png" 
               alt="HHP Asset Group" 
-              className="h-20 w-auto"
+              className="h-12 sm:h-16 md:h-20 w-auto max-w-[200px] sm:max-w-none"
             />
           </Link>
 
