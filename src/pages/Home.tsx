@@ -72,62 +72,62 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <TrendingUp className="h-6 w-6" />
+            <div className="premium-card text-center p-8">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <TrendingUp className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
                 Invest
               </h3>
-              <p className="text-hhp-charcoal text-sm">
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Strategic acquisitions & dispositions
               </p>
             </div>
 
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Building2 className="h-6 w-6" />
+            <div className="premium-card text-center p-8">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
                 Lease & Occupy
               </h3>
-              <p className="text-hhp-charcoal text-sm">
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Tenant & owner representation
               </p>
             </div>
 
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Target className="h-6 w-6" />
+            <div className="premium-card text-center p-8">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Target className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
                 Design & Build
               </h3>
-              <p className="text-hhp-charcoal text-sm">
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Tailored improvements that maximize asset value
               </p>
             </div>
 
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <BarChart3 className="h-6 w-6" />
+            <div className="premium-card text-center p-8">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <BarChart3 className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
                 Manage
               </h3>
-              <p className="text-hhp-charcoal text-sm">
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Institutional-grade property & asset management
               </p>
             </div>
 
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Bot className="h-6 w-6" />
+            <div className="premium-card text-center p-8">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Bot className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
                 Optimize
               </h3>
-              <p className="text-hhp-charcoal text-sm">
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Cost savings and efficiency through automation & AI
               </p>
             </div>
