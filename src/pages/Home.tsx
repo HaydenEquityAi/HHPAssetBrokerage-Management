@@ -252,7 +252,7 @@ const Home = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            HHP Asset Group isn't just a property manager—we are your full-service real estate partner.
+            HHHP Asset Group is more than a service provider—we are your trusted real estate partner, offering end-to-end real estate solutions.
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
             Experience the future of commercial real estate with our AI-native platform and institutional-grade expertise.

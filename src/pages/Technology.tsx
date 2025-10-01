@@ -37,22 +37,22 @@ const Technology = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               {/* BrokerAi */}
               <div className="text-center">
-                <div className="bg-gradient-to-br from-hhp-navy to-hhp-navy/80 text-white p-8 rounded-lg shadow-elegant hover-lift">
+                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
                   <Bot className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-white mb-4">BrokerAi</h3>
-                  <p className="text-white/90 mb-6">Transaction cycle platform for investment sales, leasing, and capital markets</p>
+                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">BrokerAi</h3>
+                  <p className="text-hhp-charcoal mb-6">Transaction cycle platform for investment sales, leasing, and capital markets</p>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>AI deal-matching</span>
+                      <span className="text-hhp-charcoal">AI deal-matching</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Automated underwriting</span>
+                      <span className="text-hhp-charcoal">Automated underwriting</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>CRM integration</span>
+                      <span className="text-hhp-charcoal">CRM integration</span>
                     </div>
                   </div>
                 </div>
@@ -60,22 +60,22 @@ const Technology = () => {
 
               {/* RentalAi */}
               <div className="text-center">
-                <div className="bg-gradient-to-br from-hhp-navy to-hhp-navy/80 text-white p-8 rounded-lg shadow-elegant hover-lift">
+                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
                   <Building className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-white mb-4">RentalAi</h3>
-                  <p className="text-white/90 mb-6">Multifamily/HUD property management platform with compliance automation</p>
+                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">RentalAi</h3>
+                  <p className="text-hhp-charcoal mb-6">Multifamily/HUD property management platform with compliance automation</p>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Predictive operations</span>
+                      <span className="text-hhp-charcoal">Predictive operations</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Resident lifecycle AI</span>
+                      <span className="text-hhp-charcoal">Resident lifecycle AI</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Compliance automation</span>
+                      <span className="text-hhp-charcoal">Compliance automation</span>
                     </div>
                   </div>
                 </div>
@@ -83,22 +83,22 @@ const Technology = () => {
 
               {/* LeaseAi */}
               <div className="text-center">
-                <div className="bg-gradient-to-br from-hhp-navy to-hhp-navy/80 text-white p-8 rounded-lg shadow-elegant hover-lift">
+                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
                   <TrendingUp className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-white mb-4">LeaseAi</h3>
-                  <p className="text-white/90 mb-6">Office, industrial, retail leasing SaaS with advanced analytics</p>
+                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">LeaseAi</h3>
+                  <p className="text-hhp-charcoal mb-6">Office, industrial, retail leasing SaaS with advanced analytics</p>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Lease abstraction</span>
+                      <span className="text-hhp-charcoal">Lease abstraction</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Renewal scoring</span>
+                      <span className="text-hhp-charcoal">Renewal scoring</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span>Vacancy forecasting</span>
+                      <span className="text-hhp-charcoal">Vacancy forecasting</span>
                     </div>
                   </div>
                 </div>
