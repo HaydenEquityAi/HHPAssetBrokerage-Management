@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { usePageTracking, useScrollTracking, useTimeOnPageTracking } from "./hooks/useAnalytics";
 import Home from "./pages/Home";
 import Brokerage from "./pages/Brokerage";
 import BrokerageTenantRep from "./pages/BrokerageTenantRep";
@@ -26,6 +27,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Component to handle analytics tracking
+const AnalyticsTracker = () => {
+  usePageTracking();
+  useScrollTracking();
+  useTimeOnPageTracking();
+  return null;
+};
+
 const App = () => (
   <ErrorBoundary>
     <QueryClientProvider client={queryClient}>
@@ -33,6 +42,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <AnalyticsTracker />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />

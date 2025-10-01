@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
+import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 
@@ -25,13 +26,34 @@ const Home = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/brokerage" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+              <Link 
+                to="/brokerage" 
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                onClick={() => {
+                  trackButtonClick('explore_brokerage', 'home_hero');
+                  trackLinkClick('Explore Brokerage', '/brokerage');
+                }}
+              >
                 Explore Brokerage
               </Link>
-              <Link to="/asset-management" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+              <Link 
+                to="/asset-management" 
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                onClick={() => {
+                  trackButtonClick('explore_management', 'home_hero');
+                  trackLinkClick('Explore Management', '/asset-management');
+                }}
+              >
                 Explore Management
               </Link>
-              <Link to="/technology" className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300">
+              <Link 
+                to="/technology" 
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300"
+                onClick={() => {
+                  trackButtonClick('explore_technology', 'home_hero');
+                  trackLinkClick('Explore Technology', '/technology');
+                }}
+              >
                 Explore Technology
               </Link>
             </div>
@@ -252,7 +274,7 @@ const Home = () => {
       <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
           <h2 className="section-title text-white mb-6">
-            HHHP Asset Group is more than a service provider—we are your trusted real estate partner, offering end-to-end real estate solutions.
+            HHP Asset Group is more than a service provider—we are your trusted real estate partner, offering end-to-end real estate solutions.
           </h2>
           <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
             Experience the future of commercial real estate with our AI-native platform and institutional-grade expertise.

@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
+import { trackFormSubmission, trackContactFormInteraction, trackButtonClick, trackConversion } from '@/utils/analytics';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -35,6 +36,9 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Track form interaction start
+    trackContactFormInteraction('start', 'contact');
 
     try {
       // 1. Save to Supabase (existing functionality)
@@ -74,13 +78,18 @@ const Contact = () => {
         // Form still succeeds - n8n is just for notifications
       }
 
-      // 3. Show success message
+      // 3. Track successful form submission
+      trackFormSubmission('contact_form', formData.inquiry_type || 'general');
+      trackContactFormInteraction('complete', 'contact');
+      trackConversion('contact_form_submission');
+
+      // 4. Show success message
       toast({
         title: "Message Sent Successfully!",
         description: "We'll get back to you within 24 hours.",
       });
 
-      // 4. Reset form
+      // 5. Reset form
       setFormData({
         name: '',
         email: '',
@@ -91,6 +100,10 @@ const Contact = () => {
       });
     } catch (error) {
       console.error('Contact form error:', error);
+      
+      // Track form error
+      trackContactFormInteraction('error', 'contact');
+      
       toast({
         title: "Error",
         description: "Something went wrong. Please try again.",
@@ -227,6 +240,7 @@ const Contact = () => {
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3"
+                  onClick={() => trackButtonClick('contact_form_submit', 'contact_page')}
                 >
                   {isSubmitting ? (
                     <div className="flex items-center space-x-2">

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import { trackNavigationClick, trackLinkClick, trackButtonClick } from '@/utils/analytics';
 
 const Header = () => {
   // State management
@@ -121,9 +122,9 @@ const Header = () => {
   return (
     <header className="bg-white shadow-subtle relative z-50">
       <div className="container-premium">
-        <div className="flex items-center justify-between h-20 sm:h-20 md:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-20 md:h-20 relative">
           {/* Logo */}
-          <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32">
+          <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32 lg:static lg:ml-0">
             <img 
               src="/brand/HHP Asset Group Logo.png" 
               alt="HHP Asset Group" 
@@ -174,7 +175,11 @@ const Header = () => {
                             to={subItem.href}
                             className="block px-6 py-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200"
                             role="menuitem"
-                            onClick={() => setActiveDropdown(null)}
+                            onClick={() => {
+                              setActiveDropdown(null);
+                              trackNavigationClick(item.name, subItem.name);
+                              trackLinkClick(subItem.name, subItem.href);
+                            }}
                           >
                             {subItem.name}
                           </Link>
@@ -188,6 +193,10 @@ const Header = () => {
                     className={`text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium ${
                       location.pathname === item.href ? 'text-hhp-navy border-b-2 border-hhp-navy' : ''
                     }`}
+                    onClick={() => {
+                      trackNavigationClick(item.name);
+                      trackLinkClick(item.name, item.href);
+                    }}
                   >
                     {item.name}
                   </Link>
@@ -200,12 +209,20 @@ const Header = () => {
               <Link 
                 to="/resident-login" 
                 className="border border-hhp-navy text-hhp-navy px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy hover:text-white transition-colors duration-200"
+                onClick={() => {
+                  trackButtonClick('resident_login', 'header');
+                  trackLinkClick('Resident Login', '/resident-login');
+                }}
               >
                 Resident Login
               </Link>
               <Link 
                 to="/owner-login" 
                 className="bg-hhp-navy text-white px-4 py-2 rounded text-sm font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+                onClick={() => {
+                  trackButtonClick('owner_login', 'header');
+                  trackLinkClick('Owner Login', '/owner-login');
+                }}
               >
                 Owner Login
               </Link>
@@ -214,7 +231,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 absolute top-4 right-4"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle mobile menu"
