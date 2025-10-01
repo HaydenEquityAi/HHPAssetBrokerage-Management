@@ -338,6 +338,31 @@
     }
   }
 
+  /* Mobile logo optimization */
+  @media (max-width: 480px) {
+    /* Extra small mobile devices (320px-480px) */
+    header img {
+      height: 3.5rem !important; /* 56px */
+      max-width: 160px !important;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 640px) {
+    /* Small mobile devices (481px-640px) */
+    header img {
+      height: 4rem !important; /* 64px */
+      max-width: 180px !important;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    /* Medium mobile devices (641px-768px) */
+    header img {
+      height: 4.5rem !important; /* 72px */
+      max-width: 200px !important;
+    }
+  }
+
   /* Hero section background control */
   .hero-background {
     min-height: 50vh;
