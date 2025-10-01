@@ -234,7 +234,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-hhp-navy mb-1">Email</h3>
                     <p className="text-hhp-charcoal">info@hhpassetgroup.com</p>
-                    <p className="text-sm text-gray-600">We respond within 24 hours</p>
+      
                   </div>
                 </div>
 
@@ -244,8 +244,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-hhp-navy mb-1">Phone</h3>
-                    <p className="text-hhp-charcoal">(918) 555-0123</p>
-                    <p className="text-sm text-gray-600">Mon-Fri, 8AM-6PM CST</p>
+                    <p className="text-hhp-charcoal">(918) 899-1650</p>
+                
                   </div>
                 </div>
 
@@ -255,8 +255,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-hhp-navy mb-1">Office</h3>
-                    <p className="text-hhp-charcoal">123 Business District<br />Tulsa, OK 74101</p>
-                    <p className="text-sm text-gray-600">By appointment only</p>
+                    <p className="text-hhp-charcoal">1617 S Cincinnati Ave, Tulsa, OK 74119</p>
+                    
                   </div>
                 </div>
 
@@ -266,8 +266,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-hhp-navy mb-1">Business Hours</h3>
-                    <p className="text-hhp-charcoal">Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 2:00 PM</p>
-                    <p className="text-sm text-gray-600">Sunday: Closed</p>
+                    <p className="text-hhp-charcoal">Monday - Friday: 8:00 AM - 6:00 PM CST</p>
                   </div>
                 </div>
               </div>
@@ -278,7 +277,7 @@ const Contact = () => {
                 <div className="space-y-3">
                   <Button variant="outline" className="w-full justify-start">
                     <Building className="w-4 h-4 mr-2" />
-                    Schedule Property Tour
+                    Schedule Property Consultation
                   </Button>
                   <Button variant="outline" className="w-full justify-start">
                     <Home className="w-4 h-4 mr-2" />

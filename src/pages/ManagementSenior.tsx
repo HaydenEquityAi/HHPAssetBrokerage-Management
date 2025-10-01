@@ -194,7 +194,7 @@ HHP Asset Group combines compassionate service with RentalAi-powered analytics t
             Turning Care Data Into Operational Intelligence
           </p>
           <IconGrid 
-            title="Data & Insights"
+        
             services={dataInsights}
             columns={3}
           />
