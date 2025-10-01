@@ -122,7 +122,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-subtle relative z-50">
       <div className="container-premium">
-        <div className="flex items-center justify-between h-20 sm:h-20 md:h-20 relative">
+        <div className="flex items-center justify-between h-20 sm:h-20 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32 lg:static lg:ml-0">
             <img 
@@ -231,7 +231,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 absolute top-4 right-4"
+            className="lg:hidden p-2 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle mobile menu"
