@@ -242,13 +242,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-premium py-4">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-premium py-2">
             <div className="container-premium">
               {navigation.map((item) => (
                 <div key={item.name}>
                   <Link
                     to={item.href}
-                    className="block py-3 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
+                    className="block py-2 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -259,7 +259,7 @@ const Header = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.href}
-                          className="block py-2 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
+                          className="block py-1.5 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {subItem.name}
@@ -271,17 +271,17 @@ const Header = () => {
               ))}
               
               {/* Mobile Login Buttons */}
-              <div className="flex flex-col space-y-3 mt-6 pt-6 border-t border-gray-200">
+              <div className="flex flex-col space-y-2 mt-4 pt-4 border-t border-gray-200">
                 <Link 
                   to="/resident-login" 
-                  className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy hover:text-white transition-colors duration-200"
+                  className="border border-hhp-navy text-hhp-navy px-6 py-2.5 rounded text-center font-medium hover:bg-hhp-navy hover:text-white transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Resident Login
                 </Link>
                 <Link 
                   to="/owner-login" 
-                  className="bg-hhp-navy text-white px-6 py-3 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+                  className="bg-hhp-navy text-white px-6 py-2.5 rounded text-center font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Owner Login
