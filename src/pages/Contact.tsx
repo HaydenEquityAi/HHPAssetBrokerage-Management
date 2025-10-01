@@ -37,7 +37,8 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase
+      // 1. Save to Supabase (existing functionality)
+      const { error: supabaseError } = await supabase
         .from('contacts')
         .insert([{
           name: formData.name,
@@ -48,13 +49,38 @@ const Contact = () => {
           message: formData.message
         }]);
 
-      if (error) throw error;
+      if (supabaseError) throw supabaseError;
 
+      // 2. Send to n8n webhook (NEW - for email notifications/automation)
+      try {
+        await fetch('https://n8n.capitalaiadvisors.com/webhook/hhp-contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone || 'Not provided',
+            inquiry_type: formData.inquiry_type || 'General Inquiry',
+            property_address: formData.property_address || 'Not provided',
+            message: formData.message,
+            submitted_at: new Date().toISOString()
+          })
+        });
+        // Note: We don't throw error here so Supabase save still succeeds even if n8n fails
+      } catch (n8nError) {
+        console.error('n8n webhook error (non-critical):', n8nError);
+        // Form still succeeds - n8n is just for notifications
+      }
+
+      // 3. Show success message
       toast({
         title: "Message Sent Successfully!",
         description: "We'll get back to you within 24 hours.",
       });
 
+      // 4. Reset form
       setFormData({
         name: '',
         email: '',
@@ -200,17 +226,17 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3 font-medium"
+                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center space-x-2">
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span className="text-white">Sending...</span>
+                      <span>Sending...</span>
                     </div>
                   ) : (
                     <div className="flex items-center space-x-2">
-                      <Send className="w-4 h-4 text-white" />
-                      <span className="text-white">Send Message</span>
+                      <Send className="w-4 h-4" />
+                      <span>Send Message</span>
                     </div>
                   )}
                 </Button>

@@ -190,7 +190,7 @@ const ManagementMultifamily = () => {
             Turning Data Into Action with RentalAi
           </p>
           <IconGrid 
-            title="Data & Insights"
+         
             services={dataInsights}
             columns={3}
           />

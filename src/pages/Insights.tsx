@@ -1,8 +1,53 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BarChart3, FileText, TrendingUp, CheckCircle, ArrowRight, Calendar, Users, Building, DollarSign } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
+import { useToast } from '@/hooks/use-toast';
 
 const Insights = () => {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // Send to n8n webhook
+      const response = await fetch('https://n8n.capitalaiadvisors.com/webhook/hhp-newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          subscribed_at: new Date().toISOString(),
+          source: 'Website - Insights Page'
+        })
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Successfully Subscribed!",
+          description: "Check your email for a welcome message.",
+        });
+        setEmail(''); // Reset form
+      } else {
+        throw new Error('Subscription failed');
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -327,16 +372,24 @@ const Insights = () => {
             
             <div className="bg-white p-8 rounded-lg shadow-elegant">
               <div className="max-w-md mx-auto">
-                <div className="flex space-x-4">
+                <form onSubmit={handleNewsletterSubmit} className="flex space-x-4">
                   <input
                     type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address"
                     className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:border-transparent"
+                    disabled={isSubmitting}
                   />
-                  <button className="bg-hhp-navy text-white px-6 py-3 rounded-lg font-medium hover:bg-hhp-navy/90 transition-colors duration-200">
-                    Subscribe
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-hhp-navy text-white px-6 py-3 rounded-lg font-medium hover:bg-hhp-navy/90 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                   </button>
-                </div>
+                </form>
                 <p className="text-sm text-hhp-charcoal mt-4">
                   We respect your privacy. Unsubscribe at any time.
                 </p>
