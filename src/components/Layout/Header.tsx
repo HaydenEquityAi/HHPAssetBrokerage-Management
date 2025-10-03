@@ -218,9 +218,9 @@ const Header = () => {
               alt="HHP Asset Group" 
               className={`transition-all duration-300 ${
                 isSticky 
-                  ? 'h-12 sm:h-14 md:h-16' 
-                  : 'h-16 sm:h-18 md:h-20'
-              } w-auto max-w-[180px] sm:max-w-[220px] md:max-w-none`}
+                  ? 'h-9 sm:h-11 md:h-12' 
+                  : 'h-12 sm:h-14 md:h-16'
+              } w-auto max-w-[140px] sm:max-w-[180px] md:max-w-none`}
             />
           </Link>
 
