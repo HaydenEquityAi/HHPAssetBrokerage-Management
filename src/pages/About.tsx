@@ -25,21 +25,41 @@ const About = () => {
       {/* Company Description */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-8">Our Mission</h2>
-            <div className="space-y-6 text-lg leading-relaxed text-hhp-charcoal">
-              <p className="text-xl font-medium text-hhp-navy mb-8">
-                "To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg mx-auto text-hhp-charcoal">
+              <p className="text-xl leading-relaxed mb-8 text-center">
+                HHP Asset Group is redefining what it means to be a real estate services firm.
+                We are an AI-native, data-first, boutique platform delivering institutional precision with entrepreneurial agility. From acquisitions and brokerage to asset management, advisory, site selection, and analytics, we unite strategic insight with operational execution to create lasting value across every asset and client relationship.
               </p>
-              <p>
-                HHP Asset Group is America's first AI-native, full-service commercial real estate firm. We deliver institutional-grade brokerage, management, and advisory solutions through proprietary platforms BrokerAi, RentalAi, and LeaseAi across all major asset classes nationwide.
-              </p>
-              <p>
-                Our systematic methodology combines advanced AI technology with deep market expertise across multifamily, office, industrial, retail, mixed-use, and senior housing. We serve sophisticated investors, institutions, REITs, private equity funds, and family offices who demand both innovation and proven results.
-              </p>
-              <p>
-                In addition to direct services, HHP provides SaaS licensing opportunities for our proprietary AI platforms, enabling institutions and operators nationwide to integrate enterprise-grade technology into their own portfolios.
-              </p>
+              
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8 mb-8">
+                <p className="text-lg font-medium text-hhp-navy mb-4">Our difference is simple:</p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="text-hhp-accent font-bold mr-3">•</span>
+                    <span><strong>Boutique & Entrepreneurial</strong> — a hands-on partner delivering custom strategies, not one-size-fits-all solutions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hhp-accent font-bold mr-3">•</span>
+                    <span><strong>Comprehensive Services</strong> — spanning acquisitions, development, property management, advisory & site selection, investment sales, landlord and tenant representation, and consulting</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hhp-accent font-bold mr-3">•</span>
+                    <span><strong>Data-Driven Performance</strong> — powered by proprietary technology platforms (BrokerAi, RentalAi, LeaseAi) for insight, precision, and speed</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hhp-accent font-bold mr-3">•</span>
+                    <span><strong>Client-Centric approach</strong> — agile, responsive, and committed to aligning strategies with your goals</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-hhp-navy text-white rounded-lg p-6 md:p-8 text-center">
+                <h3 className="text-xl font-display font-semibold text-white mb-4">Our Mission</h3>
+                <p className="text-white/90 leading-relaxed">
+                  To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
+                </p>
+              </div>
             </div>
           </div>
         </div>
