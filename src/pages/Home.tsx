@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign } from 'lucide-react';
+import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import commercialImage from '@/assets/commercial-building.webp';
@@ -9,20 +9,20 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
         />
-        <div className="absolute inset-0 bg-hhp-navy/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
         
         <div className="relative z-10 container-premium text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-8">
-                Full-Service Real Estate Solutions. Data Driven Performance.
+              Full-Service Real Estate Solutions. Data Driven Performance.
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-8">
-            HHP Asset Group blends institutional-quality rigor with boutique responsiveness and technology-driven insights. From property management to brokerage, HUD compliance to advisory analytics, we deliver precision and transparency that elevate portfolios nationwide.
+              HHP Asset Group is a national real estate services firm delivering brokerage, management, and advisory solutions — powered by proprietary AI platforms and automation enhancement technology.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,126 +61,439 @@ const Home = () => {
         </div>
       </section>
 
-      {/* What We Do Section */}
-      <section className="bg-white section-spacing">
+      {/* Stats Bar */}
+      <section className="bg-white py-16 border-b border-gray-200">
         <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">What We Do</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-              We create solutions across the full real estate lifecycle:
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="premium-card text-center p-8">
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <TrendingUp className="h-8 w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Invest
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Strategic acquisitions & dispositions
-              </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">$2.0B+</div>
+              <div className="text-hhp-charcoal">Transactions Facilitated</div>
             </div>
-
-            <div className="premium-card text-center p-8">
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Lease & Occupy
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Tenant & owner representation
-              </p>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">500+</div>
+              <div className="text-hhp-charcoal">Properties Managed</div>
             </div>
-
-            <div className="premium-card text-center p-8">
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Target className="h-8 w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Design & Build
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Tailored improvements that maximize asset value
-              </p>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">15+</div>
+              <div className="text-hhp-charcoal">Markets Served</div>
             </div>
-
-            <div className="premium-card text-center p-8">
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <BarChart3 className="h-8 w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Manage
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Institutional-grade property & asset management
-              </p>
-            </div>
-
-            <div className="premium-card text-center p-8">
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Bot className="h-8 w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Optimize
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Cost savings and efficiency through automation & AI
-              </p>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">98%</div>
+              <div className="text-hhp-charcoal">Client Retention</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Insights & Research */}
-      <section className="bg-gray-50 section-spacing">
+      {/* Core Services Section */}
+      <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-6">Insights & Research</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              Real estate decisions are only as strong as the data behind them. At HHP, we deliver market intelligence and thought leadership to keep our clients ahead:
+          <div className="text-center mb-16">
+            <h2 className="section-title text-hhp-navy mb-6">Core Services</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+              Comprehensive solutions across the full real estate lifecycle—from property management to strategic advisory.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="premium-card text-center">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  AI's Impact on Real Estate Workforces
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  How automation is transforming property management and brokerage operations
-                </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Link 
+              to="/asset-management" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('property_management', 'core_services');
+                trackLinkClick('Property Management', '/asset-management');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
               </div>
-              
-              <div className="premium-card text-center">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  Capital Market Trends
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  Market analysis as rates stabilize and investment patterns shift
-                </p>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Property Management
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Stabilize NOI. Elevate tenant experience. Reduce total cost of operations.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-              
-              <div className="premium-card text-center">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  Growth Sectors
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  Multifamily, industrial, and life sciences sector opportunities
-                </p>
-              </div>
-            </div>
+            </Link>
 
-            <Link to="/insights" className="btn-hero">
-              Explore Insights
+            <Link 
+              to="/brokerage" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('brokerage', 'core_services');
+                trackLinkClick('Brokerage', '/brokerage');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <TrendingUp className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Brokerage
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Strategic leasing and investment sales driven by market intelligence.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/asset-management/hud" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('hud_expertise', 'core_services');
+                trackLinkClick('HUD Expertise', '/asset-management/hud');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <CheckCircle className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                HUD Expertise
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Compliance, audits, and seamless change-of-management support.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/insights" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('advisory_analytics', 'core_services');
+                trackLinkClick('Advisory & Analytics', '/insights');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <BarChart3 className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Advisory & Analytics
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                AI-powered insights, dashboards, and data-driven decision support.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Technology Advantage */}
+      {/* Asset Types Section */}
+      <section className="bg-gray-50 section-spacing">
+        <div className="container-premium">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-hhp-navy mb-6">Asset Types We Serve</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+              Deep expertise across six major commercial real estate asset classes.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <Link 
+              to="/asset-management/multifamily" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('multifamily', 'asset_types');
+                trackLinkClick('Multifamily', '/asset-management/multifamily');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Multifamily
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Market-rate and value-add strategies that stabilize NOI and elevate communities.
+              </p>
+            </Link>
+
+            <Link 
+              to="/asset-management/hud" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('hud_affordable', 'asset_types');
+                trackLinkClick('HUD & Affordable', '/asset-management/hud');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <HomeIcon className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                HUD & Affordable
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Compliance-driven management with unmatched HUD expertise.
+              </p>
+            </Link>
+
+            <Link 
+              to="/asset-management/office" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('office', 'asset_types');
+                trackLinkClick('Office', '/asset-management/office');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Office
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Workplace management to reduce costs and improve tenant satisfaction.
+              </p>
+            </Link>
+
+            <Link 
+              to="/asset-management/retail" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('retail', 'asset_types');
+                trackLinkClick('Retail', '/asset-management/retail');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <ShoppingBag className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Retail
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Tenant mix optimization, anchor repositioning, and center performance.
+              </p>
+            </Link>
+
+            <Link 
+              to="/asset-management/industrial" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('industrial', 'asset_types');
+                trackLinkClick('Industrial', '/asset-management/industrial');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Factory className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Industrial
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Predictive maintenance and energy benchmarking for logistics & warehousing.
+              </p>
+            </Link>
+
+            <Link 
+              to="/asset-management/senior" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('senior_housing', 'asset_types');
+                trackLinkClick('Senior Housing', '/asset-management/senior');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Heart className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Senior Housing
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
+                Compliance, compassion, and operational rigor for senior communities.
+              </p>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link 
+              to="/asset-management" 
+              className="btn-hero"
+              onClick={() => {
+                trackButtonClick('view_all_asset_classes', 'asset_types');
+                trackLinkClick('View All Asset Classes', '/asset-management');
+              }}
+            >
+              View All Asset Classes →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Insights & Intelligence Section */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-hhp-navy mb-6">Insights & Intelligence</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+              Stay ahead with market reports, compliance updates, and analytics-driven strategies.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="premium-card">
+              <div className="mb-4">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                  Technology
+                </span>
+                <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
+                  AI's Impact on Real Estate Workforces
+                </h3>
+                <p className="text-hhp-charcoal mb-4">
+                  How automation is reshaping property and brokerage operations.
+                </p>
+                <div className="text-sm text-hhp-charcoal/70 mb-4">Dec 2024</div>
+                <Link 
+                  to="/insights" 
+                  className="text-hhp-accent font-medium hover:underline"
+                  onClick={() => {
+                    trackButtonClick('ai_real_estate_workforce', 'insights');
+                    trackLinkClick('AI Real Estate Workforce', '/insights');
+                  }}
+                >
+                  Read More →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="premium-card">
+              <div className="mb-4">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                  Finance
+                </span>
+                <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
+                  Capital Market Trends 2025
+                </h3>
+                <p className="text-hhp-charcoal mb-4">
+                  Rates remain elevated; secondary markets are emerging winners.
+                </p>
+                <div className="text-sm text-hhp-charcoal/70 mb-4">Oct 2024</div>
+                <Link 
+                  to="/insights" 
+                  className="text-hhp-accent font-medium hover:underline"
+                  onClick={() => {
+                    trackButtonClick('capital_markets_2025', 'insights');
+                    trackLinkClick('Capital Markets 2025', '/insights');
+                  }}
+                >
+                  Read More →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="premium-card">
+              <div className="mb-4">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                  Market Analysis
+                </span>
+                <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
+                  Growth Sectors in Multifamily
+                </h3>
+                <p className="text-hhp-charcoal mb-4">
+                  Affordable & workforce housing driving demand and absorption.
+                </p>
+                <div className="text-sm text-hhp-charcoal/70 mb-4">Nov 2024</div>
+                <Link 
+                  to="/insights" 
+                  className="text-hhp-accent font-medium hover:underline"
+                  onClick={() => {
+                    trackButtonClick('growth_sectors_multifamily', 'insights');
+                    trackLinkClick('Growth Sectors Multifamily', '/insights');
+                  }}
+                >
+                  Read More →
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link 
+              to="/insights" 
+              className="btn-hero"
+              onClick={() => {
+                trackButtonClick('explore_insights', 'insights');
+                trackLinkClick('Explore Insights', '/insights');
+              }}
+            >
+              Explore Insights →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose HHP Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container-premium">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-hhp-navy mb-6">Why Choose HHP</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Zap className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
+                Next-Gen Boutique
+              </h3>
+              <p className="text-hhp-charcoal text-sm">
+                Institutional-grade execution with client-first service.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Bot className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
+                Tech-Enabled
+              </h3>
+              <p className="text-hhp-charcoal text-sm">
+                Proprietary dashboards and platforms that deliver clarity and foresight.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Shield className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
+                Compliance Expertise
+              </h3>
+              <p className="text-hhp-charcoal text-sm">
+                HUD mastery and regulatory precision that protect owners and tenants.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
+                <Globe className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
+                National Ambitions
+              </h3>
+              <p className="text-hhp-charcoal text-sm">
+                Tulsa roots, built for scalable portfolios across the U.S.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Big CTA Banner */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
@@ -270,30 +583,22 @@ const Home = () => {
       </section>
 
 
-      {/* CTA Section */}
-      <section className="bg-hhp-navy text-white section-spacing">
+      <section className="bg-hhp-navy text-white py-20">
         <div className="container-premium text-center">
-          <h2 className="section-title text-white mb-6">
-            HHP Asset Group is more than a service provider—we are your trusted real estate partner, offering end-to-end real estate solutions.
-          </h2>
-          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Experience the future of commercial real estate with our AI-native platform and institutional-grade expertise.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link 
-              to="/contact" 
-              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-block"
-            >
-              Get in Touch
-            </Link>
-            <Link 
-              to="/asset-management" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
-            >
-              Explore Services
-            </Link>
+          <div className="text-2xl md:text-3xl font-display leading-relaxed text-white/90 mb-12 max-w-4xl mx-auto">
+            "HHP Asset Group is the next-generation real estate partner, blending institutional-quality execution with technology-driven insights. We deliver boutique, client-focused service enhanced by proprietary analytics platforms and deep compliance expertise."
           </div>
+          
+          <Link 
+            to="/about" 
+            className="btn-hero bg-white text-hhp-navy hover:bg-white/90"
+            onClick={() => {
+              trackButtonClick('learn_about_hhp', 'cta_banner');
+              trackLinkClick('Learn About HHP', '/about');
+            }}
+          >
+            Learn About HHP →
+          </Link>
         </div>
       </section>
     </Layout>
