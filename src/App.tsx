@@ -25,6 +25,29 @@ import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+// New Service Pages
+import PropertyManagement from "./pages/services/PropertyManagement";
+import AdvisorySiteSelection from "./pages/services/AdvisorySiteSelection";
+import InvestmentSales from "./pages/services/InvestmentSales";
+import LandlordRepresentation from "./pages/services/LandlordRepresentation";
+import TenantRepresentation from "./pages/services/TenantRepresentation";
+import Acquisitions from "./pages/services/Acquisitions";
+import Development from "./pages/services/Development";
+import Consulting from "./pages/services/Consulting";
+
+// New Asset Type Pages
+import MultifamilyAssetType from "./pages/assetTypes/Multifamily";
+import HudAffordable from "./pages/assetTypes/HudAffordable";
+import OfficeAssetType from "./pages/assetTypes/Office";
+import RetailAssetType from "./pages/assetTypes/Retail";
+import IndustrialAssetType from "./pages/assetTypes/Industrial";
+import SeniorHousingAssetType from "./pages/assetTypes/SeniorHousing";
+
+// New Technology Pages
+import AiPlatforms from "./pages/technology/AiPlatforms";
+import AdvisoryAnalytics from "./pages/technology/AdvisoryAnalytics";
+import CustomSolutions from "./pages/technology/CustomSolutions";
+
 const queryClient = new QueryClient();
 
 // Component to handle analytics tracking
@@ -46,6 +69,30 @@ const App = () => (
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
+            
+            {/* Services Routes */}
+            <Route path="/services/property-management" element={<PropertyManagement />} />
+            <Route path="/services/advisory-site-selection" element={<AdvisorySiteSelection />} />
+            <Route path="/services/investment-sales" element={<InvestmentSales />} />
+            <Route path="/services/landlord-representation" element={<LandlordRepresentation />} />
+            <Route path="/services/tenant-representation" element={<TenantRepresentation />} />
+            <Route path="/services/acquisitions" element={<Acquisitions />} />
+            <Route path="/services/development" element={<Development />} />
+            <Route path="/services/consulting" element={<Consulting />} />
+            
+            {/* Asset Types Routes */}
+            <Route path="/asset-types" element={<Services />} />
+            <Route path="/asset-types/multifamily" element={<MultifamilyAssetType />} />
+            <Route path="/asset-types/hud-affordable" element={<HudAffordable />} />
+            <Route path="/asset-types/office" element={<OfficeAssetType />} />
+            <Route path="/asset-types/retail" element={<RetailAssetType />} />
+            <Route path="/asset-types/industrial" element={<IndustrialAssetType />} />
+            <Route path="/asset-types/senior-housing" element={<SeniorHousingAssetType />} />
+            
+            {/* Technology Routes */}
+            <Route path="/technology/ai-platforms" element={<AiPlatforms />} />
+            <Route path="/technology/advisory-analytics" element={<AdvisoryAnalytics />} />
+            <Route path="/technology/custom-solutions" element={<CustomSolutions />} />
             
             {/* Asset Management Routes */}
             <Route path="/asset-management" element={<Services />} />
