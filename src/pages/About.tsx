@@ -3,7 +3,7 @@ import haydenImage from '@/assets/hayden-ashley.webp';
 import philImage from '@/assets/phil-ashley.webp';
 import jenniImage from '@/assets/jenni-pollard.webp';
 import hannahImage from '@/assets/hannah-fanning.png';
-import { Award, Target, Users, Zap, Building2, TrendingUp, DollarSign, Briefcase, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
             <h2 className="section-title text-hhp-navy mb-8">Our Mission</h2>
             <div className="space-y-6 text-lg leading-relaxed text-hhp-charcoal">
               <p className="text-xl font-medium text-hhp-navy mb-8">
-                "To redefine real estate with institutional expertise and proprietary AI platforms that maximize performance for investors nationwide."
+                "To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
               </p>
               <p>
                 HHP Asset Group is America's first AI-native, full-service commercial real estate firm. We deliver institutional-grade brokerage, management, and advisory solutions through proprietary platforms BrokerAi, RentalAi, and LeaseAi across all major asset classes nationwide.
@@ -172,84 +172,20 @@ const About = () => {
         </div>
       </section>
 
-      {/* National Expansion Strategy */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-8">National Expansion Strategy</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              "Scaling across U.S. markets with consistent institutional performance, supported by SaaS licensing opportunities for operators nationwide."
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Building2 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Multi-Market Operations</h3>
-                  <p className="text-white/90">Expanding across key U.S. markets with consistent institutional-grade service delivery</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <TrendingUp className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">SaaS Licensing</h3>
-                  <p className="text-white/90">Enabling operators nationwide to integrate our AI platforms into their portfolios</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <DollarSign className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Proven Performance</h3>
-                  <p className="text-white/90">Maintaining institutional standards and measurable results across all markets</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Company Values */}
-      <section className="bg-hhp-navy text-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-white mb-12">Our Values Drive Excellence</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="space-y-4">
-                <Award className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Performance-Driven</h3>
-                <p className="text-white/90 leading-relaxed">
-                  Delivering measurable results and institutional-grade performance across all portfolios.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <Zap className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Technology-Forward</h3>
-                <p className="text-white/90 leading-relaxed">
-                  Pioneering AI-native solutions that transform real estate operations and efficiency.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <Target className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Institutionally Disciplined</h3>
-                <p className="text-white/90 leading-relaxed">
-                  Every decision backed by comprehensive market analysis and institutional standards.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <Users className="h-12 w-12 text-hhp-accent mx-auto" />
-                <h3 className="text-xl font-display font-semibold text-white">Client-Aligned</h3>
-                <p className="text-white/90 leading-relaxed">
-                  Strategies and solutions that align directly with investor objectives and goals.
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Join Our Team */}
+      <section className="bg-hhp-navy text-white py-20">
+        <div className="container-premium text-center">
+          <h2 className="section-title text-white mb-4">Join Our Team</h2>
+          <p className="text-lg md:text-xl leading-relaxed text-white/90 max-w-3xl mx-auto mb-10">
+            We're building the next-generation real estate services firm — one that combines institutional standards with entrepreneurial ambition. If you're driven to transform real estate with analytics, compliance expertise, and hands-on execution, we want to hear from you.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+            aria-label="View Opportunities"
+          >
+            View Opportunities
+          </a>
         </div>
       </section>
     </Layout>
