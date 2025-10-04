@@ -93,23 +93,6 @@ const Technology = () => {
     }
   ];
 
-  const insightsCards = [
-    {
-      title: "Nine Offers in 30 Days",
-      description: "Case Study",
-      href: "/insights"
-    },
-    {
-      title: "AI's Impact on CRE Operations 2025",
-      description: "Report", 
-      href: "/insights"
-    },
-    {
-      title: "Interactive KPI Snapshot",
-      description: "Data Viz Demo",
-      href: "/insights"
-    }
-  ];
 
   const faqItems = [
     {
@@ -370,45 +353,6 @@ const Technology = () => {
                   </div>
                 );
               })}
-            </div>
-          </div>
-        </section>
-
-        {/* Case Studies / Insights */}
-        <section className="bg-white section-spacing">
-          <div className="container-premium">
-            <div className="text-center mb-16">
-              <h2 className="section-title text-hhp-navy mb-6">Insights & Case Studies</h2>
-              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-                Real-world examples of technology driving measurable results.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {insightsCards.map((card, index) => (
-                <Link
-                  key={index}
-                  to={card.href}
-                  className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-                  onClick={() => {
-                    trackButtonClick(`insights_${card.title.toLowerCase().replace(/\s+/g, '_')}`, 'insights_section');
-                    trackLinkClick(card.title, card.href);
-                  }}
-                >
-                  <div className="mb-4">
-                    <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
-                      {card.description}
-                    </span>
-                    <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
-                      {card.title}
-                    </h3>
-                  </div>
-                  <div className="flex items-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
-                    <span>Read More</span>
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </div>
-                </Link>
-              ))}
             </div>
           </div>
         </section>
