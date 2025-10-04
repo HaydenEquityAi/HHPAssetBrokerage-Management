@@ -574,7 +574,7 @@ const Home = () => {
       <section className="bg-hhp-navy text-white py-20">
         <div className="container-premium text-center">
           <div className="text-2xl md:text-3xl font-display leading-relaxed text-white/90 mb-12 max-w-4xl mx-auto">
-            "HHP Asset Group is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms and deep compliance expertise."
+            "HHP Asset Group is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms."
           </div>
           
           <Link 
