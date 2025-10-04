@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart } from 'lucide-react';
+import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart, Settings, MapPin } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import commercialImage from '@/assets/commercial-building.webp';
@@ -91,17 +91,18 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="section-title text-hhp-navy mb-6">Core Services</h2>
             <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-              Comprehensive solutions across the full real estate lifecycle—from property management to strategic advisory.
+              Comprehensive solutions across the full real estate lifecycle — from acquisitions to advisory.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Row 1 */}
             <Link 
-              to="/asset-management" 
+              to="/services/property-management" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
-                trackLinkClick('Property Management', '/asset-management');
+                trackLinkClick('Property Management', '/services/property-management');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -111,7 +112,7 @@ const Home = () => {
                 Property Management
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Stabilize NOI. Elevate tenant experience. Reduce total cost of operations.
+                We go beyond operations to deliver NOI growth, compliance excellence, and tenant satisfaction.
               </p>
               <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
                 <span>Explore Service</span>
@@ -120,21 +121,21 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/brokerage" 
+              to="/services/advisory-site-selection" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
-                trackButtonClick('brokerage', 'core_services');
-                trackLinkClick('Brokerage', '/brokerage');
+                trackButtonClick('advisory-site-selection', 'core_services');
+                trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <TrendingUp className="h-8 w-8 md:h-10 md:w-10" />
+                <MapPin className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Brokerage
+                Advisory & Site Selection
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Strategic leasing and investment sales driven by market intelligence.
+                Data-driven market analysis and GIS intelligence to align location with business strategy.
               </p>
               <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
                 <span>Explore Service</span>
@@ -143,21 +144,21 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/hud" 
+              to="/services/investment-sales" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
-                trackButtonClick('hud_expertise', 'core_services');
-                trackLinkClick('HUD Expertise', '/asset-management/hud');
+                trackButtonClick('investment_sales', 'core_services');
+                trackLinkClick('Investment Sales', '/services/investment-sales');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <CheckCircle className="h-8 w-8 md:h-10 md:w-10" />
+                <DollarSign className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                HUD Expertise
+                Investment Sales
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Compliance, audits, and seamless change-of-management support.
+                Institutional-grade marketing and valuation to maximize asset disposition outcomes.
               </p>
               <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
                 <span>Explore Service</span>
@@ -166,21 +167,114 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/insights" 
+              to="/services/landlord-representation" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
-                trackButtonClick('advisory_analytics', 'core_services');
-                trackLinkClick('Advisory & Analytics', '/insights');
+                trackButtonClick('landlord_representation', 'core_services');
+                trackLinkClick('Landlord Representation', '/services/landlord-representation');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <BarChart3 className="h-8 w-8 md:h-10 md:w-10" />
+                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Advisory & Analytics
+                Landlord Representation
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                AI-powered insights, dashboards, and data-driven decision support.
+                Leasing strategies that enhance occupancy, optimize rent, and reduce downtime.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            {/* Row 2 */}
+            <Link 
+              to="/services/tenant-representation" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('tenant_representation', 'core_services');
+                trackLinkClick('Tenant Representation', '/services/tenant-representation');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Users className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Tenant Representation
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Advisory focused on cost control, flexibility, and alignment with workforce strategy.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/acquisitions" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('acquisitions', 'core_services');
+                trackLinkClick('Acquisitions', '/services/acquisitions');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Target className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Acquisitions
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                AI-powered sourcing, underwriting, and structuring to identify and secure opportunities.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/development" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('development', 'core_services');
+                trackLinkClick('Development', '/services/development');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Settings className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Development
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Ground-up execution from entitlement through stabilization with performance tracking.
+              </p>
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/consulting" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('consulting', 'core_services');
+                trackLinkClick('Consulting', '/services/consulting');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <FileText className="h-8 w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+                Consulting
+              </h3>
+              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+                Tailored advisory for HUD, operations, technology, and portfolio optimization.
               </p>
               <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
                 <span>Explore Service</span>
@@ -196,18 +290,18 @@ const Home = () => {
         <div className="container-premium">
           <div className="text-center mb-16">
             <h2 className="section-title text-hhp-navy mb-6">Asset Types We Serve</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-              Deep expertise across six major commercial real estate asset classes.
+            <p className="text-xl leading-relaxed text-hhp-navy max-w-3xl mx-auto">
+              Deep expertise across six major commercial real estate asset sectors.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <Link 
-              to="/asset-management/multifamily" 
+              to="/asset-types/multifamily" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
-                trackLinkClick('Multifamily', '/asset-management/multifamily');
+                trackLinkClick('Multifamily', '/asset-types/multifamily');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -222,18 +316,18 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/hud" 
+              to="/asset-types/hud-affordable" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
-                trackLinkClick('HUD & Affordable', '/asset-management/hud');
+                trackLinkClick('HUD & Affordable', '/asset-types/hud-affordable');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <HomeIcon className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                HUD & Affordable
+                HUY & Affordable
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Compliance-driven management with unmatched HUD expertise.
@@ -241,11 +335,11 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/office" 
+              to="/asset-types/office" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
-                trackLinkClick('Office', '/asset-management/office');
+                trackLinkClick('Office', '/asset-types/office');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -260,11 +354,11 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/retail" 
+              to="/asset-types/retail" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
-                trackLinkClick('Retail', '/asset-management/retail');
+                trackLinkClick('Retail', '/asset-types/retail');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -279,11 +373,11 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/industrial" 
+              to="/asset-types/industrial" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
-                trackLinkClick('Industrial', '/asset-management/industrial');
+                trackLinkClick('Industrial', '/asset-types/industrial');
               }}
             >
               <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -298,14 +392,14 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/asset-management/senior" 
+              to="/asset-types/senior-housing" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
-                trackLinkClick('Senior Housing', '/asset-management/senior');
+                trackLinkClick('Senior Housing', '/asset-types/senior-housing');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w--20 md:h-20 flex items-center justify-center">
                 <Heart className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
@@ -332,8 +426,50 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Insights & Intelligence Section */}
+      {/* Technology Advantage Section */}
       <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="section-title text-hhp-navy mb-6">Technology Advantage</h2>
+            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
+              We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <Bot className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">Automation</h3>
+                  <p className="text-white/90">Streamlined processes across all operations</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <BarChart3 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">AI Integration</h3>
+                  <p className="text-white/90">Intelligent insights and predictive analytics</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                  <DollarSign className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
+                  <h3 className="text-lg font-display font-semibold text-white mb-2">Cost Advantages</h3>
+                  <p className="text-white/90">Reduced errors and operational efficiency</p>
+                </div>
+              </div>
+            </div>
+
+            <Link to="/technology" className="btn-hero">
+              Explore Technology
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Insights & Intelligence Section */}
+      <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
           <div className="text-center mb-16">
             <h2 className="section-title text-hhp-navy mb-6">Insights & Intelligence</h2>
@@ -434,159 +570,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose HHP Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">Why Choose HHP</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Zap className="h-6 w-6" />
-              </div>
-              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
-                Next-Gen Boutique
-              </h3>
-              <p className="text-hhp-charcoal text-sm">
-                Institutional-grade execution with client-first service.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Bot className="h-6 w-6" />
-              </div>
-              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
-                Tech-Enabled
-              </h3>
-              <p className="text-hhp-charcoal text-sm">
-                Proprietary dashboards and platforms that deliver clarity and foresight.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Shield className="h-6 w-6" />
-              </div>
-              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
-                Compliance Expertise
-              </h3>
-              <p className="text-hhp-charcoal text-sm">
-                HUD mastery and regulatory precision that protect owners and tenants.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Globe className="h-6 w-6" />
-              </div>
-              <h3 className="text-lg font-display font-bold text-hhp-navy mb-3">
-                National Ambitions
-              </h3>
-              <p className="text-hhp-charcoal text-sm">
-                Tulsa roots, built for scalable portfolios across the U.S.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Big CTA Banner */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-6">Technology Advantage</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Bot className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Automation</h3>
-                  <p className="text-white/90">Streamlined processes across all operations</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">AI Integration</h3>
-                  <p className="text-white/90">Intelligent insights and predictive analytics</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <DollarSign className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Cost Advantages</h3>
-                  <p className="text-white/90">Reduced errors and operational efficiency</p>
-                </div>
-              </div>
-            </div>
-
-            <Link to="/technology" className="btn-hero">
-              Explore Technology
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Commitment */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-6">Our Commitment</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="premium-card text-center">
-                <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                  <Target className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  Client Outcomes
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  Aligned success through efficiency, compliance, and tenant satisfaction
-                </p>
-              </div>
-              
-              <div className="premium-card text-center">
-                <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                  <CheckCircle className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  Responsibility & Sustainability
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  Ethical partnerships and smarter building operations
-                </p>
-              </div>
-              
-              <div className="premium-card text-center">
-                <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                  <Users className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                  People & Culture
-                </h3>
-                <p className="text-hhp-charcoal text-sm">
-                  Investing in our team to deliver institutional-level service with a local touch
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
+      {/* Final CTA Banner */}
       <section className="bg-hhp-navy text-white py-20">
         <div className="container-premium text-center">
           <div className="text-2xl md:text-3xl font-display leading-relaxed text-white/90 mb-12 max-w-4xl mx-auto">
-            "HHP Asset Group is the next-generation real estate partner, blending institutional-quality execution with technology-driven insights. We deliver boutique, client-focused service enhanced by proprietary analytics platforms and deep compliance expertise."
+            "HHP Asset Group is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms and deep compliance expertise."
           </div>
           
           <Link 

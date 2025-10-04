@@ -1,10 +1,68 @@
 import { Link } from 'react-router-dom';
-import { Building, Home, Shield, Briefcase, CheckCircle, TrendingUp, BarChart3 } from 'lucide-react';
+import { Building2, Globe, DollarSign, Users, Target, Settings, FileText, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
-import commercialImage from '@/assets/commercial-building.webp';
-import rentalImage from '@/assets/hero-property.jpg';
+import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
 const Services = () => {
+  const services = [
+    {
+      icon: Building2,
+      title: "Property Management",
+      snippet: "We go beyond operations to deliver NOI growth, compliance excellence, and superior tenant experiences. With RentalAi dashboards and HUD expertise, we transform management into measurable performance.",
+      proofPoint: "22% delinquency reduction at HUD property.",
+      href: "/services/property-management"
+    },
+    {
+      icon: Globe,
+      title: "Advisory & Site Selection",
+      snippet: "Real estate decisions hinge on location. We use demographics, GIS mapping, and LeaseAi analytics to match portfolios with workforce, logistics, and long-term growth.",
+      proofPoint: "HQ relocation saved 14% OpEx.",
+      href: "/services/advisory-site-selection"
+    },
+    {
+      icon: DollarSign,
+      title: "Investment Sales",
+      snippet: "Our capital markets team combines institutional valuation rigor with AI-powered buyer targeting to unlock liquidity and maximize proceeds.",
+      proofPoint: "Nine offers secured within 30 days.",
+      href: "/services/investment-sales"
+    },
+    {
+      icon: Building2,
+      title: "Landlord Representation",
+      snippet: "We accelerate leasing velocity through tenant targeting, dynamic rent optimization, and data-backed marketing campaigns.",
+      proofPoint: "Lease-up downtime cut by 60%.",
+      href: "/services/landlord-representation"
+    },
+    {
+      icon: Users,
+      title: "Tenant Representation",
+      snippet: "Occupiers trust us to secure favorable terms, align space with workforce strategy, and forecast occupancy costs with precision.",
+      proofPoint: "18% savings achieved through lease renegotiation.",
+      href: "/services/tenant-representation"
+    },
+    {
+      icon: Target,
+      title: "Acquisitions",
+      snippet: "We source and underwrite opportunities with AI-driven deal pipelines, stress-tested models, and disciplined structuring to protect investor capital.",
+      proofPoint: "$500M in deals evaluated in 2025.",
+      href: "/services/acquisitions"
+    },
+    {
+      icon: Settings,
+      title: "Development",
+      snippet: "From feasibility to lease-up, we manage ground-up projects with entitlement dashboards, cost controls, and absorption forecasts.",
+      proofPoint: "Permitting timelines cut by 30%.",
+      href: "/services/development"
+    },
+    {
+      icon: FileText,
+      title: "Consulting",
+      snippet: "For complex challenges, we provide bespoke consulting — from HUD compliance and operational turnarounds to tech adoption and portfolio strategy.",
+      proofPoint: "12% NOI lift achieved via process reengineering.",
+      href: "/services/consulting"
+    }
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -12,248 +70,112 @@ const Services = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              Property & Asset Management — AI-Native Platforms
+              Comprehensive Real Estate Services, Reimagined
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Enterprise-level property management and asset services across multifamily, HUD, office, industrial, retail, mixed-use, and senior housing. Our RentalAi and LeaseAi platforms deliver institutional-grade performance with predictive analytics and compliance automation.
+              HHP Asset Group delivers the full lifecycle of commercial real estate services — from acquisitions and development to management, leasing, sales, and strategic advisory — all powered by proprietary AI platforms.
             </p>
-            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
-              Schedule Consultation
+            <Link 
+              to="#services" 
+              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+              onClick={() => {
+                trackButtonClick('explore_services_cta', 'services_hero');
+                trackLinkClick('Explore Services', '#services');
+              }}
+            >
+              Explore Services →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Multifamily / HUD (RentalAi) */}
-      <section className="bg-gray-50 section-spacing">
+      {/* Services Grid */}
+      <section id="services" className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Building className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Multifamily / HUD (RentalAi)</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Comprehensive multifamily and HUD property management powered by RentalAi. Our platform delivers compliance automation, NOI optimization, and resident lifecycle AI across affordable and market-rate housing portfolios nationwide.
-              </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">RentalAi Capabilities:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Automated HUD and LIHTC compliance',
-                    'Predictive maintenance scheduling',
-                    'Resident lifecycle AI and retention',
-                    'NOI optimization algorithms',
-                    'Real-time financial dashboards',
-                    'Audit-ready documentation'
-                  ].map((service, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{service}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div 
+                  key={index}
+                  className="premium-card p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                  onMouseEnter={() => {
+                    trackButtonClick(`service_hover_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
+                  }}
+                >
+                  {/* Service Icon */}
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="icon-accent p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                      <IconComponent className="h-8 w-8" />
                     </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/contact" className="btn-hero inline-block">
-                Get Multifamily Analysis
-              </Link>
-            </div>
-            
-            <div>
-              <img 
-                src="/images/multifamily-hero.jpg" 
-                alt="Modern multifamily apartment building" 
-                loading="eager"
-                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Office / Industrial / Retail (LeaseAi) */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Building className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Office / Industrial / Retail (LeaseAi)</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Advanced leasing and property management for office, industrial, and retail properties powered by LeaseAi. Our platform delivers lease compliance, CAM reconciliation, and predictive occupancy analytics across diverse commercial portfolios.
-              </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">LeaseAi Capabilities:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Automated lease abstraction and analysis',
-                    'Renewal probability scoring',
-                    'Vacancy forecasting and prevention',
-                    'CAM reconciliation automation',
-                    'Tenant retention optimization',
-                    'Market rent benchmarking'
-                  ].map((service, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{service}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/contact" className="btn-hero inline-block">
-                Schedule Commercial Consultation
-              </Link>
-            </div>
-            
-            <div>
-              <img 
-                src={commercialImage} 
-                alt="Modern commercial property" 
-                className="w-full h-96 object-cover rounded-lg shadow-elegant hover-lift"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Senior & Specialized Housing */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Building className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">Senior & Specialized Housing</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Specialized management for senior living communities, assisted living facilities, and specialized housing properties. Our institutional-grade approach ensures compliance excellence and retention-focused operations across diverse specialized housing portfolios.
-              </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">Specialized Solutions:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Resident care coordination',
-                    'Healthcare facility management',
-                    'Regulatory compliance excellence',
-                    'Family communication systems',
-                    'Quality assurance programs',
-                    'Institutional-grade reporting'
-                  ].map((service, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{service}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/contact" className="btn-hero inline-block">
-                Senior Housing Analysis
-              </Link>
-            </div>
-            
-            <div>
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6 text-center">Specialized Excellence</h3>
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">100%</div>
-                    <div className="text-hhp-charcoal">Compliance Rate</div>
+                    <h2 className="text-xl font-display font-bold text-hhp-navy">
+                      {service.title}
+                    </h2>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">24/7</div>
-                    <div className="text-hhp-charcoal">Care Coordination</div>
+                  
+                  {/* Service Description */}
+                  <p className="text-hhp-charcoal leading-relaxed mb-6">
+                    {service.snippet}
+                  </p>
+                  
+                  {/* Proof Point */}
+                  <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
+                    <p className="font-semibold text-hhp-navy">
+                      <span className="text-hhp-accent">Proof Point:</span> {service.proofPoint}
+                    </p>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">Institutional</div>
-                    <div className="text-hhp-charcoal">Standards</div>
-                  </div>
+                  
+                  {/* CTA */}
+                  <Link 
+                    to={service.href}
+                    className="inline-flex items-center text-hhp-accent font-medium hover:text-hhp-navy transition-colors duration-300 group-hover:translate-x-2 group"
+                    onClick={() => {
+                      trackButtonClick(`learn_more_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
+                      trackLinkClick(`Learn More ${service.title}`, service.href);
+                    }}
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Link>
                 </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Differentiators */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="section-title text-hhp-navy mb-6">Our Differentiators</h2>
-              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-4xl mx-auto">
-                What sets HHP apart from traditional property management firms: predictive maintenance, vendor optimization, investor dashboards, and audit-ready reporting.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Building className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Predictive Maintenance</h3>
-                  <p className="text-white/90">AI-powered maintenance scheduling reduces costs and improves asset performance</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <TrendingUp className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Vendor Optimization</h3>
-                  <p className="text-white/90">Data-driven vendor selection and performance tracking</p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Investor Dashboards</h3>
-                  <p className="text-white/90">Real-time portfolio performance and financial reporting</p>
-                </div>
-            </div>
-            
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <CheckCircle className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Audit-Ready Reporting</h3>
-                  <p className="text-white/90">Institutional-grade documentation and compliance reporting</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gray-50 section-spacing">
+      {/* CTA Banner */}
+      <section className="bg-hhp-navy text-white section-spacing">
         <div className="container-premium text-center">
-          <h2 className="section-title text-hhp-navy mb-6">
-            Ready to Transform Your Portfolio?
+          <h2 className="section-title text-white mb-6">
+            Ready to Experience the Future of Real Estate?
           </h2>
-          <p className="text-xl leading-relaxed text-hhp-charcoal mb-12 max-w-3xl mx-auto">
-            Experience the future of asset management with our AI-native RentalAi and LeaseAi platforms and institutional-grade expertise.
+          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
+            Whether you're looking to acquire, develop, manage, or sell — our comprehensive services and proprietary AI platforms deliver institutional-grade results with boutique-level service.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               to="/contact" 
-              className="bg-hhp-navy text-white px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy/90 transition-all duration-300 inline-block"
+              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+              onClick={() => {
+                trackButtonClick('consultation_cta', 'services_banner');
+                trackLinkClick('Schedule Consultation', '/contact');
+              }}
             >
-              Schedule a Consultation
+              Schedule Consultation
+              <ArrowRight className="h-5 w-5 ml-2" />
             </Link>
             <Link 
               to="/technology" 
-              className="border-2 border-hhp-navy text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy hover:text-white transition-all duration-300 inline-block"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+              onClick={() => {
+                trackButtonClick('explore_platforms_cta', 'services_banner');
+                trackLinkClick('Explore Our Platforms', '/technology');
+              }}
             >
               Explore Our Platforms
+              <ArrowRight className="h-5 w-5 ml-2" />
             </Link>
           </div>
         </div>
