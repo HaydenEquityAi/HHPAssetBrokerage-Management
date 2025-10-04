@@ -44,7 +44,7 @@ const Home = () => {
                   trackLinkClick('Explore Management', '/asset-management');
                 }}
               >
-                Explore Management
+                Explore Services
               </Link>
               <Link 
                 to="/technology" 
