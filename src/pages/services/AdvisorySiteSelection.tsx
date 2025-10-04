@@ -303,8 +303,8 @@ const AdvisorySiteSelection = () => {
             to="/contact" 
             className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
             onClick={() => {
-              trackButtonClick('request_advisory_support_cta', 'advisory_site_selection_banner');
-              trackLinkClick('Request Advisory Support', '/contact');
+              trackButtonClick('request_valuation_support_cta', 'investmnet_sales_banner');
+              trackLinkClick('Request Valuation Support', '/contact');
             }}
           >
             Request Advisory Support
