@@ -28,14 +28,14 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg mx-auto text-hhp-charcoal">
               
-              <div className="bg-hhp-navy text-white rounded-lg p-6 md:p-8 text-center mb-8">
+              <div className="bg-hhp-navy text-white rounded-lg p-6 md:p-8 text-center mb-10">
                 <h3 className="text-xl font-display font-semibold text-white mb-4">Our Mission</h3>
                 <p className="text-white/90 leading-relaxed">
                   To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
                 </p>
               </div>
               
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8 mb-8">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8 mb-4">
                 <p className="text-lg font-medium text-hhp-navy mb-4">Our difference is simple:</p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -63,9 +63,9 @@ const About = () => {
       </section>
 
       {/* Leadership Team Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white py-12">
         <div className="container-premium">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="section-title text-hhp-navy mb-6">Leadership Excellence</h2>
             <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
               Our core team brings together decades of experience in operations, real estate, property management, and client relations to deliver exceptional results.
