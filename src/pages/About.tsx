@@ -27,10 +27,13 @@ const About = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg mx-auto text-hhp-charcoal">
-              <p className="text-xl leading-relaxed mb-8 text-center">
-                HHP Asset Group is redefining what it means to be a real estate services firm.
-                We are an AI-native, data-first, boutique platform delivering institutional precision with entrepreneurial agility. From acquisitions and brokerage to asset management, advisory, site selection, and analytics, we unite strategic insight with operational execution to create lasting value across every asset and client relationship.
-              </p>
+              
+              <div className="bg-hhp-navy text-white rounded-lg p-6 md:p-8 text-center mb-8">
+                <h3 className="text-xl font-display font-semibold text-white mb-4">Our Mission</h3>
+                <p className="text-white/90 leading-relaxed">
+                  To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
+                </p>
+              </div>
               
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8 mb-8">
                 <p className="text-lg font-medium text-hhp-navy mb-4">Our difference is simple:</p>
@@ -54,12 +57,6 @@ const About = () => {
                 </ul>
               </div>
               
-              <div className="bg-hhp-navy text-white rounded-lg p-6 md:p-8 text-center">
-                <h3 className="text-xl font-display font-semibold text-white mb-4">Our Mission</h3>
-                <p className="text-white/90 leading-relaxed">
-                  To be the next-generation alternative to institutional real estate firms, blending technology-driven insights, compliance precision, and data-backed execution with boutique attentiveness. We manage every property as if it were our own — creating measurable outcomes for owners, investors, tenants, and communities.
-                </p>
-              </div>
             </div>
           </div>
         </div>
