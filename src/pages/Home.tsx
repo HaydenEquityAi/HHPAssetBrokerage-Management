@@ -435,28 +435,37 @@ const Home = () => {
               We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {/* AI Platforms Card */}
               <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Bot className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Automation</h3>
-                  <p className="text-white/90">Streamlined processes across all operations</p>
+                <div className="bg-hhp-navy text-white p-4 rounded-lg">
+                  <Bot className="h-8 w-8 text-hhp-accent mx-auto mb-3" />
+                  <h3 className="text-base font-display font-semibold text-white mb-2">AI Platforms</h3>
+                  <p className="text-white/90 text-sm">
+                    BrokerAi, RentalAi, and LeaseAi power transaction and operations intelligence across acquisitions, leasing, and property management.
+                  </p>
                 </div>
               </div>
               
+              {/* Advisory & Analytics Card */}
               <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">AI Integration</h3>
-                  <p className="text-white/90">Intelligent insights and predictive analytics</p>
+                <div className="bg-hhp-navy text-white p-4 rounded-lg">
+                  <BarChart3 className="h-8 w-8 text-hhp-accent mx-auto mb-3" />
+                  <h3 className="text-base font-display font-semibold text-white mb-2">Advisory & Analytics</h3>
+                  <p className="text-white/90 text-sm">
+                    Dashboards, comps, underwriting models, and portfolio intelligence that make strategy measurable and deliver boardroom-ready insights.
+                  </p>
                 </div>
               </div>
               
+              {/* Custom Solutions Card */}
               <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <DollarSign className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Cost Advantages</h3>
-                  <p className="text-white/90">Reduced errors and operational efficiency</p>
+                <div className="bg-hhp-navy text-white p-4 rounded-lg">
+                  <Settings className="h-8 w-8 text-hhp-accent mx-auto mb-3" />
+                  <h3 className="text-base font-display font-semibold text-white mb-2">Custom Solutions</h3>
+                  <p className="text-white/90 text-sm">
+                    Bespoke databases, workflow automations, and client-tailored websites/microsites that integrate with your existing stack.
+                  </p>
                 </div>
               </div>
             </div>

@@ -1,461 +1,481 @@
 import { Link } from 'react-router-dom';
-import { Bot, Building, TrendingUp, CheckCircle, ArrowRight, Zap, BarChart3, Users, Target, DollarSign } from 'lucide-react';
+import { Bot, BarChart3, Settings, ArrowRight, CheckCircle, TrendingUp, DollarSign, Clock, Zap } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
+import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Helmet } from 'react-helmet-async';
 
 const Technology = () => {
+  const technologyPillars = [
+    {
+      icon: Bot,
+      title: "AI Platforms",
+      snippet: "BrokerAi, RentalAi, and LeaseAi power transaction and operations intelligence across acquisitions, leasing, and property management. Real-time comps, absorption forecasts, delinquency/turnover risk scores, and KPI dashboards turn data into action.",
+      proofPoint: "Nine offers in 30 days driven by AI buyer targeting.",
+      highlights: [
+        "Live comps, cap-rate curves, and sales velocity (BrokerAi)",
+        "Rent/absorption forecasting and tenant churn risk (LeaseAi, RentalAi)",
+        "Owner dashboards: NOI, delinquency, expense variance"
+      ],
+      href: "/technology/ai-platforms"
+    },
+    {
+      icon: BarChart3,
+      title: "Advisory & Analytics",
+      snippet: "Dashboards, comps, underwriting models, and portfolio intelligence that make strategy measurable. From market screening and site scoring to feasibility and sensitivity analysis, we deliver boardroom-ready insights.",
+      proofPoint: "HQ relocation analysis saved 14% OpEx.",
+      highlights: [
+        "Trade area/drive-time heatmaps, workforce analytics",
+        "Feasibility + sensitivity models (IRR, payback, downside cases)",
+        "Portfolio KPIs, variance tracking, and benchmarking"
+      ],
+      href: "/technology/advisory-analytics"
+    },
+    {
+      icon: Settings,
+      title: "Custom Solutions",
+      snippet: "Bespoke databases, workflow automations, and client-tailored websites/microsites that integrate with your stack (Yardi, RealPage, Google Workspace, n8n, etc.).",
+      proofPoint: "12% NOI lift from ops reengineering + automation.",
+      highlights: [
+        "HUD compliance automation (50059/EIV logs)",
+        "Deal rooms, listing microsites, and marketing automation",
+        "Data pipelines + executive dashboards (owner/lender views)"
+      ],
+      href: "/technology/custom-solutions"
+    }
+  ];
+
+  const howItWorksSteps = [
+    {
+      step: "01",
+      title: "Discovery & Goals",
+      description: "KPIs, systems, constraints"
+    },
+    {
+      step: "02", 
+      title: "Data Intake",
+      description: "Connect PMS/ERP/CRM + market feeds"
+    },
+    {
+      step: "03",
+      title: "Modeling & Dashboards", 
+      description: "Forecasts, comps, risk scoring"
+    },
+    {
+      step: "04",
+      title: "Implementation",
+      description: "Automations, training, change mgmt"
+    },
+    {
+      step: "05",
+      title: "Optimization",
+      description: "Quarterly reviews, roadmap, new features"
+    }
+  ];
+
+  const kpiCards = [
+    {
+      icon: Clock,
+      title: "Faster Decisions",
+      metric: "2×",
+      description: "reduction in time from data to decision"
+    },
+    {
+      icon: DollarSign,
+      title: "Lower Cost to Operate", 
+      metric: "10–15%",
+      description: "savings via automation/analytics"
+    },
+    {
+      icon: TrendingUp,
+      title: "Improved Performance",
+      metric: "6–10%",
+      description: "NOI improvement potential with retention & optimization"
+    }
+  ];
+
+  const insightsCards = [
+    {
+      title: "Nine Offers in 30 Days",
+      description: "Case Study",
+      href: "/insights"
+    },
+    {
+      title: "AI's Impact on CRE Operations 2025",
+      description: "Report", 
+      href: "/insights"
+    },
+    {
+      title: "Interactive KPI Snapshot",
+      description: "Data Viz Demo",
+      href: "/insights"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "How do your platforms integrate with our PMS/ERP?",
+      answer: "Our platforms seamlessly integrate with major systems including Yardi, RealPage, and custom APIs through secure, standardized connectors."
+    },
+    {
+      question: "Do you support HUD/affordable workflows?",
+      answer: "Yes, we provide specialized HUD compliance automation including 50059/EIV logs and regulatory reporting features."
+    },
+    {
+      question: "What's a typical implementation timeline?",
+      answer: "Implementation typically takes 4-8 weeks depending on complexity, including data integration, training, and optimization phases."
+    },
+    {
+      question: "Can we license platforms independently?",
+      answer: "Yes, our AI platforms can be licensed individually or as part of our comprehensive technology suite."
+    }
+  ];
+
   return (
-    <Layout>
-      {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8">
-              Technology That Lowers Cost and Increases Control
-            </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-12">
-              Our proprietary AI platforms deliver institutional-grade performance and set us apart from traditional firms. Experience the future of real estate with BrokerAi, RentalAi, and LeaseAi.
-            </p>
-            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
-              Explore Our Platforms
-            </Link>
-          </div>
-        </div>
-      </section>
+    <>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>HHP Asset Group | Technology</title>
+        <meta 
+          name="description" 
+          content="Explore HHP's Technology: AI Platforms, Advisory & Analytics, and Custom Solutions that deliver measurable performance, faster decisions, and institutional-grade execution." 
+        />
+        <meta 
+          name="keywords" 
+          content="real estate technology, AI platforms, property management software, real estate analytics, BrokerAi, RentalAi, LeaseAi, custom solutions" 
+        />
+        <meta property="og:title" content="HHP Asset Group | Technology" />
+        <meta property="og:description" content="Explore HHP's Technology: AI Platforms, Advisory & Analytics, and Custom Solutions that deliver measurable performance, faster decisions, and institutional-grade execution." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hhpassetgroup.com/technology" />
+        <meta property="og:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
+        <link rel="canonical" href="https://hhpassetgroup.com/technology" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="HHP Asset Group | Technology" />
+        <meta name="twitter:description" content="Explore HHP's Technology: AI Platforms, Advisory & Analytics, and Custom Solutions." />
+        <meta name="twitter:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
+      </Helmet>
 
-      {/* 3-Pillar Ecosystem Overview */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="max-w-6xl mx-auto">
+      <Layout>
+        {/* Hero Section */}
+        <section className="bg-hhp-navy section-spacing">
+          <div className="container-premium">
+            <div className="max-w-4xl mx-auto text-center fade-in">
+              <h1 className="hero-title text-white mb-8">
+                Technology That Moves Real Estate Forward
+              </h1>
+              <p className="text-xl leading-relaxed text-white/90 mb-12">
+                Our proprietary AI stack and analytics frameworks deliver institutional-grade execution—faster decisions, tighter controls, and measurable ROI.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Link 
+                  to="#technology-pillars" 
+                  className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                  onClick={() => {
+                    trackButtonClick('explore_technology_cta', 'technology_hero');
+                    trackLinkClick('Explore Technology', '#technology-pillars');
+                  }}
+                >
+                  Explore Technology →
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300"
+                  onClick={() => {
+                    trackButtonClick('talk_to_hhp_cta', 'technology_hero');
+                    trackLinkClick('Talk to HHP', '/contact');
+                  }}
+                >
+                  Talk to HHP
+                </Link>
+              </div>
+              
+              {/* KPI chips */}
+              <div className="flex flex-wrap justify-center gap-4">
+                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
+                  2x faster decisions
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
+                  14% OpEx savings
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
+                  22% delinquency reduction
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Technology Pillars Grid */}
+        <section id="technology-pillars" className="bg-white section-spacing">
+          <div className="container-premium">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {technologyPillars.map((pillar, index) => {
+                const IconComponent = pillar.icon;
+                return (
+                  <div 
+                    key={index}
+                    className="premium-card p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2"
+                    tabIndex={0}
+                    onMouseEnter={() => {
+                      trackButtonClick(`tech_pillar_hover_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');
+                    }}
+                  >
+                    {/* Pillar Icon */}
+                    <div className="flex items-start space-x-4 mb-6">
+                      <div className="icon-accent p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                        <IconComponent className="h-8 w-8" />
+                      </div>
+                      <h2 className="text-xl font-display font-bold text-hhp-navy">
+                        {pillar.title}
+                      </h2>
+                    </div>
+                    
+                    {/* Pillar Description */}
+                    <p className="text-hhp-charcoal leading-relaxed mb-6">
+                      {pillar.snippet}
+                    </p>
+                    
+                    {/* Proof Point */}
+                    <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
+                      <p className="font-semibold text-hhp-navy">
+                        <span className="text-hhp-accent">Proof Point:</span> {pillar.proofPoint}
+                      </p>
+                    </div>
+                    
+                    {/* Highlights */}
+                    <ul className="space-y-2 mb-6">
+                      {pillar.highlights.map((highlight, idx) => (
+                        <li key={idx} className="flex items-start space-x-2 text-hhp-charcoal">
+                          <CheckCircle className="h-4 w-4 text-hhp-accent mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    {/* CTA */}
+                    <Link 
+                      to={pillar.href}
+                      className="inline-flex items-center text-hhp-accent font-medium hover:text-hhp-navy transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-accent focus:ring-offset-2 rounded"
+                      onClick={() => {
+                        trackButtonClick(`learn_more_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');
+                        trackLinkClick(`Learn More ${pillar.title}`, pillar.href);
+                      }}
+                      aria-label={`Learn more about ${pillar.title}`}
+                    >
+                      <span>Learn More</span>
+                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Value Banner */}
+        <section className="bg-hhp-navy text-white section-spacing">
+          <div className="container-premium text-center">
+            <h2 className="section-title text-white mb-6">
+              Ready to Transform Your Operations?
+            </h2>
+            <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
+              Discover how our proprietary AI ecosystem and analytics can streamline processes, reduce risk, and drive measurable ROI.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link 
+                to="/contact" 
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+                onClick={() => {
+                  trackButtonClick('talk_to_hhp_cta', 'value_banner');
+                  trackLinkClick('Talk to HHP', '/contact');
+                }}
+              >
+                Talk to HHP
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+              <Link 
+                to="/services" 
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+                onClick={() => {
+                  trackButtonClick('explore_services_cta', 'value_banner');
+                  trackLinkClick('Explore Services', '/services');
+                }}
+              >
+                Explore Services
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="bg-white section-spacing">
+          <div className="container-premium">
             <div className="text-center mb-16">
-              <h2 className="section-title text-hhp-navy mb-6">Our AI-Native Platform Ecosystem</h2>
-              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-4xl mx-auto">
-                Three integrated platforms working together to deliver comprehensive real estate services with institutional-grade efficiency and performance.
+              <h2 className="section-title text-hhp-navy mb-6">How It Works</h2>
+              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+                Our proven implementation process ensures seamless integration and maximum ROI from day one.
               </p>
-            </div>
-
-            {/* 3-Pillar Visual */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-              {/* BrokerAi */}
-              <div className="text-center">
-                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
-                  <Bot className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">BrokerAi</h3>
-                  <p className="text-hhp-charcoal mb-6">Transaction cycle platform for investment sales, leasing, and capital markets</p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">AI deal-matching</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Automated underwriting</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">CRM integration</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* RentalAi */}
-              <div className="text-center">
-                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
-                  <Building className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">RentalAi</h3>
-                  <p className="text-hhp-charcoal mb-6">Multifamily/HUD property management platform with compliance automation</p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Predictive operations</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Resident lifecycle AI</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Compliance automation</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* LeaseAi */}
-              <div className="text-center">
-                <div className="bg-gray-200 text-hhp-navy p-8 rounded-lg shadow-elegant hover-lift">
-                  <TrendingUp className="h-16 w-16 text-hhp-accent mx-auto mb-6" />
-                  <h3 className="text-2xl font-display font-bold text-hhp-navy mb-4">LeaseAi</h3>
-                  <p className="text-hhp-charcoal mb-6">Office, industrial, retail leasing SaaS with advanced analytics</p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Lease abstraction</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Renewal scoring</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent" />
-                      <span className="text-hhp-charcoal">Vacancy forecasting</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Ecosystem Integration */}
-            <div className="text-center">
-              <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Integrated Ecosystem</h3>
-                <p className="text-hhp-charcoal max-w-3xl mx-auto">
-                  All three platforms work together seamlessly, sharing data and insights to provide a comprehensive view of your real estate portfolio and maximize performance across all asset classes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BrokerAi Deep Dive */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Bot className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">BrokerAi Platform</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Our comprehensive transaction cycle platform revolutionizes how we approach investment sales, leasing, and capital markets. BrokerAi combines AI-powered deal matching, automated underwriting, and predictive analytics to accelerate transactions and maximize value.
-              </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">Core Features:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'AI-powered buyer and tenant matching',
-                    'Automated underwriting and risk assessment',
-                    'Predictive market analysis and pricing',
-                    'Transaction timeline optimization',
-                    'CRM integration and client management',
-                    'Due diligence automation'
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/brokerage" className="btn-hero inline-block">
-                Explore Brokerage Services
-              </Link>
             </div>
             
-            <div>
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6 text-center">BrokerAi Performance</h3>
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">50% Faster</div>
-                    <div className="text-hhp-charcoal">Transaction Velocity</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+              {howItWorksSteps.map((step, index) => (
+                <div key={index} className="text-center">
+                  <div className="bg-hhp-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    {step.step}
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">95% Accuracy</div>
-                    <div className="text-hhp-charcoal">Deal Matching</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">AI-Powered</div>
-                    <div className="text-hhp-charcoal">Risk Assessment</div>
-                  </div>
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-hhp-charcoal text-sm">
+                    {step.description}
+                  </p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* RentalAi Deep Dive */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <Building className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">RentalAi Platform</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                The most advanced multifamily and HUD property management platform available. RentalAi automates compliance, optimizes NOI, and manages the complete resident lifecycle with predictive analytics and institutional-grade reporting.
+        {/* Featured Outcomes */}
+        <section className="bg-gray-50 section-spacing">
+          <div className="container-premium">
+            <div className="text-center mb-16">
+              <h2 className="section-title text-hhp-navy mb-6">Featured Outcomes</h2>
+              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+                Measurable results that drive real business value across every implementation.
               </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">Advanced Capabilities:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Automated HUD and LIHTC compliance',
-                    'Predictive maintenance scheduling',
-                    'Resident lifecycle AI and retention',
-                    'NOI optimization algorithms',
-                    'Real-time financial dashboards',
-                    'Audit-ready documentation'
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/management" className="btn-hero inline-block">
-                Explore Management Services
-              </Link>
             </div>
             
-            <div>
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6 text-center">RentalAi Results</h3>
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">99%+</div>
-                    <div className="text-hhp-charcoal">Compliance Rate</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {kpiCards.map((card, index) => {
+                const IconComponent = card.icon;
+                return (
+                  <div key={index} className="premium-card text-center p-8">
+                    <div className="icon-accent mx-auto mb-6 w-16 h-16 flex items-center justify-center">
+                      <IconComponent className="h-8 w-8" />
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-hhp-navy mb-2">
+                      {card.title}
+                    </h3>
+                    <div className="text-4xl font-bold text-hhp-accent mb-4">
+                      {card.metric}
+                    </div>
+                    <p className="text-hhp-charcoal">
+                      {card.description}
+                    </p>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">15% Higher</div>
-                    <div className="text-hhp-charcoal">NOI Growth</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">Predictive</div>
-                    <div className="text-hhp-charcoal">Operations</div>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* LeaseAi Deep Dive */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <TrendingUp className="h-12 w-12 icon-accent" />
-                <h2 className="section-title text-hhp-navy">LeaseAi Platform</h2>
-              </div>
-              
-              <p className="text-xl leading-relaxed text-hhp-charcoal">
-                Specialized SaaS platform for office, industrial, and retail leasing operations. LeaseAi streamlines lease administration, provides predictive occupancy analytics, and optimizes tenant relationships with AI-powered insights.
+        {/* Case Studies / Insights */}
+        <section className="bg-white section-spacing">
+          <div className="container-premium">
+            <div className="text-center mb-16">
+              <h2 className="section-title text-hhp-navy mb-6">Insights & Case Studies</h2>
+              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+                Real-world examples of technology driving measurable results.
               </p>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-display font-semibold text-hhp-navy mb-4">Leasing Solutions:</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Automated lease abstraction and analysis',
-                    'Renewal probability scoring',
-                    'Vacancy forecasting and prevention',
-                    'CAM reconciliation automation',
-                    'Tenant retention optimization',
-                    'Market rent benchmarking'
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 icon-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-hhp-charcoal">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="/management" className="btn-hero inline-block">
-                Explore Leasing Services
-              </Link>
             </div>
             
-            <div>
-              <div className="premium-card">
-                <h3 className="text-xl font-display font-semibold text-hhp-navy mb-6 text-center">LeaseAi Impact</h3>
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">90% Faster</div>
-                    <div className="text-hhp-charcoal">Lease Processing</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {insightsCards.map((card, index) => (
+                <Link
+                  key={index}
+                  to={card.href}
+                  className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                  onClick={() => {
+                    trackButtonClick(`insights_${card.title.toLowerCase().replace(/\s+/g, '_')}`, 'insights_section');
+                    trackLinkClick(card.title, card.href);
+                  }}
+                >
+                  <div className="mb-4">
+                    <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                      {card.description}
+                    </span>
+                    <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
+                      {card.title}
+                    </h3>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">25% Higher</div>
-                    <div className="text-hhp-charcoal">Tenant Retention</div>
+                  <div className="flex items-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+                    <span>Read More</span>
+                    <ArrowRight className="h-4 w-4 ml-2" />
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-display font-bold text-hhp-navy mb-2">AI-Driven</div>
-                    <div className="text-hhp-charcoal">Occupancy Optimization</div>
-                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-gray-50 section-spacing">
+          <div className="container-premium">
+            <div className="text-center mb-16">
+              <h2 className="section-title text-hhp-navy mb-6">Frequently Asked Questions</h2>
+              <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+                Common questions about our technology solutions and implementation process.
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              {faqItems.map((item, index) => (
+                <div key={index} className="premium-card p-6">
+                  <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
+                    {item.question}
+                  </h3>
+                  <p className="text-hhp-charcoal leading-relaxed">
+                    {item.answer}
+                  </p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Technology Integration */}
-      <section className="bg-white section-spacing">
-        <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">How Technology Integrates with Our Services</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-              Our technology platforms seamlessly integrate with asset management and brokerage services to deliver comprehensive solutions.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Zap className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                Work-Order Automation Systems
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Automated work order generation, vendor dispatch, and completion tracking with predictive maintenance scheduling.
-              </p>
-            </div>
-
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <BarChart3 className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                Vendor Scorecard Tracking
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Real-time vendor performance monitoring with automated scoring and quality assurance protocols.
-              </p>
-            </div>
-
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Bot className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                AI-Powered Document Abstraction
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Automated lease abstraction, contract analysis, and document processing with 99%+ accuracy.
-              </p>
-            </div>
-
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <CheckCircle className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                Compliance Dashboards
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Real-time compliance monitoring with automated reporting and audit preparation for HUD and LIHTC properties.
-              </p>
-            </div>
-
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <TrendingUp className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                Real-Time P&L Rollups
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Automated financial reporting with real-time P&L consolidation and performance analytics across portfolios.
-              </p>
-            </div>
-
-            <div className="premium-card text-center">
-              <div className="icon-accent mx-auto mb-4 w-12 h-12 flex items-center justify-center">
-                <Target className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">
-                Predictive Analytics
-              </h3>
-              <p className="text-hhp-charcoal leading-relaxed">
-                AI-driven insights for vacancy forecasting, rent optimization, and tenant retention strategies.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SaaS Licensing */}
-      <section className="bg-gray-50 section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-8">SaaS Licensing Opportunities</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              Our proprietary AI platforms are available for licensing to institutional operators nationwide. Bring enterprise-grade technology to your portfolio with our proven SaaS solutions.
+        {/* Final CTA Band */}
+        <section className="bg-hhp-navy text-white section-spacing">
+          <div className="container-premium text-center">
+            <h2 className="section-title text-white mb-6">
+              Let's Build Your Technology Advantage
+            </h2>
+            <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
+              Ready to transform your operations with AI-powered insights and automation? Let's discuss your specific needs and implementation timeline.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Zap className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Rapid Deployment</h3>
-                  <p className="text-white/90">Quick implementation with minimal disruption to existing operations</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Proven ROI</h3>
-                  <p className="text-white/90">Measurable performance improvements and cost savings</p>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Users className="h-12 w-12 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">Ongoing Support</h3>
-                  <p className="text-white/90">Comprehensive training and technical support</p>
-                </div>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link 
+                to="/contact" 
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+                onClick={() => {
+                  trackButtonClick('request_demo_cta', 'final_cta');
+                  trackLinkClick('Request a Demo', '/contact');
+                }}
+              >
+                Request a Demo
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+              <Link 
+                to="/technology/ai-platforms" 
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+                onClick={() => {
+                  trackButtonClick('see_pricing_cta', 'final_cta');
+                  trackLinkClick('See Pricing & Licensing', '/technology/ai-platforms');
+                }}
+              >
+                See Pricing & Licensing
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
             </div>
-
-            <Link to="/contact" className="btn-hero">
-              Learn About Licensing
-            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-hhp-navy text-white section-spacing">
-        <div className="container-premium text-center">
-          <h2 className="section-title text-white mb-6">
-            Ready to Transform Your Operations?
-          </h2>
-          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Discover how our proprietary AI ecosystem can transform your real estate operations and deliver institutional-grade performance.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link 
-              to="/contact" 
-              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-block"
-            >
-              Talk to HHP
-            </Link>
-            <Link 
-              to="/asset-management" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
-            >
-              Explore Services
-            </Link>
-          </div>
-        </div>
-      </section>
-    </Layout>
+        </section>
+      </Layout>
+    </>
   );
 };
 

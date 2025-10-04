@@ -129,11 +129,13 @@ const Header = () => {
       case 'Enter':
       case ' ':
         event.preventDefault();
-        // Navigate to main page for Services and Asset Types
+        // Navigate to main page for Services, Asset Types, and Technology
         if (dropdownName === 'Services') {
           handleMainButtonClick(dropdownName, '/asset-management');
         } else if (dropdownName === 'Asset Types') {
           handleMainButtonClick(dropdownName, '/asset-types');
+        } else if (dropdownName === 'Technology') {
+          handleMainButtonClick(dropdownName, '/technology');
         } else {
           handleDropdownClick(dropdownName);
         }
@@ -267,11 +269,13 @@ const Header = () => {
                             : 'text-hhp-charcoal hover:text-hhp-navy'
                         }`}
                         onClick={() => {
-                          // Navigate to main page for Services and Asset Types
+                          // Navigate to main page for Services, Asset Types, and Technology
                           if (item.name === 'Services') {
                             handleMainButtonClick(item.name, '/asset-management');
                           } else if (item.name === 'Asset Types') {
                             handleMainButtonClick(item.name, '/asset-types');
+                          } else if (item.name === 'Technology') {
+                            handleMainButtonClick(item.name, '/technology');
                           } else {
                             handleDropdownClick(item.name);
                           }
@@ -408,12 +412,15 @@ const Header = () => {
                         <button
                           className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
                           onClick={() => {
-                            // Navigate to main page for Services and Asset Types
+                            // Navigate to main page for Services, Asset Types, and Technology
                             if (item.name === 'Services') {
                               handleMainButtonClick(item.name, '/asset-management');
                               setIsMobileMenuOpen(false);
                             } else if (item.name === 'Asset Types') {
                               handleMainButtonClick(item.name, '/asset-types');
+                              setIsMobileMenuOpen(false);
+                            } else if (item.name === 'Technology') {
+                              handleMainButtonClick(item.name, '/technology');
                               setIsMobileMenuOpen(false);
                             } else {
                               toggleMobileAccordion(item.name);
