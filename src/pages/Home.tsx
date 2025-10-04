@@ -27,24 +27,24 @@ const Home = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                to="/brokerage" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
-                onClick={() => {
-                  trackButtonClick('explore_brokerage', 'home_hero');
-                  trackLinkClick('Explore Brokerage', '/brokerage');
-                }}
-              >
-                Explore Brokerage
-              </Link>
-              <Link 
                 to="/asset-management" 
                 className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
                 onClick={() => {
-                  trackButtonClick('explore_management', 'home_hero');
-                  trackLinkClick('Explore Management', '/asset-management');
+                  trackButtonClick('explore_services', 'home_hero');
+                  trackLinkClick('Explore Services', '/asset-management');
                 }}
               >
                 Explore Services
+              </Link>
+              <Link 
+                to="/asset-types" 
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                onClick={() => {
+                  trackButtonClick('explore_asset_types', 'home_hero');
+                  trackLinkClick('Explore Asset Types', '/asset-types');
+                }}
+              >
+                Explore Asset Types
               </Link>
               <Link 
                 to="/technology" 
@@ -413,11 +413,11 @@ const Home = () => {
 
           <div className="text-center">
             <Link 
-              to="/asset-management" 
+              to="/asset-types" 
               className="btn-hero"
               onClick={() => {
                 trackButtonClick('view_all_asset_classes', 'asset_types');
-                trackLinkClick('View All Asset Classes', '/asset-management');
+                trackLinkClick('View All Asset Classes', '/asset-types');
               }}
             >
               View All Asset Classes →

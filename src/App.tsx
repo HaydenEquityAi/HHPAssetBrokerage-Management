@@ -35,6 +35,9 @@ import Acquisitions from "./pages/services/Acquisitions";
 import Development from "./pages/services/Development";
 import Consulting from "./pages/services/Consulting";
 
+// Asset Types Overview Page
+import AssetTypes from "./pages/AssetTypes";
+
 // New Asset Type Pages
 import MultifamilyAssetType from "./pages/assetTypes/Multifamily";
 import HudAffordable from "./pages/assetTypes/HudAffordable";
@@ -81,7 +84,7 @@ const App = () => (
             <Route path="/services/consulting" element={<Consulting />} />
             
             {/* Asset Types Routes */}
-            <Route path="/asset-types" element={<Services />} />
+            <Route path="/asset-types" element={<AssetTypes />} />
             <Route path="/asset-types/multifamily" element={<MultifamilyAssetType />} />
             <Route path="/asset-types/hud-affordable" element={<HudAffordable />} />
             <Route path="/asset-types/office" element={<OfficeAssetType />} />

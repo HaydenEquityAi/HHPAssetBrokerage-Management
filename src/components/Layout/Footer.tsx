@@ -31,7 +31,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/asset-types/multifamily" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/asset-types" className="text-white/80 hover:text-white transition-colors">
                   Asset Types
                 </Link>
               </li>
