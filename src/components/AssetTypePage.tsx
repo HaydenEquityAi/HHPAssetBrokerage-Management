@@ -70,10 +70,10 @@ const AssetTypePage = ({
         className="relative h-[600px] flex items-center justify-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-hhp-navy/20"></div>
+        <div className="absolute inset-0 bg-hhp-navy/40"></div>
         <div className="relative z-10 container-premium text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">{title}</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">{tagline}</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{title}</h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-white drop-shadow-md">{tagline}</p>
           <button
             onClick={scrollToContact}
             className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"

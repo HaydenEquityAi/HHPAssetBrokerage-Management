@@ -5,7 +5,7 @@ const Industrial = () => {
   return (
     <AssetTypePage
       // Hero Section
-      heroImage="/images/industrial-hero.jpg"
+      heroImage="/images/industrial-hero.png"
       title="Industrial"
       tagline="Optimizing logistics, last-mile, and manufacturing real estate performance"
       

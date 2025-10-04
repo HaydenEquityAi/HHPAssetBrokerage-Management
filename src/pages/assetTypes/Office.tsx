@@ -5,7 +5,7 @@ const Office = () => {
   return (
     <AssetTypePage
       // Hero Section
-      heroImage="/images/office-hero.jpg"
+      heroImage="/images/multifamily-hero.jpg"
       title="Office"
       tagline="Positioning workplaces for tenant experience and long-term resilience"
       
