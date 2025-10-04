@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, Menu, X, ChevronRight } from 'lucide-react';
 import { trackNavigationClick, trackLinkClick, trackButtonClick } from '@/utils/analytics';
 
@@ -16,6 +16,7 @@ const Header = () => {
   const technologyRef = useRef<HTMLDivElement>(null);
   
   const location = useLocation();
+  const navigate = useNavigate();
 
   // New navigation structure
   const navigation = [
@@ -112,13 +113,30 @@ const Header = () => {
     setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
   };
 
+  // Handle main button click (for Services and Asset Types)
+  const handleMainButtonClick = (dropdownName: string, href: string) => {
+    // Navigate to the main page
+    navigate(href);
+    trackNavigationClick(dropdownName);
+    trackLinkClick(dropdownName, href);
+    // Close dropdown if open
+    setActiveDropdown(null);
+  };
+
   // Handle keyboard navigation
   const handleKeyDown = (event: React.KeyboardEvent, dropdownName: string) => {
     switch (event.key) {
       case 'Enter':
       case ' ':
         event.preventDefault();
-        handleDropdownClick(dropdownName);
+        // Navigate to main page for Services and Asset Types
+        if (dropdownName === 'Services') {
+          handleMainButtonClick(dropdownName, '/asset-management');
+        } else if (dropdownName === 'Asset Types') {
+          handleMainButtonClick(dropdownName, '/asset-types');
+        } else {
+          handleDropdownClick(dropdownName);
+        }
         break;
       case 'Escape':
         setActiveDropdown(null);
@@ -239,25 +257,44 @@ const Header = () => {
                     onMouseEnter={() => handleDropdownEnter(item.name)}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <button 
-                      className={`flex items-center transition-colors duration-200 font-medium ${
-                        (item.name === 'Services' && isServicesActive) ||
-                        (item.name === 'Asset Types' && isAssetTypesActive) ||
-                        (item.name === 'Technology' && isTechnologyActive)
-                          ? 'text-hhp-navy border-b-2 border-hhp-navy' 
-                          : 'text-hhp-charcoal hover:text-hhp-navy'
-                      }`}
-                      onClick={() => handleDropdownClick(item.name)}
-                      onKeyDown={(e) => handleKeyDown(e, item.name)}
-                      aria-expanded={activeDropdown === item.name}
-                      aria-haspopup="menu"
-                      aria-controls={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
-                    >
-                      {item.name}
-                      <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                        activeDropdown === item.name ? 'rotate-180' : ''
-                      }`} />
-                    </button>
+                    <div className="flex items-center">
+                      <button 
+                        className={`transition-colors duration-200 font-medium ${
+                          (item.name === 'Services' && isServicesActive) ||
+                          (item.name === 'Asset Types' && isAssetTypesActive) ||
+                          (item.name === 'Technology' && isTechnologyActive)
+                            ? 'text-hhp-navy border-b-2 border-hhp-navy' 
+                            : 'text-hhp-charcoal hover:text-hhp-navy'
+                        }`}
+                        onClick={() => {
+                          // Navigate to main page for Services and Asset Types
+                          if (item.name === 'Services') {
+                            handleMainButtonClick(item.name, '/asset-management');
+                          } else if (item.name === 'Asset Types') {
+                            handleMainButtonClick(item.name, '/asset-types');
+                          } else {
+                            handleDropdownClick(item.name);
+                          }
+                        }}
+                        onKeyDown={(e) => handleKeyDown(e, item.name)}
+                        aria-expanded={activeDropdown === item.name}
+                        aria-haspopup="menu"
+                        aria-controls={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
+                      >
+                        {item.name}
+                      </button>
+                      <button
+                        className="ml-1 p-1 hover:bg-gray-100 rounded transition-colors duration-200"
+                        onClick={() => handleDropdownClick(item.name)}
+                        aria-label={`Toggle ${item.name} menu`}
+                      >
+                        <ChevronDown 
+                          className={`h-4 w-4 transition-transform duration-200 ${
+                            activeDropdown === item.name ? 'rotate-180' : ''
+                          }`} 
+                        />
+                      </button>
+                    </div>
                     
                     {activeDropdown === item.name && (
                       <div 
@@ -367,15 +404,34 @@ const Header = () => {
                 <div key={item.name}>
                   {item.submenu ? (
                     <div>
-                      <button
-                        className="flex items-center justify-between w-full py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
-                        onClick={() => toggleMobileAccordion(item.name)}
-                      >
-                        {item.name}
-                        <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${
-                          mobileAccordions[item.name] ? 'rotate-90' : ''
-                        }`} />
-                      </button>
+                      <div className="flex items-center justify-between">
+                        <button
+                          className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
+                          onClick={() => {
+                            // Navigate to main page for Services and Asset Types
+                            if (item.name === 'Services') {
+                              handleMainButtonClick(item.name, '/asset-management');
+                              setIsMobileMenuOpen(false);
+                            } else if (item.name === 'Asset Types') {
+                              handleMainButtonClick(item.name, '/asset-types');
+                              setIsMobileMenuOpen(false);
+                            } else {
+                              toggleMobileAccordion(item.name);
+                            }
+                          }}
+                        >
+                          {item.name}
+                        </button>
+                        <button
+                          className="p-2 hover:bg-gray-100 rounded transition-colors duration-200"
+                          onClick={() => toggleMobileAccordion(item.name)}
+                          aria-label={`Toggle ${item.name} menu`}
+                        >
+                          <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${
+                            mobileAccordions[item.name] ? 'rotate-90' : ''
+                          }`} />
+                        </button>
+                      </div>
                       
                       {mobileAccordions[item.name] && (
                         <div className="ml-4 space-y-2">
