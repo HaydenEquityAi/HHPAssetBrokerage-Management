@@ -327,7 +327,7 @@ const Home = () => {
                 <HomeIcon className="h-8 w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                HUY & Affordable
+                HUD & Affordable
               </h3>
               <p className="text-base md:text-lg text-hhp-charcoal font-medium">
                 Compliance-driven management with unmatched HUD expertise.
