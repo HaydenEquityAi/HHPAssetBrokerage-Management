@@ -24,27 +24,6 @@ const Industrial = () => {
         acquisitionsDevelopment: "Industrial investment analysis incorporating tenant credit, operational efficiency, and repositioning potential for value creation opportunities."
       }}
       
-      // Case Studies
-      caseStudies={[
-        {
-          image: "/images/industrial-case1.jpg",
-          title: "Distribution Center Optimization",
-          description: "Implemented smart warehouse systems and logistics optimization for 500,000 sq ft distribution facility, enhancing tenant efficiency.",
-          impact: "20% operational cost reduction, 30% improvement in order fulfillment speed"
-        },
-        {
-          image: "/images/industrial-case2.jpg",
-          title: "Last-Mile Innovation",
-          description: "Developed strategic partnerships for urban fulfillment centers, optimizing last-mile delivery capabilities for e-commerce tenants.",
-          impact: "40% faster delivery times, 50% increase in tenant satisfaction scores"
-        },
-        {
-          image: "/images/industrial-case3.jpg",
-          title: "Manufacturing Facility Upgrade",
-          description: "Managed major facility upgrades for manufacturing tenant including infrastructure improvements and compliance enhancements.",
-          impact: "Zero operational disruption, 25% improvement in energy efficiency"
-        }
-      ]}
       
       // Technology Advantages
       technologyAdvantages={[
