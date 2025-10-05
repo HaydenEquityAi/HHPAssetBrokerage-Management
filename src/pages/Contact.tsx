@@ -40,56 +40,66 @@ const Contact = () => {
     // Track form interaction start
     trackContactFormInteraction('start', 'contact');
 
+    // Prepare shared payload
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || null,
+      inquiry_type: formData.inquiry_type || null,
+      property_address: formData.property_address || null,
+      message: formData.message,
+      submitted_at: new Date().toISOString()
+    };
+
+    let supabaseOk = false;
+    let webhookOk = false;
+    let supabaseErrMsg = '';
+    let webhookErrMsg = '';
+
+    // 1) Try Supabase insert (may fail if RLS blocks anon)
     try {
-      // 1. Save to Supabase (existing functionality)
-      const { error: supabaseError } = await supabase
-        .from('contacts')
-        .insert([{
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || null,
-          inquiry_type: formData.inquiry_type || null,
-          property_address: formData.property_address || null,
-          message: formData.message
-        }]);
-
-      if (supabaseError) throw supabaseError;
-
-      // 2. Send to n8n webhook (NEW - for email notifications/automation)
-      try {
-        await fetch('https://n8n.capitalaiadvisors.com/webhook/hhp-contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone || 'Not provided',
-            inquiry_type: formData.inquiry_type || 'General Inquiry',
-            property_address: formData.property_address || 'Not provided',
-            message: formData.message,
-            submitted_at: new Date().toISOString()
-          })
-        });
-        // Note: We don't throw error here so Supabase save still succeeds even if n8n fails
-      } catch (n8nError) {
-        console.error('n8n webhook error (non-critical):', n8nError);
-        // Form still succeeds - n8n is just for notifications
+      const { error } = await supabase.from('contacts').insert([payload]);
+      if (!error) {
+        supabaseOk = true;
+      } else {
+        supabaseErrMsg = error.message || 'Supabase insert failed';
       }
+    } catch (err: any) {
+      supabaseErrMsg = err?.message || String(err);
+    }
 
-      // 3. Track successful form submission
+    // 2) Try n8n webhook (notifications/automation)
+    try {
+      const res = await fetch('https://n8n.capitalaiadvisors.com/webhook/hhp-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...payload,
+          phone: payload.phone ?? 'Not provided',
+          inquiry_type: payload.inquiry_type ?? 'General Inquiry',
+          property_address: payload.property_address ?? 'Not provided',
+        })
+      });
+      if (res.ok) {
+        webhookOk = true;
+      } else {
+        webhookErrMsg = `Webhook ${res.status} ${res.statusText}`;
+      }
+    } catch (err: any) {
+      webhookErrMsg = err?.message || String(err);
+    }
+
+    if (supabaseOk || webhookOk) {
+      // Success if either path worked
       trackFormSubmission('contact_form', formData.inquiry_type || 'general');
       trackContactFormInteraction('complete', 'contact');
       trackConversion('contact_form_submission');
 
-      // 4. Show success message
       toast({
-        title: "Message Sent Successfully!",
+        title: 'Message Sent Successfully!',
         description: "We'll get back to you within 24 hours.",
       });
 
-      // 5. Reset form
       setFormData({
         name: '',
         email: '',
@@ -98,20 +108,18 @@ const Contact = () => {
         property_address: '',
         message: ''
       });
-    } catch (error) {
-      console.error('Contact form error:', error);
-      
-      // Track form error
+    } else {
+      // Both failed – show most relevant error and log details
       trackContactFormInteraction('error', 'contact');
-      
+      console.error('Contact form error:', { supabaseErrMsg, webhookErrMsg });
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
-        variant: "destructive",
+        title: 'Submission failed',
+        description: supabaseErrMsg || webhookErrMsg || 'Something went wrong. Please try again.',
+        variant: 'destructive',
       });
-    } finally {
-      setIsSubmitting(false);
     }
+
+    setIsSubmitting(false);
   };
 
   return (
