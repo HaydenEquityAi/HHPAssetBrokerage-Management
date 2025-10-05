@@ -6,7 +6,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/integrations/supabase/client';
 import { trackFormSubmission, trackContactFormInteraction, trackButtonClick, trackConversion } from '@/utils/analytics';
 
 const Contact = () => {
@@ -40,6 +39,17 @@ const Contact = () => {
     // Track form interaction start
     trackContactFormInteraction('start', 'contact');
 
+    // Basic client-side validation (defensive)
+    if (!formData.name?.trim() || !formData.email?.trim() || !formData.message?.trim()) {
+      toast({
+        title: 'Missing required fields',
+        description: 'Please provide your name, email, and a message.',
+        variant: 'destructive',
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     // Prepare shared payload
     const payload = {
       name: formData.name,
@@ -51,27 +61,13 @@ const Contact = () => {
       submitted_at: new Date().toISOString()
     };
 
-    let supabaseOk = false;
+    // Only n8n webhook (notifications/automation)
     let webhookOk = false;
-    let supabaseErrMsg = '';
     let webhookErrMsg = '';
-
-    // 1) Try Supabase insert (may fail if RLS blocks anon)
-    try {
-      const { error } = await supabase.from('contacts').insert([payload]);
-      if (!error) {
-        supabaseOk = true;
-      } else {
-        supabaseErrMsg = error.message || 'Supabase insert failed';
-      }
-    } catch (err: any) {
-      supabaseErrMsg = err?.message || String(err);
-    }
-
-    // 2) Try n8n webhook (notifications/automation)
     try {
       const res = await fetch('https://n8n.capitalaiadvisors.com/webhook/hhp-contact', {
         method: 'POST',
+        mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...payload,
@@ -89,7 +85,7 @@ const Contact = () => {
       webhookErrMsg = err?.message || String(err);
     }
 
-    if (supabaseOk || webhookOk) {
+    if (webhookOk) {
       // Success if either path worked
       trackFormSubmission('contact_form', formData.inquiry_type || 'general');
       trackContactFormInteraction('complete', 'contact');
@@ -111,10 +107,10 @@ const Contact = () => {
     } else {
       // Both failed – show most relevant error and log details
       trackContactFormInteraction('error', 'contact');
-      console.error('Contact form error:', { supabaseErrMsg, webhookErrMsg });
+      console.error('Contact form error:', { webhookErrMsg });
       toast({
         title: 'Submission failed',
-        description: supabaseErrMsg || webhookErrMsg || 'Something went wrong. Please try again.',
+        description: webhookErrMsg || 'Something went wrong. Please try again.',
         variant: 'destructive',
       });
     }
