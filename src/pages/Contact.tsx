@@ -249,12 +249,12 @@ const Contact = () => {
                   {isSubmitting ? (
                     <div className="flex items-center space-x-2">
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span>Sending...</span>
+                      <span className="text-white">Sending...</span>
                     </div>
                   ) : (
                     <div className="flex items-center space-x-2">
                       <Send className="w-4 h-4" />
-                      <span>Send Message</span>
+                      <span className="text-white">Send Message</span>
                     </div>
                   )}
                 </Button>
@@ -357,8 +357,7 @@ const Contact = () => {
             </Button>
             <Button 
               size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-hhp-navy"
+              className="bg-hhp-navy text-white hover:bg-hhp-navy/90"
             >
               Download Brochure
             </Button>
