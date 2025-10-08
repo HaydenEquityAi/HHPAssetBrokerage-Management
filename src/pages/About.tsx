@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout/Layout';
 import haydenImage from '@/assets/hayden-ashley.webp';
 import philImage from '@/assets/phil-ashley.webp';
-import jenniImage from '@/assets/jenni-pollard.webp';
 import hannahImage from '@/assets/hannah-fanning.png';
 import { Mail } from 'lucide-react';
 
@@ -130,33 +129,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* Jenni Pollard */}
-            <div className="team-box">
-              <img 
-                src={jenniImage} 
-                alt="Jenni Pollard, Portfolio Manager" 
-                className="w-48 h-56 object-contain rounded-lg mx-auto mb-6 shadow-subtle"
-              />
-              <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2 text-center">Jenni Pollard</h3>
-              <h4 className="text-lg font-medium text-hhp-navy mb-4 text-center italic">Director of Portfolio Strategy & Marketing</h4>
-              <p className="text-hhp-charcoal leading-relaxed">
-                Jenni Pollard directs portfolio strategy and marketing at HHP Asset Group, integrating advanced analytics, market intelligence, and strategic communications to optimize performance across multi-market operations nationwide.
-              </p>
-              <p className="text-hhp-charcoal leading-relaxed">
-                She leads marketing initiatives, investor reporting, and client engagement strategies that position portfolios for long-term success. As the primary liaison for institutional clients, Jenni delivers transparent dashboards, tailored insights, and strategic recommendations that strengthen HHP's reputation as America's first AI-native real estate firm.
-              </p>
-              
-              {/* Email Contact */}
-              <div className="flex items-center space-x-3 mt-6">
-                <Mail className="h-5 w-5 text-hhp-accent" />
-                <a 
-                  href="mailto:jenni@hhpasset.com" 
-                  className="text-hhp-navy hover:text-hhp-accent transition-colors duration-200 font-medium"
-                >
-                  jenni@hhpasset.com
-                </a>
-              </div>
-            </div>
 
             {/* Hannah Fanning */}
             <div className="team-box">
