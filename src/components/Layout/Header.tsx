@@ -25,37 +25,37 @@ const Header = () => {
       name: 'Services',
       href: '/services',
       submenu: [
-        { name: 'Property Management', href: '/services/property-management', description: 'Operational excellence, tenant retention, and performance optimization' },
-        { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection', description: 'Data-driven portfolio strategy and market positioning' },
-        { name: 'Investment Sales', href: '/services/investment-sales', description: 'Dispositions, capital markets, and valuation services' },
-        { name: 'Landlord Representation', href: '/services/landlord-representation', description: 'Marketing, leasing, and asset positioning' },
-        { name: 'Tenant Representation', href: '/services/tenant-representation', description: 'Occupier strategy, workplace and growth advisory' },
+        { name: 'Property Management', href: '/services/property-management' },
+        { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection' },
+        { name: 'Investment Sales', href: '/services/investment-sales' },
+        { name: 'Landlord Representation', href: '/services/landlord-representation' },
+        { name: 'Tenant Representation', href: '/services/tenant-representation' },
         { name: 'divider' }, // Visual divider
-        { name: 'Acquisitions', href: '/services/acquisitions', description: 'Strategic sourcing, underwriting, and deal structuring' },
-        { name: 'Development', href: '/services/development', description: 'Site planning, entitlements, and ground-up execution' },
+        { name: 'Acquisitions', href: '/services/acquisitions' },
+        { name: 'Development', href: '/services/development' },
         { name: 'divider' }, // Visual divider
-        { name: 'Consulting', href: '/services/consulting', description: 'Tailored strategies, compliance guidance, and specialized project solutions' }
+        { name: 'Consulting', href: '/services/consulting' }
       ]
     },
     {
       name: 'Asset Types',
       href: '/asset-types',
       submenu: [
-        { name: 'Multifamily', href: '/asset-types/multifamily', description: 'Enhancing value across stabilized, lease-up, and mixed-use communities' },
-        { name: 'HUD & Affordable Housing', href: '/asset-types/hud-affordable', description: 'Specialized compliance and operations expertise for regulated assets' },
-        { name: 'Office', href: '/asset-types/office', description: 'Positioning workplaces for tenant experience and long-term resilience' },
-        { name: 'Retail', href: '/asset-types/retail', description: 'Driving traffic and value through tailored merchandising and leasing strategies' },
-        { name: 'Industrial', href: '/asset-types/industrial', description: 'Optimizing logistics, last-mile, and manufacturing real estate performance' },
-        { name: 'Senior Housing', href: '/asset-types/senior-housing', description: 'Delivering operational stability and resident-focused care solutions' }
+        { name: 'Multifamily', href: '/asset-types/multifamily' },
+        { name: 'HUD & Affordable Housing', href: '/asset-types/hud-affordable' },
+        { name: 'Office', href: '/asset-types/office' },
+        { name: 'Retail', href: '/asset-types/retail' },
+        { name: 'Industrial', href: '/asset-types/industrial' },
+        { name: 'Senior Housing', href: '/asset-types/senior-housing' }
       ]
     },
     {
       name: 'Technology',
       href: '/technology',
       submenu: [
-        { name: 'AI Platforms', href: '/technology/ai-platforms', description: 'BrokerAi, RentalAi, and LeaseAi powering transactions and operations intelligence' },
-        { name: 'Advisory & Analytics', href: '/technology/advisory-analytics', description: 'Dashboards, comps, and data-driven decision support for investors' },
-        { name: 'Custom Solutions', href: '/technology/custom-solutions', description: 'Bespoke databases, workflow automation, and client-tailored websites' }
+        { name: 'AI Platforms', href: '/technology/ai-platforms' },
+        { name: 'Advisory & Analytics', href: '/technology/advisory-analytics' },
+        { name: 'Custom Solutions', href: '/technology/custom-solutions' }
       ]
     },
     { name: 'Insights', href: '/insights' },
@@ -327,7 +327,6 @@ const Header = () => {
                               onKeyDown={(e) => handleDropdownKeyDown(e, item.name, index)}
                             >
                               <div className="font-medium text-sm">{subItem.name}</div>
-                              <div className="text-xs text-gray-600 mt-1 leading-relaxed">{subItem.description}</div>
                             </Link>
                           )
                         ))}
@@ -453,7 +452,6 @@ const Header = () => {
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
                                 <div className="font-medium text-sm">{subItem.name}</div>
-                                <div className="text-xs text-gray-600 mt-1">{subItem.description}</div>
                               </Link>
                             )
                           ))}
