@@ -18,11 +18,11 @@ const Home = () => {
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-4 sm:mb-6 lg:mb-8 flex justify-center">
+            <div className="mb-2 sm:mb-3 lg:mb-4 flex justify-center">
               <img 
                 src="/images/HHP Logo White Letters.png" 
                 alt="HHP Asset Group" 
-                className="h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 w-auto object-contain drop-shadow-lg"
+                className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto object-contain drop-shadow-lg"
               />
             </div>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
