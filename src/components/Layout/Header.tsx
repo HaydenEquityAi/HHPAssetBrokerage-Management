@@ -26,15 +26,12 @@ const Header = () => {
       href: '/services',
       submenu: [
         { name: 'Property Management', href: '/services/property-management' },
+        { name: 'Leasing & Representation', href: '/services/leasing-representation' },
+        { name: 'Investment & Capital Markets', href: '/services/investment-capital-markets' },
         { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection' },
-        { name: 'Investment Sales', href: '/services/investment-sales' },
-        { name: 'Landlord Representation', href: '/services/landlord-representation' },
-        { name: 'Tenant Representation', href: '/services/tenant-representation' },
-        { name: 'divider' }, // Visual divider
-        { name: 'Acquisitions', href: '/services/acquisitions' },
-        { name: 'Development', href: '/services/development' },
-        { name: 'divider' }, // Visual divider
-        { name: 'Consulting', href: '/services/consulting' }
+        { name: 'Development Advisory', href: '/services/development-advisory' },
+        { name: 'Broker of Record & Consulting Services', href: '/services/broker-consulting' },
+        { name: 'Financial Services', href: '/services/financial-services' }
       ]
     },
     {

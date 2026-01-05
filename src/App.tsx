@@ -27,7 +27,13 @@ import NotFound from "./pages/NotFound";
 
 // New Service Pages
 import PropertyManagement from "./pages/services/PropertyManagement";
+import LeasingRepresentation from "./pages/services/LeasingRepresentation";
+import InvestmentCapitalMarkets from "./pages/services/InvestmentCapitalMarkets";
 import AdvisorySiteSelection from "./pages/services/AdvisorySiteSelection";
+import DevelopmentAdvisory from "./pages/services/DevelopmentAdvisory";
+import BrokerConsulting from "./pages/services/BrokerConsulting";
+import FinancialServices from "./pages/services/FinancialServices";
+// Legacy service pages (for backward compatibility)
 import InvestmentSales from "./pages/services/InvestmentSales";
 import LandlordRepresentation from "./pages/services/LandlordRepresentation";
 import TenantRepresentation from "./pages/services/TenantRepresentation";
@@ -75,7 +81,14 @@ const App = () => (
             
             {/* Services Routes */}
             <Route path="/services/property-management" element={<PropertyManagement />} />
+            <Route path="/services/leasing-representation" element={<LeasingRepresentation />} />
+            <Route path="/services/investment-capital-markets" element={<InvestmentCapitalMarkets />} />
             <Route path="/services/advisory-site-selection" element={<AdvisorySiteSelection />} />
+            <Route path="/services/development-advisory" element={<DevelopmentAdvisory />} />
+            <Route path="/services/broker-consulting" element={<BrokerConsulting />} />
+            <Route path="/services/financial-services" element={<FinancialServices />} />
+            
+            {/* Legacy service routes (for backward compatibility) */}
             <Route path="/services/investment-sales" element={<InvestmentSales />} />
             <Route path="/services/landlord-representation" element={<LandlordRepresentation />} />
             <Route path="/services/tenant-representation" element={<TenantRepresentation />} />
