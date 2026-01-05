@@ -74,61 +74,73 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <Link 
               to="/services/property-management" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
                 trackLinkClick('Property Management', '/services/property-management');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Property Management
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Property Management
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 
             <Link 
               to="/services/leasing-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/leasing-representation-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('leasing_representation', 'core_services');
                 trackLinkClick('Leasing & Representation', '/services/leasing-representation');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Handshake className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Leasing & Representation
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Handshake className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Leasing & Representation
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 
             <Link 
               to="/services/investment-capital-markets" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/Investment-capital-markets-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
                 trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Investment & Capital Markets
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Investment & Capital Markets
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 
@@ -154,61 +166,73 @@ const Home = () => {
 
             <Link 
               to="/services/development-advisory" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/development-advisory-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('development_advisory', 'core_services');
                 trackLinkClick('Development Advisory', '/services/development-advisory');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Development Advisory
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Development Advisory
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 
             <Link 
               to="/services/broker-consulting" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/broker-consulting-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
                 trackLinkClick('Broker of Record & Consulting Services', '/services/broker-consulting');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Shield className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Broker of Record & Consulting Services
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Broker of Record & Consulting Services
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 
             <Link 
               to="/services/financial-services" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/Financial services image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('financial_services', 'core_services');
                 trackLinkClick('Financial Services', '/services/financial-services');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Financial Services
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Financial Services
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
           </div>

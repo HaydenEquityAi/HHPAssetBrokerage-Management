@@ -7,16 +7,20 @@ const LeasingRepresentation = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-4">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/leasing-representation-hero.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Leasing & Representation
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6">
+            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
               Stabilization Through Strategy, Not Speed
             </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12">
+            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
               Leasing decisions shape the financial trajectory of an asset for years. HHP approaches leasing as a strategic function — focused on tenant quality, lease structure, and long-term risk mitigation.
             </p>
           </div>

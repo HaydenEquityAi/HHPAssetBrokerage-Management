@@ -7,16 +7,20 @@ const PropertyManagement = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-4">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/property-management-hero.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Property Management
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6">
+            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
               Disciplined Operations for Commercial Assets
             </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12">
+            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
               HHP provides commercial property management services focused on operational control, financial transparency, and long-term asset performance. Our approach is built for owners who want informed oversight, not reactive management.
             </p>
           </div>
