@@ -19,10 +19,10 @@ const Home = () => {
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
-              Full-Service Real Estate Solutions. Data Driven Performance.
+              HHP
             </h1>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
-              HHP Asset Group is a national real estate services firm delivering brokerage, management, and advisory solutions — powered by proprietary AI platforms and automation enhancement technology.
+              Vertically Integrated and Innovative Commercial Real Estate Solutions
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
