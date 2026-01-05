@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/images/HHP Logo White Letters.png" 
                 alt="HHP Asset Group" 
-                className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
               />
             </div>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
