@@ -298,116 +298,140 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <Link 
               to="/asset-types/multifamily" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
                 trackLinkClick('Multifamily', '/asset-types/multifamily');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Building2 className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  Multifamily
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Market-rate and value-add strategies that stabilize NOI and elevate communities.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Multifamily
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Market-rate and value-add strategies that stabilize NOI and elevate communities.
-              </p>
             </Link>
 
             <Link 
               to="/asset-types/hud-affordable" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
                 trackLinkClick('HUD & Affordable', '/asset-types/hud-affordable');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <HomeIcon className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <HomeIcon className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  HUD & Affordable
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Compliance-driven management with unmatched HUD expertise.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                HUD & Affordable
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Compliance-driven management with unmatched HUD expertise.
-              </p>
             </Link>
 
             <Link 
               to="/asset-types/office" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
                 trackLinkClick('Office', '/asset-types/office');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Building2 className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  Office
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Workplace management to reduce costs and improve tenant satisfaction.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Office
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Workplace management to reduce costs and improve tenant satisfaction.
-              </p>
             </Link>
 
             <Link 
               to="/asset-types/retail" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
                 trackLinkClick('Retail', '/asset-types/retail');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <ShoppingBag className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <ShoppingBag className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  Retail
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Tenant mix optimization, anchor repositioning, and center performance.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Retail
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Tenant mix optimization, anchor repositioning, and center performance.
-              </p>
             </Link>
 
             <Link 
               to="/asset-types/industrial" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
                 trackLinkClick('Industrial', '/asset-types/industrial');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Factory className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Factory className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  Industrial
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Predictive maintenance and energy benchmarking for logistics & warehousing.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Industrial
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Predictive maintenance and energy benchmarking for logistics & warehousing.
-              </p>
             </Link>
 
             <Link 
               to="/asset-types/senior-housing" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
                 trackLinkClick('Senior Housing', '/asset-types/senior-housing');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w--20 md:h-20 flex items-center justify-center">
-                <Heart className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Heart className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                  Senior Housing
+                </h3>
+                <p className="text-base md:text-lg text-white/90 font-medium">
+                  Compliance, compassion, and operational rigor for senior communities.
+                </p>
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
-                Senior Housing
-              </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium">
-                Compliance, compassion, and operational rigor for senior communities.
-              </p>
             </Link>
           </div>
 
