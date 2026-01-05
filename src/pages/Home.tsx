@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart, Settings, MapPin } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { AnimatedCard } from '@/components/AnimatedCard';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 
@@ -97,14 +98,15 @@ const Home = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {/* Row 1 */}
-            <Link 
-              to="/services/property-management" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('property_management', 'core_services');
-                trackLinkClick('Property Management', '/services/property-management');
-              }}
-            >
+            <AnimatedCard delay={0} distance={20}>
+              <Link 
+                to="/services/property-management" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('property_management', 'core_services');
+                  trackLinkClick('Property Management', '/services/property-management');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -115,16 +117,18 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/services/advisory-site-selection" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('advisory-site-selection', 'core_services');
-                trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
-              }}
-            >
+            <AnimatedCard delay={50} distance={20}>
+              <Link 
+                to="/services/advisory-site-selection" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('advisory-site-selection', 'core_services');
+                  trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <MapPin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -135,16 +139,18 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/services/investment-sales" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('investment_sales', 'core_services');
-                trackLinkClick('Investment Sales', '/services/investment-sales');
-              }}
-            >
+            <AnimatedCard delay={100} distance={20}>
+              <Link 
+                to="/services/investment-sales" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('investment_sales', 'core_services');
+                  trackLinkClick('Investment Sales', '/services/investment-sales');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -155,16 +161,18 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/services/landlord-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('landlord_representation', 'core_services');
-                trackLinkClick('Landlord Representation', '/services/landlord-representation');
-              }}
-            >
+            <AnimatedCard delay={150} distance={20}>
+              <Link 
+                to="/services/landlord-representation" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('landlord_representation', 'core_services');
+                  trackLinkClick('Landlord Representation', '/services/landlord-representation');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -175,17 +183,19 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
             {/* Row 2 */}
-            <Link 
-              to="/services/tenant-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('tenant_representation', 'core_services');
-                trackLinkClick('Tenant Representation', '/services/tenant-representation');
-              }}
-            >
+            <AnimatedCard delay={200} distance={20}>
+              <Link 
+                to="/services/tenant-representation" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('tenant_representation', 'core_services');
+                  trackLinkClick('Tenant Representation', '/services/tenant-representation');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -196,16 +206,18 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/services/acquisitions" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('acquisitions', 'core_services');
-                trackLinkClick('Acquisitions', '/services/acquisitions');
-              }}
-            >
+            <AnimatedCard delay={250} distance={20}>
+              <Link 
+                to="/services/acquisitions" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('acquisitions', 'core_services');
+                  trackLinkClick('Acquisitions', '/services/acquisitions');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Target className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -216,16 +228,18 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/services/development" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('development', 'core_services');
-                trackLinkClick('Development', '/services/development');
-              }}
-            >
+            <AnimatedCard delay={300} distance={20}>
+              <Link 
+                to="/services/development" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('development', 'core_services');
+                  trackLinkClick('Development', '/services/development');
+                }}
+              >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
@@ -238,25 +252,27 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link 
-              to="/services/consulting" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('consulting', 'core_services');
-                trackLinkClick('Consulting', '/services/consulting');
-              }}
-            >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <FileText className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Consulting
-              </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </div>
-            </Link>
+            <AnimatedCard delay={350} distance={20}>
+              <Link 
+                to="/services/consulting" 
+                className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+                onClick={() => {
+                  trackButtonClick('consulting', 'core_services');
+                  trackLinkClick('Consulting', '/services/consulting');
+                }}
+              >
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <FileText className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
+                  Consulting
+                </h3>
+                <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
+              </Link>
+            </AnimatedCard>
           </div>
         </div>
       </section>
@@ -272,15 +288,16 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
-            <Link 
-              to="/asset-types/multifamily" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('multifamily', 'asset_types');
-                trackLinkClick('Multifamily', '/asset-types/multifamily');
-              }}
-            >
+            <AnimatedCard delay={0} distance={25}>
+              <Link 
+                to="/asset-types/multifamily" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('multifamily', 'asset_types');
+                  trackLinkClick('Multifamily', '/asset-types/multifamily');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -293,17 +310,19 @@ const Home = () => {
                   Market-rate and value-add strategies that stabilize NOI and elevate communities.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/asset-types/hud-affordable" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('hud_affordable', 'asset_types');
-                trackLinkClick('HUD & Affordable', '/asset-types/hud-affordable');
-              }}
-            >
+            <AnimatedCard delay={50} distance={25}>
+              <Link 
+                to="/asset-types/hud-affordable" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('hud_affordable', 'asset_types');
+                  trackLinkClick('HUD & Affordable', '/asset-types/hud-affordable');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -316,17 +335,19 @@ const Home = () => {
                   Compliance-driven management with unmatched HUD expertise.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/asset-types/office" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('office', 'asset_types');
-                trackLinkClick('Office', '/asset-types/office');
-              }}
-            >
+            <AnimatedCard delay={100} distance={25}>
+              <Link 
+                to="/asset-types/office" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('office', 'asset_types');
+                  trackLinkClick('Office', '/asset-types/office');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -339,17 +360,19 @@ const Home = () => {
                   Workplace management to reduce costs and improve tenant satisfaction.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/asset-types/retail" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('retail', 'asset_types');
-                trackLinkClick('Retail', '/asset-types/retail');
-              }}
-            >
+            <AnimatedCard delay={150} distance={25}>
+              <Link 
+                to="/asset-types/retail" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('retail', 'asset_types');
+                  trackLinkClick('Retail', '/asset-types/retail');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -362,17 +385,19 @@ const Home = () => {
                   Tenant mix optimization, anchor repositioning, and center performance.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/asset-types/industrial" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('industrial', 'asset_types');
-                trackLinkClick('Industrial', '/asset-types/industrial');
-              }}
-            >
+            <AnimatedCard delay={200} distance={25}>
+              <Link 
+                to="/asset-types/industrial" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('industrial', 'asset_types');
+                  trackLinkClick('Industrial', '/asset-types/industrial');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -385,17 +410,19 @@ const Home = () => {
                   Predictive maintenance and energy benchmarking for logistics & warehousing.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
-            <Link 
-              to="/asset-types/senior-housing" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => {
-                trackButtonClick('senior_housing', 'asset_types');
-                trackLinkClick('Senior Housing', '/asset-types/senior-housing');
-              }}
-            >
+            <AnimatedCard delay={250} distance={25}>
+              <Link 
+                to="/asset-types/senior-housing" 
+                className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+                style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('senior_housing', 'asset_types');
+                  trackLinkClick('Senior Housing', '/asset-types/senior-housing');
+                }}
+              >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
                 <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -408,7 +435,8 @@ const Home = () => {
                   Compliance, compassion, and operational rigor for senior communities.
                 </p>
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
           </div>
 
           <div className="text-center">
@@ -437,28 +465,34 @@ const Home = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {/* AI Platforms Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Bot className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">AI Platforms</h3>
+              <AnimatedCard delay={0} distance={20}>
+                <div className="text-center">
+                  <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                    <Bot className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                    <h3 className="text-base font-display font-semibold text-white">AI Platforms</h3>
+                  </div>
                 </div>
-              </div>
+              </AnimatedCard>
               
               {/* Advisory & Analytics Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">Advisory & Analytics</h3>
+              <AnimatedCard delay={50} distance={20}>
+                <div className="text-center">
+                  <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                    <BarChart3 className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                    <h3 className="text-base font-display font-semibold text-white">Advisory & Analytics</h3>
+                  </div>
                 </div>
-              </div>
+              </AnimatedCard>
               
               {/* Custom Solutions Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Settings className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">Custom Solutions</h3>
+              <AnimatedCard delay={100} distance={20}>
+                <div className="text-center">
+                  <div className="bg-hhp-navy text-white p-6 rounded-lg">
+                    <Settings className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                    <h3 className="text-base font-display font-semibold text-white">Custom Solutions</h3>
+                  </div>
                 </div>
-              </div>
+              </AnimatedCard>
             </div>
 
             <Link to="/technology" className="btn-hero">
