@@ -22,7 +22,7 @@ const Home = () => {
               <img 
                 src="/images/HHP Logo White Letters.png" 
                 alt="HHP Asset Group" 
-                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain drop-shadow-lg"
+                className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain drop-shadow-lg"
               />
             </div>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
