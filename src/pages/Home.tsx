@@ -90,8 +90,8 @@ const Home = () => {
                   Property Management
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -114,8 +114,8 @@ const Home = () => {
                   Leasing & Representation
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -138,8 +138,8 @@ const Home = () => {
                   Investment & Capital Markets
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -162,8 +162,8 @@ const Home = () => {
                   Advisory & Site Selection
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -186,8 +186,8 @@ const Home = () => {
                   Development Advisory
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -210,8 +210,8 @@ const Home = () => {
                   Broker of Record & Consulting Services
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
@@ -234,8 +234,8 @@ const Home = () => {
                   Financial Services
                 </h3>
                 <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <span className="text-white">Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
               </div>
             </Link>
