@@ -9,7 +9,7 @@ const FinancialServices = () => {
       {/* Hero Section */}
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/Financial services image.jpg)' }}
+        style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)' }}
       >
         <div className="absolute inset-0 bg-hhp-navy/60"></div>
         <div className="relative z-10 container-premium">

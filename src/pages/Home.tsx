@@ -215,7 +215,7 @@ const Home = () => {
             <Link 
               to="/services/financial-services" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/Financial services image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('financial_services', 'core_services');
                 trackLinkClick('Financial Services', '/services/financial-services');
@@ -253,7 +253,7 @@ const Home = () => {
             <Link 
               to="/asset-types/multifamily" 
               className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
-              style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
                 trackLinkClick('Multifamily', '/asset-types/multifamily');
