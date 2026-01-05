@@ -146,21 +146,25 @@ const Home = () => {
 
             <Link 
               to="/services/advisory-site-selection" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              style={{ backgroundImage: 'url(/images/site-selection-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
                 trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
               }}
             >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <MapPin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Advisory & Site Selection
-              </h3>
-              <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10">
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                  Advisory & Site Selection
+                </h3>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
               </div>
             </Link>
 

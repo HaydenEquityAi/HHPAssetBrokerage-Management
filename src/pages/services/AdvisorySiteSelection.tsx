@@ -7,16 +7,20 @@ const AdvisorySiteSelection = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-4">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/site-selection-hero.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Advisory & Site Selection
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6">
+            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
               Independent Perspective for High-Impact Decisions
             </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12">
+            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
               HHP provides advisory services to owners, boards, and tenants navigating complex real estate decisions where clarity and structure matter.
             </p>
           </div>
