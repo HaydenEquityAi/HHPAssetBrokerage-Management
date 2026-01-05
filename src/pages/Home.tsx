@@ -61,30 +61,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-white py-8 sm:py-12 lg:py-16 border-b border-gray-200">
-        <div className="container-premium">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">$2.0B+</div>
-              <div className="text-sm sm:text-base text-hhp-charcoal">Transactions Facilitated</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">500+</div>
-              <div className="text-sm sm:text-base text-hhp-charcoal">Properties Managed</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">15+</div>
-              <div className="text-sm sm:text-base text-hhp-charcoal">Markets Served</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">98%</div>
-              <div className="text-sm sm:text-base text-hhp-charcoal">Client Retention</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Core Services Section */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
