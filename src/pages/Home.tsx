@@ -108,12 +108,9 @@ const Home = () => {
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Property Management
               </h3>
-              <p className="text-sm sm:text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                We go beyond operations to deliver NOI growth, compliance excellence, and tenant satisfaction.
-              </p>
               <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
@@ -128,16 +125,13 @@ const Home = () => {
                 trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <MapPin className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <MapPin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Advisory & Site Selection
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Data-driven market analysis and GIS intelligence to align location with business strategy.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -151,16 +145,13 @@ const Home = () => {
                 trackLinkClick('Investment Sales', '/services/investment-sales');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <DollarSign className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Investment Sales
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Institutional-grade marketing and valuation to maximize asset disposition outcomes.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -174,16 +165,13 @@ const Home = () => {
                 trackLinkClick('Landlord Representation', '/services/landlord-representation');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Landlord Representation
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Leasing strategies that enhance occupancy, optimize rent, and reduce downtime.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -198,16 +186,13 @@ const Home = () => {
                 trackLinkClick('Tenant Representation', '/services/tenant-representation');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Users className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Users className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Tenant Representation
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Advisory focused on cost control, flexibility, and alignment with workforce strategy.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -221,16 +206,13 @@ const Home = () => {
                 trackLinkClick('Acquisitions', '/services/acquisitions');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Target className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Target className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Acquisitions
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                AI-powered sourcing, underwriting, and structuring to identify and secure opportunities.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -244,16 +226,13 @@ const Home = () => {
                 trackLinkClick('Development', '/services/development');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Settings className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Development
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Ground-up execution from entitlement through stabilization with performance tracking.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -267,16 +246,13 @@ const Home = () => {
                 trackLinkClick('Consulting', '/services/consulting');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <FileText className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <FileText className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Consulting
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
-                Tailored advisory for HUD, operations, technology, and portfolio optimization.
-              </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
