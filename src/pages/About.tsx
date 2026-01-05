@@ -97,7 +97,7 @@ const About = () => {
                 className="w-full h-72 sm:h-80 object-contain object-center rounded-lg mb-5"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1 text-center">Phil Ashley</h3>
-              <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Director of National Operations</h4>
+              <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Director of Operations</h4>
               
               {/* Email Contact - Always Visible */}
               <div className="flex items-center justify-center space-x-2 mb-5">
