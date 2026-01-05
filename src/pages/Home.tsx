@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart, Settings, MapPin } from 'lucide-react';
+import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart, Settings, MapPin, Handshake } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import commercialImage from '@/assets/commercial-building.webp';
@@ -67,12 +67,11 @@ const Home = () => {
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Core Services</h2>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto px-4">
-              Comprehensive solutions across the full real estate lifecycle — from acquisitions to advisory.
+              Comprehensive solutions across the full real estate lifecycle — from property management to capital markets.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-            {/* Row 1 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <Link 
               to="/services/property-management" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
@@ -86,6 +85,46 @@ const Home = () => {
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Property Management
+              </h3>
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/leasing-representation" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('leasing_representation', 'core_services');
+                trackLinkClick('Leasing & Representation', '/services/leasing-representation');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Handshake className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
+                Leasing & Representation
+              </h3>
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/investment-capital-markets" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('investment_capital_markets', 'core_services');
+                trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
+                Investment & Capital Markets
               </h3>
               <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
@@ -114,99 +153,18 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/services/investment-sales" 
+              to="/services/development-advisory" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
-                trackButtonClick('investment_sales', 'core_services');
-                trackLinkClick('Investment Sales', '/services/investment-sales');
-              }}
-            >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Investment Sales
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/landlord-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('landlord_representation', 'core_services');
-                trackLinkClick('Landlord Representation', '/services/landlord-representation');
-              }}
-            >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Landlord Representation
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </div>
-            </Link>
-
-            {/* Row 2 */}
-            <Link 
-              to="/services/tenant-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('tenant_representation', 'core_services');
-                trackLinkClick('Tenant Representation', '/services/tenant-representation');
-              }}
-            >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Users className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Tenant Representation
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/acquisitions" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('acquisitions', 'core_services');
-                trackLinkClick('Acquisitions', '/services/acquisitions');
-              }}
-            >
-              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Target className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-              </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Acquisitions
-              </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
-                <span>Explore Service</span>
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/development" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-              onClick={() => {
-                trackButtonClick('development', 'core_services');
-                trackLinkClick('Development', '/services/development');
+                trackButtonClick('development_advisory', 'core_services');
+                trackLinkClick('Development Advisory', '/services/development-advisory');
               }}
             >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Development
+                Development Advisory
               </h3>
               <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
@@ -215,18 +173,38 @@ const Home = () => {
             </Link>
 
             <Link 
-              to="/services/consulting" 
+              to="/services/broker-consulting" 
               className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               onClick={() => {
-                trackButtonClick('consulting', 'core_services');
-                trackLinkClick('Consulting', '/services/consulting');
+                trackButtonClick('broker_consulting', 'core_services');
+                trackLinkClick('Broker of Record & Consulting Services', '/services/broker-consulting');
               }}
             >
               <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <FileText className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
+                <Shield className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
-                Consulting
+                Broker of Record & Consulting Services
+              </h3>
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <span>Explore Service</span>
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </Link>
+
+            <Link 
+              to="/services/financial-services" 
+              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
+              onClick={() => {
+                trackButtonClick('financial_services', 'core_services');
+                trackLinkClick('Financial Services', '/services/financial-services');
+              }}
+            >
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
+              </div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
+                Financial Services
               </h3>
               <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
