@@ -318,7 +318,7 @@
   }
 
   .icon-accent {
-    color: hsl(var(--hhp-accent-blue));
+    color: hsl(var(--hhp-navy));
   }
 
   /* Force trust badges to be white */

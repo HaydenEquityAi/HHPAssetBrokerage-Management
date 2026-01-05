@@ -224,7 +224,7 @@ const Technology = () => {
                     {/* Proof Point */}
                     <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
                       <p className="font-semibold text-hhp-navy">
-                        <span className="text-hhp-accent">Proof Point:</span> {pillar.proofPoint}
+                        <span className="text-hhp-navy">Proof Point:</span> {pillar.proofPoint}
                       </p>
                     </div>
                     
@@ -232,7 +232,7 @@ const Technology = () => {
                     <ul className="space-y-2 mb-6">
                       {pillar.highlights.map((highlight, idx) => (
                         <li key={idx} className="flex items-start space-x-2 text-hhp-charcoal">
-                          <CheckCircle className="h-4 w-4 text-hhp-accent mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-hhp-navy mt-0.5 flex-shrink-0" />
                           <span className="text-sm">{highlight}</span>
                         </li>
                       ))}
@@ -241,7 +241,7 @@ const Technology = () => {
                     {/* CTA */}
                     <Link 
                       to={pillar.href}
-                      className="inline-flex items-center text-hhp-accent font-medium hover:text-hhp-navy transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-accent focus:ring-offset-2 rounded"
+                      className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:ring-offset-2 rounded"
                       onClick={() => {
                         trackButtonClick(`learn_more_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');
                         trackLinkClick(`Learn More ${pillar.title}`, pillar.href);
@@ -344,7 +344,7 @@ const Technology = () => {
                     <h3 className="text-2xl font-display font-bold text-hhp-navy mb-2">
                       {card.title}
                     </h3>
-                    <div className="text-4xl font-bold text-hhp-accent mb-4">
+                    <div className="text-4xl font-bold text-hhp-navy mb-4">
                       {card.metric}
                     </div>
                     <p className="text-hhp-charcoal">

@@ -148,14 +148,14 @@ const AssetTypes = () => {
                     {/* Proof Point */}
                     <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
                       <p className="font-semibold text-hhp-navy">
-                        <span className="text-hhp-accent">Proof Point:</span> {assetType.proofPoint}
+                        <span className="text-hhp-navy">Proof Point:</span> {assetType.proofPoint}
                       </p>
                     </div>
                     
                     {/* CTA */}
                     <Link 
                       to={assetType.href}
-                      className="inline-flex items-center text-hhp-accent font-medium hover:text-hhp-navy transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-accent focus:ring-offset-2 rounded"
+                      className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:ring-offset-2 rounded"
                       onClick={() => {
                         trackButtonClick(`learn_more_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
                         trackLinkClick(`Learn More ${assetType.title}`, assetType.href);

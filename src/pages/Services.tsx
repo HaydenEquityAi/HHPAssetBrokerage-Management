@@ -121,14 +121,14 @@ const Services = () => {
                   {/* Proof Point */}
                   <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
                     <p className="font-semibold text-hhp-navy">
-                      <span className="text-hhp-accent">Proof Point:</span> {service.proofPoint}
+                      <span className="text-hhp-navy">Proof Point:</span> {service.proofPoint}
                     </p>
                   </div>
                   
                   {/* CTA */}
                   <Link 
                     to={service.href}
-                    className="inline-flex items-center text-hhp-accent font-medium hover:text-hhp-navy transition-colors duration-300 group-hover:translate-x-2 group"
+                    className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group"
                     onClick={() => {
                       trackButtonClick(`learn_more_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
                       trackLinkClick(`Learn More ${service.title}`, service.href);

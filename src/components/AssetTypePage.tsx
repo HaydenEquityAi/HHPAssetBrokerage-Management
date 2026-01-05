@@ -230,7 +230,7 @@ const AssetTypePage = ({
                 </div>
                 <h3 className="text-xl font-semibold text-hhp-navy mb-4">{insight.title}</h3>
                 <p className="text-hhp-charcoal leading-relaxed mb-4">{insight.description}</p>
-                <span className="text-hhp-accent font-medium">Read More →</span>
+                <span className="text-hhp-navy font-medium">Read More →</span>
               </Link>
             ))}
           </div>

@@ -62,25 +62,25 @@ const CustomSolutions = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Database className="h-8 w-8 text-hhp-accent" />
+                  <Database className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Data Infrastructure</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Custom real estate data warehouses pulling from Yardi, RealPage, CoStar, and public datasets.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         API integrations with financial systems (Oracle, SAP, Dayforce) and CRM.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Automated reporting pipelines withboard-ready dashboards.
                       </p>
@@ -94,25 +94,25 @@ const CustomSolutions = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Workflow className="h-8 w-8 text-hhp-accent" />
+                  <Workflow className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Workflow Automation</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Leasing assistants and chatbots powered by GPT for prospect interaction.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         HUD compliance monitoring with auto-flagged exceptions.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Maintenance and work order routing with predictive prioritization.
                       </p>
@@ -126,25 +126,25 @@ const CustomSolutions = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhip-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Globe className="h-8 w-8 text-hhp-accent" />
+                  <Globe className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Web & Platform Development</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Investor portals withlive performance dashboards.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Tenant apps with payment, maintenance, and communication integration.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Custom websites optimized for leasing and portfolio branding.
                       </p>
@@ -158,25 +158,25 @@ const CustomSolutions = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Settings className="h-8 w-8 text-hhp-accent" />
+                  <Settings className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Integration Services</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         End-to-end system integration with property management software.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Data migration and cleansing for acquisitions.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         Legacy system replacement with cloud-native solutions.
                       </p>
@@ -196,7 +196,7 @@ const CustomSolutions = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-hhp-accent/5 rounded-xl p-8 border border-hhp-accent/20">
               <div className="flex items-start mb-4">
-                <Zap className="h-8 w-8 text-hhp-accent mr-4 flex-shrink-0" />
+                <Zap className="h-8 w-8 text-hhp-navy mr-4 flex-shrink-0" />
                 <div>
                   <p className="text-lg leading-relaxed text-hhp-charcoal">
                     "We designed a proprietary compliance and analytics suite for a 3-property HUD-regulated 
@@ -217,7 +217,7 @@ const CustomSolutions = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Strategic Analysis
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">
@@ -229,7 +229,7 @@ const CustomSolutions = () => {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Industry Insight
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">

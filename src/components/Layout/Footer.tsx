@@ -68,7 +68,7 @@ const Footer = () => {
             <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-hhp-accent mt-0.5 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
                 <a 
                   href="mailto:info@hhpassetgroup.com" 
                   className="text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center"
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-hhp-accent mt-0.5 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
                 <a 
                   href="tel:+1-918-899-1650" 
                   className="text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center"
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-hhp-accent mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
                 <span className="text-sm sm:text-base text-white/80 min-h-[32px] sm:min-h-[40px] flex items-center">
                   Tulsa, Oklahoma
                 </span>

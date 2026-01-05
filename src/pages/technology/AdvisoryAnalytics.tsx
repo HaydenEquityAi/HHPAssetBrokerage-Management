@@ -64,15 +64,15 @@ const AdvisoryAnalytics = () => {
                   <h3 className="text-xl font-semibold text-hhp-navy mb-3">Market Intelligence</h3>
                   <div className="space-y-2">
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Real-time rent, sales, and absorption data across asset classes.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Demographic, mobility, and psychographic overlays for demand forecasting.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">AI-driven submarket risk scoring.</span>
                     </p>
                   </div>
@@ -88,15 +88,15 @@ const AdvisoryAnalytics = () => {
                   <h3 className="text-xl font-semibold text-hhp-navy mb-3">Portfolio Analytics</h3>
                   <div className="space-y-2">
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Asset performance benchmarking against peer sets and REIT comparables.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Hold/Sell/Refinance analysis with projected IRR impacts.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">ESG and sustainability scoring to align with investor requirements.</span>
                     </p>
                   </div>
@@ -112,15 +112,15 @@ const AdvisoryAnalytics = () => {
                   <h3 className="text-xl font-semibold text-hhp-navy mb-3">Occupier Strategy</h3>
                   <div className="space-y-2">
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Site selection using workforce analytics, commute mapping, and cost modeling.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Workplace utilization studies integrating IoT and sensor data.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Headcount planning and footprint optimization.</span>
                     </p>
                   </div>
@@ -136,15 +136,15 @@ const AdvisoryAnalytics = () => {
                   <h3 className="text-xl font-semibold text-hhp-navy mb-3">Capital Advisory</h3>
                   <div className="space-y-2">
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Capital stack optimization with AI-driven scenario planning.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Debt sourcing analysis: interest rate forecasting, lender scoring.</span>
                     </p>
                     <p className="text-hhp-charcoal flex items-start">
-                      <CheckCircle className="h-4 w-4 text-hhp-accent mr-2 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-hhp-navy mr-2 mt-1 flex-shrink-0" />
                       <span className="text-sm">Investor-ready decks with dynamic financial visuals.</span>
                     </p>
                   </div>
@@ -178,7 +178,7 @@ const AdvisoryAnalytics = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Research Report
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">
@@ -190,7 +190,7 @@ const AdvisoryAnalytics = () => {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Strategic Analysis
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">

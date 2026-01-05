@@ -61,7 +61,7 @@ const AiPlatforms = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <TrendingUp className="h-8 w-8 text-hhp-accent" />
+                  <TrendingUp className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-2">BrokerAi — Deal Intelligence Engine</h3>
@@ -70,19 +70,19 @@ const AiPlatforms = () => {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Predictive deal scoring:</strong> ranks opportunities based on NOI growth potential, market absorption, and investor risk tolerance.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Live valuation models</strong> with cap rate trending and sensitivity analysis.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Instant underwriting models</strong> with AI-generated offering memoranda.
                       </p>
@@ -96,7 +96,7 @@ const AiPlatforms = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Building2 className="h-8 w-8 text-hhp-accent" />
+                  <Building2 className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-2">LeaseAi — Portfolio & Leasing Optimizer</h3>
@@ -105,19 +105,19 @@ const AiPlatforms = () => {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Smart prospect targeting:</strong> AI identifies high-probability tenants and matches them to spaces.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Scenario modeling</strong> with vacancy and renewal simulations.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Digital leasing assistant</strong> that automates scheduling, LOIs, and document workflows.
                       </p>
@@ -131,7 +131,7 @@ const AiPlatforms = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Users className="h-8 w-8 text-hhp-accent" />
+                  <Users className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-2">RentalAi — Multifamily Performance Suite</h3>
@@ -140,19 +140,19 @@ const AiPlatforms = () => {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Tenant retention engine</strong> predicting turnover 90+ days in advance.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Dynamic rent optimization</strong> using demand signals and local comps.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>AI-driven maintenance prioritization</strong> for lower operating costs.
                       </p>
@@ -166,7 +166,7 @@ const AiPlatforms = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <DollarSign className="h-8 w-8 text-hhp-accent" />
+                  <DollarSign className="h-8 w-8 text-hhp-navy" />
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-semibold text-hhp-navy mb-2">CapitalAi — Financial Automation Hub</h3>
@@ -175,13 +175,13 @@ const AiPlatforms = () => {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Automated reconciliations</strong> integrated with Yardi, RealPage, Oracle, and Dayforce.
                       </p>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-accent mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                       <p className="text-sm text-hhp-charcoal">
                         <strong>Predictive forecasting models:</strong> interest rate scenarios, NOI sensitivity, refinance timing.
                       </p>
@@ -242,7 +242,7 @@ const AiPlatforms = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Case Study
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">
@@ -254,7 +254,7 @@ const AiPlatforms = () => {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Whitepaper
               </span>
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">

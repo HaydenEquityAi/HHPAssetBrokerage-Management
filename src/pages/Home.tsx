@@ -111,7 +111,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Property Management
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -131,7 +131,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Advisory & Site Selection
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -151,7 +151,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Investment Sales
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -171,7 +171,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Landlord Representation
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -192,7 +192,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Tenant Representation
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -212,7 +212,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Acquisitions
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -232,7 +232,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Development
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -252,7 +252,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Consulting
               </h3>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -440,7 +440,7 @@ const Home = () => {
               {/* AI Platforms Card */}
               <div className="text-center">
                 <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Bot className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                  <Bot className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
                   <h3 className="text-base font-display font-semibold text-white">AI Platforms</h3>
                 </div>
               </div>
@@ -448,7 +448,7 @@ const Home = () => {
               {/* Advisory & Analytics Card */}
               <div className="text-center">
                 <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                  <BarChart3 className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
                   <h3 className="text-base font-display font-semibold text-white">Advisory & Analytics</h3>
                 </div>
               </div>
@@ -456,7 +456,7 @@ const Home = () => {
               {/* Custom Solutions Card */}
               <div className="text-center">
                 <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Settings className="h-8 w-8 text-hhp-accent mx-auto mb-4" />
+                  <Settings className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
                   <h3 className="text-base font-display font-semibold text-white">Custom Solutions</h3>
                 </div>
               </div>
@@ -482,7 +482,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
                   Technology
                 </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
@@ -494,7 +494,7 @@ const Home = () => {
                 <div className="text-sm text-hhp-charcoal/70 mb-4">Dec 2024</div>
                 <Link 
                   to="/insights" 
-                  className="text-hhp-accent font-medium hover:underline"
+                  className="text-hhp-navy font-medium hover:underline"
                   onClick={() => {
                     trackButtonClick('ai_real_estate_workforce', 'insights');
                     trackLinkClick('AI Real Estate Workforce', '/insights');
@@ -507,7 +507,7 @@ const Home = () => {
             
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
                   Finance
                 </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
@@ -519,7 +519,7 @@ const Home = () => {
                 <div className="text-sm text-hhp-charcoal/70 mb-4">Oct 2024</div>
                 <Link 
                   to="/insights" 
-                  className="text-hhp-accent font-medium hover:underline"
+                  className="text-hhp-navy font-medium hover:underline"
                   onClick={() => {
                     trackButtonClick('capital_markets_2025', 'insights');
                     trackLinkClick('Capital Markets 2025', '/insights');
@@ -532,7 +532,7 @@ const Home = () => {
             
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-accent px-3 py-1 rounded-full text-sm font-medium mb-3">
+                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
                   Market Analysis
                 </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
@@ -544,7 +544,7 @@ const Home = () => {
                 <div className="text-sm text-hhp-charcoal/70 mb-4">Nov 2024</div>
                 <Link 
                   to="/insights" 
-                  className="text-hhp-accent font-medium hover:underline"
+                  className="text-hhp-navy font-medium hover:underline"
                   onClick={() => {
                     trackButtonClick('growth_sectors_multifamily', 'insights');
                     trackLinkClick('Growth Sectors Multifamily', '/insights');

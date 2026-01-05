@@ -256,10 +256,10 @@ const About = () => {
               
               {/* Email Contact - Always Visible */}
               <div className="flex items-center justify-center space-x-2 mb-5">
-                <Mail className="h-4 w-4 text-hhp-accent" />
+                <Mail className="h-4 w-4 text-hhp-navy" />
                 <a 
                   href="mailto:hayden@hhpasset.com" 
-                  className="text-sm text-hhp-navy hover:text-hhp-accent transition-colors duration-200 font-medium"
+                  className="text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200 font-medium"
                 >
                   hayden@hhpasset.com
                 </a>
@@ -268,7 +268,7 @@ const About = () => {
               {/* Expandable Bio */}
               <button
                 onClick={() => toggleBio('hayden')}
-                className="flex items-center justify-center space-x-2 text-sm text-hhp-accent hover:text-hhp-navy transition-colors duration-200"
+                className="flex items-center justify-center space-x-2 text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200"
               >
                 <span>{expandedBios.hayden ? 'Hide Bio' : 'View Bio'}</span>
                 {expandedBios.hayden ? (
@@ -302,10 +302,10 @@ const About = () => {
               
               {/* Email Contact - Always Visible */}
               <div className="flex items-center justify-center space-x-2 mb-5">
-                <Mail className="h-4 w-4 text-hhp-accent" />
+                <Mail className="h-4 w-4 text-hhp-navy" />
                 <a 
                   href="mailto:phil@hhpasset.com" 
-                  className="text-sm text-hhp-navy hover:text-hhp-accent transition-colors duration-200 font-medium"
+                  className="text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200 font-medium"
                 >
                   phil@hhpasset.com
                 </a>
@@ -314,7 +314,7 @@ const About = () => {
               {/* Expandable Bio */}
               <button
                 onClick={() => toggleBio('phil')}
-                className="flex items-center justify-center space-x-2 text-sm text-hhp-accent hover:text-hhp-navy transition-colors duration-200"
+                className="flex items-center justify-center space-x-2 text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200"
               >
                 <span>{expandedBios.phil ? 'Hide Bio' : 'View Bio'}</span>
                 {expandedBios.phil ? (
@@ -348,10 +348,10 @@ const About = () => {
               
               {/* Email Contact - Always Visible */}
               <div className="flex items-center justify-center space-x-2 mb-5">
-                <Mail className="h-4 w-4 text-hhp-accent" />
+                <Mail className="h-4 w-4 text-hhp-navy" />
                 <a 
                   href="mailto:hannah@hhpasset.com" 
-                  className="text-sm text-hhp-navy hover:text-hhp-accent transition-colors duration-200 font-medium"
+                  className="text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200 font-medium"
                 >
                   hannah@hhpasset.com
                 </a>
@@ -360,7 +360,7 @@ const About = () => {
               {/* Expandable Bio */}
               <button
                 onClick={() => toggleBio('hannah')}
-                className="flex items-center justify-center space-x-2 text-sm text-hhp-accent hover:text-hhp-navy transition-colors duration-200"
+                className="flex items-center justify-center space-x-2 text-sm text-hhp-navy hover:text-hhp-navy/80 transition-colors duration-200"
               >
                 <span>{expandedBios.hannah ? 'Hide Bio' : 'View Bio'}</span>
                 {expandedBios.hannah ? (
