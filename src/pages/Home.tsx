@@ -9,26 +9,26 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[75vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
         
-        <div className="relative z-10 container-premium text-center">
+        <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="hero-title text-white mb-8">
+            <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
               Full-Service Real Estate Solutions. Data Driven Performance.
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-8">
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
               HHP Asset Group is a national real estate services firm delivering brokerage, management, and advisory solutions — powered by proprietary AI platforms and automation enhancement technology.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link 
                 to="/asset-management" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base"
                 onClick={() => {
                   trackButtonClick('explore_services', 'home_hero');
                   trackLinkClick('Explore Services', '/asset-management');
@@ -38,7 +38,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/asset-types" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base"
                 onClick={() => {
                   trackButtonClick('explore_asset_types', 'home_hero');
                   trackLinkClick('Explore Asset Types', '/asset-types');
@@ -48,7 +48,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/technology" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300"
+                className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base"
                 onClick={() => {
                   trackButtonClick('explore_technology', 'home_hero');
                   trackLinkClick('Explore Technology', '/technology');
@@ -62,24 +62,24 @@ const Home = () => {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-white py-16 border-b border-gray-200">
+      <section className="bg-white py-8 sm:py-12 lg:py-16 border-b border-gray-200">
         <div className="container-premium">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">$2.0B+</div>
-              <div className="text-hhp-charcoal">Transactions Facilitated</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">$2.0B+</div>
+              <div className="text-sm sm:text-base text-hhp-charcoal">Transactions Facilitated</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">500+</div>
-              <div className="text-hhp-charcoal">Properties Managed</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">500+</div>
+              <div className="text-sm sm:text-base text-hhp-charcoal">Properties Managed</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">15+</div>
-              <div className="text-hhp-charcoal">Markets Served</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">15+</div>
+              <div className="text-sm sm:text-base text-hhp-charcoal">Markets Served</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-hhp-navy mb-2">98%</div>
-              <div className="text-hhp-charcoal">Client Retention</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-hhp-navy mb-1 sm:mb-2">98%</div>
+              <div className="text-sm sm:text-base text-hhp-charcoal">Client Retention</div>
             </div>
           </div>
         </div>
@@ -88,14 +88,14 @@ const Home = () => {
       {/* Core Services Section */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">Core Services</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Core Services</h2>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto px-4">
               Comprehensive solutions across the full real estate lifecycle — from acquisitions to advisory.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {/* Row 1 */}
             <Link 
               to="/services/property-management" 
@@ -105,16 +105,16 @@ const Home = () => {
                 trackLinkClick('Property Management', '/services/property-management');
               }}
             >
-              <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Building2 className="h-8 w-8 md:h-10 md:w-10" />
+              <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
               </div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-3 sm:mb-4">
                 Property Management
               </h3>
-              <p className="text-base md:text-lg text-hhp-charcoal font-medium mb-4">
+              <p className="text-sm sm:text-base md:text-lg text-hhp-charcoal font-medium mb-4">
                 We go beyond operations to deliver NOI growth, compliance excellence, and tenant satisfaction.
               </p>
-              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center justify-center text-hhp-accent font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
@@ -288,17 +288,17 @@ const Home = () => {
       {/* Asset Types Section */}
       <section className="bg-gray-50 section-spacing">
         <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-hhp-navy mb-6">Asset Types We Serve</h2>
-            <p className="text-xl leading-relaxed text-hhp-navy max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Asset Types We Serve</h2>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-hhp-navy max-w-3xl mx-auto px-4">
               Deep expertise across six major commercial real estate asset sectors.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             <Link 
               to="/asset-types/multifamily" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
@@ -307,13 +307,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Building2 className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Multifamily
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Market-rate and value-add strategies that stabilize NOI and elevate communities.
                 </p>
               </div>
@@ -321,7 +321,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/hud-affordable" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
@@ -330,13 +330,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <HomeIcon className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <HomeIcon className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   HUD & Affordable
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Compliance-driven management with unmatched HUD expertise.
                 </p>
               </div>
@@ -344,7 +344,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/office" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
@@ -353,13 +353,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Building2 className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Office
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Workplace management to reduce costs and improve tenant satisfaction.
                 </p>
               </div>
@@ -367,7 +367,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/retail" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
@@ -376,13 +376,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <ShoppingBag className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <ShoppingBag className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Retail
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Tenant mix optimization, anchor repositioning, and center performance.
                 </p>
               </div>
@@ -390,7 +390,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/industrial" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
@@ -399,13 +399,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Factory className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Factory className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Industrial
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Predictive maintenance and energy benchmarking for logistics & warehousing.
                 </p>
               </div>
@@ -413,7 +413,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/senior-housing" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
               style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
@@ -422,13 +422,13 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Heart className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <Heart className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Senior Housing
                 </h3>
-                <p className="text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
                   Compliance, compassion, and operational rigor for senior communities.
                 </p>
               </div>

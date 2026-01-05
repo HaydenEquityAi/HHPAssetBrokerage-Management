@@ -123,11 +123,11 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-hhp-navy section-spacing">
         <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8">
+          <div className="max-w-4xl mx-auto text-center fade-in px-4">
+            <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
               Get in Touch
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-12">
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-8 sm:mb-10 lg:mb-12">
               Ready to transform your real estate operations? Let's discuss how HHP Asset Group can help you achieve your goals.
             </p>
           </div>
@@ -137,18 +137,18 @@ const Contact = () => {
       {/* Contact Form & Info */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             {/* Contact Form */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div>
-                <h2 className="section-title text-hhp-navy mb-6">Send Us a Message</h2>
-                <p className="text-hhp-charcoal leading-relaxed mb-8">
+                <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Send Us a Message</h2>
+                <p className="text-sm sm:text-base text-hhp-charcoal leading-relaxed mb-6 sm:mb-8">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Full Name *
@@ -179,7 +179,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-hhp-charcoal mb-2">
                       Phone Number
@@ -189,7 +189,7 @@ const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full"
+                      className="w-full min-h-[48px]"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -198,7 +198,7 @@ const Contact = () => {
                       Inquiry Type
                     </label>
                     <Select value={formData.inquiry_type} onValueChange={(value) => setFormData({ ...formData, inquiry_type: value })}>
-                      <SelectTrigger>
+                      <SelectTrigger className="min-h-[48px]">
                         <SelectValue placeholder="Select inquiry type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -243,7 +243,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3"
+                  className="w-full bg-hhp-navy hover:bg-hhp-navy/90 text-white py-3 sm:py-4 min-h-[48px] sm:min-h-[52px] text-sm sm:text-base"
                   onClick={() => trackButtonClick('contact_form_submit', 'contact_page')}
                 >
                   {isSubmitting ? (
@@ -262,15 +262,15 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div>
-                <h2 className="section-title text-hhp-navy mb-6">Contact Information</h2>
-                <p className="text-hhp-charcoal leading-relaxed mb-8">
+                <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Contact Information</h2>
+                <p className="text-sm sm:text-base text-hhp-charcoal leading-relaxed mb-6 sm:mb-8">
                   Reach out to us through any of these channels for immediate assistance.
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-hhp-navy/10 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-hhp-navy" />

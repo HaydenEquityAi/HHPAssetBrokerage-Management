@@ -303,7 +303,7 @@ const Header = () => {
                     {activeDropdown === item.name && (
                       <div 
                         id={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
-                        className="absolute top-full left-0 mt-2 min-w-[450px] bg-white rounded-lg shadow-premium py-6 z-50 border border-gray-200"
+                        className="absolute top-full left-0 mt-2 w-[90vw] max-w-[450px] lg:min-w-[450px] bg-white rounded-lg shadow-premium py-4 md:py-6 z-50 border border-gray-200"
                         role="menu"
                         aria-label={`${item.name} submenu`}
                         onMouseEnter={() => handleDropdownEnter(item.name)}
@@ -316,7 +316,7 @@ const Header = () => {
                             <Link
                               key={subItem.name}
                               to={subItem.href}
-                              className="block px-8 py-5 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group"
+                              className="block px-4 py-3 md:px-8 md:py-5 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group min-h-[48px] flex items-center"
                               role="menuitem"
                               tabIndex={0}
                               onClick={() => {
@@ -326,7 +326,7 @@ const Header = () => {
                               }}
                               onKeyDown={(e) => handleDropdownKeyDown(e, item.name, index)}
                             >
-                              <div className="font-medium text-base">{subItem.name}</div>
+                              <div className="font-medium text-sm md:text-base">{subItem.name}</div>
                             </Link>
                           )
                         ))}
@@ -353,7 +353,7 @@ const Header = () => {
             {/* Contact CTA */}
             <Link
               to={contactCTA.href}
-              className="bg-hhp-navy text-white px-6 py-3 rounded font-medium hover:bg-hhp-navy/90 transition-colors duration-200"
+              className="bg-hhp-navy text-white px-4 py-2.5 md:px-6 md:py-3 rounded font-medium hover:bg-hhp-navy/90 transition-colors duration-200 min-h-[48px] flex items-center justify-center text-sm md:text-base"
               onClick={() => {
                 trackButtonClick('contact_cta', 'header');
                 trackLinkClick('Get in Touch', contactCTA.href);
@@ -387,9 +387,9 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* Mobile menu button */}
+          {/* Mobile/Tablet menu button */}
           <button
-            className="lg:hidden p-2 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-3 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle mobile menu"
@@ -409,7 +409,7 @@ const Header = () => {
                     <div>
                       <div className="flex items-center justify-between">
                         <button
-                          className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
+                          className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
                           onClick={() => {
                             // Navigate to main page for Services, Asset Types, and Technology
                             if (item.name === 'Services') {
@@ -429,11 +429,11 @@ const Header = () => {
                           {item.name}
                         </button>
                         <button
-                          className="p-2 hover:bg-gray-100 rounded transition-colors duration-200"
+                          className="p-3 hover:bg-gray-100 rounded transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center"
                           onClick={() => toggleMobileAccordion(item.name)}
                           aria-label={`Toggle ${item.name} menu`}
                         >
-                          <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${
+                          <ChevronRight className={`h-5 w-5 transition-transform duration-200 ${
                             mobileAccordions[item.name] ? 'rotate-90' : ''
                           }`} />
                         </button>
@@ -448,10 +448,10 @@ const Header = () => {
                               <Link
                                 key={subItem.name}
                                 to={subItem.href}
-                                className="block py-4 px-2 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200"
+                                className="block py-3 px-2 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 min-h-[48px] flex items-center"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
-                                <div className="font-medium text-base">{subItem.name}</div>
+                                <div className="font-medium text-sm md:text-base">{subItem.name}</div>
                               </Link>
                             )
                           ))}
@@ -460,12 +460,12 @@ const Header = () => {
                     </div>
                   ) : (
                     <Link
-                      to={item.href}
-                      className="block py-3 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
+                  to={item.href}
+                  className="block py-3 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
                   )}
                 </div>
               ))}
@@ -474,7 +474,7 @@ const Header = () => {
               <div className="mt-6 pt-4 border-t border-gray-200">
                 <Link
                   to={contactCTA.href}
-                  className="block w-full bg-hhp-navy text-white px-6 py-4 rounded font-medium text-center hover:bg-hhp-navy/90 transition-colors duration-200 mb-4"
+                  className="block w-full bg-hhp-navy text-white px-6 py-4 rounded font-medium text-center hover:bg-hhp-navy/90 transition-colors duration-200 mb-4 min-h-[48px] flex items-center justify-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {contactCTA.name}
