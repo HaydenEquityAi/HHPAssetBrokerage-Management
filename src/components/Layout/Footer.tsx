@@ -10,7 +10,13 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">HHP Asset Group</h3>
+            <div className="mb-3 sm:mb-4">
+              <img 
+                src="/images/HHP Logo White Letters.png" 
+                alt="HHP Asset Group" 
+                className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+              />
+            </div>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
             Next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms.
             </p>
