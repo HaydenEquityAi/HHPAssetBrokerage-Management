@@ -10,7 +10,6 @@ const Retail = () => {
       tagline="Driving traffic and value through tailored merchandising and leasing strategies"
       
       // Market Context
-      marketContextImage="/images/retail-market.jpg"
       marketText="Retail real estate continues evolving as omnichannel strategies reshape tenant needs and consumer behavior. Successful retail centers balance physical spaces with digital integration, creating experiential environments that drive foot traffic and tenant profitability."
       valueProposition="HHP delivers strategic retail management combining demographic analysis, traffic patterns, and tenant mix optimization. Our data-driven approach identifies high-performing retail concepts, optimizes merchandising strategies, and creates compelling shopping environments that benefit tenants and owners."
       

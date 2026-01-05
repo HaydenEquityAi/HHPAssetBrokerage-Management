@@ -10,7 +10,6 @@ const Industrial = () => {
       tagline="Optimizing logistics, last-mile, and manufacturing real estate performance"
       
       // Market Context
-      marketContextImage="/images/industrial-market.jpg"
       marketText="Industrial real estate benefits from e-commerce growth, supply chain optimization, and manufacturing reshoring trends. Modern industrial properties require sophisticated logistics planning, technology integration, and tenant-focused operations to capitalize on market opportunities."
       valueProposition="HHP delivers operational excellence in industrial real estate through predictive maintenance, logistics optimization, and tenant partnership strategies. Our technology platforms enhance building efficiency while supporting tenant operations for mutual success and long-term value creation."
       

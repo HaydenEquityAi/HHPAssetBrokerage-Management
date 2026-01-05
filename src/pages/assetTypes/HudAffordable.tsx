@@ -10,7 +10,6 @@ const HudAffordable = () => {
       tagline="Specialized compliance and operations expertise for regulated assets"
       
       // Market Context
-      marketContextImage="/images/hud-market.jpg"
       marketText="Affordable housing faces unprecedented demand as housing costs outpace wage growth across markets. HUD programs provide critical housing solutions while requiring specialized compliance expertise. Success in this sector demands institutional knowledge, robust systems, and resident-centered operations."
       valueProposition="HHP delivers institutional-grade compliance management with resident-first service excellence. Our specialized expertise in HUD programs, MOR preparation, and affordable housing regulations ensures seamless operations while optimizing subsidy utilization and resident outcomes."
       

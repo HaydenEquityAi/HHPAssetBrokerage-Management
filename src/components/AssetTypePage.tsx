@@ -10,7 +10,6 @@ interface AssetTypePageProps {
   tagline: string;
   
   // Market Context
-  marketContextImage: string;
   marketText: string;
   valueProposition: string;
   
@@ -49,7 +48,6 @@ const AssetTypePage = ({
   heroImage,
   title,
   tagline,
-  marketContextImage,
   marketText,
   valueProposition,
   services,
@@ -87,22 +85,14 @@ const AssetTypePage = ({
       {/* Market Context & Value Prop */}
       <section className="py-20 bg-white">
         <div className="container-premium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-4xl mx-auto space-y-8">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy">Market Context</h2>
               <p className="text-lg leading-relaxed text-hhp-charcoal">{marketText}</p>
-              <div className="border-l-4 border-hhp-accent pl-6">
-                <h3 className="text-xl font-semibold text-hhp-navy mb-3">HHP's Value Proposition</h3>
-                <p className="text-hhp-charcoal leading-relaxed">{valueProposition}</p>
-              </div>
             </div>
-            <div className="relative">
-              <img 
-                src={marketContextImage} 
-                alt={`${title} market context`}
-                className="w-full h-96 object-cover rounded-2xl shadow-xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-hhp-navy/20 to-transparent rounded-2xl"></div>
+            <div className="border-l-4 border-hhp-accent pl-6">
+              <h3 className="text-xl font-semibold text-hhp-navy mb-3">HHP's Value Proposition</h3>
+              <p className="text-hhp-charcoal leading-relaxed">{valueProposition}</p>
             </div>
           </div>
         </div>

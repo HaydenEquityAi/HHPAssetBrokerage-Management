@@ -10,7 +10,6 @@ const SeniorHousing = () => {
       tagline="Delivering operational stability and resident-focused care solutions"
       
       // Market Context
-      marketContextImage="/images/senior-market.jpg"
       marketText="Senior housing markets benefit from demographic tailwinds as baby boomers enter retirement age, creating sustained demand for quality senior living options. Success requires specialized expertise in healthcare regulations, resident care protocols, and operational excellence."
       valueProposition="HHP delivers specialized senior housing management combining healthcare expertise with hospitality-focused service excellence. Our ResidentAi platform supports resident care coordination while maintaining operational efficiency and regulatory compliance across independent living, assisted living, and memory care communities."
       

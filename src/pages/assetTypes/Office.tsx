@@ -10,7 +10,6 @@ const Office = () => {
       tagline="Positioning workplaces for tenant experience and long-term resilience"
       
       // Market Context
-      marketContextImage="/images/office-market.jpg"
       marketText="Office markets are undergoing fundamental transformation as hybrid work models reshape space utilization and tenant expectations. Success requires adaptive strategies that balance flexible workspaces, technology integration, and tenant retention in evolving market conditions."
       valueProposition="HHP leverages technology and market intelligence to optimize office operations, enhance tenant satisfaction, and position properties for long-term resilience. Our approach combines flexible space planning, proactive tenant relationships, and data-driven market positioning."
       

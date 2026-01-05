@@ -37,7 +37,6 @@ const Multifamily = () => {
         tagline="Enhancing value across stabilized, lease-up, and mixed-use communities"
         
         // Market Context
-        marketContextImage="/images/multifamily-market.jpg"
         marketText="The multifamily sector remains a cornerstone of U.S. real estate, driven by urbanization, housing affordability challenges, and demographic shifts. As millennials and Gen Z prioritize flexibility and urban amenities, professional management and strategic positioning are critical for success."
         valueProposition="HHP combines institutional-grade operations with resident-focused technology to drive NOI growth and reduce turnover. Our RentalAi platform delivers 22% reduction in delinquency rates, 8% NOI growth, and 95% tenant satisfaction."
         
