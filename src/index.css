@@ -321,25 +321,6 @@
     color: hsl(var(--hhp-accent-blue));
   }
 
-  /* Ensure scroll animations don't break card layouts */
-  [data-scroll-animated] {
-    backface-visibility: visible;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  [data-scroll-animated] img {
-    image-rendering: auto;
-    transform: translateZ(0);
-    will-change: auto;
-    object-fit: contain;
-  }
-
-  [data-scroll-animated] svg {
-    transform: translateZ(0);
-    will-change: auto;
-  }
-
   /* Force trust badges to be white */
   .trust-badge-text {
     color: white !important;

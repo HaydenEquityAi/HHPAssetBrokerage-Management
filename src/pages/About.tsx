@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Layout from '@/components/Layout/Layout';
-import { AnimatedCard } from '@/components/AnimatedCard';
 import haydenImage from '@/assets/hayden-ashley.webp';
 import philImage from '@/assets/phil-ashley.webp';
 import hannahImage from '@/assets/hannah-fanning.png';
@@ -45,8 +44,7 @@ const About = () => {
           {/* Team Grid - 3 Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
             {/* Hayden Ashley */}
-            <AnimatedCard delay={0} distance={25}>
-              <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
+            <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
               <img 
                 src={haydenImage} 
                 alt="Hayden Ashley, Managing Principal" 
@@ -89,12 +87,10 @@ const About = () => {
                   </p>
                 </div>
               )}
-              </div>
-            </AnimatedCard>
+            </div>
 
             {/* Phil Ashley */}
-            <AnimatedCard delay={50} distance={25}>
-              <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
+            <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
               <img 
                 src={philImage} 
                 alt="Phil Ashley, Director of Operations" 
@@ -137,12 +133,10 @@ const About = () => {
                   </p>
                 </div>
               )}
-              </div>
-            </AnimatedCard>
+            </div>
 
             {/* Hannah Fanning */}
-            <AnimatedCard delay={100} distance={25}>
-              <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
+            <div className="flex flex-col bg-white rounded-lg p-4 sm:p-6">
               <img 
                 src={hannahImage} 
                 alt="Hannah Fanning, Director of Client Operations" 
@@ -185,8 +179,7 @@ const About = () => {
                   </p>
                 </div>
               )}
-              </div>
-            </AnimatedCard>
+            </div>
           </div>
         </div>
       </section>
