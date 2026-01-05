@@ -48,13 +48,12 @@ export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
     isVisible,
     style: {
       transform: isVisible
-        ? 'translate3d(0, 0, 0)'
-        : `translate3d(0, ${distance}px, 0)`,
-      opacity: isVisible ? 1 : 0,
-      transition: `transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-      willChange: isVisible ? 'auto' : 'transform, opacity',
-      backfaceVisibility: 'hidden',
-      perspective: '1000px',
+        ? 'translateY(0)'
+        : `translateY(${distance}px)`,
+      opacity: isVisible ? 1 : 0.7,
+      transition: `transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+      willChange: isVisible ? undefined : 'transform, opacity',
+      transformOrigin: 'center center',
     } as React.CSSProperties,
   };
 };
