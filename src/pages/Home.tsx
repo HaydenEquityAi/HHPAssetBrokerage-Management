@@ -158,7 +158,7 @@ const Home = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-hhp-navy mb-4 sm:mb-6">
                 Advisory & Site Selection
               </h3>
-              <div className="flex items-center justify-center text-hhp-navy font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
