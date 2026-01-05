@@ -18,9 +18,13 @@ const Home = () => {
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
-              HHP
-            </h1>
+            <div className="mb-4 sm:mb-6 lg:mb-8 flex justify-center">
+              <img 
+                src="/images/HHP Logo White Letters.png" 
+                alt="HHP Asset Group" 
+                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain drop-shadow-lg"
+              />
+            </div>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
               Vertically Integrated and Innovative Commercial Real Estate Solutions
             </p>
