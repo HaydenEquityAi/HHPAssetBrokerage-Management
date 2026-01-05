@@ -250,7 +250,8 @@ const Home = () => {
                 <span>Explore Service</span>
                 <ArrowRight className="h-4 w-4 ml-2" />
               </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
 
             <AnimatedCard delay={350} distance={20}>
               <Link 
