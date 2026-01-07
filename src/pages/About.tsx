@@ -181,10 +181,13 @@ const About = () => {
                     {expandedBios.hayden && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Hayden Ashley drives HHP Asset Group's national growth and technology strategy. As Managing Principal, he leads the development of our proprietary AI ecosystem—BrokerAi, RentalAi, and LeaseAi—while overseeing enterprise operations across multiple markets nationwide.
+                          Hayden Ashley serves as Managing Principal of HHP Asset Group, where he leads firm strategy, national growth, and platform development across brokerage, property management, and advisory services.
                         </p>
                         <p>
-                          With a background spanning institutional real estate, Big Four accounting, and advanced technology, Hayden has positioned HHP as America's first AI-native real estate firm. His experience auditing Fortune 500 companies at Ernst & Young, combined with facilitating over $2.0B in real estate transactions, informs HHP's disciplined, institutional-grade approach.
+                          An operator by background, Hayden oversees HHP's vertically integrated execution model and the development of technology-enabled systems that enhance underwriting discipline, operational consistency, and long-term asset performance.
+                        </p>
+                        <p>
+                          Hayden's experience spans institutional real estate, Big Four accounting, and enterprise operations. Prior to HHP, he audited Fortune 500 companies at Ernst & Young and has since been involved in over $2.0 billion in real estate transactions. This foundation informs HHP's disciplined, fiduciary approach and its focus on aligned incentives across the full asset lifecycle.
                         </p>
                       </div>
                     )}
