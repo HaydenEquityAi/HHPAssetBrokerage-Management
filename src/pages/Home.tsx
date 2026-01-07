@@ -85,7 +85,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <Link 
               to="/services/property-management" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
@@ -93,20 +93,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Property Management
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/leasing-representation" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/leasing-representation-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('leasing_representation', 'core_services');
@@ -114,20 +114,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Leasing & Representation
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/investment-capital-markets" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/Investment-capital-markets-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
@@ -135,20 +135,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Investment & Capital Markets
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/advisory-site-selection" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/site-selection-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
@@ -156,20 +156,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Advisory & Site Selection
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/development-advisory" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/development-advisory-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('development_advisory', 'core_services');
@@ -177,20 +177,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Development Advisory
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/broker-consulting" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/broker-consulting-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
@@ -198,20 +198,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Broker of Record & Consulting Services
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/services/financial-services" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('financial_services', 'core_services');
@@ -219,13 +219,13 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Financial Services
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
@@ -246,7 +246,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             <Link 
               to="/asset-types/multifamily" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
@@ -254,20 +254,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Multifamily
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/asset-types/hud-affordable" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
@@ -275,20 +275,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   HUD & Affordable
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/asset-types/office" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
@@ -296,20 +296,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Office
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/asset-types/retail" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
@@ -317,20 +317,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Retail
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/asset-types/industrial" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
@@ -338,20 +338,20 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Industrial
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
 
             <Link 
               to="/asset-types/senior-housing" 
-              className="premium-card p-4 sm:p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[350px] md:min-h-[380px] flex flex-col justify-end"
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
               style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
@@ -359,13 +359,13 @@ const Home = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 text-left">
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                   Senior Housing
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base text-left">
-                  <span className="text-white">Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
               </div>
             </Link>
@@ -399,7 +399,7 @@ const Home = () => {
               {/* AI Platforms Card */}
               <Link 
                 to="/technology/ai-platforms"
-                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px] flex flex-col p-0"
                 style={{ backgroundImage: 'url(/images/ai-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                 onClick={() => {
                   trackButtonClick('ai_platforms', 'technology_advantage');
@@ -407,15 +407,15 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10">
-                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">AI Platforms</h3>
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl">AI Platforms</h3>
                 </div>
               </Link>
               
               {/* Advisory & Analytics Card */}
               <Link 
                 to="/technology/advisory-analytics"
-                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px] flex flex-col p-0"
                 style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                 onClick={() => {
                   trackButtonClick('advisory_analytics', 'technology_advantage');
@@ -423,15 +423,15 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10">
-                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">Advisory & Analytics</h3>
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl">Advisory & Analytics</h3>
                 </div>
               </Link>
               
               {/* Custom Solutions Card */}
               <Link 
                 to="/technology/custom-solutions"
-                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px] flex flex-col p-0"
                 style={{ backgroundImage: 'url(/images/custom-solutions.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                 onClick={() => {
                   trackButtonClick('custom_solutions', 'technology_advantage');
@@ -439,8 +439,8 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10">
-                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">Custom Solutions</h3>
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl">Custom Solutions</h3>
                 </div>
               </Link>
             </div>
@@ -573,6 +573,9 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      {/* Divider Line */}
+      <div className="w-full h-px bg-white/30 my-12 sm:my-16" />
     </Layout>
   );
 };
