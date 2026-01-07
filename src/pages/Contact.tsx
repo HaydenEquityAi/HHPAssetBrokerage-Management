@@ -351,13 +351,13 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
               size="lg"
-              className="bg-white text-hhp-navy hover:bg-white/90"
+              className="bg-white text-hhp-navy hover:bg-white/90 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             >
               Schedule Consultation
             </Button>
             <Button 
               size="lg"
-              className="bg-hhp-navy text-white hover:bg-hhp-navy/90"
+              className="bg-hhp-navy text-white hover:bg-hhp-navy/90 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             >
               Download Brochure
             </Button>

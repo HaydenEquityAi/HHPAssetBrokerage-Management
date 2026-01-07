@@ -213,6 +213,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 640px) {
@@ -220,6 +224,9 @@
       padding: 0.875rem 2rem;
       font-size: 1rem;
       min-height: 52px;
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -352,6 +359,15 @@
     button, a[role="button"], input[type="button"], input[type="submit"], select {
       min-height: 48px;
       min-width: 48px;
+    }
+
+    /* CTA Button Mobile Sizing - Constrain width on mobile for buttons without explicit sizing */
+    .flex.flex-col > a:not([class*="max-w"]),
+    .flex.flex-col > button:not([class*="max-w"]) {
+      width: auto !important;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Links should have adequate touch targets */

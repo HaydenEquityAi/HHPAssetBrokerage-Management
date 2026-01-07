@@ -24,7 +24,7 @@ const AdvisoryAnalytics = () => {
             
             <Link 
               to="/contact" 
-              className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+              className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
               onClick={() => {
                 trackButtonClick('explore_advisory_services_cta', 'advisory_analytics_hero');
                 trackLinkClick('Explore Advisory Services', '/contact');
@@ -216,7 +216,7 @@ const AdvisoryAnalytics = () => {
           </h2>
           <Link 
             to="/contact" 
-            className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+            className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             onClick={() => {
               trackButtonClick('request_advisory_demo_cta', 'advisory_analytics_banner');
               trackLinkClick('Request Advisory Demo', '/contact');

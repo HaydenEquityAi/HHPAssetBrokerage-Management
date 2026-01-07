@@ -394,7 +394,7 @@ const About = () => {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+            className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             aria-label="View Opportunities"
           >
             View Opportunities

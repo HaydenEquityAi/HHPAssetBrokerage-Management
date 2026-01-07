@@ -159,7 +159,7 @@ const Technology = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Link 
                   to="#technology-pillars" 
-                  className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant"
+                  className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                   onClick={() => {
                     trackButtonClick('explore_technology_cta', 'technology_hero');
                     trackLinkClick('Explore Technology', '#technology-pillars');
@@ -169,7 +169,7 @@ const Technology = () => {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300"
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                   onClick={() => {
                     trackButtonClick('talk_to_hhp_cta', 'technology_hero');
                     trackLinkClick('Talk to HHP', '/contact');
@@ -275,7 +275,7 @@ const Technology = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('talk_to_hhp_cta', 'value_banner');
                   trackLinkClick('Talk to HHP', '/contact');
@@ -286,7 +286,7 @@ const Technology = () => {
               </Link>
               <Link 
                 to="/services" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_services_cta', 'value_banner');
                   trackLinkClick('Explore Services', '/services');
@@ -399,7 +399,7 @@ const Technology = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('request_demo_cta', 'final_cta');
                   trackLinkClick('Request a Demo', '/contact');
@@ -410,7 +410,7 @@ const Technology = () => {
               </Link>
               <Link 
                 to="/technology/ai-platforms" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('see_pricing_cta', 'final_cta');
                   trackLinkClick('See Pricing & Licensing', '/technology/ai-platforms');

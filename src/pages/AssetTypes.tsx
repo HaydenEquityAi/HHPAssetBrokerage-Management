@@ -187,7 +187,7 @@ const AssetTypes = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center"
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('consultation_cta', 'asset_types_banner');
                   trackLinkClick('Schedule Consultation', '/contact');
@@ -200,7 +200,7 @@ const AssetTypes = () => {
               </Link>
               <Link 
                 to="/services" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_services_cta', 'asset_types_banner');
                   trackLinkClick('Explore Our Services', '/services');

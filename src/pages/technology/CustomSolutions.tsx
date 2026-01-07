@@ -24,7 +24,7 @@ const CustomSolutions = () => {
             
             <Link 
               to="/contact" 
-              className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+              className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
               onClick={() => {
                 trackButtonClick('start_custom_project_cta', 'custom_solutions_hero');
                 trackLinkClick('Start a Custom Project', '/contact');
@@ -255,7 +255,7 @@ const CustomSolutions = () => {
           </h2>
           <Link 
             to="/contact" 
-            className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
+            className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             onClick={() => {
               trackButtonClick('request_custom_solution_cta', 'custom_solutions_banner');
               trackLinkClick('Request Custom Solution', '/contact');
