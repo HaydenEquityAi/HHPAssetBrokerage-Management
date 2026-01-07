@@ -10,11 +10,17 @@ const Home = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[55vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
+        {/* Video Background */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/multifamily-hero.jpg"
+        >
+          <source src="/images/Subtle_Hero_Background_Animation_Generated.mp4" type="video/mp4" />
+        </video>
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
@@ -25,7 +31,7 @@ const Home = () => {
                 className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto object-contain drop-shadow-lg"
               />
             </div>
-            <p className="text-base sm:text-lg lg:text-xl leading-tight text-white/90 mb-4 sm:mb-5 px-2 -mt-1">
+            <p className="text-base sm:text-lg lg:text-xl leading-tight text-white mb-4 sm:mb-5 px-2 -mt-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
               Vertically Integrated and Innovative Commercial Real Estate Solutions
             </p>
             
@@ -52,7 +58,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/technology" 
-                className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
                 onClick={() => {
                   trackButtonClick('explore_technology', 'home_hero');
                   trackLinkClick('Explore Technology', '/technology');
