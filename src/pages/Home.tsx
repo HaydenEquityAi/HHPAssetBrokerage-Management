@@ -251,9 +251,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Multifamily
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Market-rate and value-add strategies that stabilize NOI and elevate communities.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
 
@@ -271,9 +275,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   HUD & Affordable
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Compliance-driven management with unmatched HUD expertise.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
 
@@ -291,9 +299,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Office
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Workplace management to reduce costs and improve tenant satisfaction.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
 
@@ -311,9 +323,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Retail
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Tenant mix optimization, anchor repositioning, and center performance.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
 
@@ -331,9 +347,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Industrial
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Predictive maintenance and energy benchmarking for logistics & warehousing.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
 
@@ -351,9 +371,13 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Senior Housing
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
                   Compliance, compassion, and operational rigor for senior communities.
                 </p>
+                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                  <span className="text-white">Learn More</span>
+                  <ArrowRight className="h-4 w-4 ml-2 text-white" />
+                </div>
               </div>
             </Link>
           </div>
