@@ -18,7 +18,7 @@ const Home = () => {
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-0 sm:mb-1 flex justify-center">
+            <div className="mb-4 sm:mb-5 flex justify-center">
               <img 
                 src="/images/HHP Logo White Letters.png" 
                 alt="HHP Asset Group" 
