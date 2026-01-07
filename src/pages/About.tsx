@@ -309,32 +309,44 @@ const About = () => {
             {/* Tab 3: Our Approach */}
             {activeTab === 'approach' && (
               <div className="fade-in animate-in fade-in duration-300">
-                <h2 className="section-title text-hhp-navy mb-6 text-center">Institutional Discipline. Technology-Enabled.</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2">Brokerage-First Strategy</h3>
+                <h2 className="section-title text-hhp-navy mb-12 text-center">How We Operate</h2>
+                <div className="max-w-[720px] mx-auto space-y-8 md:space-y-12">
+                  <div className="bg-[#f7f9fb] border-t-[3px] border-hhp-navy p-6 md:p-8">
+                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">Brokerage-First Strategy</h3>
+                    <p className="text-base font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      Every transaction begins with institutional-grade market intelligence and disciplined underwriting.
+                    </p>
                     <p className="text-base leading-relaxed text-hhp-charcoal">
-                      Every transaction begins with institutional-grade market intelligence and disciplined underwriting. Our brokerage foundation ensures acquisitions, dispositions, and leasing decisions are grounded in deep market knowledge and rigorous financial analysis.
+                      Our brokerage foundation ensures acquisitions, dispositions, and leasing decisions are grounded in rigorous analysis—not momentum or market noise.
                     </p>
                   </div>
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2">Operator-Led Execution</h3>
+                  <div className="bg-[#f7f9fb] border-t-[3px] border-hhp-navy p-6 md:p-8">
+                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">Operator-Led Execution</h3>
+                    <p className="text-base font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      Decisions are made by operators who have managed real assets—not spreadsheets.
+                    </p>
                     <p className="text-base leading-relaxed text-hhp-charcoal">
-                      Leadership with real asset management experience means decisions prioritize long-term performance over short-term metrics. We understand the operational realities that drive NOI, tenant retention, and portfolio value.
+                      Long-term performance always outweighs short-term optics.
                     </p>
                   </div>
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2">Data & AI-Enabled Decision Making</h3>
+                  <div className="bg-[#f7f9fb] border-t-[3px] border-hhp-navy p-6 md:p-8">
+                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">Data & AI-Enabled Decision Making</h3>
+                    <p className="text-base font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      Proprietary platforms augment human expertise with real-time insight, automated compliance, and performance monitoring.
+                    </p>
                     <p className="text-base leading-relaxed text-hhp-charcoal">
-                      Proprietary platforms BrokerAi, RentalAi, and LeaseAi augment human expertise with predictive analytics, automated compliance, and real-time performance insights—enabling faster, more accurate decisions at scale.
+                      Improving speed and accuracy without sacrificing judgment.
                     </p>
                   </div>
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-2">Long-Term Asset Alignment</h3>
-                    <p className="text-base leading-relaxed text-hhp-charcoal">
-                      Our vertically integrated model aligns incentives across the entire asset lifecycle. We succeed only when properties perform, tenants thrive, and investors achieve their strategic objectives over years, not quarters.
+                  <div className="bg-[#f7f9fb] border-t-[3px] border-hhp-navy p-6 md:p-8">
+                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">Long-Term Asset Alignment</h3>
+                    <p className="text-base font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      We succeed only when properties perform, tenants thrive, and owners achieve outcomes measured in years—not quarters.
                     </p>
                   </div>
+                  <p className="text-base leading-relaxed text-hhp-charcoal text-center mt-10 md:mt-12 font-medium">
+                    This approach governs every engagement, regardless of asset size, market, or service line.
+                  </p>
                 </div>
               </div>
             )}
