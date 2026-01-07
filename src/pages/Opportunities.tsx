@@ -9,14 +9,14 @@ const Opportunities = () => {
       id: 1,
       title: 'Property Management - Operations',
       department: 'Operations',
-      location: 'Oklahoma City, OK',
+      location: 'Tulsa, OK / Multiple Oklahoma locations',
       description: 'Lead day-to-day operations for institutional-grade commercial properties. Direct accountability for financial performance, tenant relations, and asset preservation.',
     },
     {
       id: 2,
       title: 'Leasing & Representation - Brokerage',
       department: 'Brokerage',
-      location: 'Oklahoma City, OK',
+      location: 'Tulsa, OK / Oklahoma City, OK',
       description: 'Represent owners and tenants in commercial leasing transactions. Focus on long-term asset value, not just deal volume.',
     },
     {
@@ -30,21 +30,21 @@ const Opportunities = () => {
       id: 4,
       title: 'Technology Implementation - Systems',
       department: 'Technology',
-      location: 'Oklahoma City, OK / Remote',
+      location: 'Tulsa, OK / Remote',
       description: 'Deploy and maintain proprietary AI platforms and data systems. Work directly with operations and brokerage teams to solve real problems.',
     },
     {
       id: 5,
       title: 'Advisory Services - Consulting',
       department: 'Advisory',
-      location: 'Oklahoma City, OK',
+      location: 'Tulsa, OK',
       description: 'Advise owners and boards on complex real estate decisions. Site selection, portfolio optimization, and strategic planning.',
     },
     {
       id: 6,
       title: 'Broker Support - Compliance',
       department: 'Operations',
-      location: 'Oklahoma City, OK',
+      location: 'Tulsa, OK',
       description: 'Provide Broker of Record services and compliance oversight for independent brokerages. Regulatory excellence and operational support.',
     },
   ];
@@ -58,12 +58,9 @@ const Opportunities = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
               Opportunities
             </h1>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-white/90">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white/90">
               Join HHP Asset Group
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-white/90 max-w-3xl mx-auto">
-              We're building the next-generation real estate services firm — one that combines institutional standards with entrepreneurial ambition. We're looking for talented operators, technologists, and specialists to help transform commercial real estate. If you're driven to solve real problems with clarity, rigor, and execution, we want to hear from you.
-            </p>
           </div>
         </div>
       </section>
