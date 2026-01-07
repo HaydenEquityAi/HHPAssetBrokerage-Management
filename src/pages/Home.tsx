@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[75vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[55vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(/images/multifamily-hero.jpg)' }}
@@ -18,14 +18,14 @@ const Home = () => {
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-1 sm:mb-2 flex justify-center">
+            <div className="mb-0 sm:mb-1 flex justify-center">
               <img 
                 src="/images/HHP Logo White Letters.png" 
                 alt="HHP Asset Group" 
                 className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto object-contain drop-shadow-lg"
               />
             </div>
-            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-6 sm:mb-8 px-2">
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-4 sm:mb-5 px-2">
               Vertically Integrated and Innovative Commercial Real Estate Solutions
             </p>
             
