@@ -53,7 +53,7 @@ const About = () => {
       <section className="bg-white py-12 lg:py-16">
         <div className="container-premium">
           {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12 border-b border-gray-200 pb-4" role="tablist" aria-label="About HHP sections">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6 border-b border-gray-200 pb-4" role="tablist" aria-label="About HHP sections">
             <button
               onClick={() => handleTabChange('people')}
               onKeyDown={(e) => {
@@ -127,7 +127,7 @@ const About = () => {
 
           {/* Tab Content */}
           <div 
-            className="transition-opacity duration-300" 
+            className="transition-opacity duration-300 pt-6" 
             role="tabpanel"
             id={`panel-${activeTab}`}
             aria-labelledby={`tab-${activeTab}`}
@@ -135,8 +135,8 @@ const About = () => {
             {/* Tab 1: Our People */}
             {activeTab === 'people' && (
               <div className="fade-in animate-in fade-in duration-300">
-                <div className="text-center mb-12">
-                  <h2 className="section-title text-hhp-navy mb-6">Leadership Excellence</h2>
+                <div className="text-center mb-8">
+                  <h2 className="section-title text-hhp-navy mb-4">Leadership Excellence</h2>
                   <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
                     Our core team brings together decades of experience in operations, real estate, property management, and client relations to deliver exceptional results.
                   </p>
@@ -309,7 +309,7 @@ const About = () => {
             {/* Tab 3: Our Approach */}
             {activeTab === 'approach' && (
               <div className="fade-in animate-in fade-in duration-300">
-                <h2 className="section-title text-hhp-navy mb-12 text-center">How We Operate</h2>
+                <h2 className="section-title text-hhp-navy mb-8 text-center">How We Operate</h2>
                 <div className="max-w-[720px] mx-auto space-y-8 md:space-y-12">
                   <div className="bg-[#f7f9fb] border-t-[3px] border-hhp-navy p-6 md:p-8">
                     <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">Brokerage-First Strategy</h3>
