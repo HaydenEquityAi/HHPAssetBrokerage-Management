@@ -5,11 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-hhp-navy text-white">
       <div className="container-premium py-8 sm:py-10">
-        {/* Main Footer Content - Horizontal Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-6 sm:mb-8">
-          
-          {/* LEFT: Logo/Branding */}
-          <div className="flex items-start">
+        {/* Top Row: Logo + Horizontal Navigation */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8 mb-6 sm:mb-8">
+          {/* Logo */}
+          <div className="flex-shrink-0">
             <img 
               src="/images/HHP Logo White Letters.png" 
               alt="HHP Asset Group" 
@@ -17,54 +16,40 @@ const Footer = () => {
             />
           </div>
 
-          {/* CENTER-LEFT: Navigation */}
-          <div className="space-y-3">
-            <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Navigation</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/asset-management" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/asset-types" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  Asset Types
-                </Link>
-              </li>
-              <li>
-                <Link to="/technology" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  Technology
-                </Link>
-              </li>
-              <li>
-                <Link to="/insights" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  Insights
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/opportunities" className="block text-sm text-white/80 hover:text-white transition-colors">
-                  Opportunities
-                </Link>
-              </li>
-            </ul>
-
-            {/* Login Links */}
-            <div className="pt-3 space-y-2">
-              <Link to="/resident-login" className="block text-sm text-white/70 hover:text-white transition-colors">
+          {/* Horizontal Navigation Links */}
+          <div className="flex-1">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8">
+              <Link to="/asset-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                Services
+              </Link>
+              <Link to="/asset-types" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                Asset Types
+              </Link>
+              <Link to="/technology" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                Technology
+              </Link>
+              <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                Insights
+              </Link>
+              <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                About
+              </Link>
+              <Link to="/opportunities" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+                Opportunities
+              </Link>
+              <Link to="/resident-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap">
                 Resident Login →
               </Link>
-              <Link to="/owner-login" className="block text-sm text-white/70 hover:text-white transition-colors">
+              <Link to="/owner-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap">
                 Owner Login →
               </Link>
             </div>
           </div>
+        </div>
 
-          {/* CENTER-RIGHT: Contact */}
+        {/* Bottom Row: Contact + Follow Us */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          {/* Contact */}
           <div className="space-y-3">
             <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Contact</h3>
             <div className="space-y-3">
@@ -87,7 +72,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* RIGHT: Social Media */}
+          {/* Follow Us */}
           <div className="space-y-3">
             <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Follow Us</h3>
             <div className="flex space-x-4">
