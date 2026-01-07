@@ -10,7 +10,6 @@ const Technology = () => {
       icon: Bot,
       title: "AI Platforms",
       snippet: "BrokerAi, RentalAi, and LeaseAi power transaction and operations intelligence across acquisitions, leasing, and property management. Real-time comps, absorption forecasts, delinquency/turnover risk scores, and KPI dashboards turn data into action.",
-      proofPoint: "Nine offers in 30 days driven by AI buyer targeting.",
       highlights: [
         "Live comps, cap-rate curves, and sales velocity (BrokerAi)",
         "Rent/absorption forecasting and tenant churn risk (LeaseAi, RentalAi)",
@@ -22,7 +21,6 @@ const Technology = () => {
       icon: BarChart3,
       title: "Advisory & Analytics",
       snippet: "Dashboards, comps, underwriting models, and portfolio intelligence that make strategy measurable. From market screening and site scoring to feasibility and sensitivity analysis, we deliver boardroom-ready insights.",
-      proofPoint: "HQ relocation analysis saved 14% OpEx.",
       highlights: [
         "Trade area/drive-time heatmaps, workforce analytics",
         "Feasibility + sensitivity models (IRR, payback, downside cases)",
@@ -34,7 +32,6 @@ const Technology = () => {
       icon: Settings,
       title: "Custom Solutions",
       snippet: "Bespoke databases, workflow automations, and client-tailored websites/microsites that integrate with your stack (Yardi, RealPage, Google Workspace, n8n, etc.).",
-      proofPoint: "12% NOI lift from ops reengineering + automation.",
       highlights: [
         "HUD compliance automation (50059/EIV logs)",
         "Deal rooms, listing microsites, and marketing automation",
@@ -225,13 +222,6 @@ const Technology = () => {
                       {pillar.snippet}
                     </p>
                     
-                    {/* Proof Point */}
-                    <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
-                      <p className="font-semibold text-hhp-navy">
-                        <span className="text-hhp-navy">Proof Point:</span> {pillar.proofPoint}
-                      </p>
-                    </div>
-                    
                     {/* Highlights */}
                     <ul className="space-y-2 mb-6">
                       {pillar.highlights.map((highlight, idx) => (
@@ -258,43 +248,6 @@ const Technology = () => {
                   </div>
                 );
               })}
-            </div>
-          </div>
-        </section>
-
-        {/* Value Banner */}
-        <section className="bg-hhp-navy text-white section-spacing">
-          <div className="container-premium text-center">
-            <h2 className="section-title text-white mb-6">
-              Ready to Transform Your Operations?
-            </h2>
-            <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-              Discover how our proprietary AI ecosystem and analytics can streamline processes, reduce risk, and drive measurable ROI.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link 
-                to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-                onClick={() => {
-                  trackButtonClick('talk_to_hhp_cta', 'value_banner');
-                  trackLinkClick('Talk to HHP', '/contact');
-                }}
-              >
-                Talk to HHP
-                <ArrowRight className="h-5 w-5 ml-2" />
-              </Link>
-              <Link 
-                to="/services" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-                onClick={() => {
-                  trackButtonClick('explore_services_cta', 'value_banner');
-                  trackLinkClick('Explore Services', '/services');
-                }}
-              >
-                Explore Services
-                <ArrowRight className="h-5 w-5 ml-2" />
-              </Link>
             </div>
           </div>
         </section>
