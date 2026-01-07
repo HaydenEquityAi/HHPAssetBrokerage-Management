@@ -19,7 +19,7 @@ const Home = () => {
           playsInline
           poster="/images/multifamily-hero.jpg"
         >
-          <source src="/images/Subtle_Hero_Background_Animation_Generated.mp4" type="video/mp4" />
+          <source src="/images/skyline-hero-video.mp4" type="video/mp4" />
         </video>
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">
