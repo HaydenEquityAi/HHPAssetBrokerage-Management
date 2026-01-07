@@ -139,40 +139,6 @@ const About = () => {
                 <p className="text-lg leading-relaxed text-hhp-charcoal max-w-3xl mx-auto mb-12 text-center">
                   Our leadership team combines deep operator-led experience with institutional brokerage expertise. Each member brings real-world asset management experience, ensuring decisions are grounded in practical execution rather than theoretical frameworks.
                 </p>
-                
-                {/* Team Preview Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-                  <div className="text-center">
-                    <img 
-                      src={haydenImage} 
-                      alt="Hayden Ashley" 
-                      className="w-48 h-48 mx-auto object-contain object-center rounded-lg mb-4"
-                    />
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1">Hayden Ashley</h3>
-                    <p className="text-base font-medium text-hhp-charcoal mb-2">Managing Principal</p>
-                    <p className="text-sm text-hhp-charcoal/70">Real Estate Broker</p>
-                  </div>
-                  <div className="text-center">
-                    <img 
-                      src={philImage} 
-                      alt="Phil Ashley" 
-                      className="w-48 h-48 mx-auto object-contain object-center rounded-lg mb-4"
-                    />
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1">Phil Ashley</h3>
-                    <p className="text-base font-medium text-hhp-charcoal mb-2">Director of Operations</p>
-                    <p className="text-sm text-hhp-charcoal/70">Operations & Asset Management</p>
-                  </div>
-                  <div className="text-center">
-                    <img 
-                      src={hannahImage} 
-                      alt="Hannah Fanning" 
-                      className="w-48 h-48 mx-auto object-contain object-center rounded-lg mb-4"
-                    />
-                    <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1">Hannah Fanning</h3>
-                    <p className="text-base font-medium text-hhp-charcoal mb-2">Director of Client Operations</p>
-                    <p className="text-sm text-hhp-charcoal/70">Client Relations & Administration</p>
-                  </div>
-                </div>
               </div>
             )}
 
@@ -233,7 +199,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Leadership Excellence Section */}
+      {/* Leadership Excellence Section - Only show on Our People tab */}
+      {activeTab === 'people' && (
       <section className="bg-gray-50 py-12 lg:py-16">
         <div className="container-premium">
           <div className="text-center mb-12">
@@ -385,6 +352,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      )}
 
       {/* Join Our Team */}
       <section className="bg-hhp-navy text-white py-20">
