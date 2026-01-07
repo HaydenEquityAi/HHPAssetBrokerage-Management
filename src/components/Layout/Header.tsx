@@ -437,15 +437,15 @@ const Header = () => {
                       </div>
                       
                       {mobileAccordions[item.name] && (
-                        <div className="ml-4 space-y-3">
+                        <div className="ml-4 space-y-2">
                           {item.submenu.map((subItem, index) => (
                             subItem.name === 'divider' ? (
-                              <hr key={`mobile-divider-${index}`} className="my-4 border-gray-200" />
+                              <hr key={`mobile-divider-${index}`} className="my-3 border-gray-200" />
                             ) : (
                               <Link
                                 key={subItem.name}
                                 to={subItem.href}
-                                className="block py-3 px-2 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 min-h-[48px] flex items-center"
+                                className="block py-3 px-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 min-h-[48px] flex items-center"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
                                 <div className="font-medium text-sm md:text-base">{subItem.name}</div>
@@ -458,7 +458,7 @@ const Header = () => {
                   ) : (
                     <Link
                   to={item.href}
-                  className="block py-3 text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
+                  className="block py-3 px-2 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 font-medium min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -479,17 +479,17 @@ const Header = () => {
               </div>
               
               {/* Mobile Utility Links */}
-              <div className="flex flex-col space-y-3 pt-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-2 pt-4 border-t border-gray-200">
                 <Link 
                   to="/resident-login" 
-                  className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200 py-2"
+                  className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200 py-3 px-2 hover:bg-gray-50 rounded-md min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Resident Login
                 </Link>
                 <Link 
                   to="/owner-login" 
-                  className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200 py-2"
+                  className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200 py-3 px-2 hover:bg-gray-50 rounded-md min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Owner Login

@@ -150,7 +150,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                    <label htmlFor="name" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                       Full Name *
                     </label>
                     <Input
@@ -159,12 +159,12 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full"
+                      className="w-full min-h-[48px] text-base"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                    <label htmlFor="email" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                       Email Address *
                     </label>
                     <Input
@@ -173,7 +173,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full"
+                      className="w-full min-h-[48px] text-base"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -181,7 +181,7 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                    <label htmlFor="phone" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                       Phone Number
                     </label>
                     <Input
@@ -189,16 +189,16 @@ const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full min-h-[48px]"
+                      className="w-full min-h-[48px] text-base"
                       placeholder="(555) 123-4567"
                     />
                   </div>
                   <div>
-                    <label htmlFor="inquiry_type" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                    <label htmlFor="inquiry_type" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                       Inquiry Type
                     </label>
                     <Select value={formData.inquiry_type} onValueChange={(value) => setFormData({ ...formData, inquiry_type: value })}>
-                      <SelectTrigger className="min-h-[48px]">
+                      <SelectTrigger className="min-h-[48px] text-base">
                         <SelectValue placeholder="Select inquiry type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -213,7 +213,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="property_address" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                  <label htmlFor="property_address" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                     Property Address (if applicable)
                   </label>
                   <Input
@@ -221,13 +221,13 @@ const Contact = () => {
                     type="text"
                     value={formData.property_address}
                     onChange={(e) => setFormData({ ...formData, property_address: e.target.value })}
-                    className="w-full"
+                    className="w-full min-h-[48px] text-base"
                     placeholder="123 Main St, City, State"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-hhp-charcoal mb-2">
+                  <label htmlFor="message" className="block text-sm sm:text-base font-medium text-hhp-charcoal mb-2">
                     Message *
                   </label>
                   <Textarea
@@ -235,7 +235,7 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full min-h-[120px]"
+                    className="w-full min-h-[120px] text-base"
                     placeholder="Tell us about your real estate needs..."
                   />
                 </div>

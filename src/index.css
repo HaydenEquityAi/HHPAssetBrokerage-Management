@@ -103,12 +103,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: hsl(var(--hhp-charcoal));
     font-size: 1rem;
-    line-height: 1.65;
+    line-height: 1.7;
   }
 
   @media (min-width: 640px) {
     p, li, ul, ol {
       font-size: 1.125rem;
+      line-height: 1.65;
     }
   }
 
@@ -198,6 +199,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
   }
 
   /* Premium component styles */
@@ -401,14 +403,19 @@
     /* Typography scaling for mobile */
     .hero-title {
       font-size: 1.75rem !important;
-      line-height: 1.2 !important;
+      line-height: 1.3 !important;
       margin-bottom: 1.5rem !important;
     }
 
     .section-title {
       font-size: 1.5rem !important;
-      line-height: 1.3 !important;
+      line-height: 1.4 !important;
       margin-bottom: 1rem !important;
+    }
+
+    /* Improve paragraph readability on mobile */
+    p {
+      line-height: 1.7 !important;
     }
 
     /* Reduce padding on mobile */
@@ -420,6 +427,29 @@
     .container-premium {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
+    }
+
+    /* Ensure images are responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Improve card text on mobile */
+    .premium-card h3 {
+      font-size: 1.125rem !important;
+      line-height: 1.4 !important;
+    }
+
+    /* Better button spacing on mobile */
+    .flex.flex-col.gap-3 > * + * {
+      margin-top: 0.75rem;
+    }
+
+    /* Ensure no text overflow */
+    * {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
   }
 

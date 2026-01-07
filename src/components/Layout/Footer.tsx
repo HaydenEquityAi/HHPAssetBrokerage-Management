@@ -18,29 +18,29 @@ const Footer = () => {
 
           {/* Horizontal Navigation Links */}
           <div className="flex-1">
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8">
-              <Link to="/asset-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+              <Link to="/asset-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Services
               </Link>
-              <Link to="/asset-types" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/asset-types" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Asset Types
               </Link>
-              <Link to="/technology" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/technology" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Technology
               </Link>
-              <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Insights
               </Link>
-              <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 About
               </Link>
-              <Link to="/opportunities" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/opportunities" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Opportunities
               </Link>
-              <Link to="/resident-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/resident-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Resident Login →
               </Link>
-              <Link to="/owner-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap">
+              <Link to="/owner-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Owner Login →
               </Link>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-white/80 flex-shrink-0" />
                 <a 
                   href="mailto:info@hhpasset.com" 
-                  className="text-sm text-white/80 hover:text-white transition-colors"
+                  className="text-sm text-white/80 hover:text-white transition-colors min-h-[44px] flex items-center"
                 >
                   info@hhpasset.com
                 </a>
@@ -65,7 +65,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-white/80 flex-shrink-0" />
-                <span className="text-sm text-white/80">
+                <span className="text-sm text-white/80 min-h-[44px] flex items-center">
                   Tulsa, Oklahoma
                 </span>
               </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/hhpasset" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
@@ -89,7 +89,7 @@ const Footer = () => {
                 href="https://www.facebook.com/share/1JLHp25e3N/?mibextid=wwXIfr" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
