@@ -98,15 +98,30 @@
     }
   }
 
-  body, p, span, div {
-    font-family: 'Crimson Text', serif;
+  /* Body text typography - modern system font stack */
+  p, li, ul, ol {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: hsl(var(--hhp-charcoal));
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.65;
   }
 
   @media (min-width: 640px) {
-    body, p, span, div {
+    p, li, ul, ol {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* Body element - system font for base text */
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: hsl(var(--hhp-charcoal));
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  @media (min-width: 640px) {
+    body {
       font-size: 1.125rem;
     }
   }
@@ -182,7 +197,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Crimson Text', serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   /* Premium component styles */
