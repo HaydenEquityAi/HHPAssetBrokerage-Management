@@ -3,6 +3,7 @@ import { Bot, BarChart3, Settings, ArrowRight, CheckCircle, TrendingUp, DollarSi
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Helmet } from 'react-helmet-async';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const Technology = () => {
   const technologyPillars = [
@@ -93,20 +94,44 @@ const Technology = () => {
 
   const faqItems = [
     {
-      question: "How do your platforms integrate with our PMS/ERP?",
-      answer: "Our platforms seamlessly integrate with major systems including Yardi, RealPage, and custom APIs through secure, standardized connectors."
+      question: "How do your platforms integrate with our existing systems?",
+      answer: "Our technology is designed to integrate with common accounting, property management, CRM, and reporting platforms through APIs and structured data workflows. We prioritize minimizing disruption by working within your existing stack wherever possible, rather than forcing full system replacement."
     },
     {
-      question: "Do you support HUD/affordable workflows?",
-      answer: "Yes, we provide specialized HUD compliance automation including 50059/EIV logs and regulatory reporting features."
+      question: "What platforms do you support integration with?",
+      answer: "We support integrations with leading property management, accounting, CRM, document management, and analytics platforms. Specific integrations depend on your current systems and scope, and we assess compatibility during onboarding to ensure a clean and secure connection."
     },
     {
-      question: "What's a typical implementation timeline?",
-      answer: "Implementation typically takes 4-8 weeks depending on complexity, including data integration, training, and optimization phases."
+      question: "What's the typical implementation timeline?",
+      answer: "Implementation timelines vary by scope, but most engagements range from 2–6 weeks. Simpler integrations can move faster, while larger portfolios or custom workflows may require phased rollouts."
     },
     {
-      question: "Can we license platforms independently?",
-      answer: "Yes, our AI platforms can be licensed individually or as part of our comprehensive technology suite."
+      question: "How does the data migration process work?",
+      answer: "We follow a structured migration process that includes data mapping, validation, testing, and reconciliation before go-live. Our goal is to ensure accuracy, continuity, and minimal operational downtime throughout the transition."
+    },
+    {
+      question: "What training and support do you provide?",
+      answer: "We provide role-based training for leadership, operators, and on-site teams, along with documentation and live support during rollout. Post-implementation support is available to ensure adoption, performance, and long-term success."
+    },
+    {
+      question: "Can the platforms be customized to our specific workflows?",
+      answer: "Yes. Our technology is designed to be configurable and adaptable to your operational workflows, reporting needs, and approval structures. Customization is guided by best practices to avoid unnecessary complexity while preserving flexibility."
+    },
+    {
+      question: "What security and compliance standards do you meet?",
+      answer: "We follow industry-standard security practices including access controls, role-based permissions, encrypted data handling, and auditability. Compliance considerations are addressed based on your asset type, jurisdiction, and operational requirements."
+    },
+    {
+      question: "How does pricing work?",
+      answer: "Pricing is based on scope, portfolio size, and level of customization or support required. We offer transparent, engagement-based pricing so clients understand costs upfront without hidden usage fees."
+    },
+    {
+      question: "What happens to our data?",
+      answer: "Your data remains your property. We maintain clear data ownership, access controls, and export capabilities to ensure transparency, portability, and long-term security."
+    },
+    {
+      question: "How do you handle ongoing support and updates?",
+      answer: "We provide ongoing support, performance monitoring, and system updates as part of our technology engagements. Enhancements and improvements are rolled out intentionally to maintain stability while evolving with your operational needs."
     }
   ];
 
@@ -324,17 +349,23 @@ const Technology = () => {
               </p>
             </div>
             
-            <div className="max-w-4xl mx-auto space-y-6">
-              {faqItems.map((item, index) => (
-                <div key={index} className="premium-card p-6">
-                  <h3 className="text-lg font-display font-semibold text-hhp-navy mb-3">
-                    {item.question}
-                  </h3>
-                  <p className="text-hhp-charcoal leading-relaxed">
-                    {item.answer}
-                  </p>
-                </div>
-              ))}
+            <div className="max-w-4xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200 border-b-0"
+                  >
+                    <AccordionTrigger className="text-left text-lg font-bold text-hhp-navy hover:text-hhp-navy/80 hover:no-underline px-6 py-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-hhp-navy focus-visible:ring-offset-2 rounded-lg">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-base leading-relaxed text-hhp-charcoal px-6 pb-5 pt-0">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </section>
