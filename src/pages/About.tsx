@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Layout from '@/components/Layout/Layout';
 import haydenImage from '@/assets/hayden-ashley.webp';
 import philImage from '@/assets/phil-ashley.webp';
 import hannahImage from '@/assets/hannah-fanning.png';
 import { Mail, ChevronDown, ChevronUp } from 'lucide-react';
+import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
 const About = () => {
   const location = useLocation();
@@ -392,13 +393,17 @@ const About = () => {
           <p className="text-lg md:text-xl leading-relaxed text-white/90 max-w-3xl mx-auto mb-10">
             We're building the next-generation real estate services firm — one that combines institutional standards with entrepreneurial ambition. If you're driven to transform real estate with analytics, compliance expertise, and hands-on execution, we want to hear from you.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/opportunities"
             className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             aria-label="View Opportunities"
+            onClick={() => {
+              trackButtonClick('view_opportunities', 'about_join_team');
+              trackLinkClick('View Opportunities', '/opportunities');
+            }}
           >
             View Opportunities
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

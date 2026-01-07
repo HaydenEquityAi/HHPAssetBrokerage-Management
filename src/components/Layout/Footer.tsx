@@ -56,6 +56,11 @@ const Footer = () => {
                   About
                 </Link>
               </li>
+              <li>
+                <Link to="/opportunities" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                  Opportunities
+                </Link>
+              </li>
             </ul>
 
             {/* Login Links */}
