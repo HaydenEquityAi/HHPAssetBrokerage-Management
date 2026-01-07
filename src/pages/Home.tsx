@@ -78,7 +78,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <Link 
               to="/services/property-management" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
@@ -87,10 +87,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Property Management
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -99,7 +99,7 @@ const Home = () => {
 
             <Link 
               to="/services/leasing-representation" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/leasing-representation-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('leasing_representation', 'core_services');
@@ -108,10 +108,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Leasing & Representation
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -120,7 +120,7 @@ const Home = () => {
 
             <Link 
               to="/services/investment-capital-markets" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/Investment-capital-markets-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
@@ -129,10 +129,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Investment & Capital Markets
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -141,7 +141,7 @@ const Home = () => {
 
             <Link 
               to="/services/advisory-site-selection" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/site-selection-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
@@ -150,10 +150,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Advisory & Site Selection
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -162,7 +162,7 @@ const Home = () => {
 
             <Link 
               to="/services/development-advisory" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/development-advisory-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('development_advisory', 'core_services');
@@ -171,10 +171,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Development Advisory
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -183,7 +183,7 @@ const Home = () => {
 
             <Link 
               to="/services/broker-consulting" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/broker-consulting-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
@@ -192,10 +192,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Broker of Record & Consulting Services
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -204,7 +204,7 @@ const Home = () => {
 
             <Link 
               to="/services/financial-services" 
-              className="premium-card text-center p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('financial_services', 'core_services');
@@ -213,10 +213,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Financial Services
                 </h3>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -239,7 +239,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             <Link 
               to="/asset-types/multifamily" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
@@ -251,10 +251,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Multifamily
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Market-rate and value-add strategies that stabilize NOI and elevate communities.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -263,7 +260,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/hud-affordable" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
@@ -275,10 +272,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   HUD & Affordable
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Compliance-driven management with unmatched HUD expertise.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -287,7 +281,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/office" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/office-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
@@ -299,10 +293,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Office
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Workplace management to reduce costs and improve tenant satisfaction.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -311,7 +302,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/retail" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
@@ -323,10 +314,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Retail
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Tenant mix optimization, anchor repositioning, and center performance.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -335,7 +323,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/industrial" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/industrial-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
@@ -347,10 +335,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Industrial
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Predictive maintenance and energy benchmarking for logistics & warehousing.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
@@ -359,7 +344,7 @@ const Home = () => {
 
             <Link 
               to="/asset-types/senior-housing" 
-              className="premium-card text-center p-4 sm:p-6 lg:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px]"
+              className="premium-card p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[280px] sm:min-h-[320px] flex flex-col justify-end"
               style={{ backgroundImage: 'url(/images/senior-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
@@ -371,10 +356,7 @@ const Home = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Senior Housing
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium mb-4 sm:mb-5">
-                  Compliance, compassion, and operational rigor for senior communities.
-                </p>
-                <div className="flex items-center justify-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
                   <span className="text-white">Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2 text-white" />
                 </div>
