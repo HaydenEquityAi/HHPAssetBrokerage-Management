@@ -309,33 +309,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-hhp-navy text-white section-spacing">
-        <div className="container-premium text-center">
-          <h2 className="section-title text-white mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Don't wait to transform your real estate operations. Contact us today for a personalized consultation.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg"
-              className="bg-white text-hhp-navy hover:bg-white/90 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-            >
-              Schedule Consultation
-            </Button>
-            <Button 
-              size="lg"
-              className="bg-hhp-navy text-white hover:bg-hhp-navy/90 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-            >
-              Download Brochure
-            </Button>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
