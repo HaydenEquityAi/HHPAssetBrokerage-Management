@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Building, Home, Users, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -277,7 +277,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-hhp-navy mb-1">Email</h3>
-                    <p className="text-hhp-charcoal">info@hhpassetgroup.com</p>
+                    <p className="text-hhp-charcoal">info@hhpasset.com</p>
       
                   </div>
                 </div>
@@ -304,34 +304,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-hhp-navy" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-hhp-navy mb-1">Business Hours</h3>
-                    <p className="text-hhp-charcoal">Monday - Friday: 8:00 AM - 6:00 PM CST</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Quick Contact Options */}
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-hhp-navy mb-4">Quick Contact</h3>
-                <div className="space-y-3">
-                  <Button variant="outline" className="w-full justify-start">
-                    <Building className="w-4 h-4 mr-2" />
-                    Schedule Property Consultation
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start">
-                    <Home className="w-4 h-4 mr-2" />
-                    Request Management Quote
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start">
-                    <Users className="w-4 h-4 mr-2" />
-                    Join Our Network
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
