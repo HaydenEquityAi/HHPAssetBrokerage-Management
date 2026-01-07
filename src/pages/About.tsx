@@ -135,10 +135,7 @@ const About = () => {
             {/* Tab 1: Our People */}
             {activeTab === 'people' && (
               <div className="fade-in animate-in fade-in duration-300">
-                <h2 className="section-title text-hhp-navy mb-6 text-center">Leadership & Operators</h2>
-                <p className="text-lg leading-relaxed text-hhp-charcoal max-w-3xl mx-auto mb-12 text-center">
-                  Our leadership team combines deep operator-led experience with institutional brokerage expertise. Each member brings real-world asset management experience, ensuring decisions are grounded in practical execution rather than theoretical frameworks.
-                </p>
+                {/* Content is in Leadership Excellence section below */}
               </div>
             )}
 

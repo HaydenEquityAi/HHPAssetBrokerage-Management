@@ -443,7 +443,7 @@ const Home = () => {
               <Link 
                 to="/technology/custom-solutions"
                 className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
-                style={{ backgroundImage: 'url(/images/custom-solutions-hero - Copy.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: 'url(/images/custom-solutions.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                 onClick={() => {
                   trackButtonClick('custom_solutions', 'technology_advantage');
                   trackLinkClick('Custom Solutions', '/technology/custom-solutions');
