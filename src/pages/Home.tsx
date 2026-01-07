@@ -38,7 +38,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link 
                 to="/asset-management" 
-                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-md font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_services', 'home_hero');
                   trackLinkClick('Explore Services', '/asset-management');
@@ -48,7 +48,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/asset-types" 
-                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-md font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_asset_types', 'home_hero');
                   trackLinkClick('Explore Asset Types', '/asset-types');
@@ -58,7 +58,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/technology" 
-                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="bg-white text-hhp-navy px-6 py-3 sm:px-8 sm:py-4 rounded-md font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_technology', 'home_hero');
                   trackLinkClick('Explore Technology', '/technology');
