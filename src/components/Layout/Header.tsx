@@ -225,24 +225,18 @@ const Header = () => {
       isSticky ? 'sticky top-0 py-2' : ''
     }`}>
       <div className="container-premium">
-        <div className={`flex items-center justify-between transition-all duration-300 ${
-          isSticky ? 'h-14 md:h-16' : 'h-20 sm:h-20 md:h-20'
-        }`}>
+        <div className="flex items-center justify-between transition-all duration-300 h-14 md:h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32">
             <img 
               src="/brand/HHP Asset Group Logo.png" 
               alt="HHP Asset Group" 
-              className={`transition-all duration-300 ${
-                isSticky 
-                  ? 'h-9 sm:h-11 md:h-12' 
-                  : 'h-12 sm:h-14 md:h-16'
-              } w-auto max-w-[140px] sm:max-w-[180px] md:max-w-none`}
+              className="h-9 sm:h-11 md:h-12 w-auto max-w-[140px] sm:max-w-[180px] md:max-w-none transition-all duration-300"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8" role="menubar">
+          <nav className="hidden lg:flex items-center space-x-10" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
@@ -258,7 +252,7 @@ const Header = () => {
                   >
                     <div className="flex items-center">
                       <button 
-                        className={`transition-colors duration-200 font-medium ${
+                        className={`transition-colors duration-200 font-medium text-sm sm:text-base ${
                           (item.name === 'Services' && isServicesActive) ||
                           (item.name === 'Asset Types' && isAssetTypesActive) ||
                           (item.name === 'Technology' && isTechnologyActive)
@@ -333,7 +327,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.href}
-                    className={`text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium ${
+                    className={`text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium text-sm sm:text-base ${
                       location.pathname === item.href ? 'text-hhp-navy border-b-2 border-hhp-navy' : ''
                     }`}
                     onClick={() => {
