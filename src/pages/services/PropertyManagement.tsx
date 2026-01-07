@@ -36,10 +36,10 @@ const PropertyManagement = () => {
               <h2 className="section-title text-hhp-navy mb-6">Our Management Philosophy</h2>
               <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
                 <p>
-                  Effective property management is not about volume or speed. It is about consistency, accountability, and understanding how daily decisions compound over time.
+                  Effective property management is not about volume or speed. It is about consistency, accountability, and disciplined execution over time.
                 </p>
                 <p>
-                  We manage assets with an owner's mindset — balancing tenant needs, expense control, capital preservation, and risk management.
+                  We manage assets with an owner's mindset — balancing tenant needs, expense control, capital preservation, and risk management. Daily decisions are evaluated based on their long-term impact on asset performance.
                 </p>
               </div>
             </div>
@@ -49,37 +49,99 @@ const PropertyManagement = () => {
               <h2 className="section-title text-hhp-navy mb-6">Core Management Functions</h2>
               
               <div className="space-y-8">
+                {/* 1. Financial Oversight & Reporting */}
                 <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Financial Oversight</h3>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">1. Financial Oversight & Reporting</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We maintain tight financial controls to provide transparency, predictability, and decision-ready information.
+                  </p>
                   <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
                     <li>Rent collection and receivables monitoring</li>
-                    <li>Monthly owner reporting</li>
-                    <li>Budget preparation and variance tracking</li>
+                    <li>Monthly owner financial reporting</li>
+                    <li>Budget preparation and variance analysis</li>
                     <li>Expense review and cost control</li>
                     <li>Coordination with ownership accounting and tax advisors</li>
                   </ul>
                 </div>
 
+                {/* 2. Asset & Maintenance Management */}
                 <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Physical Asset Management</h3>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">2. Asset & Maintenance Management</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We focus on proactive maintenance and disciplined oversight to preserve asset condition and control long-term costs.
+                  </p>
                   <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
                     <li>Preventative maintenance planning</li>
                     <li>Vendor sourcing, bidding, and oversight</li>
                     <li>Capital improvement coordination</li>
                     <li>Emergency response protocols</li>
-                    <li>Site inspections and condition monitoring</li>
+                    <li>Regular site inspections and condition monitoring</li>
                   </ul>
                 </div>
 
+                {/* 3. Lease Administration */}
                 <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Lease & Tenant Administration</h3>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">3. Lease Administration</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We manage leases as legal and financial instruments, not just documents.
+                  </p>
                   <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
                     <li>Lease abstraction and administration</li>
+                    <li>Critical date tracking</li>
+                    <li>Rent escalations and reconciliations</li>
                     <li>Enforcement of lease terms</li>
-                    <li>Tenant communication and issue resolution</li>
-                    <li>Coordination with leasing and brokerage teams</li>
+                    <li>Coordination with legal and brokerage teams</li>
                   </ul>
                 </div>
+
+                {/* 4. Tenant Relations & Retention */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">4. Tenant Relations & Retention</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We prioritize professional, consistent tenant communication to support stability and reduce friction.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Tenant communication and issue resolution</li>
+                    <li>Coordination of service requests</li>
+                    <li>Lease compliance monitoring</li>
+                    <li>Support for renewals and extensions</li>
+                  </ul>
+                </div>
+
+                {/* 5. Risk Management & Compliance */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">5. Risk Management & Compliance</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We identify and mitigate operational and regulatory risk before issues escalate.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Insurance coordination and compliance tracking</li>
+                    <li>Safety and risk assessments</li>
+                    <li>Regulatory and lease compliance oversight</li>
+                    <li>Documentation and audit support</li>
+                  </ul>
+                </div>
+
+                {/* 6. Strategic Planning & Ownership Support */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">6. Strategic Planning & Ownership Support</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We support ownership with forward-looking insight beyond day-to-day operations.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Operating and capital planning support</li>
+                    <li>Performance trend analysis</li>
+                    <li>Hold / sell / reposition input</li>
+                    <li>Coordination with advisory and brokerage services</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Optional Closing Line */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+                  Our management platform is designed to support stable operations today while preserving flexibility and value for future ownership decisions.
+                </p>
               </div>
             </div>
 
