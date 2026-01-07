@@ -26,7 +26,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="mb-2 sm:mb-3 flex justify-center">
               <img 
-                src="/images/HHP Logo White Letters.png" 
+                src="/images/hhp-logo-navy-letters.png" 
                 alt="HHP Asset Group" 
                 className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto object-contain drop-shadow-lg"
               />
