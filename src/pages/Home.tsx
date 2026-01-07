@@ -94,10 +94,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Property Management
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -115,10 +115,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Leasing & Representation
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -136,10 +136,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Investment & Capital Markets
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -157,10 +157,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Advisory & Site Selection
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -178,10 +178,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Development Advisory
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -199,10 +199,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Broker of Record & Consulting Services
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -220,10 +220,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Financial Services
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -255,10 +255,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Multifamily
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -276,10 +276,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   HUD & Affordable
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -297,10 +297,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Office
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -318,10 +318,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Retail
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -339,10 +339,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Industrial
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -360,10 +360,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Senior Housing
                 </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base">
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </div>
@@ -407,8 +407,8 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl">AI Platforms</h3>
+                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">AI Platforms</h3>
                 </div>
               </Link>
               
@@ -423,8 +423,8 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl">Advisory & Analytics</h3>
+                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Advisory & Analytics</h3>
                 </div>
               </Link>
               
@@ -439,8 +439,8 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full p-6">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl">Custom Solutions</h3>
+                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Custom Solutions</h3>
                 </div>
               </Link>
             </div>
