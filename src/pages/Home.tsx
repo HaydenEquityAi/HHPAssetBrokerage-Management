@@ -28,7 +28,7 @@ const Home = () => {
               <img 
                 src="/images/hhp-logo-navy-letters.png" 
                 alt="HHP Asset Group" 
-                className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto object-contain drop-shadow-lg"
+                className="h-24 sm:h-32 md:h-40 lg:h-48 xl:h-56 w-auto object-contain drop-shadow-lg"
               />
             </div>
             <p className="text-base sm:text-lg lg:text-xl leading-tight text-white mb-4 sm:mb-5 px-2 -mt-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
