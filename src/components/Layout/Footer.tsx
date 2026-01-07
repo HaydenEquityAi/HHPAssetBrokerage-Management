@@ -1,148 +1,123 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Facebook } from 'lucide-react';
-import equalHousingLogo from '@/assets/equal-housing.png';
+import { Mail, MapPin, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-hhp-navy text-white">
-      <div className="container-premium py-8 sm:py-10 lg:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-6 sm:mb-8">
+      <div className="container-premium py-8 sm:py-10">
+        {/* Main Footer Content - Horizontal Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-6 sm:mb-8">
           
-          {/* Company Info */}
-          <div className="space-y-3 sm:space-y-4">
-            <div className="mb-3 sm:mb-4">
-              <img 
-                src="/images/HHP Logo White Letters.png" 
-                alt="HHP Asset Group" 
-                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
-              />
-            </div>
-            <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            Next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms.
-            </p>
+          {/* LEFT: Logo/Branding */}
+          <div className="flex items-start">
             <img 
-              src={equalHousingLogo} 
-              alt="Equal Housing Opportunity" 
-              className="h-10 sm:h-12 w-auto opacity-90"
+              src="/images/HHP Logo White Letters.png" 
+              alt="HHP Asset Group" 
+              className="h-16 sm:h-20 lg:h-24 w-auto object-contain"
             />
           </div>
 
-          {/* Main Navigation */}
-          <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Navigation</h3>
+          {/* CENTER-LEFT: Navigation */}
+          <div className="space-y-3">
+            <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/asset-management" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/asset-management" className="block text-sm text-white/80 hover:text-white transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/asset-types" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/asset-types" className="block text-sm text-white/80 hover:text-white transition-colors">
                   Asset Types
                 </Link>
               </li>
               <li>
-                <Link to="/technology" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/technology" className="block text-sm text-white/80 hover:text-white transition-colors">
                   Technology
                 </Link>
               </li>
               <li>
-                <Link to="/insights" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/insights" className="block text-sm text-white/80 hover:text-white transition-colors">
                   Insights
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/about" className="block text-sm text-white/80 hover:text-white transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/opportunities" className="block text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+                <Link to="/opportunities" className="block text-sm text-white/80 hover:text-white transition-colors">
                   Opportunities
                 </Link>
               </li>
             </ul>
 
             {/* Login Links */}
-            <div className="pt-3 sm:pt-4 space-y-2">
-              <Link to="/resident-login" className="block text-sm text-white/70 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+            <div className="pt-3 space-y-2">
+              <Link to="/resident-login" className="block text-sm text-white/70 hover:text-white transition-colors">
                 Resident Login →
               </Link>
-              <Link to="/owner-login" className="block text-sm text-white/70 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center">
+              <Link to="/owner-login" className="block text-sm text-white/70 hover:text-white transition-colors">
                 Owner Login →
               </Link>
             </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Contact</h3>
+          {/* CENTER-RIGHT: Contact */}
+          <div className="space-y-3">
+            <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Contact</h3>
             <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-white/80 flex-shrink-0" />
                 <a 
-                  href="mailto:info@hhpassetgroup.com" 
-                  className="text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center"
+                  href="mailto:info@hhpasset.com" 
+                  className="text-sm text-white/80 hover:text-white transition-colors"
                 >
                   info@hhpasset.com
                 </a>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
-                <a 
-                  href="tel:+1-918-899-1650" 
-                  className="text-sm sm:text-base text-white/80 hover:text-white transition-colors min-h-[32px] sm:min-h-[40px] flex items-center"
-                >
-                  (918) 899-1650
-                </a>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-hhp-navy mt-0.5 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-white/80 min-h-[32px] sm:min-h-[40px] flex items-center">
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-white/80 flex-shrink-0" />
+                <span className="text-sm text-white/80">
                   Tulsa, Oklahoma
                 </span>
               </div>
             </div>
+          </div>
 
-            {/* Social Media Links */}
-            <div className="pt-3 sm:pt-4">
-              <h4 className="text-sm font-semibold text-white mb-3">Follow Us</h4>
-              <div className="flex space-x-4">
-                <a 
-                  href="https://www.linkedin.com/company/hhpasset" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-6 w-6" />
-                </a>
-                <a 
-                  href="https://www.facebook.com/share/1JLHp25e3N/?mibextid=wwXIfr" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-6 w-6" />
-                </a>
-              </div>
+          {/* RIGHT: Social Media */}
+          <div className="space-y-3">
+            <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a 
+                href="https://www.linkedin.com/company/hhpasset" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/1JLHp25e3N/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar - Copyright */}
         <div className="border-t border-white/20 pt-4 sm:pt-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0 text-xs sm:text-sm text-center sm:text-left">
-            <p className="text-white/70">
-              © 2024 HHP Asset Group. All rights reserved.
-            </p>
-            <p className="text-white/70">
-              Licensed • Insured • AI-Powered
-            </p>
-          </div>
+          <p className="text-xs sm:text-sm text-white/70 text-center">
+            © 2024 HHP Asset Group. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
