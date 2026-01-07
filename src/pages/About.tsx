@@ -39,10 +39,10 @@ const About = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="hero-title text-white mb-8">
-              About HHP Asset Group
+              About HHP
             </h1>
             <p className="text-xl leading-relaxed text-white/90 mb-12">
-              America's first AI-native, full-service commercial real estate firm. We deliver institutional-grade brokerage, management, and advisory solutions through proprietary platforms BrokerAi, RentalAi, and LeaseAi.
+              HHP is a vertically integrated commercial real estate firm delivering institutional-grade brokerage, property management, and advisory services. We combine operator-led execution with disciplined strategy and technology-enabled decision-making to support owners across the full asset lifecycle.
             </p>
           </div>
         </div>
