@@ -7,13 +7,17 @@ const CustomSolutions = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/custom-solutions-hero - Copy.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="hero-title text-white mb-8 drop-shadow-lg">
               Technology That Adapts to You
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-8">
+            <p className="text-xl leading-relaxed text-white/90 mb-8 drop-shadow-md">
               Every client has unique goals. HHP designs and deploys bespoke AI and data solutions 
               that embed into your operations — unlocking efficiency, compliance, and growth.
             </p>

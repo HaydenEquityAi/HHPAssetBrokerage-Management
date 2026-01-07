@@ -384,29 +384,52 @@ const Home = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {/* AI Platforms Card */}
-              {/* AI Platforms Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Bot className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">AI Platforms</h3>
+              <Link 
+                to="/technology/ai-platforms"
+                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                style={{ backgroundImage: 'url(/images/ai-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('ai_platforms', 'technology_advantage');
+                  trackLinkClick('AI Platforms', '/technology/ai-platforms');
+                }}
+              >
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+                <div className="relative z-10">
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">AI Platforms</h3>
                 </div>
-              </div>
+              </Link>
               
               {/* Advisory & Analytics Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <BarChart3 className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">Advisory & Analytics</h3>
+              <Link 
+                to="/technology/advisory-analytics"
+                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('advisory_analytics', 'technology_advantage');
+                  trackLinkClick('Advisory & Analytics', '/technology/advisory-analytics');
+                }}
+              >
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+                <div className="relative z-10">
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">Advisory & Analytics</h3>
                 </div>
-              </div>
+              </Link>
               
               {/* Custom Solutions Card */}
-              <div className="text-center">
-                <div className="bg-hhp-navy text-white p-6 rounded-lg">
-                  <Settings className="h-8 w-8 text-hhp-navy mx-auto mb-4" />
-                  <h3 className="text-base font-display font-semibold text-white">Custom Solutions</h3>
+              <Link 
+                to="/technology/custom-solutions"
+                className="premium-card text-center p-6 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[200px] sm:min-h-[240px]"
+                style={{ backgroundImage: 'url(/images/custom-solutions-hero - Copy.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={() => {
+                  trackButtonClick('custom_solutions', 'technology_advantage');
+                  trackLinkClick('Custom Solutions', '/technology/custom-solutions');
+                }}
+              >
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+                <div className="relative z-10">
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-white">Custom Solutions</h3>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <Link to="/technology" className="btn-hero">

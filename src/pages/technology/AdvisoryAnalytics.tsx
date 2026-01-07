@@ -7,13 +7,17 @@ const AdvisoryAnalytics = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="hero-title text-white mb-8 drop-shadow-lg">
               From Data to Direction
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-8">
+            <p className="text-xl leading-relaxed text-white/90 mb-8 drop-shadow-md">
               HHP integrates advisory expertise with proprietary analytics to unlock clarity, 
               optimize portfolios, and guide smarter investment decisions.
             </p>
