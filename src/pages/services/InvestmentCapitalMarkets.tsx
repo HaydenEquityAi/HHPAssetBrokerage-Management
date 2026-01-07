@@ -21,7 +21,10 @@ const InvestmentCapitalMarkets = () => {
               Transaction Strategy Informed by Operations
             </p>
             <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP advises owners and investors on acquisitions, dispositions, and owner-user transactions with an understanding of how assets perform beyond the closing table.
+              HHP advises owners, investors, and owner-users on acquisitions, dispositions, and strategic transactions with an understanding of how assets perform beyond the closing table.
+            </p>
+            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
+              Our work integrates market insight, underwriting discipline, and operational awareness to support decisions that hold up over time — not just at closing.
             </p>
           </div>
         </div>
@@ -34,34 +37,122 @@ const InvestmentCapitalMarkets = () => {
             {/* Our Role */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Role</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
-                We serve as both broker and advisor — providing market insight, underwriting perspective, and execution support throughout the transaction lifecycle.
-              </p>
+              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+                <p>
+                  We serve as both broker and advisor, providing structured guidance throughout the transaction lifecycle.
+                </p>
+                <p>
+                  Our role is to help clients evaluate opportunities clearly, structure transactions thoughtfully, and execute with discipline — while remaining aligned with long-term ownership objectives.
+                </p>
+              </div>
             </div>
 
-            {/* Services Offered */}
+            {/* Core Investment & Capital Markets Functions */}
             <div>
-              <h2 className="section-title text-hhp-navy mb-6">Services Offered</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Investment sales representation</li>
-                <li>Acquisition advisory</li>
-                <li>Owner-user transactions</li>
-                <li>Pricing and valuation guidance</li>
-                <li>Deal structuring and negotiation</li>
-                <li>Transaction management</li>
-              </ul>
+              <h2 className="section-title text-hhp-navy mb-6">Core Investment & Capital Markets Functions</h2>
+              
+              <div className="space-y-8">
+                {/* 1. Investment Sales Representation */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">1. Investment Sales Representation</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We represent owners in the disposition of commercial assets with a focus on pricing discipline, positioning, and execution.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Asset valuation and pricing strategy</li>
+                    <li>Market positioning and buyer targeting</li>
+                    <li>Marketing and exposure coordination</li>
+                    <li>Offer evaluation and negotiation</li>
+                    <li>Coordination through closing</li>
+                  </ul>
+                </div>
+
+                {/* 2. Acquisition Advisory */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">2. Acquisition Advisory</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We advise buyers on the evaluation and acquisition of commercial real estate.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Market and submarket analysis</li>
+                    <li>Financial review and assumption validation</li>
+                    <li>Risk identification and mitigation</li>
+                    <li>Support through due diligence</li>
+                    <li>Transaction structuring and execution</li>
+                  </ul>
+                </div>
+
+                {/* 3. Owner-User Transactions */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">3. Owner-User Transactions</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We support owner-users acquiring or disposing of real estate with both operational and investment considerations.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Site and asset evaluation</li>
+                    <li>Financial comparison of alternatives</li>
+                    <li>Transaction structuring</li>
+                    <li>Lease and occupancy considerations</li>
+                    <li>Coordination through closing and occupancy</li>
+                  </ul>
+                </div>
+
+                {/* 4. Pricing, Valuation & Underwriting */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">4. Pricing, Valuation & Underwriting</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We provide valuation guidance grounded in realistic assumptions and market context.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Income and expense analysis</li>
+                    <li>Comparable sales review</li>
+                    <li>Sensitivity and scenario analysis</li>
+                    <li>Consideration of leasing and operational risk</li>
+                  </ul>
+                </div>
+
+                {/* 5. Deal Structuring & Negotiation */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">5. Deal Structuring & Negotiation</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We focus on structuring transactions to align risk, economics, and flexibility.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Deal structure evaluation</li>
+                    <li>Negotiation strategy</li>
+                    <li>Coordination with legal and financial advisors</li>
+                    <li>Alignment with ownership objectives</li>
+                  </ul>
+                </div>
+
+                {/* 6. Transaction Management & Execution */}
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">6. Transaction Management & Execution</h3>
+                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
+                    We manage the transaction process from initial strategy through closing.
+                  </p>
+                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                    <li>Timeline and process coordination</li>
+                    <li>Due diligence oversight</li>
+                    <li>Communication management</li>
+                    <li>Closing support</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             {/* How We Approach Transactions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Approach Transactions</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside mb-4">
                 <li>Clear underwriting assumptions</li>
-                <li>Realistic view of income and expenses</li>
+                <li>Realistic view of income, expenses, and capital requirements</li>
                 <li>Consideration of operational and leasing risk</li>
-                <li>No forced outcomes</li>
-                <li>We are aligned with long-term decision-making, not transaction volume</li>
+                <li>Objective analysis without pressure or forced outcomes</li>
               </ul>
+              <p className="text-lg leading-relaxed text-hhp-charcoal">
+                We are aligned with long-term decision-making, not transaction volume.
+              </p>
             </div>
 
             {/* Who We Work With */}
@@ -73,6 +164,35 @@ const InvestmentCapitalMarkets = () => {
                 <li>Owner-users</li>
                 <li>Long-term holders</li>
               </ul>
+            </div>
+
+            {/* Why Our Approach Matters */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
+              <p className="text-lg leading-relaxed text-hhp-charcoal">
+                Transactions that ignore operational realities often underperform after closing.
+              </p>
+              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+                Our approach integrates brokerage execution with management and advisory insight, allowing clients to make informed decisions with a clear view of both risk and opportunity.
+              </p>
+            </div>
+
+            {/* How We Differ */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">How We Differ</h2>
+              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                <li>Strategy-driven, not volume-driven</li>
+                <li>Operationally informed underwriting</li>
+                <li>Clear communication and disciplined execution</li>
+                <li>Alignment with ownership and portfolio goals</li>
+              </ul>
+            </div>
+
+            {/* Optional Closing Line */}
+            <div className="pt-8 border-t border-gray-200">
+              <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+                Sound transaction decisions are built on clear assumptions, disciplined execution, and an understanding of how assets perform over time.
+              </p>
             </div>
           </div>
         </div>
