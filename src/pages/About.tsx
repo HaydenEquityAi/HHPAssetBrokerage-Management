@@ -148,7 +148,7 @@ const About = () => {
                       className="w-48 h-48 mx-auto object-contain object-center rounded-lg mb-4"
                     />
                     <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1">Hayden Ashley</h3>
-                    <p className="text-base font-medium text-hhp-charcoal mb-2">Founder & Managing Principal</p>
+                    <p className="text-base font-medium text-hhp-charcoal mb-2">Managing Principal</p>
                     <p className="text-sm text-hhp-charcoal/70">Real Estate Broker</p>
                   </div>
                   <div className="text-center">
@@ -252,7 +252,7 @@ const About = () => {
                 className="w-full h-72 sm:h-80 object-contain object-center rounded-lg mb-5"
               />
               <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1 text-center">Hayden Ashley</h3>
-              <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Founder & Managing Principal</h4>
+              <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Managing Principal</h4>
               
               {/* Email Contact - Always Visible */}
               <div className="flex items-center justify-center space-x-2 mb-5">
@@ -281,7 +281,7 @@ const About = () => {
               {expandedBios.hayden && (
                 <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                   <p>
-                    Hayden Ashley drives HHP Asset Group's national growth and technology strategy. As Founder & Managing Principal, he leads the development of our proprietary AI ecosystem—BrokerAi, RentalAi, and LeaseAi—while overseeing enterprise operations across multiple markets nationwide.
+                    Hayden Ashley drives HHP Asset Group's national growth and technology strategy. As Managing Principal, he leads the development of our proprietary AI ecosystem—BrokerAi, RentalAi, and LeaseAi—while overseeing enterprise operations across multiple markets nationwide.
                   </p>
                   <p>
                     With a background spanning institutional real estate, Big Four accounting, and advanced technology, Hayden has positioned HHP as America's first AI-native real estate firm. His experience auditing Fortune 500 companies at Ernst & Young, combined with facilitating over $2.0B in real estate transactions, informs HHP's disciplined, institutional-grade approach.

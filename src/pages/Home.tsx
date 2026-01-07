@@ -87,9 +87,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Property Management
                 </h3>
@@ -111,9 +108,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Handshake className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Leasing & Representation
                 </h3>
@@ -135,9 +129,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Investment & Capital Markets
                 </h3>
@@ -159,9 +150,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Advisory & Site Selection
                 </h3>
@@ -183,9 +171,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Settings className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Development Advisory
                 </h3>
@@ -207,9 +192,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Broker of Record & Consulting Services
                 </h3>
@@ -231,9 +213,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-4 sm:mb-6">
                   Financial Services
                 </h3>
@@ -269,9 +248,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Multifamily
                 </h3>
@@ -292,9 +268,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <HomeIcon className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   HUD & Affordable
                 </h3>
@@ -315,9 +288,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Office
                 </h3>
@@ -338,9 +308,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <ShoppingBag className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Retail
                 </h3>
@@ -361,9 +328,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Factory className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Industrial
                 </h3>
@@ -384,9 +348,6 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10">
-                <div className="icon-accent mx-auto mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                  <Heart className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
                   Senior Housing
                 </h3>
