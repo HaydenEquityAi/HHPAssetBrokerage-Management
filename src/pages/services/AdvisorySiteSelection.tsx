@@ -2,6 +2,7 @@ import Layout from '@/components/Layout/Layout';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const AdvisorySiteSelection = () => {
   return (
@@ -51,95 +52,119 @@ const AdvisorySiteSelection = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Advisory & Site Selection Functions</h2>
               
-              <div className="space-y-8">
+              <Accordion type="single" collapsible className="w-full space-y-2">
                 {/* 1. Site Selection & Relocation Analysis */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">1. Site Selection & Relocation Analysis</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We assist tenants, owner-users, and organizations in evaluating location options based on operational, financial, and strategic considerations.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Needs assessment and criteria development</li>
-                    <li>Market and submarket evaluation</li>
-                    <li>Comparative site analysis</li>
-                    <li>Financial impact assessment</li>
-                    <li>Support through selection and execution</li>
-                  </ul>
-                </div>
+                <AccordionItem value="site-selection" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    1. Site Selection & Relocation Analysis
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We assist tenants, owner-users, and organizations in evaluating location options based on operational, financial, and strategic considerations.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Needs assessment and criteria development</li>
+                      <li>Market and submarket evaluation</li>
+                      <li>Comparative site analysis</li>
+                      <li>Financial impact assessment</li>
+                      <li>Support through selection and execution</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 2. Market & Feasibility Studies */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">2. Market & Feasibility Studies</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We evaluate market conditions and project feasibility to support informed decision-making.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Market demand and supply analysis</li>
-                    <li>Competitive landscape evaluation</li>
-                    <li>Use and positioning analysis</li>
-                    <li>Preliminary financial feasibility</li>
-                    <li>Risk identification and mitigation</li>
-                  </ul>
-                </div>
+                <AccordionItem value="feasibility" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    2. Market & Feasibility Studies
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We evaluate market conditions and project feasibility to support informed decision-making.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Market demand and supply analysis</li>
+                      <li>Competitive landscape evaluation</li>
+                      <li>Use and positioning analysis</li>
+                      <li>Preliminary financial feasibility</li>
+                      <li>Risk identification and mitigation</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 3. Portfolio Review & Optimization */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">3. Portfolio Review & Optimization</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We work with owners to assess portfolio performance and identify opportunities for improvement.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Asset-level performance review</li>
-                    <li>Portfolio-wide analysis</li>
-                    <li>Capital allocation insight</li>
-                    <li>Identification of underperforming assets</li>
-                    <li>Strategic prioritization</li>
-                  </ul>
-                </div>
+                <AccordionItem value="portfolio" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    3. Portfolio Review & Optimization
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We work with owners to assess portfolio performance and identify opportunities for improvement.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Asset-level performance review</li>
+                      <li>Portfolio-wide analysis</li>
+                      <li>Capital allocation insight</li>
+                      <li>Identification of underperforming assets</li>
+                      <li>Strategic prioritization</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 4. Hold vs. Sell Evaluations */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">4. Hold vs. Sell Evaluations</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We provide structured analysis to support ownership decisions around disposition timing.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Performance trend analysis</li>
-                    <li>Market timing considerations</li>
-                    <li>Operational and leasing risk assessment</li>
-                    <li>Scenario modeling</li>
-                    <li>Objective recommendation support</li>
-                  </ul>
-                </div>
+                <AccordionItem value="hold-sell" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    4. Hold vs. Sell Evaluations
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We provide structured analysis to support ownership decisions around disposition timing.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Performance trend analysis</li>
+                      <li>Market timing considerations</li>
+                      <li>Operational and leasing risk assessment</li>
+                      <li>Scenario modeling</li>
+                      <li>Objective recommendation support</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 5. Strategic Planning Support */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">5. Strategic Planning Support</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We support owners and boards with structured planning around real estate strategy.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Long-term real estate planning</li>
-                    <li>Alignment with business objectives</li>
-                    <li>Capital planning considerations</li>
-                    <li>Integration with brokerage and management insight</li>
-                  </ul>
-                </div>
+                <AccordionItem value="strategic" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    5. Strategic Planning Support
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We support owners and boards with structured planning around real estate strategy.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Long-term real estate planning</li>
+                      <li>Alignment with business objectives</li>
+                      <li>Capital planning considerations</li>
+                      <li>Integration with brokerage and management insight</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 6. Third-Party Validation & Board Support */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">6. Third-Party Validation & Board Support</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We provide independent analysis to support governance and stakeholder decision-making.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Board-ready presentations</li>
-                    <li>Third-party review and validation</li>
-                    <li>Independent perspective for complex decisions</li>
-                    <li>Support during critical review processes</li>
-                  </ul>
-                </div>
-              </div>
+                <AccordionItem value="validation" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    6. Third-Party Validation & Board Support
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We provide independent analysis to support governance and stakeholder decision-making.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Board-ready presentations</li>
+                      <li>Third-party review and validation</li>
+                      <li>Independent perspective for complex decisions</li>
+                      <li>Support during critical review processes</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
 
             {/* When Clients Engage Us */}

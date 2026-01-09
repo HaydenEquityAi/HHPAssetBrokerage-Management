@@ -2,6 +2,7 @@ import Layout from '@/components/Layout/Layout';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const InvestmentCapitalMarkets = () => {
   return (
@@ -51,94 +52,118 @@ const InvestmentCapitalMarkets = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Investment & Capital Markets Functions</h2>
               
-              <div className="space-y-8">
+              <Accordion type="single" collapsible className="w-full space-y-2">
                 {/* 1. Investment Sales Representation */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">1. Investment Sales Representation</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We represent owners in the disposition of commercial assets with a focus on pricing discipline, positioning, and execution.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Asset valuation and pricing strategy</li>
-                    <li>Market positioning and buyer targeting</li>
-                    <li>Marketing and exposure coordination</li>
-                    <li>Offer evaluation and negotiation</li>
-                    <li>Coordination through closing</li>
-                  </ul>
-                </div>
+                <AccordionItem value="sales" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    1. Investment Sales Representation
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We represent owners in the disposition of commercial assets with a focus on pricing discipline, positioning, and execution.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Asset valuation and pricing strategy</li>
+                      <li>Market positioning and buyer targeting</li>
+                      <li>Marketing and exposure coordination</li>
+                      <li>Offer evaluation and negotiation</li>
+                      <li>Coordination through closing</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 2. Acquisition Advisory */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">2. Acquisition Advisory</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We advise buyers on the evaluation and acquisition of commercial real estate.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Market and submarket analysis</li>
-                    <li>Financial review and assumption validation</li>
-                    <li>Risk identification and mitigation</li>
-                    <li>Support through due diligence</li>
-                    <li>Transaction structuring and execution</li>
-                  </ul>
-                </div>
+                <AccordionItem value="acquisition" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    2. Acquisition Advisory
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We advise buyers on the evaluation and acquisition of commercial real estate.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Market and submarket analysis</li>
+                      <li>Financial review and assumption validation</li>
+                      <li>Risk identification and mitigation</li>
+                      <li>Support through due diligence</li>
+                      <li>Transaction structuring and execution</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 3. Owner-User Transactions */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">3. Owner-User Transactions</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We support owner-users acquiring or disposing of real estate with both operational and investment considerations.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Site and asset evaluation</li>
-                    <li>Financial comparison of alternatives</li>
-                    <li>Transaction structuring</li>
-                    <li>Lease and occupancy considerations</li>
-                    <li>Coordination through closing and occupancy</li>
-                  </ul>
-                </div>
+                <AccordionItem value="owner-user" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    3. Owner-User Transactions
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We support owner-users acquiring or disposing of real estate with both operational and investment considerations.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Site and asset evaluation</li>
+                      <li>Financial comparison of alternatives</li>
+                      <li>Transaction structuring</li>
+                      <li>Lease and occupancy considerations</li>
+                      <li>Coordination through closing and occupancy</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 4. Pricing, Valuation & Underwriting */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">4. Pricing, Valuation & Underwriting</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We provide valuation guidance grounded in realistic assumptions and market context.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Income and expense analysis</li>
-                    <li>Comparable sales review</li>
-                    <li>Sensitivity and scenario analysis</li>
-                    <li>Consideration of leasing and operational risk</li>
-                  </ul>
-                </div>
+                <AccordionItem value="pricing" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    4. Pricing, Valuation & Underwriting
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We provide valuation guidance grounded in realistic assumptions and market context.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Income and expense analysis</li>
+                      <li>Comparable sales review</li>
+                      <li>Sensitivity and scenario analysis</li>
+                      <li>Consideration of leasing and operational risk</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 5. Deal Structuring & Negotiation */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">5. Deal Structuring & Negotiation</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We focus on structuring transactions to align risk, economics, and flexibility.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Deal structure evaluation</li>
-                    <li>Negotiation strategy</li>
-                    <li>Coordination with legal and financial advisors</li>
-                    <li>Alignment with ownership objectives</li>
-                  </ul>
-                </div>
+                <AccordionItem value="structuring" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    5. Deal Structuring & Negotiation
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We focus on structuring transactions to align risk, economics, and flexibility.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Deal structure evaluation</li>
+                      <li>Negotiation strategy</li>
+                      <li>Coordination with legal and financial advisors</li>
+                      <li>Alignment with ownership objectives</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 6. Transaction Management & Execution */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">6. Transaction Management & Execution</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We manage the transaction process from initial strategy through closing.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Timeline and process coordination</li>
-                    <li>Due diligence oversight</li>
-                    <li>Communication management</li>
-                    <li>Closing support</li>
-                  </ul>
-                </div>
-              </div>
+                <AccordionItem value="execution" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    6. Transaction Management & Execution
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We manage the transaction process from initial strategy through closing.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Timeline and process coordination</li>
+                      <li>Due diligence oversight</li>
+                      <li>Communication management</li>
+                      <li>Closing support</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
 
             {/* How We Approach Transactions */}

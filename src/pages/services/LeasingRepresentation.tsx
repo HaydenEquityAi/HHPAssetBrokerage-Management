@@ -2,6 +2,7 @@ import Layout from '@/components/Layout/Layout';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const LeasingRepresentation = () => {
   return (
@@ -51,98 +52,122 @@ const LeasingRepresentation = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Leasing & Representation Functions</h2>
               
-              <div className="space-y-8">
+              <Accordion type="single" collapsible className="w-full space-y-2">
                 {/* 1. Market & Asset Positioning */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">1. Market & Asset Positioning</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We begin with a clear understanding of the asset's position within its competitive set.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Market and submarket analysis</li>
-                    <li>Competitive property review</li>
-                    <li>Rent positioning and pricing strategy</li>
-                    <li>Concession and incentive evaluation</li>
-                    <li>Assessment of tenant demand and absorption</li>
-                  </ul>
-                </div>
+                <AccordionItem value="market" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    1. Market & Asset Positioning
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We begin with a clear understanding of the asset's position within its competitive set.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Market and submarket analysis</li>
+                      <li>Competitive property review</li>
+                      <li>Rent positioning and pricing strategy</li>
+                      <li>Concession and incentive evaluation</li>
+                      <li>Assessment of tenant demand and absorption</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 2. Landlord Representation */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">2. Landlord Representation</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We represent owners in the leasing of commercial space with a focus on protecting asset value and supporting long-term performance.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-4">Landlord representation services include:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Leasing strategy development</li>
-                    <li>Marketing coordination and exposure</li>
-                    <li>Tenant qualification and underwriting</li>
-                    <li>Lease negotiation and structuring</li>
-                    <li>Coordination through execution and delivery</li>
-                  </ul>
-                </div>
+                <AccordionItem value="landlord" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    2. Landlord Representation
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We represent owners in the leasing of commercial space with a focus on protecting asset value and supporting long-term performance.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-3">Landlord representation services include:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Leasing strategy development</li>
+                      <li>Marketing coordination and exposure</li>
+                      <li>Tenant qualification and underwriting</li>
+                      <li>Lease negotiation and structuring</li>
+                      <li>Coordination through execution and delivery</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 3. Tenant Representation */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">3. Tenant Representation</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We advise tenants on site selection and lease negotiation with an emphasis on operational fit, cost structure, and long-term flexibility.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-4">Tenant representation services include:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Needs assessment and market evaluation</li>
-                    <li>Site selection and tour coordination</li>
-                    <li>Financial comparison of alternatives</li>
-                    <li>Lease term negotiation</li>
-                    <li>Coordination through occupancy</li>
-                  </ul>
-                </div>
+                <AccordionItem value="tenant" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    3. Tenant Representation
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We advise tenants on site selection and lease negotiation with an emphasis on operational fit, cost structure, and long-term flexibility.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-3">Tenant representation services include:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Needs assessment and market evaluation</li>
+                      <li>Site selection and tour coordination</li>
+                      <li>Financial comparison of alternatives</li>
+                      <li>Lease term negotiation</li>
+                      <li>Coordination through occupancy</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 4. Lease Structuring & Risk Mitigation */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">4. Lease Structuring & Risk Mitigation</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We focus on the details that materially impact long-term outcomes.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Lease term and renewal structure</li>
-                    <li>Expense recovery and escalation analysis</li>
-                    <li>Responsibility allocation and risk exposure</li>
-                    <li>Flexibility and exit considerations</li>
-                    <li>Alignment with ownership objectives</li>
-                  </ul>
-                </div>
+                <AccordionItem value="lease" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    4. Lease Structuring & Risk Mitigation
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We focus on the details that materially impact long-term outcomes.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Lease term and renewal structure</li>
+                      <li>Expense recovery and escalation analysis</li>
+                      <li>Responsibility allocation and risk exposure</li>
+                      <li>Flexibility and exit considerations</li>
+                      <li>Alignment with ownership objectives</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 5. Execution & Coordination */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">5. Execution & Coordination</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    We manage the leasing process through execution to ensure consistency and accountability.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Coordination with ownership and management</li>
-                    <li>Interface with legal counsel as needed</li>
-                    <li>Timeline management</li>
-                    <li>Documentation oversight</li>
-                    <li>Transition support through occupancy</li>
-                  </ul>
-                </div>
+                <AccordionItem value="execution" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    5. Execution & Coordination
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      We manage the leasing process through execution to ensure consistency and accountability.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Coordination with ownership and management</li>
+                      <li>Interface with legal counsel as needed</li>
+                      <li>Timeline management</li>
+                      <li>Documentation oversight</li>
+                      <li>Transition support through occupancy</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
                 {/* 6. Integration with Management & Advisory */}
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-3">6. Integration with Management & Advisory</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-4">
-                    Our leasing work is informed by real operational experience.
-                  </p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Alignment with property management strategy</li>
-                    <li>Consideration of maintenance and operational impact</li>
-                    <li>Integration with asset-level financial analysis</li>
-                    <li>Support for broader ownership and portfolio goals</li>
-                  </ul>
-                </div>
-              </div>
+                <AccordionItem value="integration" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    6. Integration with Management & Advisory
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                      Our leasing work is informed by real operational experience.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Alignment with property management strategy</li>
+                      <li>Consideration of maintenance and operational impact</li>
+                      <li>Integration with asset-level financial analysis</li>
+                      <li>Support for broader ownership and portfolio goals</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
 
             {/* Who This Is For */}
