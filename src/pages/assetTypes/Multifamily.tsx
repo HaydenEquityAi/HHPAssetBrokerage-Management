@@ -20,19 +20,19 @@ const Multifamily = () => {
         <meta property="og:description" content="Enhancing value across stabilized, lease-up, and mixed-use communities with AI-powered property management." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hhpassetgroup.com/services/multifamily" />
-        <meta property="og:image" content="https://hhpassetgroup.com/images/multifamily-hero.jpg" />
+        <meta property="og:image" content="https://hhpassetgroup.com/images/multifamily-image-header.jpg" />
         <link rel="canonical" href="https://hhpassetgroup.com/services/multifamily" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Multifamily Property Management Services | HHP Asset Group" />
         <meta name="twitter:description" content="Enhancing value across stabilized, lease-up, and mixed-use communities." />
-        <meta name="twitter:image" content="https://hhpassetgroup.com/images/multifamily-hero.jpg" />
+        <meta name="twitter:image" content="https://hhpassetgroup.com/images/multifamily-image-header.jpg" />
       </Helmet>
 
       <AssetTypePage
         // Hero Section
-        heroImage="/images/multifamily-hero.jpg"
+        heroImage="/images/multifamily-image-header.jpg"
         title="Multifamily"
         tagline="Enhancing value across stabilized, lease-up, and mixed-use communities"
         
