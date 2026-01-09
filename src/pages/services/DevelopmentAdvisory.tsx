@@ -317,17 +317,17 @@ const DevelopmentAdvisory = () => {
         </div>
       </section>
 
-      {/* Ideal Clients & How We Differ */}
+      {/* Who We Work With & How We Differ */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Ideal Clients */}
+            {/* Who We Work With */}
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
                   <Users className="h-6 w-6 text-hhp-navy" />
                 </div>
-                <h2 className="section-title text-hhp-navy">Ideal Clients</h2>
+                <h2 className="section-title text-hhp-navy">Who We Work With</h2>
               </div>
               <ul className="space-y-3 text-hhp-charcoal">
                 <li className="flex items-start">

@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -189,15 +189,63 @@ const AdvisorySiteSelection = () => {
               </ul>
             </div>
 
-            {/* How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">How We Differ</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Advisory-first mindset</li>
-                <li>No transactional pressure</li>
-                <li>Integration with brokerage, management, and financial insight</li>
-                <li>Focus on clarity and decision quality</li>
-              </ul>
+            {/* Who We Work With & How We Differ */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* Who We Work With */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Users className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">Who We Work With</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Owners navigating operational or organizational transitions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Boards seeking independent, third-party perspective</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Stakeholders managing complex operational challenges</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Firms requiring specialized interim support</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* How We Differ */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Shield className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">How We Differ</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Advisory-first mindset</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>No transactional pressure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Integration with brokerage, management, and financial insight</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Focus on clarity and decision quality</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Optional Closing Line */}

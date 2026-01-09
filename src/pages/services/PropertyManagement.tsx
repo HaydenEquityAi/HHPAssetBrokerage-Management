@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -170,26 +170,63 @@ const PropertyManagement = () => {
               </div>
             </div>
 
-            {/* Who This Is For */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Who This Is For</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Private owners</li>
-                <li>Partnerships and boards</li>
-                <li>Owner-users with investment components</li>
-                <li>Assets requiring hands-on oversight</li>
-              </ul>
-            </div>
+            {/* Who We Work With & How We Differ */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* Who We Work With */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Users className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">Who We Work With</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Private owners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Partnerships and boards</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Owner-users with investment components</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Assets requiring hands-on oversight</span>
+                  </li>
+                </ul>
+              </div>
 
-            {/* How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">How We Differ</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Selective portfolio size</li>
-                <li>Direct accountability</li>
-                <li>No call-center model</li>
-                <li>Integrated brokerage and advisory insight</li>
-              </ul>
+              {/* How We Differ */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Shield className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">How We Differ</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Selective portfolio size</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Direct accountability</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>No call-center model</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Integrated brokerage and advisory insight</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

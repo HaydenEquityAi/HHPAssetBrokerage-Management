@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -261,15 +261,63 @@ const BrokerConsulting = () => {
               </div>
             </div>
 
-            {/* How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">How We Differ</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Regulatory-first mindset</li>
-                <li>Disciplined, non-intrusive oversight</li>
-                <li>Integration with brokerage, advisory, and financial insight</li>
-                <li>Focus on stability, continuity, and long-term outcomes</li>
-              </ul>
+            {/* Who We Work With & How We Differ */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* Who We Work With */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Users className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">Who We Work With</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Independent commercial brokerages</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Owners navigating operational or organizational transitions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Boards seeking independent, third-party perspective</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Brokerages seeking continuity and long-term stability</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* How We Differ */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Shield className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">How We Differ</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Regulatory-first mindset</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Disciplined, non-intrusive oversight</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Integration with brokerage, advisory, and financial insight</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Focus on stability, continuity, and long-term outcomes</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Optional Closing Line */}

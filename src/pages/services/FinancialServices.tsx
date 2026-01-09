@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -159,18 +159,6 @@ const FinancialServices = () => {
               </Accordion>
             </div>
 
-            {/* Who This Is For */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Who This Is For</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                <li>Commercial property owners</li>
-                <li>Partnerships and ownership groups</li>
-                <li>Boards and fiduciaries</li>
-                <li>Owner-users with investment components</li>
-                <li>Clients seeking clarity before major decisions</li>
-              </ul>
-            </div>
-
             {/* How We Work */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
@@ -183,6 +171,69 @@ const FinancialServices = () => {
               <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
                 Our goal is to support better decisions — not to replace existing professional advisors.
               </p>
+            </div>
+
+            {/* Who We Work With & How We Differ */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* Who We Work With */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Users className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">Who We Work With</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Commercial property owners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Partnerships and ownership groups</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Boards and fiduciaries</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Owner-users with investment components</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Clients seeking clarity before major decisions</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* How We Differ */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-4">
+                    <Shield className="h-6 w-6 text-hhp-navy" />
+                  </div>
+                  <h2 className="section-title text-hhp-navy">How We Differ</h2>
+                </div>
+                <ul className="space-y-3 text-hhp-charcoal">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Real estate-focused analysis (not generic financial advice)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Integration with operations, brokerage, and advisory insight</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Clear, decision-ready outputs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                    <span>Support for better decisions without replacing existing advisors</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Important Disclosure */}
