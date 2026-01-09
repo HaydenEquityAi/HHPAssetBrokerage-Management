@@ -2,6 +2,7 @@ import Layout from '@/components/Layout/Layout';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const FinancialServices = () => {
   return (
@@ -54,83 +55,108 @@ const FinancialServices = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Financial Services</h2>
               
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Asset-Level Financial Analysis</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-3">
-                    We evaluate individual assets to provide a clear picture of performance, risks, and opportunities.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-2">Includes:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Operating income and expense analysis</li>
-                    <li>Cash flow evaluation</li>
-                    <li>Expense normalization and benchmarking</li>
-                    <li>Performance trend analysis</li>
-                    <li>Identification of operational inefficiencies</li>
-                  </ul>
-                </div>
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {/* 1. Asset-Level Financial Analysis */}
+                <AccordionItem value="asset-analysis" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    Asset-Level Financial Analysis
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      We evaluate individual assets to provide a clear picture of performance, risks, and opportunities.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Operating income and expense analysis</li>
+                      <li>Cash flow evaluation</li>
+                      <li>Expense normalization and benchmarking</li>
+                      <li>Performance trend analysis</li>
+                      <li>Identification of operational inefficiencies</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Budgeting & Forecasting</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-3">
-                    We assist owners in building realistic budgets and forward-looking projections grounded in market conditions and operational realities.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-2">Includes:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Annual operating budgets</li>
-                    <li>Short- and mid-term forecasts</li>
-                    <li>Sensitivity analysis</li>
-                    <li>Capital planning support</li>
-                    <li>Variance analysis and explanation</li>
-                  </ul>
-                </div>
+                {/* 2. Budgeting & Forecasting */}
+                <AccordionItem value="budgeting" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    Budgeting & Forecasting
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      We assist owners in building realistic budgets and forward-looking projections grounded in market conditions and operational realities.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Annual operating budgets</li>
+                      <li>Short- and mid-term forecasts</li>
+                      <li>Sensitivity analysis</li>
+                      <li>Capital planning support</li>
+                      <li>Variance analysis and explanation</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Transaction Financial Support</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-3">
-                    We provide financial analysis to support acquisitions, dispositions, leasing decisions, and owner-user transactions.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-2">Includes:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Financial review of opportunities</li>
-                    <li>Assumption validation</li>
-                    <li>Lease impact analysis</li>
-                    <li>Hold vs. sell modeling</li>
-                    <li>Support during due diligence</li>
-                  </ul>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mt-3 italic">
-                    This service is often integrated with our Investment & Capital Markets and Leasing & Representation work.
-                  </p>
-                </div>
+                {/* 3. Transaction Financial Support */}
+                <AccordionItem value="transaction" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    Transaction Financial Support
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      We provide financial analysis to support acquisitions, dispositions, leasing decisions, and owner-user transactions.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Financial review of opportunities</li>
+                      <li>Assumption validation</li>
+                      <li>Lease impact analysis</li>
+                      <li>Hold vs. sell modeling</li>
+                      <li>Support during due diligence</li>
+                    </ul>
+                    <p className="text-base leading-relaxed text-hhp-charcoal mt-3 italic">
+                      This service is often integrated with our Investment & Capital Markets and Leasing & Representation work.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Owner & Board Reporting</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-3">
-                    We help ownership groups and boards gain clarity through structured, understandable reporting.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-2">Includes:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Customized reporting formats</li>
-                    <li>Performance summaries for stakeholders</li>
-                    <li>Board-ready financial presentations</li>
-                    <li>Ongoing financial oversight support</li>
-                  </ul>
-                </div>
+                {/* 4. Owner & Board Reporting */}
+                <AccordionItem value="reporting" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    Owner & Board Reporting
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      We help ownership groups and boards gain clarity through structured, understandable reporting.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Customized reporting formats</li>
+                      <li>Performance summaries for stakeholders</li>
+                      <li>Board-ready financial presentations</li>
+                      <li>Ongoing financial oversight support</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Portfolio-Level Insight</h3>
-                  <p className="text-lg leading-relaxed text-hhp-charcoal mb-3">
-                    For owners with multiple assets, we provide consolidated views to support portfolio strategy.
-                  </p>
-                  <p className="text-lg font-medium text-hhp-navy mb-2">Includes:</p>
-                  <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
-                    <li>Portfolio performance reviews</li>
-                    <li>Asset comparison and prioritization</li>
-                    <li>Capital allocation insight</li>
-                    <li>Long-term planning support</li>
-                  </ul>
-                </div>
-              </div>
+                {/* 5. Portfolio-Level Insight */}
+                <AccordionItem value="portfolio" className="border border-gray-200 rounded-lg px-4 mb-2">
+                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                    Portfolio-Level Insight
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                      For owners with multiple assets, we provide consolidated views to support portfolio strategy.
+                    </p>
+                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                      <li>Portfolio performance reviews</li>
+                      <li>Asset comparison and prioritization</li>
+                      <li>Capital allocation insight</li>
+                      <li>Long-term planning support</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
 
             {/* Who This Is For */}

@@ -53,7 +53,7 @@ const PropertyManagement = () => {
                 {/* 1. Financial Oversight & Reporting */}
                 <AccordionItem value="financial" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    1. Financial Oversight & Reporting
+                    Financial Oversight & Reporting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
@@ -72,7 +72,7 @@ const PropertyManagement = () => {
                 {/* 2. Physical Asset Management */}
                 <AccordionItem value="asset" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    2. Physical Asset Management
+                    Physical Asset Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
@@ -91,7 +91,7 @@ const PropertyManagement = () => {
                 {/* 3. Lease Administration */}
                 <AccordionItem value="lease" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    3. Lease Administration
+                    Lease Administration
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
@@ -110,7 +110,7 @@ const PropertyManagement = () => {
                 {/* 4. Tenant Relations & Issue Resolution */}
                 <AccordionItem value="tenant" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    4. Tenant Relations & Issue Resolution
+                    Tenant Relations & Issue Resolution
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
@@ -128,7 +128,7 @@ const PropertyManagement = () => {
                 {/* 5. Risk Management & Compliance */}
                 <AccordionItem value="risk" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    5. Risk Management & Compliance
+                    Risk Management & Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
@@ -146,7 +146,7 @@ const PropertyManagement = () => {
                 {/* 6. Strategic Planning & Ownership Support */}
                 <AccordionItem value="strategic" className="border border-gray-200 rounded-lg px-4 mb-2">
                   <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
-                    6. Strategic Planning & Ownership Support
+                    Strategic Planning & Ownership Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
