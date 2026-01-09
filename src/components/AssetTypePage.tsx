@@ -12,6 +12,7 @@ interface AssetTypePageProps {
   // Market Context
   marketText: string;
   valueProposition: string;
+  valuePropositionTitle?: string; // Optional: defaults to "HHP's Value Proposition"
   
   // Services Context (descriptions for each service relevant to this asset type)
   services: {
@@ -22,8 +23,16 @@ interface AssetTypePageProps {
     tenantRepresentation: string;
     acquisitionsDevelopment: string;
   };
-  
-
+  servicesTitle?: string; // Optional: defaults to "Our Integrated Services for {title}"
+  servicesSubtitle?: string; // Optional: defaults to "Comprehensive solutions tailored to..."
+  serviceTitles?: {
+    propertyManagement?: string;
+    advisorySiteSelection?: string;
+    investmentSales?: string;
+    landlordRepresentation?: string;
+    tenantRepresentation?: string;
+    acquisitionsDevelopment?: string;
+  }; // Optional: custom service card titles
   
   // Technology Advantages
   technologyAdvantages: Array<{
@@ -31,6 +40,8 @@ interface AssetTypePageProps {
     title: string;
     description: string;
   }>;
+  technologyTitle?: string; // Optional: defaults to "AI-Driven Advantage for {title}"
+  technologySubtitle?: string; // Optional: defaults to "Our proprietary platforms..."
   
   // Insights
   insights: Array<{
@@ -38,10 +49,13 @@ interface AssetTypePageProps {
     description: string;
     date: string;
   }>;
+  insightsTitle?: string; // Optional: defaults to "Insights for {title}"
+  insightsSubtitle?: string; // Optional: defaults to "Stay ahead with our latest..."
   
   // CTA Section
   ctaImage: string;
   ctaTitle: string;
+  heroButtonText?: string; // Optional: defaults to "Talk to Our Experts"
 }
 
 const AssetTypePage = ({
@@ -50,11 +64,20 @@ const AssetTypePage = ({
   tagline,
   marketText,
   valueProposition,
+  valuePropositionTitle,
   services,
+  servicesTitle,
+  servicesSubtitle,
+  serviceTitles,
   technologyAdvantages,
+  technologyTitle,
+  technologySubtitle,
   insights,
+  insightsTitle,
+  insightsSubtitle,
   ctaImage,
-  ctaTitle
+  ctaTitle,
+  heroButtonText
 }: AssetTypePageProps) => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('asset-contact');
@@ -76,7 +99,7 @@ const AssetTypePage = ({
             onClick={scrollToContact}
             className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
           >
-            Talk to Our Experts
+            {heroButtonText || "Talk to Our Experts"}
             <ArrowRight className="inline ml-2 h-5 w-5" />
           </button>
         </div>
@@ -91,7 +114,7 @@ const AssetTypePage = ({
               <p className="text-lg leading-relaxed text-hhp-charcoal">{marketText}</p>
             </div>
             <div className="border-l-4 border-hhp-accent pl-6">
-              <h3 className="text-xl font-semibold text-hhp-navy mb-3">HHP's Value Proposition</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-3">{valuePropositionTitle || "HHP's Value Proposition"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{valueProposition}</p>
             </div>
           </div>
@@ -103,10 +126,10 @@ const AssetTypePage = ({
         <div className="container-premium">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
-              Our Integrated Services for {title}
+              {servicesTitle || `Our Integrated Services for ${title}`}
             </h2>
             <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              Comprehensive solutions tailored to the unique needs of {title.toLowerCase()} properties
+              {servicesSubtitle || `Comprehensive solutions tailored to the unique needs of ${title.toLowerCase()} properties`}
             </p>
           </div>
           
@@ -118,7 +141,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Building className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Property Management</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.propertyManagement || "Property Management"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.propertyManagement}</p>
             </Link>
 
@@ -129,7 +152,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Advisory & Site Selection</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.advisorySiteSelection || "Advisory & Site Selection"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.advisorySiteSelection}</p>
             </Link>
 
@@ -140,7 +163,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Investment Sales</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.investmentSales || "Investment Sales"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.investmentSales}</p>
             </Link>
 
@@ -151,7 +174,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Landlord Representation</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.landlordRepresentation || "Landlord Representation"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.landlordRepresentation}</p>
             </Link>
 
@@ -162,7 +185,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Tenant Representation</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.tenantRepresentation || "Tenant Representation"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.tenantRepresentation}</p>
             </Link>
 
@@ -173,7 +196,7 @@ const AssetTypePage = ({
               <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <BarChart3 className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">Acquisitions & Development</h3>
+              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.acquisitionsDevelopment || "Acquisitions & Development"}</h3>
               <p className="text-hhp-charcoal leading-relaxed">{services.acquisitionsDevelopment}</p>
             </Link>
           </div>
@@ -185,10 +208,10 @@ const AssetTypePage = ({
         <div className="container-premium">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
-              AI-Driven Advantage for {title}
+              {technologyTitle || `AI-Driven Advantage for ${title}`}
             </h2>
             <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              Our proprietary platforms deliver measurable competitive advantages
+              {technologySubtitle || "Our proprietary platforms deliver measurable competitive advantages"}
             </p>
           </div>
           
@@ -211,10 +234,10 @@ const AssetTypePage = ({
         <div className="container-premium">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
-              Insights for {title}
+              {insightsTitle || `Insights for ${title}`}
             </h2>
             <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              Stay ahead with our latest research and market intelligence
+              {insightsSubtitle || "Stay ahead with our latest research and market intelligence"}
             </p>
           </div>
           

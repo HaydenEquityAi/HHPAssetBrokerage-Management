@@ -34,70 +34,79 @@ const Multifamily = () => {
         // Hero Section
         heroImage="/images/multifamily-image-header.jpg"
         title="Multifamily"
-        tagline="Enhancing value across stabilized, lease-up, and mixed-use communities"
+        tagline="Institutional management and advisory across stabilized, lease-up, and mixed-use communities"
+        heroButtonText="Schedule a Consultation"
         
         // Market Context
-        marketText="The multifamily sector remains a cornerstone of U.S. real estate, driven by urbanization, housing affordability challenges, and demographic shifts. As millennials and Gen Z prioritize flexibility and urban amenities, professional management and strategic positioning are critical for success."
-        valueProposition="HHP combines institutional-grade operations with resident-focused technology to drive NOI growth and reduce turnover. Our RentalAi platform delivers 22% reduction in delinquency rates, 8% NOI growth, and 95% tenant satisfaction."
+        marketText="Multifamily remains one of the most durable sectors in U.S. real estate, supported by long-term housing undersupply, affordability constraints, and shifting demographic preferences. As renters prioritize flexibility, quality of service, and community experience, execution—not just location—has become the primary driver of asset performance. Owners today require disciplined operations, transparent reporting, and adaptive strategies to navigate rising operating costs, regulatory pressure, and evolving tenant expectations."
+        valueProposition="HHP delivers operator-led multifamily management and advisory services grounded in institutional standards and real-world execution. We combine rigorous financial oversight with resident-centric operations and technology-enabled decision-making to improve asset performance across the full lifecycle. Our platform is designed to support owners focused on long-term value creation, capital preservation, and operational accountability."
+        valuePropositionTitle="HHP's Approach to Multifamily"
         
         // Services Context
         services={{
-          propertyManagement: "Full-service management optimizing resident retention, reducing operational costs, and maximizing NOI across all multifamily asset classes from luxury high-rises to value-add opportunities.",
-          advisorySiteSelection: "Strategic site analysis for multifamily development and acquisitions, leveraging market data to identify high-potential locations with strong rental fundamentals.",
-          investmentSales: "Sophisticated disposition strategies for multifamily assets, utilizing market intelligence to optimize timing and pricing for maximum investor returns.",
-          landlordRepresentation: "Comprehensive leasing strategies tailored to demographic shifts and amenity preferences, ensuring optimal tenant mix and rental income maximization.",
-          tenantRepresentation: "Custom corporate housing solutions for businesses with strategic relocation and temporary housing needs.",
-          acquisitionsDevelopment: "Institutional-grade underwriting for multifamily acquisitions and mixed-use developments, identifying value-add opportunities and development feasibility."
+          propertyManagement: "Full-service management focused on operational efficiency, resident retention, and NOI growth across stabilized, value-add, lease-up, and mixed-use communities.",
+          advisorySiteSelection: "Market-driven analysis supporting development, acquisition, and repositioning decisions, with a focus on rental fundamentals, absorption, and long-term viability.",
+          investmentSales: "Strategic disposition advisory for multifamily assets, leveraging market intelligence, pricing discipline, and targeted execution to maximize outcomes.",
+          landlordRepresentation: "Leasing strategies aligned with demographic trends and amenity preferences, supporting occupancy stability and sustainable rent growth.",
+          tenantRepresentation: "Customized housing solutions for employers, relocations, and short-term needs, designed to reduce vacancy friction and enhance portfolio utilization.",
+          acquisitionsDevelopment: "Institutional underwriting and feasibility analysis for acquisitions and ground-up or mixed-use development, identifying value-creation opportunities and execution risk."
         }}
-        
-       
+        servicesTitle="Integrated Services for Multifamily"
+        servicesSubtitle="Comprehensive solutions aligned to ownership objectives"
+        serviceTitles={{
+          tenantRepresentation: "Tenant & Corporate Housing Representation"
+        }}
         
         // Technology Advantages
         technologyAdvantages={[
           {
             icon: <BarChart3 className="h-8 w-8 text-white" />,
-            title: "Predictive Analytics",
-            description: "AI-powered forecasting for demand patterns, maintenance schedules, and rent optimization to maximize portfolio performance."
+            title: "Predictive Portfolio Insights",
+            description: "Forward-looking analytics to anticipate demand shifts, maintenance needs, and revenue performance."
           },
           {
             icon: <Users className="h-8 w-8 text-white" />,
             title: "Resident Experience Platform",
-            description: "Integrated resident portal with maintenance requests, amenity bookings, and community features to enhance satisfaction and retention."
+            description: "Unified resident portal for communication, service requests, and community engagement—designed to improve satisfaction and retention."
           },
           {
             icon: <Zap className="h-8 w-8 text-white" />,
-            title: "Smart Building Management",
-            description: "IoT-enabled building systems for energy efficiency and predictive maintenance, reducing operational costs by up to 25%."
+            title: "Smart Operations & Building Systems",
+            description: "Technology-supported maintenance planning and energy efficiency initiatives that reduce operating costs and improve asset reliability."
           },
           {
             icon: <DollarSign className="h-8 w-8 text-white" />,
-            title: "Dynamic Pricing Engine",
-            description: "Real-time rental rate optimization based on market conditions, competitor analysis, and demand forecasting."
+            title: "Dynamic Revenue Optimization",
+            description: "Data-informed pricing and renewal strategies aligned with market conditions and asset positioning."
           }
         ]}
+        technologyTitle="Technology-Enabled Advantage"
+        technologySubtitle="Purpose-built tools that support better decisions—not noise"
         
         // Insights
         insights={[
           {
             title: "The Future of Multifamily: Technology Integration Trends",
-            description: "How smart building technologies and resident platforms are reshaping operations.",
+            description: "How data-driven operations are reshaping asset management.",
             date: "December 2024"
           },
           {
-            title: "Market Analysis: Secondary City Multifamily Opportunities",
-            description: "Deep dive into emerging multifamily markets and investment strategies.",
+            title: "Secondary Market Multifamily Opportunities",
+            description: "Identifying growth markets beyond primary metros.",
             date: "November 2024"
           },
           {
-            title: "Renewal Strategies for High-Performing Properties",
-            description: "Best practices for converting short-term tenants to long-term residents.",
+            title: "Renewal Strategies for Long-Term Performance",
+            description: "Operational practices that support retention and income stability.",
             date: "October 2024"
           }
         ]}
+        insightsTitle="Insights & Research"
+        insightsSubtitle="Perspectives shaping multifamily performance"
         
         // CTA Section
         ctaImage="/images/multifamily-cta.jpg"
-        ctaTitle="Looking to optimize your Multifamily portfolio? Let's talk."
+        ctaTitle="Looking to improve performance across your multifamily portfolio?"
       />
     </>
   );
