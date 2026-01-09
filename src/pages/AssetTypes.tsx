@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building2, Home, Building, ShoppingBag, Warehouse, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import { Helmet } from 'react-helmet-async';
@@ -7,45 +7,39 @@ import { Helmet } from 'react-helmet-async';
 const AssetTypes = () => {
   const assetTypes = [
     {
-      icon: Home,
       title: "Multifamily",
-      snippet: "Enhancing value across stabilized, lease-up, and mixed-use communities through strategic management, tenant experience, and AI-powered retention analytics.",
       proofPoint: "95% tenant satisfaction and 8% NOI growth portfolio-wide.",
+      image: "/images/multifamily-hero.jpg",
       href: "/asset-types/multifamily"
     },
     {
-      icon: Building2,
       title: "HUD & Affordable Housing",
-      snippet: "Specialized compliance and operations expertise for HUD-regulated and affordable portfolios. We combine RentalAi automation with deep knowledge of HUD 50059 and EIV to ensure accuracy, transparency, and sustained compliance.",
       proofPoint: "100% HUD audit compliance across three managed communities.",
+      image: "/images/hud-hero.jpg",
       href: "/asset-types/hud-affordable"
     },
     {
-      icon: Building,
       title: "Office",
-      snippet: "Positioning workplaces for tenant experience, resilience, and hybrid adaptation. Our data-driven leasing strategies and workplace analytics align space with productivity and ROI.",
       proofPoint: "15% OpEx savings achieved through workplace realignment.",
+      image: "/images/office-hero.png",
       href: "/asset-types/office"
     },
     {
-      icon: ShoppingBag,
       title: "Retail",
-      snippet: "Driving foot traffic and value through curated tenant mixes, merchandising analytics, and data-backed leasing strategies. We optimize visibility, sales capture, and rent rolls.",
       proofPoint: "Average sales per SF increased 18% post-remerchandising.",
+      image: "/images/retail-hero.png",
       href: "/asset-types/retail"
     },
     {
-      icon: Warehouse,
       title: "Industrial & Logistics",
-      snippet: "Optimizing logistics, last-mile, and manufacturing real estate with data-driven site selection, space utilization, and facility efficiency modeling.",
       proofPoint: "Warehouse occupancy and utilization improved 22% via AI forecasting.",
+      image: "/images/industrial-hero.png",
       href: "/asset-types/industrial"
     },
     {
-      icon: Heart,
       title: "Senior Housing & Healthcare",
-      snippet: "Delivering operational stability, resident-focused care, and regulatory compliance across senior living, assisted living, and healthcare facilities.",
       proofPoint: "Occupancy recovery 10% faster than market average post-pandemic.",
+      image: "/images/senior-hero.png",
       href: "/asset-types/senior-housing"
     }
   ];
@@ -118,56 +112,40 @@ const AssetTypes = () => {
         {/* Asset Types Grid */}
         <section id="asset-types" className="bg-white section-spacing">
           <div className="container-premium">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {assetTypes.map((assetType, index) => {
-                const IconComponent = assetType.icon;
                 return (
-                  <div 
+                  <Link
                     key={index}
-                    className="premium-card p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2"
-                    tabIndex={0}
-                    onMouseEnter={() => {
-                      trackButtonClick(`asset_type_hover_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
+                    to={assetType.href}
+                    className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
+                    style={{ backgroundImage: `url(${assetType.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    onClick={() => {
+                      trackButtonClick(`asset_type_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
+                      trackLinkClick(assetType.title, assetType.href);
                     }}
                   >
-                    {/* Asset Type Icon */}
-                    <div className="flex items-start space-x-4 mb-6">
-                      <div className="icon-accent p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent className="h-8 w-8" />
-                      </div>
-                      <h2 className="text-xl font-display font-bold text-hhp-navy">
+                    {/* Background Overlay */}
+                    <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+                    
+                    {/* Content at Bottom-Left */}
+                    <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                      <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                         {assetType.title}
-                      </h2>
+                      </h3>
+                      <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
+                        <span>Learn More</span>
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </div>
                     </div>
                     
-                    {/* Asset Type Description */}
-                    <p className="text-hhp-charcoal leading-relaxed mb-6">
-                      {assetType.snippet}
-                    </p>
-                    
-                    {/* Proof Point */}
-                    <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
-                      <p className="font-semibold text-hhp-navy">
-                        <span className="text-hhp-navy">Proof Point:</span> {assetType.proofPoint}
+                    {/* Proof Point on Hover */}
+                    <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 z-20">
+                      <p className="text-white text-center text-sm sm:text-base leading-relaxed">
+                        <span className="font-semibold">Proof Point:</span> {assetType.proofPoint}
                       </p>
                     </div>
-                    
-                    {/* CTA */}
-                    <Link 
-                      to={assetType.href}
-                      className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:ring-offset-2 rounded"
-                      onClick={() => {
-                        trackButtonClick(`learn_more_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
-                        trackLinkClick(`Learn More ${assetType.title}`, assetType.href);
-                      }}
-                      aria-label={`Learn more about ${assetType.title}`}
-                    >
-                      <span>Learn More</span>
-                      <svg className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </Link>
-                  </div>
+                  </Link>
                 );
               })}
             </div>

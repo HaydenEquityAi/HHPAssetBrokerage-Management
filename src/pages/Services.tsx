@@ -1,65 +1,44 @@
 import { Link } from 'react-router-dom';
-import { Building2, Globe, DollarSign, Users, Target, Settings, FileText, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
 const Services = () => {
   const services = [
     {
-      icon: Building2,
       title: "Property Management",
-      snippet: "We go beyond operations to deliver NOI growth, compliance excellence, and superior tenant experiences. With RentalAi dashboards and HUD expertise, we transform management into measurable performance.",
-      proofPoint: "22% delinquency reduction at HUD property.",
+      image: "/images/property-management-hero.jpg",
       href: "/services/property-management"
     },
     {
-      icon: Globe,
+      title: "Leasing & Representation",
+      image: "/images/leasing-representation-hero.jpg",
+      href: "/services/leasing-representation"
+    },
+    {
+      title: "Investment & Capital Markets",
+      image: "/images/Investment-capital-markets-hero.jpg",
+      href: "/services/investment-capital-markets"
+    },
+    {
       title: "Advisory & Site Selection",
-      snippet: "Real estate decisions hinge on location. We use demographics, GIS mapping, and LeaseAi analytics to match portfolios with workforce, logistics, and long-term growth.",
-      proofPoint: "HQ relocation saved 14% OpEx.",
+      image: "/images/site-selection-hero.jpg",
       href: "/services/advisory-site-selection"
     },
     {
-      icon: DollarSign,
-      title: "Investment Sales",
-      snippet: "Our capital markets team combines institutional valuation rigor with AI-powered buyer targeting to unlock liquidity and maximize proceeds.",
-      proofPoint: "Nine offers secured within 30 days.",
-      href: "/services/investment-sales"
+      title: "Development Advisory",
+      image: "/images/development-advisory-hero.jpg",
+      href: "/services/development-advisory"
     },
     {
-      icon: Building2,
-      title: "Landlord Representation",
-      snippet: "We accelerate leasing velocity through tenant targeting, dynamic rent optimization, and data-backed marketing campaigns.",
-      proofPoint: "Lease-up downtime cut by 60%.",
-      href: "/services/landlord-representation"
+      title: "Broker of Record & Consulting Services",
+      image: "/images/broker-consulting-hero.jpg",
+      href: "/services/broker-consulting"
     },
     {
-      icon: Users,
-      title: "Tenant Representation",
-      snippet: "Occupiers trust us to secure favorable terms, align space with workforce strategy, and forecast occupancy costs with precision.",
-      proofPoint: "18% savings achieved through lease renegotiation.",
-      href: "/services/tenant-representation"
-    },
-    {
-      icon: Target,
-      title: "Acquisitions",
-      snippet: "We source and underwrite opportunities with AI-driven deal pipelines, stress-tested models, and disciplined structuring to protect investor capital.",
-      proofPoint: "$500M in deals evaluated in 2025.",
-      href: "/services/acquisitions"
-    },
-    {
-      icon: Settings,
-      title: "Development",
-      snippet: "From feasibility to lease-up, we manage ground-up projects with entitlement dashboards, cost controls, and absorption forecasts.",
-      proofPoint: "Permitting timelines cut by 30%.",
-      href: "/services/development"
-    },
-    {
-      icon: FileText,
-      title: "Consulting",
-      snippet: "For complex challenges, we provide bespoke consulting — from HUD compliance and operational turnarounds to tech adoption and portfolio strategy.",
-      proofPoint: "12% NOI lift achieved via process reengineering.",
-      href: "/services/consulting"
+      title: "Financial Services",
+      image: "/images/financial-services-hero.jpg",
+      href: "/services/financial-services"
     }
   ];
 
@@ -92,52 +71,33 @@ const Services = () => {
       {/* Services Grid */}
       <section id="services" className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => {
-              const IconComponent = service.icon;
               return (
-                <div 
+                <Link
                   key={index}
-                  className="premium-card p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
-                  onMouseEnter={() => {
-                    trackButtonClick(`service_hover_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
+                  to={service.href}
+                  className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
+                  style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  onClick={() => {
+                    trackButtonClick(`service_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
+                    trackLinkClick(service.title, service.href);
                   }}
                 >
-                  {/* Service Icon */}
-                  <div className="flex items-start space-x-4 mb-6">
-                    <div className="icon-accent p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent className="h-8 w-8" />
-                    </div>
-                    <h2 className="text-xl font-display font-bold text-hhp-navy">
+                  {/* Background Overlay */}
+                  <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+                  
+                  {/* Content at Bottom-Left */}
+                  <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                    <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                       {service.title}
-                    </h2>
+                    </h3>
+                    <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
+                      <span>Explore Service</span>
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </div>
                   </div>
-                  
-                  {/* Service Description */}
-                  <p className="text-hhp-charcoal leading-relaxed mb-6">
-                    {service.snippet}
-                  </p>
-                  
-                  {/* Proof Point */}
-                  <div className="bg-hhp-accent/10 border-l-4 border-hhp-accent p-4 rounded-lg mb-6">
-                    <p className="font-semibold text-hhp-navy">
-                      <span className="text-hhp-navy">Proof Point:</span> {service.proofPoint}
-                    </p>
-                  </div>
-                  
-                  {/* CTA */}
-                  <Link 
-                    to={service.href}
-                    className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group"
-                    onClick={() => {
-                      trackButtonClick(`learn_more_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
-                      trackLinkClick(`Learn More ${service.title}`, service.href);
-                    }}
-                  >
-                    <span>Learn More</span>
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Link>
-                </div>
+                </Link>
               );
             })}
           </div>
