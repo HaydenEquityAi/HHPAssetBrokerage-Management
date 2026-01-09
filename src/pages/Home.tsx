@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* Core Services Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Core Services</h2>
@@ -234,7 +234,7 @@ const Home = () => {
       </section>
 
       {/* Asset Types Section */}
-      <section className="bg-gray-50 section-spacing">
+      <section className="bg-gray-50 pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Asset Types We Serve</h2>
@@ -243,7 +243,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
             <Link 
               to="/asset-types/multifamily" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
@@ -387,7 +387,7 @@ const Home = () => {
       </section>
 
       {/* Technology Advantage Section */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title text-hhp-navy mb-6">Technology Advantage</h2>
@@ -395,7 +395,7 @@ const Home = () => {
               We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 sm:mb-8">
               {/* AI Platforms Card */}
               <Link 
                 to="/technology/ai-platforms"
@@ -453,16 +453,16 @@ const Home = () => {
       </section>
 
       {/* Insights & Intelligence Section */}
-      <section className="bg-gray-50 section-spacing">
+      <section className="bg-gray-50 pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12">
             <h2 className="section-title text-hhp-navy mb-6">Insights & Intelligence</h2>
             <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
               Stay ahead with market reports, compliance updates, and analytics-driven strategies.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6 sm:mb-8">
             <div className="premium-card">
               <div className="mb-4">
                 <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
@@ -555,7 +555,7 @@ const Home = () => {
       </section>
 
       {/* Final CTA Banner */}
-      <section className="bg-hhp-navy text-white py-20">
+      <section className="bg-hhp-navy text-white pt-16 pb-8 sm:pt-20 sm:pb-10">
         <div className="container-premium text-center">
           <div className="text-2xl md:text-3xl font-display leading-relaxed text-white/90 mb-12 max-w-4xl mx-auto">
             "HHP Asset Group is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms."
@@ -575,7 +575,7 @@ const Home = () => {
       </section>
 
       {/* Divider Line */}
-      <div className="w-full h-px bg-white/30 my-12 sm:my-16" />
+      <div className="w-full h-px bg-white/30 my-6 sm:my-8" />
     </Layout>
   );
 };
