@@ -366,14 +366,14 @@ const Header = () => {
                 Resident Login
               </Link>
               <Link 
-                to="/owner-login" 
+                to="/investor-portal" 
                 className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200"
                 onClick={() => {
-                  trackButtonClick('owner_login', 'header');
-                  trackLinkClick('Owner Login', '/owner-login');
+                  trackButtonClick('investor_portal', 'header');
+                  trackLinkClick('Investor Portal', '/investor-portal');
                 }}
               >
-                Owner Login
+                Investor Portal
               </Link>
             </div>
           </nav>
@@ -482,11 +482,11 @@ const Header = () => {
                   Resident Login
                 </Link>
                 <Link 
-                  to="/owner-login" 
+                  to="/investor-portal" 
                   className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200 py-3 px-2 hover:bg-gray-50 rounded-md min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Owner Login
+                  Investor Portal
                 </Link>
               </div>
             </div>

@@ -230,7 +230,7 @@ const About = () => {
                     {expandedBios.phil && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Phil Ashley serves as Director of National Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution across all major asset classes.
+                          Phil Ashley serves as Director of Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution across all major asset classes.
                         </p>
                         <p>
                           Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across national markets. His systematic approach to property operations and investor relations makes him an invaluable strategic resource for HHP's sophisticated client base nationwide.

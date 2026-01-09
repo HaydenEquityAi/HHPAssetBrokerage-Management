@@ -253,16 +253,16 @@ const ResidentLogin = () => {
                 Back to Home
               </Link>
               <div className="text-sm text-hhp-charcoal">
-                <span className="mr-2">Need owner access?</span>
+                <span className="mr-2">Need investor access?</span>
                 <Link
-                  to="/owner-login"
+                  to="/investor-portal"
                   className="text-hhp-navy hover:text-hhp-navy/80 transition-colors font-medium"
                   onClick={() => {
-                    trackLinkClick('Owner Login', '/owner-login');
-                    trackButtonClick('owner_login_link', 'resident_login_page');
+                    trackLinkClick('Investor Portal', '/investor-portal');
+                    trackButtonClick('investor_portal_link', 'resident_login_page');
                   }}
                 >
-                  Owner Login
+                  Investor Portal
                 </Link>
               </div>
               <div className="text-sm text-hhp-charcoal/70">

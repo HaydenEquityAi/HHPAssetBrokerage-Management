@@ -25,7 +25,7 @@ import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import Opportunities from "./pages/Opportunities";
 import ResidentLogin from "./pages/ResidentLogin";
-import OwnerLogin from "./pages/OwnerLogin";
+import InvestorPortal from "./pages/InvestorPortal";
 import NotFound from "./pages/NotFound";
 
 // New Service Pages
@@ -136,7 +136,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/opportunities" element={<Opportunities />} />
             <Route path="/resident-login" element={<ResidentLogin />} />
-            <Route path="/owner-login" element={<OwnerLogin />} />
+            <Route path="/investor-portal" element={<InvestorPortal />} />
             
             {/* Legacy routes for backward compatibility */}
             <Route path="/management" element={<Services />} />

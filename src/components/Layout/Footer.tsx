@@ -4,7 +4,7 @@ import { Mail, MapPin, Linkedin, Facebook } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-hhp-navy text-white">
-      <div className="container-premium py-8 sm:py-10">
+      <div className="container-premium pt-8 sm:pt-10 pb-4 sm:pb-6">
         {/* Top Row: Logo + Horizontal Navigation */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo */}
@@ -40,8 +40,8 @@ const Footer = () => {
               <Link to="/resident-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Resident Login →
               </Link>
-              <Link to="/owner-login" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
-                Owner Login →
+              <Link to="/investor-portal" className="text-sm text-white/70 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
+                Investor Portal →
               </Link>
             </div>
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar - Copyright */}
-        <div className="border-t border-white/20 pt-4 sm:pt-6">
+        <div className="border-t border-white/20 pt-4 sm:pt-6 pb-0">
           <p className="text-xs sm:text-sm text-white/70 text-center">
             © 2024 HHP Asset Group. All rights reserved.
           </p>
