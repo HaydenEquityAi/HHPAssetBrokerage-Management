@@ -575,7 +575,7 @@ const Home = () => {
       </section>
 
       {/* Divider Line */}
-      <div className="w-full h-px bg-white/30 my-6 sm:my-8" />
+      <div className="w-full h-px bg-white/30 mt-6 sm:mt-8" />
     </Layout>
   );
 };

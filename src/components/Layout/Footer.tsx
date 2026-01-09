@@ -3,8 +3,8 @@ import { Mail, MapPin, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-hhp-navy text-white">
-      <div className="container-premium pt-8 sm:pt-10 pb-4 sm:pb-6">
+    <footer className="bg-hhp-navy text-white -mt-px">
+      <div className="container-premium pt-2 sm:pt-4 pb-4 sm:pb-6">
         {/* Top Row: Logo + Horizontal Navigation */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo */}
