@@ -300,7 +300,7 @@ const Header = () => {
                     {activeDropdown === item.name && (
                       <div 
                         id={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
-                        className="absolute top-full left-0 mt-2 w-[90vw] max-w-[450px] lg:min-w-[450px] bg-white rounded-lg shadow-premium py-4 md:py-6 z-50 border border-gray-200"
+                        className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white rounded-lg shadow-premium py-2 sm:py-3 z-50 border border-gray-200"
                         role="menu"
                         aria-label={`${item.name} submenu`}
                         onMouseEnter={() => handleDropdownEnter(item.name)}
@@ -308,12 +308,12 @@ const Header = () => {
                       >
                         {item.submenu.map((subItem, index) => (
                           subItem.name === 'divider' ? (
-                            <hr key={`divider-${index}`} className="my-5 border-gray-200" />
+                            <hr key={`divider-${index}`} className="my-0 border-gray-200" />
                           ) : (
                             <Link
                               key={subItem.name}
                               to={subItem.href}
-                              className="block px-4 py-3 md:px-8 md:py-5 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group min-h-[48px] flex items-center"
+                              className="block px-3 py-2 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group min-h-[36px] flex items-center leading-tight"
                               role="menuitem"
                               tabIndex={0}
                               onClick={() => {
@@ -323,7 +323,7 @@ const Header = () => {
                               }}
                               onKeyDown={(e) => handleDropdownKeyDown(e, item.name, index)}
                             >
-                              <div className="font-medium text-sm md:text-base">{subItem.name}</div>
+                              <div className="font-medium text-sm leading-tight">{subItem.name}</div>
                             </Link>
                           )
                         ))}
@@ -437,18 +437,18 @@ const Header = () => {
                       </div>
                       
                       {mobileAccordions[item.name] && (
-                        <div className="ml-4 space-y-2">
+                        <div className="ml-4 space-y-0">
                           {item.submenu.map((subItem, index) => (
                             subItem.name === 'divider' ? (
-                              <hr key={`mobile-divider-${index}`} className="my-3 border-gray-200" />
+                              <hr key={`mobile-divider-${index}`} className="my-0 border-gray-200" />
                             ) : (
                               <Link
                                 key={subItem.name}
                                 to={subItem.href}
-                                className="block py-3 px-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 min-h-[48px] flex items-center"
+                                className="block py-2 px-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 min-h-[36px] flex items-center leading-tight"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
-                                <div className="font-medium text-sm md:text-base">{subItem.name}</div>
+                                <div className="font-medium text-sm leading-tight">{subItem.name}</div>
                               </Link>
                             )
                           ))}
