@@ -89,6 +89,15 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Core Services Heading */}
+      <section className="bg-white py-12 sm:py-16 text-center">
+        <div className="container-premium">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hhp-navy tracking-[0.06em] uppercase">
+            CORE SERVICES
+          </h2>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section id="services" className="bg-white section-spacing">
         <div className="container-premium">
