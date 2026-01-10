@@ -20,7 +20,6 @@ const Header = () => {
 
   // New navigation structure
   const navigation = [
-    { name: 'Home', href: '/' },
     {
       name: 'Services',
       href: '/services',
@@ -227,10 +226,16 @@ const Header = () => {
     }`}>
       <div className="container-premium">
         <div className="flex items-center justify-between transition-all duration-300 h-14 md:h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center -ml-4 md:-ml-8 lg:-ml-32">
+          {/* Logo - Clickable Home Link */}
+          <Link 
+            to="/" 
+            className="flex items-center -ml-4 md:-ml-8 lg:-ml-32"
+            onClick={() => {
+              trackLinkClick('HHP Logo', '/');
+            }}
+          >
             <img 
-              src="/brand/HHP Asset Group Logo.png" 
+              src="/images/hhp-logo-navy-letters.png" 
               alt="HHP Asset Group" 
               className="h-9 sm:h-11 md:h-12 w-auto max-w-[140px] sm:max-w-[180px] md:max-w-none transition-all duration-300"
             />
