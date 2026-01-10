@@ -52,7 +52,7 @@ const About = () => {
         {/* RIGHT SIDE - Background Image */}
         <div 
           className="hidden md:block w-full md:w-[55%] lg:w-[60%] bg-cover bg-center bg-no-repeat"
-          style={{backgroundImage: 'url(/images/about-us-hero.jpg)'}}
+          style={{backgroundImage: 'url(/images/cool-real-estate-about-us-image.jpg)'}}
         >
           {/* Optional: Gradient overlay for better text contrast if needed */}
           <div className="w-full h-full bg-gradient-to-r from-black/10 to-transparent"></div>
