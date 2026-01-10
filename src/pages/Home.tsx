@@ -576,10 +576,10 @@ const Home = () => {
       </section>
 
       {/* Final CTA Banner */}
-      <section className="bg-hhp-navy text-white pt-16 pb-8 sm:pt-20 sm:pb-10">
+      <section className="bg-hhp-navy text-white pt-16 pb-6 sm:pt-20 sm:pb-8">
         <div className="container-premium text-center">
           <div className="text-2xl md:text-3xl font-display leading-relaxed text-white/90 mb-12 max-w-4xl mx-auto">
-            "HHP Asset Group is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms."
+            "HHP is the next-generation real estate partner delivering boutique, client-focused service enhanced by proprietary analytics platforms."
           </div>
           
           <Link 
@@ -596,7 +596,7 @@ const Home = () => {
       </section>
 
       {/* Divider Line */}
-      <div className="w-full h-px bg-white/30 mt-6 sm:mt-8" />
+      <div className="w-full h-px bg-white/30 mt-0" />
     </Layout>
   );
 };
