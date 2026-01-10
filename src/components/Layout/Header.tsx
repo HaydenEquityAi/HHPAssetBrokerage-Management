@@ -31,7 +31,8 @@ const Header = () => {
         { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection' },
         { name: 'Development Advisory', href: '/services/development-advisory' },
         { name: 'Broker of Record & Consulting Services', href: '/services/broker-consulting' },
-        { name: 'Financial Services', href: '/services/financial-services' }
+        { name: 'Financial Services', href: '/services/financial-services' },
+        { name: 'Facilities Management', href: '/services/facilities-management' }
       ]
     },
     {

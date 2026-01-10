@@ -39,6 +39,11 @@ const Services = () => {
       title: "Financial Services",
       image: "/images/financial-services-hero.jpg",
       href: "/services/financial-services"
+    },
+    {
+      title: "Facilities Management",
+      image: "/images/property-management-hero.jpg",
+      href: "/services/facilities-management"
     }
   ];
 

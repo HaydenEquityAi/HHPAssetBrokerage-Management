@@ -36,6 +36,7 @@ import AdvisorySiteSelection from "./pages/services/AdvisorySiteSelection";
 import DevelopmentAdvisory from "./pages/services/DevelopmentAdvisory";
 import BrokerConsulting from "./pages/services/BrokerConsulting";
 import FinancialServices from "./pages/services/FinancialServices";
+import FacilitiesManagement from "./pages/FacilitiesManagement";
 // Legacy service pages (for backward compatibility)
 import InvestmentSales from "./pages/services/InvestmentSales";
 import LandlordRepresentation from "./pages/services/LandlordRepresentation";
@@ -90,6 +91,7 @@ const App = () => (
             <Route path="/services/development-advisory" element={<DevelopmentAdvisory />} />
             <Route path="/services/broker-consulting" element={<BrokerConsulting />} />
             <Route path="/services/financial-services" element={<FinancialServices />} />
+            <Route path="/services/facilities-management" element={<FacilitiesManagement />} />
             
             {/* Legacy service routes (for backward compatibility) */}
             <Route path="/services/investment-sales" element={<InvestmentSales />} />

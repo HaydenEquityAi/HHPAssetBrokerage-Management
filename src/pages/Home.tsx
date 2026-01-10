@@ -229,6 +229,27 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+
+            <Link 
+              to="/services/facilities-management" 
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
+              style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              onClick={() => {
+                trackButtonClick('facilities_management', 'core_services');
+                trackLinkClick('Facilities Management', '/services/facilities-management');
+              }}
+            >
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
+                  Facilities Management
+                </h3>
+                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
