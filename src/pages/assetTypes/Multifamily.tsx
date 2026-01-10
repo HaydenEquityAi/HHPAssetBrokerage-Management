@@ -32,7 +32,7 @@ const Multifamily = () => {
 
       <AssetTypePage
         // Hero Section
-        heroImage="/images/multifamily-image-header.jpg"
+        heroImage="/images/multifamily-image-trendy.jpg"
         title="Multifamily"
         tagline="Institutional management and advisory across stabilized, lease-up, and mixed-use communities"
         heroButtonText="Schedule a Consultation"

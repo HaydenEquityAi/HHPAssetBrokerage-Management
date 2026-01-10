@@ -9,7 +9,7 @@ const AssetTypes = () => {
     {
       title: "Multifamily",
       proofPoint: "95% tenant satisfaction and 8% NOI growth portfolio-wide.",
-      image: "/images/multifamily-hero.jpg",
+      image: "/images/multifamily-image-trendy.jpg",
       href: "/asset-types/multifamily"
     },
     {
