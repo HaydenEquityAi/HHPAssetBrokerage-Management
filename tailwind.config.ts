@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['Montserrat', 'sans-serif'],
-        'body': ['Crimson Text', 'serif'],
+        'heading': ['Brandon Grotesque', 'Montserrat', 'sans-serif'],
+        'body': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+        'display': ['Brandon Grotesque', 'Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

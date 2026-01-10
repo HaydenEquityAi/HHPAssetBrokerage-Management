@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+/* Brandon Grotesque - Primary heading font (paid font, fallback to Montserrat) */
+/* If you have Brandon Grotesque license, add it here via Adobe Fonts or self-hosted */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +10,10 @@
 
 @layer base {
   :root {
+    /* Typography Variables - Robinson Park Style */
+    --font-heading: "Brandon Grotesque", "Montserrat", sans-serif;
+    --font-body: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    
     /* HHP Brand Colors - Exact navy blue matching logo */
     --hhp-navy: 216 43% 14%;
     --hhp-accent-blue: 199 89% 85%;
@@ -54,18 +60,23 @@
     --transition-elegant: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* HHP Premium Typography System */
+  /* HHP Premium Typography System - Robinson Park Style */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-heading);
     color: hsl(var(--hhp-navy));
     line-height: 1.2;
     font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   .hero-title {
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   @media (min-width: 640px) {
@@ -81,9 +92,12 @@
   }
 
   .section-title {
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.3;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   @media (min-width: 640px) {
@@ -98,12 +112,12 @@
     }
   }
 
-  /* Body text typography - modern system font stack */
+  /* Body text typography - clean system font stack */
   p, li, ul, ol {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: var(--font-body);
     color: hsl(var(--hhp-charcoal));
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   @media (min-width: 640px) {
@@ -113,12 +127,12 @@
     }
   }
 
-  /* Body element - system font for base text */
+  /* Body element - clean system font for base text */
   body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: hsl(var(--hhp-charcoal));
-    font-size: 1rem;
-    line-height: 1.65;
+    font-family: var(--font-body);
+    color: #242424;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   @media (min-width: 640px) {
@@ -198,17 +212,50 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: var(--font-body);
     overflow-x: hidden;
   }
+  
+  /* Navigation Links - Robinson Park Style */
+  nav a, nav button {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  /* All Buttons - Robinson Park Style */
+  button {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  /* Page Title - Robinson Park Style */
+  .page-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  /* All Caps Labels - Robinson Park Style */
+  [class*="uppercase"], .uppercase {
+    font-family: var(--font-heading);
+    letter-spacing: 0.06em;
+  }
 
-  /* Premium component styles */
+  /* Premium component styles - Robinson Park Style */
   .btn-hero {
     @apply bg-primary text-primary-foreground rounded-lg font-medium;
     @apply hover:bg-primary/90 transition-all duration-300;
     box-shadow: var(--shadow-elegant);
-    font-family: 'Crimson Text', serif;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 0.9375rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     min-height: 48px;
     min-width: 48px;
     padding: 0.75rem 1.5rem;
@@ -248,8 +295,11 @@
   .btn-secondary {
     @apply border-2 border-primary text-primary rounded-lg font-medium;
     @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
-    font-family: 'Crimson Text', serif;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 0.9375rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     min-height: 48px;
     min-width: 48px;
     padding: 0.75rem 1.5rem;
@@ -323,9 +373,11 @@
   }
 
   .hero-headline {
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: 700;
     font-size: 3.5rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     line-height: 1.1;
   }
 
