@@ -73,9 +73,26 @@ const AssetTypes = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section className="bg-hhp-navy section-spacing">
-          <div className="container-premium">
-            <div className="max-w-4xl mx-auto text-center fade-in">
+        <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
+          {/* Video Background */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            onLoadedMetadata={(e) => {
+              e.currentTarget.play().catch(() => {
+                // Silently handle autoplay failures
+              });
+            }}
+          >
+            <source src="/images/real-estate-hero.mp4" type="video/mp4" />
+          </video>
+          
+          <div className="relative z-10 container-premium text-center px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto fade-in">
               <h1 className="hero-title text-white mb-8">
                 Every Asset Class, One Integrated Platform
               </h1>
