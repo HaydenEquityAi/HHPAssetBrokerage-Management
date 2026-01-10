@@ -73,6 +73,19 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Vertically Integrated Approach Image */}
+      <section className="bg-white py-8 sm:py-12">
+        <div className="container-premium">
+          <div className="w-full">
+            <img 
+              src="/images/our-vertically-integrated-approach.png" 
+              alt="Our Vertically Integrated Approach" 
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section id="services" className="bg-white section-spacing">
         <div className="container-premium">
