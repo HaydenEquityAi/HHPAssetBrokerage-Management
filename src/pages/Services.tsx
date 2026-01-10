@@ -76,6 +76,9 @@ const Services = () => {
       {/* Vertically Integrated Approach Image */}
       <section className="bg-white py-8 sm:py-12">
         <div className="container-premium">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+            OUR VERTICALLY INTEGRATED APPROACH
+          </h2>
           <div className="w-full">
             <img 
               src="/images/our-vertically-integrated-approach.png" 
