@@ -12,7 +12,7 @@ const Services = () => {
     },
     {
       title: "Leasing & Representation",
-      image: "/images/leasing-representation-hero.jpg",
+      image: "/images/leasing-tenant-representation-hero.webp",
       href: "/services/leasing-representation"
     },
     {
