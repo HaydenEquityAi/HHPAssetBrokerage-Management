@@ -202,7 +202,7 @@ const Home = () => {
             <Link 
               to="/services/broker-consulting" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/broker-consulting-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
                 trackLinkClick('Broker of Record & Consulting Services', '/services/broker-consulting');

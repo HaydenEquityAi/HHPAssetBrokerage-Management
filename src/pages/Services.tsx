@@ -32,7 +32,7 @@ const Services = () => {
     },
     {
       title: "Broker of Record & Consulting Services",
-      image: "/images/broker-consulting-hero.jpg",
+      image: "/images/broker-record-hero.png",
       href: "/services/broker-consulting"
     },
     {
