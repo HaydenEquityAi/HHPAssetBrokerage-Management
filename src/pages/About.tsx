@@ -35,17 +35,27 @@ const About = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8">
-              About HHP
+      {/* Split Hero Section - Robinson Park Style */}
+      <section className="h-[400px] sm:h-[500px] md:h-[600px] flex flex-col md:flex-row">
+        {/* LEFT SIDE - Text & Navy Background */}
+        <div className="w-full md:w-[45%] lg:w-[40%] bg-hhp-navy flex items-center justify-start px-6 sm:px-8 lg:px-12 py-12 md:py-0">
+          <div className="max-w-md">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-heading font-bold tracking-[0.06em] uppercase mb-4 sm:mb-6">
+              ABOUT US
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-12">
-              HHP is a vertically integrated commercial real estate firm delivering institutional-grade brokerage, property management, and advisory services. We combine operator-led execution with disciplined strategy and technology-enabled decision-making to support owners across the full asset lifecycle.
+            <p className="text-white/80 text-base sm:text-lg leading-relaxed">
+              A vertically integrated commercial real estate firm delivering institutional-grade brokerage, property management, and advisory services.
             </p>
           </div>
+        </div>
+        
+        {/* RIGHT SIDE - Background Image */}
+        <div 
+          className="hidden md:block w-full md:w-[55%] lg:w-[60%] bg-cover bg-center bg-no-repeat"
+          style={{backgroundImage: 'url(/images/about-us-hero.jpg)'}}
+        >
+          {/* Optional: Gradient overlay for better text contrast if needed */}
+          <div className="w-full h-full bg-gradient-to-r from-black/10 to-transparent"></div>
         </div>
       </section>
 
