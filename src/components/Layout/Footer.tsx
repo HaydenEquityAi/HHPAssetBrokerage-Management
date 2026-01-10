@@ -25,9 +25,6 @@ const Footer = () => {
               <Link to="/asset-types" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Asset Types
               </Link>
-              <Link to="/technology" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
-                Technology
-              </Link>
               <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Insights
               </Link>

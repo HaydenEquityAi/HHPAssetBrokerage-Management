@@ -13,7 +13,6 @@ const Header = () => {
   // Refs for dropdown containers and click outside detection
   const servicesRef = useRef<HTMLDivElement>(null);
   const assetTypesRef = useRef<HTMLDivElement>(null);
-  const technologyRef = useRef<HTMLDivElement>(null);
   
   const location = useLocation();
   const navigate = useNavigate();
@@ -46,15 +45,6 @@ const Header = () => {
         { name: 'Senior Housing', href: '/asset-types/senior-housing' }
       ]
     },
-    {
-      name: 'Technology',
-      href: '/technology',
-      submenu: [
-        { name: 'AI Platforms', href: '/technology/ai-platforms' },
-        { name: 'Advisory & Analytics', href: '/technology/advisory-analytics' },
-        { name: 'Custom Solutions', href: '/technology/custom-solutions' }
-      ]
-    },
     { name: 'Insights', href: '/insights' },
     { name: 'About', href: '/about' }
   ];
@@ -69,7 +59,6 @@ const Header = () => {
   // Check if current path matches dropdown items
   const isServicesActive = location.pathname.startsWith('/services');
   const isAssetTypesActive = location.pathname.startsWith('/asset-types');
-  const isTechnologyActive = location.pathname.startsWith('/technology');
 
   // Sticky header effect
   useEffect(() => {
@@ -126,13 +115,11 @@ const Header = () => {
       case 'Enter':
       case ' ':
         event.preventDefault();
-        // Navigate to main page for Services, Asset Types, and Technology
+        // Navigate to main page for Services and Asset Types
         if (dropdownName === 'Services') {
           handleMainButtonClick(dropdownName, '/asset-management');
         } else if (dropdownName === 'Asset Types') {
           handleMainButtonClick(dropdownName, '/asset-types');
-        } else if (dropdownName === 'Technology') {
-          handleMainButtonClick(dropdownName, '/technology');
         } else {
           handleDropdownClick(dropdownName);
         }
@@ -189,8 +176,7 @@ const Header = () => {
       
       // Check if click is outside any dropdown
       if (servicesRef.current && !servicesRef.current.contains(target) &&
-          assetTypesRef.current && !assetTypesRef.current.contains(target) &&
-          technologyRef.current && !technologyRef.current.contains(target)) {
+          assetTypesRef.current && !assetTypesRef.current.contains(target)) {
         setActiveDropdown(null);
       }
     };
@@ -249,8 +235,7 @@ const Header = () => {
                   <div
                     ref={
                       item.name === 'Services' ? servicesRef :
-                      item.name === 'Asset Types' ? assetTypesRef :
-                      technologyRef
+                      assetTypesRef
                     }
                     className="relative"
                     onMouseEnter={() => handleDropdownEnter(item.name)}
@@ -260,19 +245,16 @@ const Header = () => {
                       <button 
                         className={`transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight ${
                           (item.name === 'Services' && isServicesActive) ||
-                          (item.name === 'Asset Types' && isAssetTypesActive) ||
-                          (item.name === 'Technology' && isTechnologyActive)
+                          (item.name === 'Asset Types' && isAssetTypesActive)
                             ? 'text-hhp-navy border-b-2 border-hhp-navy' 
                             : 'text-hhp-charcoal hover:text-hhp-navy'
                         }`}
                         onClick={() => {
-                          // Navigate to main page for Services, Asset Types, and Technology
+                          // Navigate to main page for Services and Asset Types
                           if (item.name === 'Services') {
                             handleMainButtonClick(item.name, '/asset-management');
                           } else if (item.name === 'Asset Types') {
                             handleMainButtonClick(item.name, '/asset-types');
-                          } else if (item.name === 'Technology') {
-                            handleMainButtonClick(item.name, '/technology');
                           } else {
                             handleDropdownClick(item.name);
                           }
@@ -408,15 +390,12 @@ const Header = () => {
                         <button
                           className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
                           onClick={() => {
-                            // Navigate to main page for Services, Asset Types, and Technology
+                            // Navigate to main page for Services and Asset Types
                             if (item.name === 'Services') {
                               handleMainButtonClick(item.name, '/asset-management');
                               setIsMobileMenuOpen(false);
                             } else if (item.name === 'Asset Types') {
                               handleMainButtonClick(item.name, '/asset-types');
-                              setIsMobileMenuOpen(false);
-                            } else if (item.name === 'Technology') {
-                              handleMainButtonClick(item.name, '/technology');
                               setIsMobileMenuOpen(false);
                             } else {
                               toggleMobileAccordion(item.name);
