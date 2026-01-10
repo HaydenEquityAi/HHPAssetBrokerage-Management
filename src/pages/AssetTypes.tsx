@@ -122,7 +122,7 @@ const AssetTypes = () => {
                   <Link
                     key={index}
                     to={assetType.href}
-                    className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
+                    className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[550px] flex flex-col p-0"
                     style={{ backgroundImage: `url(${assetType.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     onClick={() => {
                       trackButtonClick(`asset_type_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
