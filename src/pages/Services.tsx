@@ -17,7 +17,7 @@ const Services = () => {
     },
     {
       title: "Investment & Capital Markets",
-      image: "/images/Investment-capital-markets-hero.jpg",
+      image: "/images/investment-sales-capital-markets-hero.png",
       href: "/services/investment-capital-markets"
     },
     {

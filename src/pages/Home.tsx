@@ -139,7 +139,7 @@ const Home = () => {
             <Link 
               to="/services/investment-capital-markets" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/Investment-capital-markets-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
                 trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
