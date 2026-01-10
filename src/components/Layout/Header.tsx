@@ -222,10 +222,10 @@ const Header = () => {
 
   return (
     <header className={`bg-white shadow-subtle relative z-50 transition-all duration-300 ${
-      isSticky ? 'sticky top-0 py-2' : ''
+      isSticky ? 'sticky top-0 py-2' : 'py-2 sm:py-3'
     }`}>
       <div className="container-premium">
-        <div className="flex items-center justify-between transition-all duration-300 h-14 md:h-16">
+        <div className="flex items-center justify-between transition-all duration-300 h-12 md:h-14">
           {/* Logo - Clickable Home Link */}
           <Link 
             to="/" 
@@ -237,12 +237,12 @@ const Header = () => {
             <img 
               src="/images/hhp-logo-navy-letters.png" 
               alt="HHP Asset Group" 
-              className="h-9 sm:h-11 md:h-12 w-auto max-w-[140px] sm:max-w-[180px] md:max-w-none transition-all duration-300"
+              className="h-8 sm:h-10 md:h-11 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-none transition-all duration-300"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-10" role="menubar">
+          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
@@ -258,7 +258,7 @@ const Header = () => {
                   >
                     <div className="flex items-center">
                       <button 
-                        className={`transition-colors duration-200 font-medium text-sm sm:text-base ${
+                        className={`transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight ${
                           (item.name === 'Services' && isServicesActive) ||
                           (item.name === 'Asset Types' && isAssetTypesActive) ||
                           (item.name === 'Technology' && isTechnologyActive)
@@ -285,12 +285,12 @@ const Header = () => {
                         {item.name}
                       </button>
                       <button
-                        className="ml-1 p-1 hover:bg-gray-100 rounded transition-colors duration-200"
+                        className="ml-0.5 p-0.5 hover:bg-gray-100 rounded transition-colors duration-200"
                         onClick={() => handleDropdownClick(item.name)}
                         aria-label={`Toggle ${item.name} menu`}
                       >
                         <ChevronDown 
-                          className={`h-4 w-4 transition-transform duration-200 ${
+                          className={`h-3.5 w-3.5 transition-transform duration-200 ${
                             activeDropdown === item.name ? 'rotate-180' : ''
                           }`} 
                         />
@@ -333,7 +333,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.href}
-                    className={`text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium text-sm sm:text-base ${
+                    className={`text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight px-1 sm:px-2 py-1 ${
                       location.pathname === item.href ? 'text-hhp-navy border-b-2 border-hhp-navy' : ''
                     }`}
                     onClick={() => {
@@ -350,7 +350,7 @@ const Header = () => {
             {/* Contact CTA */}
             <Link
               to={contactCTA.href}
-              className="bg-hhp-navy text-white px-4 py-2.5 md:px-6 md:py-3 rounded font-medium hover:bg-hhp-navy/90 transition-colors duration-200 min-h-[48px] flex items-center justify-center text-sm md:text-base"
+              className="bg-hhp-navy text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded font-medium hover:bg-hhp-navy/90 transition-colors duration-200 min-h-[40px] flex items-center justify-center text-xs sm:text-sm leading-tight"
               onClick={() => {
                 trackButtonClick('contact_cta', 'header');
                 trackLinkClick('CONTACT', contactCTA.href);
@@ -360,10 +360,10 @@ const Header = () => {
             </Link>
 
             {/* Utility Links */}
-            <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-gray-300">
+            <div className="flex items-center space-x-2 sm:space-x-3 ml-4 sm:ml-6 pl-4 sm:pl-6 border-l border-gray-300">
               <Link 
                 to="/resident-login" 
-                className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200"
+                className="text-hhp-charcoal hover:text-hhp-navy text-xs sm:text-sm font-medium transition-colors duration-200 leading-tight px-1 sm:px-2 py-1"
                 onClick={() => {
                   trackButtonClick('resident_login', 'header');
                   trackLinkClick('Resident Login', '/resident-login');
@@ -373,7 +373,7 @@ const Header = () => {
               </Link>
               <Link 
                 to="/investor-portal" 
-                className="text-hhp-charcoal hover:text-hhp-navy text-sm font-medium transition-colors duration-200"
+                className="text-hhp-charcoal hover:text-hhp-navy text-xs sm:text-sm font-medium transition-colors duration-200 leading-tight px-1 sm:px-2 py-1"
                 onClick={() => {
                   trackButtonClick('investor_portal', 'header');
                   trackLinkClick('Investor Portal', '/investor-portal');
