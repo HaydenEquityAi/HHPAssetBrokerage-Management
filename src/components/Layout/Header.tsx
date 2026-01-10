@@ -225,11 +225,11 @@ const Header = () => {
       isSticky ? 'sticky top-0 py-2' : 'py-2 sm:py-3'
     }`}>
       <div className="container-premium">
-        <div className="flex items-center justify-between transition-all duration-300 h-12 md:h-14">
+        <div className="flex items-center gap-8 sm:gap-12 lg:gap-16 transition-all duration-300 h-12 md:h-14">
           {/* Logo - Clickable Home Link */}
           <Link 
             to="/" 
-            className="flex items-center -ml-4 md:-ml-8 lg:-ml-32"
+            className="flex items-center flex-shrink-0"
             onClick={() => {
               trackLinkClick('HHP Logo', '/');
             }}
@@ -242,7 +242,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6" role="menubar">
+          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6 ml-auto" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
