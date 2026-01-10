@@ -42,7 +42,7 @@ const Services = () => {
     },
     {
       title: "Facilities Management",
-      image: "/images/property-management-hero.jpg",
+      image: "/images/facilities-management-hero-image.jpg",
       href: "/services/facilities-management"
     }
   ];
