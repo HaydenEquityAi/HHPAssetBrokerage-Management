@@ -19,6 +19,9 @@ const Footer = () => {
           {/* Horizontal Navigation Links */}
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+              <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
+                About
+              </Link>
               <Link to="/asset-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Services
               </Link>
@@ -27,9 +30,6 @@ const Footer = () => {
               </Link>
               <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Insights
-              </Link>
-              <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
-                About
               </Link>
               <Link to="/opportunities" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
                 Opportunities

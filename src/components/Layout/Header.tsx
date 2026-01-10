@@ -19,6 +19,7 @@ const Header = () => {
 
   // New navigation structure
   const navigation = [
+    { name: 'About', href: '/about' },
     {
       name: 'Services',
       href: '/services',
@@ -45,8 +46,7 @@ const Header = () => {
         { name: 'Senior Housing', href: '/asset-types/senior-housing' }
       ]
     },
-    { name: 'Insights', href: '/insights' },
-    { name: 'About', href: '/about' }
+    { name: 'Insights', href: '/insights' }
   ];
 
   // Contact as primary CTA
