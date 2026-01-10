@@ -25,7 +25,7 @@ const ServiceStub = ({ title, description, serviceType }: ServiceStubProps) => {
               to="/contact" 
               className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200"
             >
-              Get in Touch
+              CONTACT
               <ArrowRight className="inline ml-2 h-5 w-5" />
             </Link>
           </div>

@@ -125,7 +125,7 @@ const Contact = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in px-4">
             <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
-              Get in Touch
+              CONTACT
             </h1>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-8 sm:mb-10 lg:mb-12">
               Ready to transform your real estate operations? Let's discuss how HHP Asset Group can help you achieve your goals.

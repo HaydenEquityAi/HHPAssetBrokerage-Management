@@ -61,7 +61,7 @@ const Header = () => {
 
   // Contact as primary CTA
   const contactCTA = {
-    name: 'Get in Touch',
+    name: 'CONTACT',
     href: '/contact',
     isPrimary: true
   };
@@ -353,7 +353,7 @@ const Header = () => {
               className="bg-hhp-navy text-white px-4 py-2.5 md:px-6 md:py-3 rounded font-medium hover:bg-hhp-navy/90 transition-colors duration-200 min-h-[48px] flex items-center justify-center text-sm md:text-base"
               onClick={() => {
                 trackButtonClick('contact_cta', 'header');
-                trackLinkClick('Get in Touch', contactCTA.href);
+                trackLinkClick('CONTACT', contactCTA.href);
               }}
             >
               {contactCTA.name}
