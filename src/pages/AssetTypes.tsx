@@ -92,19 +92,6 @@ const AssetTypes = () => {
               >
                 Explore Asset Types →
               </Link>
-              
-              {/* Optional KPI chips */}
-              <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  100% HUD Audit Compliance
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  8% NOI Lift
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  50% Faster Lease-Up
-                </div>
-              </div>
             </div>
           </div>
         </section>

@@ -9,16 +9,27 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
+        {/* Fallback Background Image */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+          style={{backgroundImage: 'url(/images/multifamily-hero.jpg)'}}
+        />
+        
         {/* Video Background */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay
           loop
           muted
           playsInline
           preload="metadata"
           poster="/images/multifamily-hero.jpg"
+          onLoadedMetadata={(e) => {
+            e.currentTarget.play().catch(() => {
+              // Silently handle autoplay failures
+            });
+          }}
         >
           <source src="/images/skyline-hero-video.mp4" type="video/mp4" />
         </video>
@@ -416,7 +427,7 @@ const Home = () => {
               We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 sm:mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
               {/* AI Platforms Card */}
               <Link 
                 to="/technology/ai-platforms"
@@ -428,7 +439,7 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
                   <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">AI Platforms</h3>
                 </div>
               </Link>
@@ -444,7 +455,7 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
                   <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Advisory & Analytics</h3>
                 </div>
               </Link>
@@ -460,7 +471,7 @@ const Home = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
                   <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Custom Solutions</h3>
                 </div>
               </Link>
