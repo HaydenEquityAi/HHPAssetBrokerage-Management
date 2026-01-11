@@ -160,7 +160,7 @@ const Home = () => {
             <Link 
               to="/services/advisory-site-selection" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/site-selection-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
                 trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
@@ -181,7 +181,7 @@ const Home = () => {
             <Link 
               to="/services/development-advisory" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/development-advisory-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/development-advisory-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('development_advisory', 'core_services');
                 trackLinkClick('Development Advisory', '/services/development-advisory');
@@ -300,7 +300,7 @@ const Home = () => {
             <Link 
               to="/asset-types/hud-affordable" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/hud-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/affordable-housing-image.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
                 trackLinkClick('HUD & Affordable', '/asset-types/hud-affordable');
@@ -342,7 +342,7 @@ const Home = () => {
             <Link 
               to="/asset-types/retail" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/retail-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/retail-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
                 trackLinkClick('Retail', '/asset-types/retail');
