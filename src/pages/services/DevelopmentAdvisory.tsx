@@ -347,11 +347,16 @@ const DevelopmentAdvisory = () => {
         {/* RIGHT: Dark overlay with text and CTA */}
         <div className="bg-gray-800 text-white flex items-center p-8 sm:p-12 lg:p-16">
           <div className="max-w-lg">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              DEVELOPMENT ADVISORY
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
+              ABOUT US
             </h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              HHP provides development advisory services to owners and developers seeking structured insight during the planning, feasibility, and execution phases of commercial real estate projects.
+            <p className="text-lg text-white mb-8 leading-relaxed">
+              HHP Asset Management is an operator-led real estate platform combining 
+              institutional discipline with hands-on execution. We specialize in vertically 
+              integrated asset management, bringing together property management, facilities 
+              operations, financial oversight, and strategic advisory under one integrated 
+              approach. Our focus is disciplined performance, long-term value creation, and 
+              owner-aligned decision-making across every phase of asset ownership.
             </p>
             <div className="pt-8 border-t border-gray-600">
               <h3 className="text-2xl font-bold mb-6 tracking-wide">
