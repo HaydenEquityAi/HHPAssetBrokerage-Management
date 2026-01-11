@@ -61,12 +61,12 @@ const DevelopmentAdvisory = () => {
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container-premium">
           <h2 className="section-title text-hhp-navy mb-6">
-            OUR DEVELOPMENT ADVISORY APPROACH
+            OUR VERTICALLY INTEGRATED APPROACH
           </h2>
           <div className="flex justify-center">
             <img 
               src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Development Advisory Approach"
+              alt="Our Vertically Integrated Approach"
               className="w-full max-w-5xl h-auto"
             />
           </div>

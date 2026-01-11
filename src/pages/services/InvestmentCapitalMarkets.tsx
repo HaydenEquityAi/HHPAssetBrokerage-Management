@@ -40,14 +40,14 @@ const InvestmentCapitalMarkets = () => {
             </div>
 
             {/* Service Approach Chart */}
-            <div>
+            <div className="mb-8">
               <h2 className="section-title text-hhp-navy mb-6">
-                OUR INVESTMENT & CAPITAL MARKETS APPROACH
+                OUR VERTICALLY INTEGRATED APPROACH
               </h2>
               <div className="flex justify-center">
                 <img 
                   src="/images/our-vertically-integrated-approach.png" 
-                  alt="Our Investment & Capital Markets Approach"
+                  alt="Our Vertically Integrated Approach"
                   className="w-full max-w-5xl h-auto"
                 />
               </div>
