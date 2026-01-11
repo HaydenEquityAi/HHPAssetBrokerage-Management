@@ -46,7 +46,7 @@ const PropertyManagement = () => {
               </h2>
               <div className="flex justify-center">
                 <img 
-                  src="/images/our-vertically-integrated-approach.png" 
+                  src="/images/property-management-chart.png" 
                   alt="Our Vertically Integrated Approach"
                   className="w-full max-w-5xl h-auto"
                 />
