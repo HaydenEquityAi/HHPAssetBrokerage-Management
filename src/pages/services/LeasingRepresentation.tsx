@@ -10,7 +10,7 @@ const LeasingRepresentation = () => {
       {/* Hero Section */}
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/leasing-tenant-representation-hero.webp)' }}
+        style={{ backgroundImage: 'url(/images/leasing-representation-image.jpg)' }}
       >
         <div className="absolute inset-0 bg-hhp-navy/60"></div>
         <div className="relative z-10 container-premium">
