@@ -42,7 +42,7 @@ const FacilitiesManagement = () => {
       {/* Core Content */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="max-w-4xl mx-auto space-y-16">
+          <div className="max-w-6xl mx-auto space-y-16">
             {/* Introduction */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Introduction</h2>
@@ -78,11 +78,11 @@ const FacilitiesManagement = () => {
               
               <Accordion type="single" collapsible className="w-full">
                 {/* Engineering & Building Systems */}
-                <AccordionItem value="engineering" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="engineering" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Engineering & Building Systems
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Mechanical, electrical, and plumbing system oversight</li>
                       <li>Preventive maintenance programs</li>
@@ -94,11 +94,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Preventive Maintenance & Inspections */}
-                <AccordionItem value="maintenance" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="maintenance" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Preventive Maintenance & Inspections
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Scheduled maintenance planning and execution</li>
                       <li>Regular building and system inspections</li>
@@ -110,11 +110,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Vendor & Contractor Management */}
-                <AccordionItem value="vendor" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="vendor" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Vendor & Contractor Management
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Vendor sourcing and qualification</li>
                       <li>Bidding and contract negotiation</li>
@@ -126,11 +126,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Safety & Regulatory Compliance */}
-                <AccordionItem value="safety" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="safety" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Safety & Regulatory Compliance
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Building code compliance monitoring</li>
                       <li>Fire safety and life safety system maintenance</li>
@@ -142,11 +142,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Landscaping & Exterior Maintenance */}
-                <AccordionItem value="landscaping" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="landscaping" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Landscaping & Exterior Maintenance
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Landscaping and grounds maintenance</li>
                       <li>Exterior building maintenance and repairs</li>
@@ -158,11 +158,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Parking & Common Area Management */}
-                <AccordionItem value="parking" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="parking" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Parking & Common Area Management
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Parking lot maintenance and striping</li>
                       <li>Common area cleaning and maintenance</li>
@@ -174,11 +174,11 @@ const FacilitiesManagement = () => {
                 </AccordionItem>
 
                 {/* Commercial Cleaning & Janitorial Services */}
-                <AccordionItem value="cleaning" className="border-b border-gray-300 py-2">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
+                <AccordionItem value="cleaning" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Commercial Cleaning & Janitorial Services
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-6">
+                  <AccordionContent className="pt-0 pb-8">
                     <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
                       <li>Janitorial service coordination and oversight</li>
                       <li>Cleaning schedule management</li>
@@ -263,7 +263,7 @@ const FacilitiesManagement = () => {
       {/* Who We Work With & How We Differ */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="max-w-4xl mx-auto space-y-16">
+          <div className="max-w-6xl mx-auto space-y-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* Who We Work With */}
               <div>
