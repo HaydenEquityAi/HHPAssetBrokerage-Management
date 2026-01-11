@@ -50,7 +50,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link 
                 to="/asset-management" 
-                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_services', 'home_hero');
                   trackLinkClick('Explore Services', '/asset-management');
@@ -60,7 +60,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/asset-types" 
-                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_asset_types', 'home_hero');
                   trackLinkClick('Explore Asset Types', '/asset-types');
@@ -70,7 +70,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/technology" 
-                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_technology', 'home_hero');
                   trackLinkClick('Explore Technology', '/technology');
@@ -96,8 +96,8 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 sm:gap-6 lg:gap-8 -mx-4 sm:mx-0">
             <Link 
               to="/services/property-management" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/property-management-picture.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[4/5] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/property-management-picture.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
                 trackLinkClick('Property Management', '/services/property-management');
@@ -117,8 +117,8 @@ const Home = () => {
 
             <Link 
               to="/services/leasing-representation" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/leasing-representation-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/leasing-representation-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('leasing_representation', 'core_services');
                 trackLinkClick('Leasing & Representation', '/services/leasing-representation');
@@ -138,8 +138,8 @@ const Home = () => {
 
             <Link 
               to="/services/investment-capital-markets" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
                 trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
@@ -159,8 +159,8 @@ const Home = () => {
 
             <Link 
               to="/services/advisory-site-selection" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/advisory-site-selection-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/advisory-site-selection-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
                 trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
@@ -180,8 +180,8 @@ const Home = () => {
 
             <Link 
               to="/services/development-advisory" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/development-advisory-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/development-advisory-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('development_advisory', 'core_services');
                 trackLinkClick('Development Advisory', '/services/development-advisory');
@@ -201,8 +201,8 @@ const Home = () => {
 
             <Link 
               to="/services/broker-consulting" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
                 trackLinkClick('Consulting and Strategic Advisory', '/services/broker-consulting');
@@ -222,8 +222,8 @@ const Home = () => {
 
             <Link 
               to="/services/financial-services" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('financial_services', 'core_services');
                 trackLinkClick('Financial Services', '/services/financial-services');
@@ -243,8 +243,8 @@ const Home = () => {
 
             <Link 
               to="/services/facilities-management" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/facilities-management-hero-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/facilities-management-hero-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('facilities_management', 'core_services');
                 trackLinkClick('Facilities Management', '/services/facilities-management');
@@ -278,8 +278,8 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 -mx-4 sm:mx-0">
             <Link 
               to="/asset-types/multifamily" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/multifamily-image-trendy.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/multifamily-image-trendy.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('multifamily', 'asset_types');
                 trackLinkClick('Multifamily', '/asset-types/multifamily');
@@ -299,8 +299,8 @@ const Home = () => {
 
             <Link 
               to="/asset-types/hud-affordable" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/affordable-housing-image.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/affordable-housing-image.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('hud_affordable', 'asset_types');
                 trackLinkClick('Affordable Housing', '/asset-types/hud-affordable');
@@ -320,8 +320,8 @@ const Home = () => {
 
             <Link 
               to="/asset-types/office" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/office-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/office-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('office', 'asset_types');
                 trackLinkClick('Office', '/asset-types/office');
@@ -341,8 +341,8 @@ const Home = () => {
 
             <Link 
               to="/asset-types/retail" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/retail-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/retail-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('retail', 'asset_types');
                 trackLinkClick('Retail', '/asset-types/retail');
@@ -362,8 +362,8 @@ const Home = () => {
 
             <Link 
               to="/asset-types/industrial" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/industrial-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/industrial-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('industrial', 'asset_types');
                 trackLinkClick('Industrial', '/asset-types/industrial');
@@ -383,8 +383,8 @@ const Home = () => {
 
             <Link 
               to="/asset-types/senior-housing" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/senior-housing-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+              style={{ backgroundImage: 'url(/images/senior-housing-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('senior_housing', 'asset_types');
                 trackLinkClick('Senior Housing', '/asset-types/senior-housing');
@@ -432,7 +432,7 @@ const Home = () => {
               <Link 
                 to="/technology/ai-platforms"
                 className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/ai-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: 'url(/images/ai-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
                 onClick={() => {
                   trackButtonClick('ai_platforms', 'technology_advantage');
                   trackLinkClick('AI Platforms', '/technology/ai-platforms');
@@ -448,7 +448,7 @@ const Home = () => {
               <Link 
                 to="/technology/advisory-analytics"
                 className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
                 onClick={() => {
                   trackButtonClick('advisory_analytics', 'technology_advantage');
                   trackLinkClick('Advisory & Analytics', '/technology/advisory-analytics');
@@ -464,7 +464,7 @@ const Home = () => {
               <Link 
                 to="/technology/custom-solutions"
                 className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/custom-solutions.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: 'url(/images/custom-solutions.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
                 onClick={() => {
                   trackButtonClick('custom_solutions', 'technology_advantage');
                   trackLinkClick('Custom Solutions', '/technology/custom-solutions');

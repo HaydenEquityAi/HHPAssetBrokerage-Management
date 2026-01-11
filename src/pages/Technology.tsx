@@ -211,7 +211,7 @@ const Technology = () => {
                 return (
                   <div 
                     key={index}
-                    className="premium-card p-6 sm:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2 w-full min-h-[400px] sm:min-h-auto"
+                    className="premium-card p-6 sm:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2 w-full"
                     tabIndex={0}
                     onMouseEnter={() => {
                       trackButtonClick(`tech_pillar_hover_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');

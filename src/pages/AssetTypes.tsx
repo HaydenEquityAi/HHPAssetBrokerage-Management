@@ -120,8 +120,8 @@ const AssetTypes = () => {
                   <Link
                     key={index}
                     to={assetType.href}
-                    className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[600px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-                    style={{ backgroundImage: `url(${assetType.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
+                    style={{ backgroundImage: `url(${assetType.image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
                     onClick={() => {
                       trackButtonClick(`asset_type_${assetType.title.toLowerCase().replace(/\s+/g, '_')}`, 'asset_types_grid');
                       trackLinkClick(assetType.title, assetType.href);
