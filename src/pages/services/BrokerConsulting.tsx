@@ -26,6 +26,153 @@ const BrokerConsulting = () => {
       <section className="bg-white section-spacing">
         <div className="container-premium">
           <div className="max-w-6xl mx-auto space-y-16">
+            {/* Consulting Services */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">Consulting Services</h2>
+              <p className="text-lg leading-relaxed text-gray-600 mb-6">
+                HHP provides consulting services for owners, boards, and stakeholders facing operational, governance, or transition-related challenges.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-600 mb-8">
+                Our consulting engagements are targeted, defined in scope, and designed to deliver clarity in complex situations.
+              </p>
+
+              <Accordion type="single" collapsible className="w-full mb-8">
+                {/* 1. Management Transitions */}
+                <AccordionItem value="transitions" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Management Transitions
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We support ownership and boards during management changes and organizational transitions.
+                    </p>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Transition planning and oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Interim operational support</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Risk identification and mitigation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Stakeholder coordination</span>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* 2. Operational & Financial Reviews */}
+                <AccordionItem value="reviews" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Operational & Financial Reviews
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We provide independent reviews to assess performance and identify improvement opportunities.
+                    </p>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Operational assessments</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial performance review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Process and structure evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Objective findings and recommendations</span>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* 3. Board & Ownership Advisory */}
+                <AccordionItem value="board" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Board & Ownership Advisory
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We support boards and ownership groups requiring independent perspective.
+                    </p>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Board-ready analysis and reporting</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Third-party validation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Strategic input for high-impact decisions</span>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* 4. Special Situations & Interim Support */}
+                <AccordionItem value="special" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Special Situations & Interim Support
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We provide targeted support during complex or time-sensitive situations.
+                    </p>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Special projects</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Interim leadership or advisory support</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Short-term, high-impact engagements</span>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+
+              <div className="space-y-6 mb-8">
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Engagement Style</h3>
+                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
+                    <li>Defined scope and objectives</li>
+                    <li>Clear deliverables</li>
+                    <li>Independent, objective perspective</li>
+                    <li>Professional discretion and accountability</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Who Consulting Services Are For</h3>
+                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
+                    <li>Owners navigating operational or organizational transitions</li>
+                    <li>Boards seeking independent, third-party perspective</li>
+                    <li>Stakeholders managing complex operational challenges</li>
+                    <li>Firms requiring specialized interim support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             {/* Broker of Record Services */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Broker of Record Services</h2>
@@ -200,153 +347,6 @@ const BrokerConsulting = () => {
                   <p className="text-lg leading-relaxed text-gray-600">
                     We understand brokerage operations from the inside. Our approach provides oversight without micromanagement, allowing firms to operate efficiently while remaining compliant and protected.
                   </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Consulting Services */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Consulting Services</h2>
-              <p className="text-lg leading-relaxed text-gray-600 mb-6">
-                HHP provides consulting services for owners, boards, and stakeholders facing operational, governance, or transition-related challenges.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-600 mb-8">
-                Our consulting engagements are targeted, defined in scope, and designed to deliver clarity in complex situations.
-              </p>
-
-              <Accordion type="single" collapsible className="w-full mb-8">
-                {/* 1. Management Transitions */}
-                <AccordionItem value="transitions" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
-                    Management Transitions
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
-                      We support ownership and boards during management changes and organizational transitions.
-                    </p>
-                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Transition planning and oversight</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Interim operational support</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Risk identification and mitigation</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Stakeholder coordination</span>
-                      </div>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                {/* 2. Operational & Financial Reviews */}
-                <AccordionItem value="reviews" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
-                    Operational & Financial Reviews
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
-                      We provide independent reviews to assess performance and identify improvement opportunities.
-                    </p>
-                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Operational assessments</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Financial performance review</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Process and structure evaluation</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Objective findings and recommendations</span>
-                      </div>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                {/* 3. Board & Ownership Advisory */}
-                <AccordionItem value="board" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
-                    Board & Ownership Advisory
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
-                      We support boards and ownership groups requiring independent perspective.
-                    </p>
-                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Board-ready analysis and reporting</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Third-party validation</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Strategic input for high-impact decisions</span>
-                      </div>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                {/* 4. Special Situations & Interim Support */}
-                <AccordionItem value="special" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
-                    Special Situations & Interim Support
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
-                      We provide targeted support during complex or time-sensitive situations.
-                    </p>
-                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Special projects</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Interim leadership or advisory support</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
-                        <span>Short-term, high-impact engagements</span>
-                      </div>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-
-              <div className="space-y-6 mb-8">
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Engagement Style</h3>
-                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                    <li>Defined scope and objectives</li>
-                    <li>Clear deliverables</li>
-                    <li>Independent, objective perspective</li>
-                    <li>Professional discretion and accountability</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Who Consulting Services Are For</h3>
-                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                    <li>Owners navigating operational or organizational transitions</li>
-                    <li>Boards seeking independent, third-party perspective</li>
-                    <li>Stakeholders managing complex operational challenges</li>
-                    <li>Firms requiring specialized interim support</li>
-                  </ul>
                 </div>
               </div>
             </div>
