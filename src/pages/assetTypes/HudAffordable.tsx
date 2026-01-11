@@ -77,6 +77,7 @@ const HudAffordable = () => {
         tenantRepresentation: "Tenant & Stakeholder Representation"
       }}
       servicesTitle={"Our Integrated Services for Affordable Housing"}
+      showAboutUs={true}
       
       // Technology Advantages / HHP Advantage
       technologyAdvantages={[
@@ -128,9 +129,7 @@ const HudAffordable = () => {
         }
       ]}
       
-      // CTA Section
-      ctaImage="/images/hud-cta.jpg"
-      ctaTitle="Looking to optimize your HUD & Affordable Housing portfolio? Let's talk."
+      // CTA Section - Removed
     />
   );
 };

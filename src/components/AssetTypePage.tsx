@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout/Layout';
 import { ArrowRight, Building, TrendingUp, Shield, Users, Target, BarChart3 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
 interface AssetTypePageProps {
   // Hero Section
@@ -55,9 +56,10 @@ interface AssetTypePageProps {
   insightsSubtitle?: string; // Optional: defaults to "Stay ahead with our latest..."
   
   // CTA Section
-  ctaImage: string;
-  ctaTitle: string;
+  ctaImage?: string;
+  ctaTitle?: string;
   heroButtonText?: string; // Optional: defaults to "Talk to Our Experts"
+  showAboutUs?: boolean; // Optional: show About Us section between services and technology
 }
 
 const AssetTypePage = ({
@@ -80,7 +82,8 @@ const AssetTypePage = ({
   insightsSubtitle,
   ctaImage,
   ctaTitle,
-  heroButtonText
+  heroButtonText,
+  showAboutUs
 }: AssetTypePageProps) => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('asset-contact');
@@ -330,6 +333,51 @@ const AssetTypePage = ({
         </div>
       </section>
 
+      {/* About Us Section */}
+      {showAboutUs && (
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px]">
+          {/* LEFT: Large property/building image */}
+          <div className="relative h-[400px] md:h-auto">
+            <img 
+              src="/images/about-us-image.jpg" 
+              alt={title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          
+          {/* RIGHT: Dark overlay with text and CTA */}
+          <div className="bg-gray-800 text-white flex items-center p-8 sm:p-12 lg:p-16">
+            <div className="max-w-lg">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
+                ABOUT US
+              </h2>
+              <p className="text-lg text-white mb-10 leading-relaxed">
+                HHP Asset Management is an operator-led real estate platform combining 
+                institutional discipline with hands-on execution. We specialize in vertically 
+                integrated asset management, bringing together property management, facilities 
+                operations, financial oversight, and strategic advisory under one integrated 
+                approach.
+              </p>
+              <div className="pt-8 border-t border-gray-500">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-8 tracking-widest text-white">
+                  DISCOVER<br/>WHAT WE DO
+                </h3>
+                <Link 
+                  to="/contact" 
+                  className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-heading font-semibold tracking-[0.06em] uppercase hover:bg-gray-100 transition"
+                  onClick={() => {
+                    trackButtonClick('contact_us_cta', `${title.toLowerCase().replace(/\s+/g, '_')}_split`);
+                    trackLinkClick('Contact Us', '/contact');
+                  }}
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Technology & Data Advantage / HHP Advantage */}
       {technologyAdvantages && technologyAdvantages.length > 0 && (
         <section className="py-20 bg-gray-50">
@@ -409,23 +457,25 @@ const AssetTypePage = ({
       </section>
 
       {/* CTA / Contact */}
-      <section 
-        id="asset-contact"
-        className="relative py-20 flex items-center justify-center"
-        style={{ backgroundImage: `url(${ctaImage})` }}
-      >
-        <div className="absolute inset-0 bg-hhp-navy/50"></div>
-        <div className="relative z-10 container-premium text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaTitle}</h2>
-          <Link 
-            to="/contact"
-            className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-heading font-semibold tracking-[0.06em] uppercase text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-          >
-            Schedule a Consultation
-            <ArrowRight className="inline ml-2 h-5 w-5" />
-          </Link>
-        </div>
-      </section>
+      {ctaImage && ctaTitle && (
+        <section 
+          id="asset-contact"
+          className="relative py-20 flex items-center justify-center"
+          style={{ backgroundImage: `url(${ctaImage})` }}
+        >
+          <div className="absolute inset-0 bg-hhp-navy/50"></div>
+          <div className="relative z-10 container-premium text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaTitle}</h2>
+            <Link 
+              to="/contact"
+              className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-heading font-semibold tracking-[0.06em] uppercase text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+            >
+              Schedule a Consultation
+              <ArrowRight className="inline ml-2 h-5 w-5" />
+            </Link>
+          </div>
+        </section>
+      )}
     </Layout>
   );
 };
