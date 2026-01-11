@@ -15,35 +15,68 @@ const HudAffordable = () => {
       
       // Services Context
       services={{
-        propertyManagement: "Comprehensive HUD-compliant property management ensuring seamless MOR audits, optimize subsidy performance, and maintain excellence in resident services.",
-        advisorySiteSelection: "Strategic guidance for affordable housing development and acquisitions, navigating complex regulatory environments and funding requirements.",
-        investmentSales: "Specialized disposition strategies for affordable housing portfolios, understanding unique buyer base and regulatory considerations.",
-        landlordRepresentation: "Expert lease administration for affordable housing properties, managing rent restriction compliance and tenant certification processes.",
-        tenantRepresentation: "Representation for organizations seeking affordable housing solutions, navigating waitlists and qualification processes.",
-        acquisitionsDevelopment: "Institutional underwriting for affordable housing projects, incorporating subsidy structures and regulatory requirements into investment analysis."
-      }}
-      
-      // Case Studies
-      caseStudies={[
-        {
-          image: "/images/hud-case1.jpg",
-          title: "HUD Program Excellence",
-          description: "Managed transition to new HUD program requirements across 500+ units, implementing comprehensive compliance protocols.",
-          impact: "Zero MOR findings for two consecutive years, 15% improvement in subsidy utilization"
+        propertyManagement: {
+          description: "Specialized management services designed for regulated and income-restricted housing environments.",
+          services: [
+            "Day-to-day property and on-site staff oversight",
+            "Compliance administration and documentation",
+            "Tenant eligibility, certifications, and recertifications",
+            "Maintenance coordination and capital planning",
+            "Financial reporting aligned with program and lender requirements"
+          ]
         },
-        {
-          image: "/images/hud-case2.jpg",
-          title: "New Construction Transition",
-          description: "Established operations for newly constructed affordable housing community, setting up all compliance systems from day one.",
-          impact: "100% occupancy within 6 months, perfect audit compliance record maintained"
+        advisorySiteSelection: {
+          description: "Strategic advisory services supporting acquisition, redevelopment, and long-term ownership decisions for affordable housing assets.",
+          services: [
+            "Program and regulatory feasibility analysis",
+            "Operational due diligence and compliance risk assessment",
+            "Transition planning for new ownership or management",
+            "Asset strategy development for stabilized and value-add properties"
+          ]
         },
-        {
-          image: "/images/hud-case3.jpg",
-          title: "Portfolio Optimization",
-          description: "Optimized operations across 12 affordable housing properties, standardizing compliance processes and resident services.",
-          impact: "25% reduction in administrative costs, 30% improvement in resident satisfaction scores"
+        investmentSales: {
+          description: "Advisory support for ownership transfers, recapitalizations, and long-term capital decisions within regulated housing environments.",
+          services: [
+            "Valuation and underwriting support reflecting affordability structures",
+            "Buyer and stakeholder coordination",
+            "Transaction execution support",
+            "Post-transaction operational and compliance transition planning"
+          ]
+        },
+        landlordRepresentation: {
+          description: "Occupancy coordination and leasing oversight aligned with affordability requirements and eligibility guidelines.",
+          services: [
+            "Occupancy strategy development",
+            "Rent and income restriction oversight",
+            "Leasing performance monitoring",
+            "Coordination between leasing and compliance functions"
+          ]
+        },
+        tenantRepresentation: {
+          description: "Representation and coordination for residents, nonprofit partners, agencies, and stakeholders involved in affordable housing communities.",
+          services: [
+            "Tenant qualification and program alignment",
+            "Housing placement and coordination support",
+            "Lease administration and compliance review",
+            "Stakeholder communication and reporting"
+          ]
+        },
+        acquisitionsDevelopment: {
+          description: "Support across acquisition, rehabilitation, and development phases with a focus on compliance readiness and operational execution.",
+          services: [
+            "Acquisition underwriting and regulatory review",
+            "Development feasibility and advisory support",
+            "Operational setup for affordability requirements",
+            "Lease-up and stabilization planning"
+          ]
         }
-      ]}
+      }}
+      serviceTitles={{
+        investmentSales: "Transaction Advisory",
+        landlordRepresentation: "Leasing & Occupancy Management",
+        tenantRepresentation: "Tenant & Stakeholder Representation"
+      }}
+      servicesTitle={"Our Integrated Services for Affordable Housing"}
       
       // Technology Advantages
       technologyAdvantages={[

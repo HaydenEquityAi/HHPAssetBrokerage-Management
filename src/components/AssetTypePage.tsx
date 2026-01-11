@@ -17,12 +17,12 @@ interface AssetTypePageProps {
   
   // Services Context (descriptions for each service relevant to this asset type)
   services: {
-    propertyManagement: string;
-    advisorySiteSelection: string;
-    investmentSales: string;
-    landlordRepresentation: string;
-    tenantRepresentation: string;
-    acquisitionsDevelopment: string;
+    propertyManagement: string | { description: string; services: string[] };
+    advisorySiteSelection: string | { description: string; services: string[] };
+    investmentSales: string | { description: string; services: string[] };
+    landlordRepresentation: string | { description: string; services: string[] };
+    tenantRepresentation: string | { description: string; services: string[] };
+    acquisitionsDevelopment: string | { description: string; services: string[] };
   };
   servicesTitle?: string; // Optional: defaults to "Our Integrated Services for {title}"
   servicesSubtitle?: string; // Optional: defaults to "Comprehensive solutions tailored to..."
@@ -131,9 +131,30 @@ const AssetTypePage = ({
                     {serviceTitles?.propertyManagement || "Property Management"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.propertyManagement}
-                    </p>
+                    {typeof services.propertyManagement === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.propertyManagement}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.propertyManagement.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.propertyManagement.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
 
@@ -143,9 +164,30 @@ const AssetTypePage = ({
                     {serviceTitles?.advisorySiteSelection || "Advisory & Site Selection"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.advisorySiteSelection}
-                    </p>
+                    {typeof services.advisorySiteSelection === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.advisorySiteSelection}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.advisorySiteSelection.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.advisorySiteSelection.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
 
@@ -155,9 +197,30 @@ const AssetTypePage = ({
                     {serviceTitles?.investmentSales || "Investment Sales"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.investmentSales}
-                    </p>
+                    {typeof services.investmentSales === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.investmentSales}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.investmentSales.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.investmentSales.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
 
@@ -167,9 +230,30 @@ const AssetTypePage = ({
                     {serviceTitles?.landlordRepresentation || "Landlord Representation"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.landlordRepresentation}
-                    </p>
+                    {typeof services.landlordRepresentation === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.landlordRepresentation}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.landlordRepresentation.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.landlordRepresentation.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
 
@@ -179,9 +263,30 @@ const AssetTypePage = ({
                     {serviceTitles?.tenantRepresentation || "Tenant Representation"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.tenantRepresentation}
-                    </p>
+                    {typeof services.tenantRepresentation === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.tenantRepresentation}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.tenantRepresentation.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.tenantRepresentation.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
 
@@ -191,9 +296,30 @@ const AssetTypePage = ({
                     {serviceTitles?.acquisitionsDevelopment || "Acquisitions & Development"}
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      {services.acquisitionsDevelopment}
-                    </p>
+                    {typeof services.acquisitionsDevelopment === 'string' ? (
+                      <p className="text-lg leading-relaxed text-gray-600">
+                        {services.acquisitionsDevelopment}
+                      </p>
+                    ) : (
+                      <div className="space-y-4">
+                        <p className="text-lg leading-relaxed text-gray-600">
+                          {services.acquisitionsDevelopment.description}
+                        </p>
+                        <div>
+                          <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                            Services include:
+                          </p>
+                          <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                            {services.acquisitionsDevelopment.services.map((service, idx) => (
+                              <div key={idx} className="flex items-start">
+                                <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                                <span>{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
