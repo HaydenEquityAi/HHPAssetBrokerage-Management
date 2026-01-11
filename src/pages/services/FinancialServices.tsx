@@ -48,11 +48,11 @@ const FinancialServices = () => {
               
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Asset-Level Financial Analysis */}
-                <AccordionItem value="asset-analysis" className="border-b border-gray-300">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
+                <AccordionItem value="asset-analysis" className="border-b border-gray-300 py-2">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
                     Asset-Level Financial Analysis
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-4">
+                  <AccordionContent className="pt-0 pb-6">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
                       We evaluate individual assets to provide a clear picture of performance, risks, and opportunities.
                     </p>
@@ -68,11 +68,11 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 2. Budgeting & Forecasting */}
-                <AccordionItem value="budgeting" className="border-b border-gray-300">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
+                <AccordionItem value="budgeting" className="border-b border-gray-300 py-2">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
                     Budgeting & Forecasting
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-4">
+                  <AccordionContent className="pt-0 pb-6">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
                       We assist owners in building realistic budgets and forward-looking projections grounded in market conditions and operational realities.
                     </p>
@@ -88,11 +88,11 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 3. Transaction Financial Support */}
-                <AccordionItem value="transaction" className="border-b border-gray-300">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
+                <AccordionItem value="transaction" className="border-b border-gray-300 py-2">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
                     Transaction Financial Support
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-4">
+                  <AccordionContent className="pt-0 pb-6">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
                       We provide financial analysis to support acquisitions, dispositions, leasing decisions, and owner-user transactions.
                     </p>
@@ -111,11 +111,11 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 4. Owner & Board Reporting */}
-                <AccordionItem value="reporting" className="border-b border-gray-300">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
+                <AccordionItem value="reporting" className="border-b border-gray-300 py-2">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
                     Owner & Board Reporting
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-4">
+                  <AccordionContent className="pt-0 pb-6">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
                       We help ownership groups and boards gain clarity through structured, understandable reporting.
                     </p>
@@ -130,11 +130,11 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 5. Portfolio-Level Insight */}
-                <AccordionItem value="portfolio" className="border-b border-gray-300">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
+                <AccordionItem value="portfolio" className="border-b border-gray-300 py-2">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-6 hover:no-underline">
                     Portfolio-Level Insight
                   </AccordionTrigger>
-                  <AccordionContent className="pt-0 pb-4">
+                  <AccordionContent className="pt-0 pb-6">
                     <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
                       For owners with multiple assets, we provide consolidated views to support portfolio strategy.
                     </p>
