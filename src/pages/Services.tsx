@@ -112,7 +112,7 @@ const Services = () => {
                 <Link
                   key={index}
                   to={service.href}
-                  className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden h-[450px] sm:h-[380px] md:h-[400px] lg:h-[420px] flex flex-col p-0"
+                  className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
                   style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                   onClick={() => {
                     trackButtonClick(`service_${service.title.toLowerCase().replace(/\s+/g, '_')}`, 'services_grid');
