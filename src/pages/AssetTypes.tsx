@@ -15,25 +15,25 @@ const AssetTypes = () => {
     {
       title: "HUD & Affordable Housing",
       proofPoint: "100% HUD audit compliance across three managed communities.",
-      image: "/images/hud-hero.jpg",
+      image: "/images/affordable-housing-image.jpeg",
       href: "/asset-types/hud-affordable"
     },
     {
       title: "Office",
       proofPoint: "15% OpEx savings achieved through workplace realignment.",
-      image: "/images/office-hero.png",
+      image: "/images/office-image.jpg",
       href: "/asset-types/office"
     },
     {
       title: "Retail",
       proofPoint: "Average sales per SF increased 18% post-remerchandising.",
-      image: "/images/retail-hero.png",
+      image: "/images/retail-image.jpg",
       href: "/asset-types/retail"
     },
     {
       title: "Industrial & Logistics",
       proofPoint: "Warehouse occupancy and utilization improved 22% via AI forecasting.",
-      image: "/images/industrial-hero.png",
+      image: "/images/industrial-image.webp",
       href: "/asset-types/industrial"
     },
     {

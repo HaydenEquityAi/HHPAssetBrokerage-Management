@@ -7,12 +7,12 @@ const Services = () => {
   const services = [
     {
       title: "Property Management",
-      image: "/images/property-management-hero.jpg",
+      image: "/images/property-management-picture.webp",
       href: "/services/property-management"
     },
     {
       title: "Leasing & Representation",
-      image: "/images/leasing-tenant-representation-hero.webp",
+      image: "/images/leasing-representation-image.jpg",
       href: "/services/leasing-representation"
     },
     {
@@ -22,12 +22,12 @@ const Services = () => {
     },
     {
       title: "Advisory & Site Selection",
-      image: "/images/site-selection-hero.jpg",
+      image: "/images/broker-record-hero.png",
       href: "/services/advisory-site-selection"
     },
     {
       title: "Development Advisory",
-      image: "/images/development-advisory-hero.jpg",
+      image: "/images/development-advisory-image.webp",
       href: "/services/development-advisory"
     },
     {
