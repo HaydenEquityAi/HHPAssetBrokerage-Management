@@ -406,25 +406,6 @@ const DevelopmentAdvisory = () => {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium text-center">
-          <h2 className="section-title text-white mb-8">
-            Ready to discuss your development project?
-          </h2>
-          <Link 
-            to="/contact" 
-            className="inline-block bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-            onClick={() => {
-              trackButtonClick('discuss_development_project_cta', 'development_advisory_banner');
-              trackLinkClick('Discuss a Project', '/contact');
-            }}
-          >
-            Discuss a Project
-            <ArrowRight className="inline ml-2 h-5 w-5" />
-          </Link>
-        </div>
-      </section>
     </Layout>
   );
 };

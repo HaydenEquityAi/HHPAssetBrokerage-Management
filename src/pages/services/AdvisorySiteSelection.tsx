@@ -444,22 +444,6 @@ const AdvisorySiteSelection = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container-premium text-center">
-          <Link 
-            to="/contact" 
-            className="group inline-flex items-center gap-2 bg-hhp-navy text-white px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy/90 transition-all duration-200 shadow-lg w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-            onClick={() => {
-              trackButtonClick('request_advisory_support', 'advisory_site_selection_cta');
-              trackLinkClick('Request Advisory Support', '/contact');
-            }}
-          >
-            Request Advisory Support
-            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </section>
     </Layout>
   );
 };
