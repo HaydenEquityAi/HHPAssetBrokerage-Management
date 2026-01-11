@@ -68,7 +68,7 @@ const Services = () => {
       <section className="bg-white py-12 sm:py-16">
         <div className="container-premium">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hhp-navy mb-6 tracking-[0.06em] uppercase">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-hhp-navy mb-6 tracking-[0.06em] uppercase">
               Comprehensive Real Estate Services, Reimagined
             </h2>
             <p className="text-xl leading-relaxed text-gray-600">
@@ -81,12 +81,12 @@ const Services = () => {
       {/* Vertically Integrated Approach Image */}
       <section className="bg-white py-8 sm:py-12">
         <div className="container-premium">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
             OUR VERTICALLY INTEGRATED APPROACH
           </h2>
           <div className="w-full">
             <img 
-              src="/images/our-vertically-integrated-approach.png" 
+              src="/images/vertically-integrated-approach-chart.png" 
               alt="Our Vertically Integrated Approach" 
               className="w-full h-auto object-contain"
             />
