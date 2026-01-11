@@ -43,10 +43,10 @@ const LeasingRepresentation = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Leasing & Representation Functions</h2>
               
-              <Accordion type="single" collapsible className="w-full space-y-2">
+              <Accordion type="single" collapsible className="w-full">
                 {/* 1. Market & Asset Positioning */}
-                <AccordionItem value="market" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="market" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Market & Asset Positioning
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -64,8 +64,8 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
 
                 {/* 2. Landlord Representation */}
-                <AccordionItem value="landlord" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="landlord" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Landlord Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -84,8 +84,8 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
 
                 {/* 3. Tenant Representation */}
-                <AccordionItem value="tenant" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="tenant" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Tenant Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -104,8 +104,8 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
 
                 {/* 4. Lease Structuring & Risk Mitigation */}
-                <AccordionItem value="lease" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="lease" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Lease Structuring & Risk Mitigation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -123,8 +123,8 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
 
                 {/* 5. Execution & Coordination */}
-                <AccordionItem value="execution" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="execution" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Execution & Coordination
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -142,8 +142,8 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
 
                 {/* 6. Integration with Management & Advisory */}
-                <AccordionItem value="integration" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="integration" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Integration with Management & Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">

@@ -36,10 +36,10 @@ const BrokerConsulting = () => {
                 Our role is to provide regulatory coverage and professional governance while allowing firms to maintain autonomy and focus on their core business.
               </p>
 
-              <Accordion type="single" collapsible className="w-full space-y-2 mb-8">
+              <Accordion type="single" collapsible className="w-full mb-8">
                 {/* 1. Broker Supervision & Oversight */}
-                <AccordionItem value="supervision" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="supervision" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Broker Supervision & Oversight
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -56,8 +56,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 2. Transaction Review & Risk Management */}
-                <AccordionItem value="transaction" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="transaction" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Transaction Review & Risk Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -74,8 +74,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 3. License & Regulatory Compliance Support */}
-                <AccordionItem value="license" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="license" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     License & Regulatory Compliance Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -92,8 +92,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 4. Policy & Procedure Frameworks */}
-                <AccordionItem value="policy" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="policy" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Policy & Procedure Frameworks
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -110,8 +110,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 5. Strategic Support for Brokerage Operations */}
-                <AccordionItem value="strategic" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="strategic" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Strategic Support for Brokerage Operations
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -157,10 +157,10 @@ const BrokerConsulting = () => {
                 Our consulting engagements are targeted, defined in scope, and designed to deliver clarity in complex situations.
               </p>
 
-              <Accordion type="single" collapsible className="w-full space-y-2 mb-8">
+              <Accordion type="single" collapsible className="w-full mb-8">
                 {/* 1. Management Transitions */}
-                <AccordionItem value="transitions" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="transitions" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Management Transitions
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -177,8 +177,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 2. Operational & Financial Reviews */}
-                <AccordionItem value="reviews" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="reviews" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Operational & Financial Reviews
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -195,8 +195,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 3. Board & Ownership Advisory */}
-                <AccordionItem value="board" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="board" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Board & Ownership Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -212,8 +212,8 @@ const BrokerConsulting = () => {
                 </AccordionItem>
 
                 {/* 4. Special Situations & Interim Support */}
-                <AccordionItem value="special" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="special" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Special Situations & Interim Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">

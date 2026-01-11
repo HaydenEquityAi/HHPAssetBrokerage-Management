@@ -46,10 +46,10 @@ const FinancialServices = () => {
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Financial Services</h2>
               
-              <Accordion type="single" collapsible className="w-full space-y-2">
+              <Accordion type="single" collapsible className="w-full">
                 {/* 1. Asset-Level Financial Analysis */}
-                <AccordionItem value="asset-analysis" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="asset-analysis" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Asset-Level Financial Analysis
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -68,8 +68,8 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 2. Budgeting & Forecasting */}
-                <AccordionItem value="budgeting" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="budgeting" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Budgeting & Forecasting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -88,8 +88,8 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 3. Transaction Financial Support */}
-                <AccordionItem value="transaction" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="transaction" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Transaction Financial Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -111,8 +111,8 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 4. Owner & Board Reporting */}
-                <AccordionItem value="reporting" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="reporting" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Owner & Board Reporting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
@@ -130,8 +130,8 @@ const FinancialServices = () => {
                 </AccordionItem>
 
                 {/* 5. Portfolio-Level Insight */}
-                <AccordionItem value="portfolio" className="border border-gray-200 rounded-lg px-4 mb-2">
-                  <AccordionTrigger className="text-xl font-display font-semibold text-hhp-navy hover:no-underline py-4">
+                <AccordionItem value="portfolio" className="border-b border-gray-300">
+                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide py-4 hover:no-underline">
                     Portfolio-Level Insight
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-4">
