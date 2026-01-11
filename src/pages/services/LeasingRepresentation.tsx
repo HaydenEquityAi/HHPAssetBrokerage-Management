@@ -400,10 +400,20 @@ const LeasingRepresentation = () => {
       <section className="bg-white py-8 sm:py-12">
         <div className="container-premium">
           <div className="border border-gray-300 rounded-lg my-4 sm:my-6 p-8 sm:p-10">
-            <div className="text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
               <h3 className="text-2xl sm:text-3xl font-bold text-hhp-navy">
                 HAVE MORE QUESTIONS?
               </h3>
+              <Link 
+                to="/faq" 
+                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-hhp-navy/90 transition flex-shrink-0"
+                onClick={() => {
+                  trackButtonClick('visit_faq_cta', 'leasing_representation_faq');
+                  trackLinkClick('Visit our FAQ page', '/faq');
+                }}
+              >
+                Visit our FAQ page
+              </Link>
             </div>
           </div>
         </div>
