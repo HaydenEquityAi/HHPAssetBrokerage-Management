@@ -105,7 +105,7 @@ const About = () => {
               aria-controls="panel-story"
               role="tab"
             >
-              Our Story
+              Why HHP Was Built
               {activeTab === 'story' && (
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-hhp-navy transform transition-all duration-300" />
               )}
@@ -194,10 +194,13 @@ const About = () => {
                           Hayden Ashley serves as Managing Principal of HHP, where he leads firm strategy, national growth, and platform development across brokerage, property management, and advisory services.
                         </p>
                         <p>
-                          An operator by background, Hayden oversees HHP's vertically integrated execution model and the development of technology-enabled systems that enhance underwriting discipline, operational consistency, and long-term asset performance.
+                          An operator by background, Hayden oversees HHP's vertically integrated execution model and the development of technology-enabled systems that strengthen underwriting discipline, operational consistency, and long-term asset performance.
                         </p>
                         <p>
-                          Hayden's experience spans institutional real estate, Big Four accounting, and enterprise operations. Prior to HHP, he audited Fortune 500 companies at Ernst & Young and has since been involved in over $2.0 billion in real estate transactions. This foundation informs HHP's disciplined, fiduciary approach and its focus on aligned incentives across the full asset lifecycle.
+                          Hayden's experience spans institutional real estate, Big Four accounting, and enterprise operations. He has worked with two of the world's largest commercial real estate firms—Newmark and Colliers—and began his career auditing Fortune 500 companies at Ernst & Young. Across brokerage, advisory, and ownership-oriented roles, he has been involved in over $2.0 billion in real estate transactions.
+                        </p>
+                        <p>
+                          This foundation informs HHP's disciplined, fiduciary approach and its focus on aligned incentives across the full asset lifecycle.
                         </p>
                       </div>
                     )}
@@ -257,7 +260,7 @@ const About = () => {
                       className="w-full h-72 sm:h-80 object-contain object-center rounded-lg mb-5"
                     />
                     <h3 className="text-xl font-display font-semibold text-hhp-navy mb-1 text-center">Hannah Fanning</h3>
-                    <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Director of Client Operations</h4>
+                    <h4 className="text-base font-medium text-hhp-navy mb-4 text-center italic">Administrative Director</h4>
                     
                     {/* Email Contact - Always Visible */}
                     <div className="flex items-center justify-center space-x-2 mb-5">
@@ -286,10 +289,13 @@ const About = () => {
                     {expandedBios.hannah && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Hannah Fanning directs client operations at HHP, ensuring seamless execution of service standards and administrative oversight across all portfolios nationwide. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
+                          Hannah Fanning serves as Administrative Director at HHP, where she oversees firmwide administrative functions and supports consistent service execution across all portfolios. She provides structured coordination between ownership, residents, and third-party vendors, ensuring administrative accuracy and continuity.
                         </p>
                         <p>
-                          Her leadership ensures transparent reporting, efficient processes, and client-focused service that align with the institutional standards investors expect from HHP's AI-native platform.
+                          With over a decade of experience in enterprise logistics and communications, Hannah brings disciplined organization, documentation control, and process reliability to HHP's day-to-day administrative framework.
+                        </p>
+                        <p>
+                          Her leadership supports transparent reporting, efficient workflows, and client-focused service aligned with the institutional standards HHP maintains across its platform.
                         </p>
                       </div>
                     )}
@@ -304,16 +310,16 @@ const About = () => {
                 <h2 className="section-title text-hhp-navy mb-6 text-center">Why HHP Was Built</h2>
                 <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-hhp-charcoal">
                   <p>
-                    HHP was founded from a fundamental frustration with the fragmented real estate services model. Traditional firms silo brokerage, management, and advisory—forcing clients to navigate disconnected relationships, inconsistent execution, and misaligned incentives.
+                    HHP was founded in response to a fundamental flaw in the traditional real estate services model. Brokerage, management, and advisory functions are typically siloed across separate firms, creating fragmented accountability, misaligned incentives, and execution gaps that directly erode asset performance.
                   </p>
                   <p>
-                    We started as an operator-first firm, managing our own portfolio before expanding to serve institutional clients. This foundation taught us that successful real estate requires long-term ownership thinking, not transaction-driven short-termism.
+                    We began as an operator-first firm—managing our own portfolio long before serving institutional clients. That experience reinforced a simple truth: durable real estate value is created through long-term ownership thinking, not transaction-driven decision-making.
                   </p>
                   <p>
-                    Our evolution into a vertically integrated platform was intentional. By combining brokerage expertise with hands-on asset management and technology-enabled decision-making, we eliminate the friction that plagues traditional models. Every service we offer—from acquisitions to property management—operates under a single fiduciary mindset: treat every asset as if we own it.
+                    Our evolution into a vertically integrated platform was deliberate. By aligning brokerage, asset management, and advisory services under one operating framework, we remove friction from the ownership lifecycle. Decisions are made faster, execution is tighter, and accountability is clear. Every service we provide—from acquisitions through ongoing management—operates under a single fiduciary standard: treat every asset as if we own it.
                   </p>
                   <p>
-                    Today, HHP represents disciplined growth built on operator credibility. We've maintained our boutique attentiveness while scaling to serve national markets, powered by proprietary AI platforms that enhance—never replace—human judgment and execution.
+                    Today, HHP combines boutique-level attention with institutional-grade capability. Our growth has been disciplined, grounded in operator credibility, and supported by proprietary technology that strengthens decision-making without replacing human judgment. Clients engage HHP not as a collection of service lines, but as a long-term operating partner.
                   </p>
                 </div>
               </div>
