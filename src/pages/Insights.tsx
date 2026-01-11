@@ -58,13 +58,21 @@ const Insights = () => {
         <div className="absolute inset-0 bg-hhp-navy/60"></div>
         <div className="relative z-10 container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="hero-title text-white mb-8 drop-shadow-lg">
+            <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Insights & Intelligence
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-12 drop-shadow-md">
+          </div>
+        </div>
+      </section>
+
+      {/* Intro Section */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl leading-relaxed text-gray-600 mb-8">
               AI-driven market analysis, case studies, and thought leadership from America's first AI-native real estate firm. Stay ahead with data-driven insights and institutional-grade intelligence.
             </p>
-            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant">
+            <Link to="/contact" className="bg-hhp-navy text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition-all duration-300 shadow-elegant inline-block">
               Subscribe to Insights
             </Link>
           </div>
