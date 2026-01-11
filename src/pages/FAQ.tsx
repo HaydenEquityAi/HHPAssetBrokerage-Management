@@ -110,7 +110,7 @@ const FAQ = () => {
       {/* Hero Section */}
       <section className="relative h-[400px] sm:h-[500px] flex items-center justify-center">
         <img 
-          src="/images/faq-hero.jpg" 
+          src="/images/investment-sales-capital-markets-hero.png" 
           alt="FAQ"
           className="absolute inset-0 w-full h-full object-cover"
         />
