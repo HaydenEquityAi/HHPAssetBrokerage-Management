@@ -2,6 +2,7 @@ import Layout from '@/components/Layout/Layout';
 import { ArrowRight, Building2, MapPin, Calculator, FileText, Wrench, Link as LinkIcon, CheckCircle, Target, Users, Shield, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const DevelopmentAdvisory = () => {
   return (
@@ -57,255 +58,121 @@ const DevelopmentAdvisory = () => {
       </section>
 
       {/* Core Development Advisory Functions */}
-      <section className="bg-gray-50 section-spacing">
+      <section className="bg-white section-spacing">
         <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-12 text-center">Core Development Advisory Functions</h2>
-          
-          <div className="space-y-8">
-            {/* Market Feasibility Analysis */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <TrendingUp className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Market Feasibility Analysis</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We assess market conditions to determine whether proposed projects are supportable.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Market demand and absorption analysis
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Competitive project review
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Use and positioning analysis
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Preliminary risk assessment
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto space-y-16">
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">Core Development Advisory Functions</h2>
+              
+              <Accordion type="single" collapsible className="w-full">
+                {/* 1. Market Feasibility Analysis */}
+                <AccordionItem value="feasibility" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Market Feasibility Analysis
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We assess market conditions to determine whether proposed projects are supportable.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>Market demand and absorption analysis</li>
+                      <li>Competitive project review</li>
+                      <li>Use and positioning analysis</li>
+                      <li>Preliminary risk assessment</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-            {/* Site Evaluation & Positioning */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <MapPin className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Site Evaluation & Positioning</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We evaluate sites based on location, access, constraints, and long-term viability.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Site and location analysis
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Access, visibility, and infrastructure considerations
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Zoning and use review
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Positioning recommendations
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                {/* 2. Site Evaluation & Positioning */}
+                <AccordionItem value="site-evaluation" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Site Evaluation & Positioning
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We evaluate sites based on location, access, constraints, and long-term viability.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>Site and location analysis</li>
+                      <li>Access, visibility, and infrastructure considerations</li>
+                      <li>Zoning and use review</li>
+                      <li>Positioning recommendations</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-            {/* Preliminary Financial Modeling */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Calculator className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Preliminary Financial Modeling</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We support early-stage financial evaluation to test assumptions and identify sensitivities.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        High-level development modeling
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Cost and revenue assumptions
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Sensitivity and scenario analysis
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Capital requirement evaluation
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                {/* 3. Preliminary Financial Modeling */}
+                <AccordionItem value="financial-modeling" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Preliminary Financial Modeling
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We support early-stage financial evaluation to test assumptions and identify sensitivities.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>High-level development modeling</li>
+                      <li>Cost and revenue assumptions</li>
+                      <li>Sensitivity and scenario analysis</li>
+                      <li>Capital requirement evaluation</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-            {/* Entitlement & Planning Coordination */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <FileText className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Entitlement & Planning Coordination</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We coordinate with planning professionals and stakeholders during entitlement and pre-development phases.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Coordination with planners, architects, and engineers
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Support during entitlement processes
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Timeline and process oversight
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Risk identification during approvals
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                {/* 4. Entitlement & Planning Coordination */}
+                <AccordionItem value="entitlement" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Entitlement & Planning Coordination
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We coordinate with planning professionals and stakeholders during entitlement and pre-development phases.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>Coordination with planners, architects, and engineers</li>
+                      <li>Support during entitlement processes</li>
+                      <li>Timeline and process oversight</li>
+                      <li>Risk identification during approvals</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-            {/* Execution Advisory & Oversight */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <Wrench className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Execution Advisory & Oversight</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We provide advisory support during execution to help manage risk and maintain alignment.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Advisory support during construction and delivery
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Coordination with consultants and third parties
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Issue identification and resolution support
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Alignment with leasing and operations strategy
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                {/* 5. Execution Advisory & Oversight */}
+                <AccordionItem value="execution" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Execution Advisory & Oversight
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We provide advisory support during execution to help manage risk and maintain alignment.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>Advisory support during construction and delivery</li>
+                      <li>Coordination with consultants and third parties</li>
+                      <li>Issue identification and resolution support</li>
+                      <li>Alignment with leasing and operations strategy</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-            {/* Integration with Leasing, Operations & Exit Strategy */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-start mb-6">
-                <div className="w-16 h-16 bg-hhp-accent/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
-                  <LinkIcon className="h-8 w-8 text-hhp-navy" />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-hhp-navy mb-4">Integration with Leasing, Operations & Exit Strategy</h3>
-                  <p className="text-hhp-charcoal mb-4">
-                    We ensure development decisions support long-term performance and exit flexibility.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Leasing strategy alignment
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Operational readiness considerations
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Exit and hold strategy evaluation
-                      </p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-sm text-hhp-charcoal">
-                        Integration with brokerage and advisory services
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                {/* 6. Integration with Leasing, Operations & Exit Strategy */}
+                <AccordionItem value="integration" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    Integration with Leasing, Operations & Exit Strategy
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
+                      We ensure development decisions support long-term performance and exit flexibility.
+                    </p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
+                      <li>Leasing strategy alignment</li>
+                      <li>Operational readiness considerations</li>
+                      <li>Exit and hold strategy evaluation</li>
+                      <li>Integration with brokerage and advisory services</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
