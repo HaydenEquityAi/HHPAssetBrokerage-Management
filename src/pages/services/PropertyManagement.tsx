@@ -233,7 +233,6 @@ const PropertyManagement = () => {
         <div className="container-premium">
           <div className="max-w-4xl mx-auto space-y-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* Who We Work With */}
               <div>
                 <div className="flex items-center mb-6">
