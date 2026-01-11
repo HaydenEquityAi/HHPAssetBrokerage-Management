@@ -324,17 +324,6 @@ const LeasingRepresentation = () => {
             </div>
 
             {/* Who We Work With & How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
-              <p className="text-lg leading-relaxed text-gray-600">
-                Poorly structured leases often create hidden costs, operational friction, and long-term constraints.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-600 mt-4">
-                Our leasing work is informed by management, advisory, and financial insight — not just deal-making — allowing us to deliver outcomes that support both near-term stability and long-term value.
-              </p>
-            </div>
-
-            {/* Who We Work With & How We Differ */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* Who We Work With */}
               <div>

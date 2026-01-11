@@ -309,45 +309,47 @@ const AdvisorySiteSelection = () => {
             {/* When Clients Engage Us */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">When Clients Engage Us</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Prior to committing capital</li>
-                <li>During portfolio transitions</li>
-                <li>When internal consensus is unclear</li>
-                <li>When third-party validation is required</li>
-              </ul>
+              <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Prior to committing capital</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>During portfolio transitions</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>When internal consensus is unclear</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>When third-party validation is required</span>
+                </div>
+              </div>
             </div>
 
             {/* Value We Bring */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Value We Bring</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Objective, independent analysis</li>
-                <li>Market-grounded assumptions</li>
-                <li>Awareness of execution and operational realities</li>
-                <li>Clear, disciplined communication</li>
-              </ul>
-            </div>
-
-            {/* Who We Work With & How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">When Clients Engage Us</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Prior to committing capital</li>
-                <li>During portfolio transitions</li>
-                <li>When internal consensus is unclear</li>
-                <li>When third-party validation is required</li>
-              </ul>
-            </div>
-
-            {/* Value We Bring */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Value We Bring</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Objective, independent analysis</li>
-                <li>Market-grounded assumptions</li>
-                <li>Awareness of execution and operational realities</li>
-                <li>Clear, disciplined communication</li>
-              </ul>
+              <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Objective, independent analysis</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Market-grounded assumptions</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Awareness of execution and operational realities</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Clear, disciplined communication</span>
+                </div>
+              </div>
             </div>
 
             {/* Who We Work With & How We Differ */}

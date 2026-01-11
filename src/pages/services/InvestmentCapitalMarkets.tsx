@@ -305,12 +305,24 @@ const InvestmentCapitalMarkets = () => {
             {/* How We Approach Transactions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Approach Transactions</h2>
-                    <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside mb-4">
-                <li>Clear underwriting assumptions</li>
-                <li>Realistic view of income, expenses, and capital requirements</li>
-                <li>Consideration of operational and leasing risk</li>
-                <li>Objective analysis without pressure or forced outcomes</li>
-              </ul>
+              <div className="space-y-2 text-lg leading-relaxed text-gray-600 mb-4">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Clear underwriting assumptions</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Realistic view of income, expenses, and capital requirements</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Consideration of operational and leasing risk</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Objective analysis without pressure or forced outcomes</span>
+                </div>
+              </div>
               <p className="text-lg leading-relaxed text-gray-600">
                 We are aligned with long-term decision-making, not transaction volume.
               </p>

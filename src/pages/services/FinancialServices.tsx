@@ -286,30 +286,30 @@ const FinancialServices = () => {
             {/* How We Work */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Defined scope and objectives</li>
-                <li>Transparent assumptions</li>
-                <li>Clear, decision-ready outputs</li>
-                <li>Coordination with CPAs, lenders, and legal advisors as appropriate</li>
-              </ul>
+              <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Defined scope and objectives</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Transparent assumptions</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Clear, decision-ready outputs</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                  <span>Coordination with CPAs, lenders, and legal advisors as appropriate</span>
+                </div>
+              </div>
               <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our goal is to support better decisions — not to replace existing professional advisors.
               </p>
             </div>
 
             {/* Who We Work With & How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                <li>Defined scope and objectives</li>
-                <li>Transparent assumptions</li>
-                <li>Clear, decision-ready outputs</li>
-                <li>Coordination with CPAs, lenders, and legal advisors as appropriate</li>
-              </ul>
-              <p className="text-lg leading-relaxed text-gray-600 mt-4">
-                Our goal is to support better decisions — not to replace existing professional advisors.
-              </p>
-            </div>
 
             {/* Who We Work With & How We Differ */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
