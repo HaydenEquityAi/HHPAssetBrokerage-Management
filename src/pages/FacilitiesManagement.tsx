@@ -237,21 +237,20 @@ const FacilitiesManagement = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
               ABOUT US
             </h2>
-            <p className="text-lg text-white mb-8 leading-relaxed">
+            <p className="text-lg text-white mb-10 leading-relaxed">
               HHP Asset Management is an operator-led real estate platform combining 
               institutional discipline with hands-on execution. We specialize in vertically 
               integrated asset management, bringing together property management, facilities 
               operations, financial oversight, and strategic advisory under one integrated 
-              approach. Our focus is disciplined performance, long-term value creation, and 
-              owner-aligned decision-making across every phase of asset ownership.
+              approach.
             </p>
-            <div className="pt-8 border-t border-gray-600">
-              <h3 className="text-2xl font-bold mb-6 tracking-wide">
-                DISCOVER<br/>WHAT WE OFFER
+            <div className="pt-8 border-t border-gray-500">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-8 tracking-widest text-white">
+                DISCOVER<br/>WHAT WE DO
               </h3>
               <Link 
                 to="/contact" 
-                className="inline-block bg-white text-gray-800 px-8 py-3 rounded font-semibold hover:bg-gray-100 transition"
+                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-semibold hover:bg-gray-100 transition"
                 onClick={() => {
                   trackButtonClick('contact_us_cta', 'facilities_management_split');
                   trackLinkClick('Contact Us', '/contact');
