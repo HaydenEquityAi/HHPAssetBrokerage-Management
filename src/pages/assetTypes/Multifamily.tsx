@@ -38,75 +38,127 @@ const Multifamily = () => {
         heroButtonText="Schedule a Consultation"
         
         // Market Context
-        marketText="Multifamily remains one of the most durable sectors in U.S. real estate, supported by long-term housing undersupply, affordability constraints, and shifting demographic preferences. As renters prioritize flexibility, quality of service, and community experience, execution—not just location—has become the primary driver of asset performance. Owners today require disciplined operations, transparent reporting, and adaptive strategies to navigate rising operating costs, regulatory pressure, and evolving tenant expectations."
-        valueProposition="HHP delivers operator-led multifamily management and advisory services grounded in institutional standards and real-world execution. We combine rigorous financial oversight with resident-centric operations and technology-enabled decision-making to improve asset performance across the full lifecycle. Our platform is designed to support owners focused on long-term value creation, capital preservation, and operational accountability."
+        marketText="Multifamily assets operate in a competitive environment shaped by local market dynamics, operating costs, and resident expectations. Owners must balance occupancy, revenue stability, expense control, and long-term capital preservation while adapting to shifting market conditions. Sustained performance in multifamily requires disciplined operations, consistent resident engagement, and financial oversight aligned with ownership objectives."
+        valueProposition="HHP provides operator-led property management and advisory services for multifamily assets, grounded in accountability, execution, and institutional operating standards. Our approach emphasizes: Occupancy stability and resident retention; Revenue and expense discipline; Preventive maintenance and asset stewardship; Transparent reporting and owner communication. We manage multifamily properties with a long-term ownership mindset, aligning daily operations with asset strategy, market positioning, and capital objectives."
         valuePropositionTitle="HHP's Approach to Multifamily"
         
         // Services Context
         services={{
-          propertyManagement: "Full-service management focused on operational efficiency, resident retention, and NOI growth across stabilized, value-add, lease-up, and mixed-use communities.",
-          advisorySiteSelection: "Market-driven analysis supporting development, acquisition, and repositioning decisions, with a focus on rental fundamentals, absorption, and long-term viability.",
-          investmentSales: "Strategic disposition advisory for multifamily assets, leveraging market intelligence, pricing discipline, and targeted execution to maximize outcomes.",
-          landlordRepresentation: "Leasing strategies aligned with demographic trends and amenity preferences, supporting occupancy stability and sustainable rent growth.",
-          tenantRepresentation: "Customized housing solutions for employers, relocations, and short-term needs, designed to reduce vacancy friction and enhance portfolio utilization.",
-          acquisitionsDevelopment: "Institutional underwriting and feasibility analysis for acquisitions and ground-up or mixed-use development, identifying value-creation opportunities and execution risk."
+          propertyManagement: {
+            description: "Comprehensive multifamily property management focused on operational consistency and resident service.",
+            services: [
+              "Day-to-day property and on-site staff oversight",
+              "Resident relations and service request coordination",
+              "Vendor management and service quality oversight",
+              "Preventive maintenance and capital planning",
+              "Financial management, budgeting, and reporting"
+            ]
+          },
+          advisorySiteSelection: {
+            description: "Strategic advisory services supporting acquisition, repositioning, and long-term ownership decisions.",
+            services: [
+              "Market and submarket analysis",
+              "Operational due diligence and asset reviews",
+              "Transition planning for new ownership or management",
+              "Asset strategy development for stabilized and value-add properties"
+            ]
+          },
+          investmentSales: {
+            description: "Advisory support for ownership transitions, recapitalizations, and strategic portfolio decisions involving multifamily assets.",
+            services: [
+              "Valuation and underwriting support",
+              "Buyer and stakeholder coordination",
+              "Transaction execution support",
+              "Post-transaction operational transition planning"
+            ]
+          },
+          landlordRepresentation: {
+            description: "Occupancy and leasing oversight aligned with market conditions and asset positioning.",
+            services: [
+              "Leasing strategy coordination",
+              "Rent positioning and renewal oversight",
+              "Resident onboarding and move-in coordination",
+              "Retention-focused resident engagement"
+            ]
+          },
+          tenantRepresentation: {
+            description: "Structured communication and engagement supporting resident satisfaction and community stability.",
+            services: [
+              "Resident communication and issue resolution",
+              "Community standards and lease compliance oversight",
+              "Coordination of resident services and programming"
+            ]
+          },
+          acquisitionsDevelopment: {
+            description: "Support across acquisition, redevelopment, and development phases with a focus on operational readiness and continuity.",
+            services: [
+              "Acquisition underwriting and operational review",
+              "Development and redevelopment advisory",
+              "Operational setup for new or repositioned assets",
+              "Lease-up and stabilization planning"
+            ]
+          }
+        }}
+        serviceTitles={{
+          investmentSales: "Transaction Advisory",
+          landlordRepresentation: "Leasing & Occupancy Management",
+          tenantRepresentation: "Resident & Community Relations"
         }}
         servicesTitle="Integrated Services for Multifamily"
-        servicesSubtitle="Comprehensive solutions aligned to ownership objectives"
-        serviceTitles={{
-          tenantRepresentation: "Tenant & Corporate Housing Representation"
-        }}
+        showAboutUs={true}
         
-        // Technology Advantages
+        // Technology Advantages / HHP Advantage
         technologyAdvantages={[
           {
             icon: <BarChart3 className="h-8 w-8 text-white" />,
-            title: "Predictive Portfolio Insights",
-            description: "Forward-looking analytics to anticipate demand shifts, maintenance needs, and revenue performance."
+            title: "Operator-Led Performance",
+            description: "Hands-on operational oversight focused on occupancy stability, expense control, and long-term asset performance."
           },
           {
             icon: <Users className="h-8 w-8 text-white" />,
-            title: "Resident Experience Platform",
-            description: "Unified resident portal for communication, service requests, and community engagement—designed to improve satisfaction and retention."
+            title: "Revenue & Expense Discipline",
+            description: "Market-informed rent strategy, renewal oversight, and cost controls aligned with ownership objectives."
           },
           {
             icon: <Zap className="h-8 w-8 text-white" />,
-            title: "Smart Operations & Building Systems",
-            description: "Technology-supported maintenance planning and energy efficiency initiatives that reduce operating costs and improve asset reliability."
+            title: "Maintenance & Asset Stewardship",
+            description: "Preventive maintenance programs and capital planning designed to protect asset condition and reduce operational risk."
           },
           {
             icon: <DollarSign className="h-8 w-8 text-white" />,
-            title: "Dynamic Revenue Optimization",
-            description: "Data-informed pricing and renewal strategies aligned with market conditions and asset positioning."
+            title: "Resident Experience Execution",
+            description: "Consistent resident communication and service delivery supporting retention and community stability."
+          },
+          {
+            icon: <BarChart3 className="h-8 w-8 text-white" />,
+            title: "Owner Transparency",
+            description: "Clear financial reporting, performance monitoring, and proactive communication aligned with institutional ownership standards."
           }
         ]}
-        technologyTitle="Technology-Enabled Advantage"
-        technologySubtitle="Purpose-built tools that support better decisions—not noise"
+        technologyTitle="The HHP Advantage for Multifamily"
+        useModernLayout={true}
         
         // Insights
         insights={[
           {
-            title: "The Future of Multifamily: Technology Integration Trends",
-            description: "How data-driven operations are reshaping asset management.",
+            title: "Operating Multifamily in Changing Markets",
+            description: "Perspectives on occupancy trends, operating costs, and resident expectations.",
             date: "December 2024"
           },
           {
-            title: "Secondary Market Multifamily Opportunities",
-            description: "Identifying growth markets beyond primary metros.",
+            title: "Revenue and Retention Strategies",
+            description: "Insights into rent positioning, renewals, and resident engagement.",
             date: "November 2024"
           },
           {
-            title: "Renewal Strategies for Long-Term Performance",
-            description: "Operational practices that support retention and income stability.",
+            title: "Long-Term Multifamily Ownership",
+            description: "Guidance on capital planning, expense management, and asset performance.",
             date: "October 2024"
           }
         ]}
         insightsTitle="Insights & Research"
-        insightsSubtitle="Perspectives shaping multifamily performance"
         
-        // CTA Section
-        ctaImage="/images/multifamily-cta.jpg"
-        ctaTitle="Looking to improve performance across your multifamily portfolio?"
+        // CTA Section - Removed
       />
     </>
   );
