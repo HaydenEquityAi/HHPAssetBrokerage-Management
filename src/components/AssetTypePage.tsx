@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout/Layout';
 import { ArrowRight, Building, TrendingUp, Shield, Users, Target, BarChart3 } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 interface AssetTypePageProps {
   // Hero Section
@@ -113,80 +114,90 @@ const AssetTypePage = ({
       </section>
 
       {/* Services Integration */}
-      <section className="py-20 bg-gray-50">
+      <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
-              {servicesTitle || `Our Integrated Services for ${title}`}
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link 
-              to="/services/property-management"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Building className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.propertyManagement || "Property Management"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.propertyManagement}</p>
-            </Link>
+          <div className="max-w-6xl mx-auto space-y-16">
+            <div className="text-center mb-8">
+              <h2 className="section-title text-hhp-navy mb-6">
+                {servicesTitle || `Our Integrated Services for ${title}`}
+              </h2>
+            </div>
+            
+            <div>
+              <Accordion type="single" collapsible className="w-full">
+                {/* Property Management */}
+                <AccordionItem value="property-management" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.propertyManagement || "Property Management"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.propertyManagement}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-            <Link 
-              to="/services/advisory-site-selection"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Target className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.advisorySiteSelection || "Advisory & Site Selection"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.advisorySiteSelection}</p>
-            </Link>
+                {/* Advisory & Site Selection */}
+                <AccordionItem value="advisory-site-selection" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.advisorySiteSelection || "Advisory & Site Selection"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.advisorySiteSelection}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-            <Link 
-              to="/services/investment-sales"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <TrendingUp className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.investmentSales || "Investment Sales"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.investmentSales}</p>
-            </Link>
+                {/* Investment Sales */}
+                <AccordionItem value="investment-sales" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.investmentSales || "Investment Sales"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.investmentSales}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-            <Link 
-              to="/services/landlord-representation"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Shield className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.landlordRepresentation || "Landlord Representation"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.landlordRepresentation}</p>
-            </Link>
+                {/* Landlord Representation */}
+                <AccordionItem value="landlord-representation" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.landlordRepresentation || "Landlord Representation"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.landlordRepresentation}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-            <Link 
-              to="/services/tenant-representation"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.tenantRepresentation || "Tenant Representation"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.tenantRepresentation}</p>
-            </Link>
+                {/* Tenant Representation */}
+                <AccordionItem value="tenant-representation" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.tenantRepresentation || "Tenant Representation"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.tenantRepresentation}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-            <Link 
-              to="/services/acquisitions"
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
-            >
-              <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <BarChart3 className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-hhp-navy mb-4">{serviceTitles?.acquisitionsDevelopment || "Acquisitions & Development"}</h3>
-              <p className="text-hhp-charcoal leading-relaxed">{services.acquisitionsDevelopment}</p>
-            </Link>
+                {/* Acquisitions & Development */}
+                <AccordionItem value="acquisitions-development" className="border-b border-gray-300 py-3">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
+                    {serviceTitles?.acquisitionsDevelopment || "Acquisitions & Development"}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-0 pb-8">
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {services.acquisitionsDevelopment}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </div>
         </div>
       </section>
