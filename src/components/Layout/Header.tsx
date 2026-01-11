@@ -211,7 +211,7 @@ const Header = () => {
       isSticky ? 'sticky top-0 py-2' : 'py-2 sm:py-3'
     }`}>
       <div className="container-premium">
-        <div className="flex items-center transition-all duration-300 h-12 md:h-14">
+        <div className="flex items-center justify-between transition-all duration-300 h-12 md:h-14 px-6 sm:px-8">
           {/* Logo - Clickable Home Link */}
           <Link 
             to="/" 
@@ -227,11 +227,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Spacer - Pushes nav to far right */}
-          <div className="flex-1"></div>
-
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6" role="menubar">
+          <nav className="hidden lg:flex items-center gap-6 sm:gap-8" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
