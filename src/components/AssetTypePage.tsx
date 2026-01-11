@@ -94,7 +94,6 @@ const AssetTypePage = ({
         <div className="absolute inset-0 bg-hhp-navy/40"></div>
         <div className="relative z-10 container-premium text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{title}</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-white drop-shadow-md">{tagline}</p>
           <button
             onClick={scrollToContact}
             className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
@@ -111,7 +110,6 @@ const AssetTypePage = ({
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy">Market Context</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">{marketText}</p>
             </div>
             <div className="border-l-4 border-hhp-accent pl-6">
               <h3 className="text-xl font-semibold text-hhp-navy mb-3">{valuePropositionTitle || "HHP's Value Proposition"}</h3>
@@ -128,9 +126,6 @@ const AssetTypePage = ({
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
               {servicesTitle || `Our Integrated Services for ${title}`}
             </h2>
-            <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              {servicesSubtitle || `Comprehensive solutions tailored to the unique needs of ${title.toLowerCase()} properties`}
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -210,9 +205,6 @@ const AssetTypePage = ({
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
               {technologyTitle || `AI-Driven Advantage for ${title}`}
             </h2>
-            <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              {technologySubtitle || "Our proprietary platforms deliver measurable competitive advantages"}
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -236,9 +228,6 @@ const AssetTypePage = ({
             <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
               {insightsTitle || `Insights for ${title}`}
             </h2>
-            <p className="text-lg text-hhp-charcoal max-w-3xl mx-auto">
-              {insightsSubtitle || "Stay ahead with our latest research and market intelligence"}
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -279,9 +268,6 @@ const AssetTypePage = ({
         <div className="absolute inset-0 bg-hhp-navy/50"></div>
         <div className="relative z-10 container-premium text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaTitle}</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your portfolio with institutional-grade expertise?
-          </p>
           <Link 
             to="/contact"
             className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
