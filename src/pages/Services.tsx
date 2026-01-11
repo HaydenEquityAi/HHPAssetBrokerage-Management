@@ -71,19 +71,9 @@ const Services = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hhp-navy mb-6 tracking-[0.06em] uppercase">
               Comprehensive Real Estate Services, Reimagined
             </h2>
-            <p className="text-xl leading-relaxed text-gray-600 mb-8">
-              HHP Asset Group delivers the full lifecycle of commercial real estate services — from acquisitions and development to management, leasing, sales, and strategic advisory — all powered by proprietary AI platforms.
+            <p className="text-xl leading-relaxed text-gray-600">
+              HHP delivers the full lifecycle of commercial real estate services — from acquisitions and development to management, leasing, sales, and strategic advisory — all powered by proprietary AI platforms.
             </p>
-            <Link 
-              to="#services" 
-              className="inline-block bg-hhp-navy text-white px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy/90 transition-all duration-300 shadow-elegant"
-              onClick={() => {
-                trackButtonClick('explore_services_cta', 'services_intro');
-                trackLinkClick('Explore Services', '#services');
-              }}
-            >
-              Explore Services →
-            </Link>
           </div>
         </div>
       </section>
