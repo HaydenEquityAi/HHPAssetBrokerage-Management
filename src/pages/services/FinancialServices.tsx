@@ -29,7 +29,7 @@ const FinancialServices = () => {
             {/* Our Role */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Role</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Real estate financial performance is often obscured by fragmented reporting, incomplete assumptions, or backward-looking data.
                 </p>
@@ -53,11 +53,11 @@ const FinancialServices = () => {
                     Asset-Level Financial Analysis
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-3">
                       We evaluate individual assets to provide a clear picture of performance, risks, and opportunities.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Operating income and expense analysis</li>
                       <li>Cash flow evaluation</li>
                       <li>Expense normalization and benchmarking</li>
@@ -73,11 +73,11 @@ const FinancialServices = () => {
                     Budgeting & Forecasting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-3">
                       We assist owners in building realistic budgets and forward-looking projections grounded in market conditions and operational realities.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Annual operating budgets</li>
                       <li>Short- and mid-term forecasts</li>
                       <li>Sensitivity analysis</li>
@@ -93,18 +93,18 @@ const FinancialServices = () => {
                     Transaction Financial Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-3">
                       We provide financial analysis to support acquisitions, dispositions, leasing decisions, and owner-user transactions.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Financial review of opportunities</li>
                       <li>Assumption validation</li>
                       <li>Lease impact analysis</li>
                       <li>Hold vs. sell modeling</li>
                       <li>Support during due diligence</li>
                     </ul>
-                    <p className="text-base leading-relaxed text-hhp-charcoal mt-3 italic">
+                    <p className="text-base leading-relaxed text-gray-600 mt-3 italic">
                       This service is often integrated with our Investment & Capital Markets and Leasing & Representation work.
                     </p>
                   </AccordionContent>
@@ -116,11 +116,11 @@ const FinancialServices = () => {
                     Owner & Board Reporting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-3">
                       We help ownership groups and boards gain clarity through structured, understandable reporting.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Customized reporting formats</li>
                       <li>Performance summaries for stakeholders</li>
                       <li>Board-ready financial presentations</li>
@@ -135,11 +135,11 @@ const FinancialServices = () => {
                     Portfolio-Level Insight
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-3">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-3">
                       For owners with multiple assets, we provide consolidated views to support portfolio strategy.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Portfolio performance reviews</li>
                       <li>Asset comparison and prioritization</li>
                       <li>Capital allocation insight</li>
@@ -219,13 +219,13 @@ const FinancialServices = () => {
             {/* How We Work */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Defined scope and objectives</li>
                 <li>Transparent assumptions</li>
                 <li>Clear, decision-ready outputs</li>
                 <li>Coordination with CPAs, lenders, and legal advisors as appropriate</li>
               </ul>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+              <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our goal is to support better decisions — not to replace existing professional advisors.
               </p>
             </div>
@@ -233,13 +233,13 @@ const FinancialServices = () => {
             {/* Who We Work With & How We Differ */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Defined scope and objectives</li>
                 <li>Transparent assumptions</li>
                 <li>Clear, decision-ready outputs</li>
                 <li>Coordination with CPAs, lenders, and legal advisors as appropriate</li>
               </ul>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+              <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our goal is to support better decisions — not to replace existing professional advisors.
               </p>
             </div>
@@ -254,7 +254,7 @@ const FinancialServices = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Commercial property owners</span>
@@ -286,7 +286,7 @@ const FinancialServices = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Real estate-focused analysis (not generic financial advice)</span>
@@ -310,7 +310,7 @@ const FinancialServices = () => {
             {/* Important Disclosure */}
             <div className="bg-gray-50 border-l-4 border-hhp-navy p-6 rounded">
               <h2 className="section-title text-hhp-navy mb-4">Important Disclosure</h2>
-              <div className="space-y-3 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-3 text-lg leading-relaxed text-gray-600">
                 <p>
                   HHP provides real estate financial analysis and advisory services only. We do not provide tax advice, legal advice, lending services, or regulated investment advisory services.
                 </p>

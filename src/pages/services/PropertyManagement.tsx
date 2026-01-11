@@ -29,7 +29,7 @@ const PropertyManagement = () => {
             {/* Our Management Philosophy */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Management Philosophy</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Effective property management is not about volume or speed. It is about consistency, accountability, and disciplined execution over time.
                 </p>
@@ -50,10 +50,10 @@ const PropertyManagement = () => {
                     Financial Oversight & Reporting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We maintain tight financial controls to provide transparency, predictability, and decision-ready information.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Rent collection and receivables monitoring</li>
                       <li>Monthly owner financial reporting</li>
                       <li>Budget preparation and variance analysis</li>
@@ -69,10 +69,10 @@ const PropertyManagement = () => {
                     Physical Asset Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on proactive maintenance and disciplined oversight to preserve asset condition and control long-term costs.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Preventative maintenance planning</li>
                       <li>Vendor sourcing, bidding, and oversight</li>
                       <li>Capital improvement coordination</li>
@@ -88,10 +88,10 @@ const PropertyManagement = () => {
                     Lease Administration
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage leases as legal and financial instruments, not just documents.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Lease abstraction and administration</li>
                       <li>Critical date tracking</li>
                       <li>Rent escalations and reconciliations</li>
@@ -107,10 +107,10 @@ const PropertyManagement = () => {
                     Tenant Relations & Issue Resolution
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We prioritize professional, consistent tenant communication to support stability and reduce friction.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Tenant communication and issue resolution</li>
                       <li>Coordination of service requests</li>
                       <li>Lease compliance monitoring</li>
@@ -125,10 +125,10 @@ const PropertyManagement = () => {
                     Risk Management & Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We identify and mitigate operational and regulatory risk before issues escalate.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Insurance coordination and compliance tracking</li>
                       <li>Safety and risk assessments</li>
                       <li>Regulatory and lease compliance oversight</li>
@@ -143,10 +143,10 @@ const PropertyManagement = () => {
                     Strategic Planning & Ownership Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support ownership with forward-looking insight beyond day-to-day operations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Operating and capital planning support</li>
                       <li>Performance trend analysis</li>
                       <li>Hold / sell / reposition input</li>
@@ -158,7 +158,7 @@ const PropertyManagement = () => {
 
               {/* Optional Closing Line */}
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+                <p className="text-lg leading-relaxed text-gray-600 italic">
                   Our management platform is designed to support stable operations today while preserving flexibility and value for future ownership decisions.
                 </p>
               </div>
@@ -239,7 +239,7 @@ const PropertyManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Private owners</span>
@@ -267,7 +267,7 @@ const PropertyManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Selective portfolio size</span>

@@ -29,7 +29,7 @@ const LeasingRepresentation = () => {
             {/* Our Leasing Philosophy */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Leasing Philosophy</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Leasing is not a marketing exercise. It is a capital decision.
                 </p>
@@ -50,10 +50,10 @@ const LeasingRepresentation = () => {
                     Market & Asset Positioning
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We begin with a clear understanding of the asset's position within its competitive set.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Market and submarket analysis</li>
                       <li>Competitive property review</li>
                       <li>Rent positioning and pricing strategy</li>
@@ -69,11 +69,11 @@ const LeasingRepresentation = () => {
                     Landlord Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We represent owners in the leasing of commercial space with a focus on protecting asset value and supporting long-term performance.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-3">Landlord representation services include:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-3">Landlord representation services include:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Leasing strategy development</li>
                       <li>Marketing coordination and exposure</li>
                       <li>Tenant qualification and underwriting</li>
@@ -89,11 +89,11 @@ const LeasingRepresentation = () => {
                     Tenant Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We advise tenants on site selection and lease negotiation with an emphasis on operational fit, cost structure, and long-term flexibility.
                     </p>
-                    <p className="text-base font-medium text-hhp-navy mb-3">Tenant representation services include:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <p className="text-base font-medium text-gray-600 mb-3">Tenant representation services include:</p>
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Needs assessment and market evaluation</li>
                       <li>Site selection and tour coordination</li>
                       <li>Financial comparison of alternatives</li>
@@ -109,10 +109,10 @@ const LeasingRepresentation = () => {
                     Lease Structuring & Risk Mitigation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on the details that materially impact long-term outcomes.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Lease term and renewal structure</li>
                       <li>Expense recovery and escalation analysis</li>
                       <li>Responsibility allocation and risk exposure</li>
@@ -128,10 +128,10 @@ const LeasingRepresentation = () => {
                     Execution & Coordination
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage the leasing process through execution to ensure consistency and accountability.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Coordination with ownership and management</li>
                       <li>Interface with legal counsel as needed</li>
                       <li>Timeline management</li>
@@ -147,10 +147,10 @@ const LeasingRepresentation = () => {
                     Integration with Management & Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       Our leasing work is informed by real operational experience.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Alignment with property management strategy</li>
                       <li>Consideration of maintenance and operational impact</li>
                       <li>Integration with asset-level financial analysis</li>
@@ -230,10 +230,10 @@ const LeasingRepresentation = () => {
             {/* Why Our Approach Matters */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
+              <p className="text-lg leading-relaxed text-gray-600">
                 Poorly structured leases often create hidden costs, operational friction, and long-term constraints.
               </p>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+              <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our leasing work is informed by management, advisory, and financial insight — not just deal-making — allowing us to deliver outcomes that support both near-term stability and long-term value.
               </p>
             </div>
@@ -241,10 +241,10 @@ const LeasingRepresentation = () => {
             {/* Who We Work With & How We Differ */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
+              <p className="text-lg leading-relaxed text-gray-600">
                 Poorly structured leases often create hidden costs, operational friction, and long-term constraints.
               </p>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+              <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our leasing work is informed by management, advisory, and financial insight — not just deal-making — allowing us to deliver outcomes that support both near-term stability and long-term value.
               </p>
             </div>
@@ -259,7 +259,7 @@ const LeasingRepresentation = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Commercial property owners</span>
@@ -291,7 +291,7 @@ const LeasingRepresentation = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Strategy-first leasing approach</span>
@@ -314,7 +314,7 @@ const LeasingRepresentation = () => {
 
             {/* Optional Closing Line */}
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+              <p className="text-lg leading-relaxed text-gray-600 italic">
                 Leasing decisions should support the asset long after the ink dries. Our approach is designed to do exactly that.
               </p>
             </div>

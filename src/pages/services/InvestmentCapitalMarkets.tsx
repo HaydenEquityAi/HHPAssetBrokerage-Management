@@ -29,7 +29,7 @@ const InvestmentCapitalMarkets = () => {
             {/* Our Role */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Role</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   We serve as both broker and advisor, providing structured guidance throughout the transaction lifecycle.
                 </p>
@@ -50,10 +50,10 @@ const InvestmentCapitalMarkets = () => {
                     Investment Sales Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We represent owners in the disposition of commercial assets with a focus on pricing discipline, positioning, and execution.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Asset valuation and pricing strategy</li>
                       <li>Market positioning and buyer targeting</li>
                       <li>Marketing and exposure coordination</li>
@@ -69,10 +69,10 @@ const InvestmentCapitalMarkets = () => {
                     Acquisition Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We advise buyers on the evaluation and acquisition of commercial real estate.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Market and submarket analysis</li>
                       <li>Financial review and assumption validation</li>
                       <li>Risk identification and mitigation</li>
@@ -88,10 +88,10 @@ const InvestmentCapitalMarkets = () => {
                     Owner-User Transactions
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support owner-users acquiring or disposing of real estate with both operational and investment considerations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Site and asset evaluation</li>
                       <li>Financial comparison of alternatives</li>
                       <li>Transaction structuring</li>
@@ -107,10 +107,10 @@ const InvestmentCapitalMarkets = () => {
                     Pricing, Valuation & Underwriting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide valuation guidance grounded in realistic assumptions and market context.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Income and expense analysis</li>
                       <li>Comparable sales review</li>
                       <li>Sensitivity and scenario analysis</li>
@@ -125,10 +125,10 @@ const InvestmentCapitalMarkets = () => {
                     Deal Structuring & Negotiation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on structuring transactions to align risk, economics, and flexibility.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Deal structure evaluation</li>
                       <li>Negotiation strategy</li>
                       <li>Coordination with legal and financial advisors</li>
@@ -143,10 +143,10 @@ const InvestmentCapitalMarkets = () => {
                     Transaction Management & Execution
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage the transaction process from initial strategy through closing.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Timeline and process coordination</li>
                       <li>Due diligence oversight</li>
                       <li>Communication management</li>
@@ -226,13 +226,13 @@ const InvestmentCapitalMarkets = () => {
             {/* How We Approach Transactions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Approach Transactions</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside mb-4">
+                    <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside mb-4">
                 <li>Clear underwriting assumptions</li>
                 <li>Realistic view of income, expenses, and capital requirements</li>
                 <li>Consideration of operational and leasing risk</li>
                 <li>Objective analysis without pressure or forced outcomes</li>
               </ul>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
+              <p className="text-lg leading-relaxed text-gray-600">
                 We are aligned with long-term decision-making, not transaction volume.
               </p>
             </div>
@@ -240,10 +240,10 @@ const InvestmentCapitalMarkets = () => {
             {/* Why Our Approach Matters */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
+              <p className="text-lg leading-relaxed text-gray-600">
                 Transactions that ignore operational realities often underperform after closing.
               </p>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+              <p className="text-lg leading-relaxed text-gray-600 mt-4">
                 Our approach integrates brokerage execution with management and advisory insight, allowing clients to make informed decisions with a clear view of both risk and opportunity.
               </p>
             </div>
@@ -258,7 +258,7 @@ const InvestmentCapitalMarkets = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Private capital</span>
@@ -286,7 +286,7 @@ const InvestmentCapitalMarkets = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Strategy-driven, not volume-driven</span>
@@ -309,7 +309,7 @@ const InvestmentCapitalMarkets = () => {
 
             {/* Optional Closing Line */}
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+              <p className="text-lg leading-relaxed text-gray-600 italic">
                 Sound transaction decisions are built on clear assumptions, disciplined execution, and an understanding of how assets perform over time.
               </p>
             </div>

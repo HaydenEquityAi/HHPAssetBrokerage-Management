@@ -29,7 +29,7 @@ const AdvisorySiteSelection = () => {
             {/* Our Advisory Role */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Advisory Role</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Real estate decisions often involve competing objectives, incomplete information, and meaningful capital commitments.
                 </p>
@@ -50,10 +50,10 @@ const AdvisorySiteSelection = () => {
                     Site Selection & Relocation Analysis
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We assist tenants, owner-users, and organizations in evaluating location options based on operational, financial, and strategic considerations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Needs assessment and criteria development</li>
                       <li>Market and submarket evaluation</li>
                       <li>Comparative site analysis</li>
@@ -69,10 +69,10 @@ const AdvisorySiteSelection = () => {
                     Market & Feasibility Studies
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We evaluate market conditions and project feasibility to support informed decision-making.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Market demand and supply analysis</li>
                       <li>Competitive landscape evaluation</li>
                       <li>Use and positioning analysis</li>
@@ -88,10 +88,10 @@ const AdvisorySiteSelection = () => {
                     Portfolio Review & Optimization
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We work with owners to assess portfolio performance and identify opportunities for improvement.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Asset-level performance review</li>
                       <li>Portfolio-wide analysis</li>
                       <li>Capital allocation insight</li>
@@ -107,10 +107,10 @@ const AdvisorySiteSelection = () => {
                     Hold vs. Sell Evaluations
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide structured analysis to support ownership decisions around disposition timing.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Performance trend analysis</li>
                       <li>Market timing considerations</li>
                       <li>Operational and leasing risk assessment</li>
@@ -126,10 +126,10 @@ const AdvisorySiteSelection = () => {
                     Strategic Planning Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support owners and boards with structured planning around real estate strategy.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Long-term real estate planning</li>
                       <li>Alignment with business objectives</li>
                       <li>Capital planning considerations</li>
@@ -144,10 +144,10 @@ const AdvisorySiteSelection = () => {
                     Third-Party Validation & Board Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <p className="text-lg font-semibold leading-relaxed text-hhp-charcoal mb-4">
+                    <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide independent analysis to support governance and stakeholder decision-making.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Board-ready presentations</li>
                       <li>Third-party review and validation</li>
                       <li>Independent perspective for complex decisions</li>
@@ -227,7 +227,7 @@ const AdvisorySiteSelection = () => {
             {/* When Clients Engage Us */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">When Clients Engage Us</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Prior to committing capital</li>
                 <li>During portfolio transitions</li>
                 <li>When internal consensus is unclear</li>
@@ -238,7 +238,7 @@ const AdvisorySiteSelection = () => {
             {/* Value We Bring */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Value We Bring</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Objective, independent analysis</li>
                 <li>Market-grounded assumptions</li>
                 <li>Awareness of execution and operational realities</li>
@@ -249,7 +249,7 @@ const AdvisorySiteSelection = () => {
             {/* Who We Work With & How We Differ */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">When Clients Engage Us</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Prior to committing capital</li>
                 <li>During portfolio transitions</li>
                 <li>When internal consensus is unclear</li>
@@ -260,7 +260,7 @@ const AdvisorySiteSelection = () => {
             {/* Value We Bring */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Value We Bring</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+              <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
                 <li>Objective, independent analysis</li>
                 <li>Market-grounded assumptions</li>
                 <li>Awareness of execution and operational realities</li>
@@ -278,7 +278,7 @@ const AdvisorySiteSelection = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Owners navigating operational or organizational transitions</span>
@@ -306,7 +306,7 @@ const AdvisorySiteSelection = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Advisory-first mindset</span>
@@ -329,7 +329,7 @@ const AdvisorySiteSelection = () => {
 
             {/* Optional Closing Line */}
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+              <p className="text-lg leading-relaxed text-gray-600 italic">
                 High-impact real estate decisions benefit from independent perspective, disciplined analysis, and clear communication.
               </p>
             </div>

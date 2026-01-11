@@ -46,7 +46,7 @@ const FacilitiesManagement = () => {
             {/* Introduction */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Introduction</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   HHP provides facilities management services focused on operational reliability, safety, and long-term asset preservation. Our approach integrates preventive maintenance, vendor oversight, compliance management, and commercial cleaning operations to ensure buildings perform predictably — not reactively.
                 </p>
@@ -59,7 +59,7 @@ const FacilitiesManagement = () => {
             {/* Philosophy Section */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Our Facilities Management Philosophy</h2>
-              <div className="space-y-4 text-lg leading-relaxed text-hhp-charcoal">
+              <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Effective facilities management is not about chasing work orders. It is about systems, accountability, and proactive execution.
                 </p>
@@ -83,7 +83,7 @@ const FacilitiesManagement = () => {
                     Engineering & Building Systems
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Mechanical, electrical, and plumbing system oversight</li>
                       <li>Preventive maintenance programs</li>
                       <li>Troubleshooting and repair coordination</li>
@@ -99,7 +99,7 @@ const FacilitiesManagement = () => {
                     Preventive Maintenance & Inspections
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Scheduled maintenance planning and execution</li>
                       <li>Regular building and system inspections</li>
                       <li>Condition assessments and reporting</li>
@@ -115,7 +115,7 @@ const FacilitiesManagement = () => {
                     Vendor & Contractor Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Vendor sourcing and qualification</li>
                       <li>Bidding and contract negotiation</li>
                       <li>Work order management and oversight</li>
@@ -131,7 +131,7 @@ const FacilitiesManagement = () => {
                     Safety & Regulatory Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Building code compliance monitoring</li>
                       <li>Fire safety and life safety system maintenance</li>
                       <li>ADA compliance oversight</li>
@@ -147,7 +147,7 @@ const FacilitiesManagement = () => {
                     Landscaping & Exterior Maintenance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Landscaping and grounds maintenance</li>
                       <li>Exterior building maintenance and repairs</li>
                       <li>Roofing system oversight</li>
@@ -163,7 +163,7 @@ const FacilitiesManagement = () => {
                     Parking & Common Area Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Parking lot maintenance and striping</li>
                       <li>Common area cleaning and maintenance</li>
                       <li>Signage and wayfinding management</li>
@@ -179,7 +179,7 @@ const FacilitiesManagement = () => {
                     Commercial Cleaning & Janitorial Services
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-hhp-charcoal list-disc list-inside ml-4">
+                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
                       <li>Janitorial service coordination and oversight</li>
                       <li>Cleaning schedule management</li>
                       <li>Quality control and inspection</li>
@@ -192,7 +192,7 @@ const FacilitiesManagement = () => {
 
               {/* Closing Statement */}
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <p className="text-lg leading-relaxed text-hhp-charcoal italic">
+                <p className="text-lg leading-relaxed text-gray-600 italic">
                   Our facilities platform is designed to protect asset condition, operational standards, and tenant experience today while preserving flexibility and value for future ownership decisions.
                 </p>
               </div>
@@ -273,7 +273,7 @@ const FacilitiesManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Private commercial property owners</span>
@@ -305,7 +305,7 @@ const FacilitiesManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-hhp-charcoal">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
                     <span>Selective portfolio size to ensure accountability</span>
