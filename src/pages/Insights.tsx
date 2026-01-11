@@ -373,33 +373,6 @@ const Insights = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-hhp-navy text-white section-spacing">
-        <div className="container-premium text-center">
-          <h2 className="section-title text-white mb-6">
-            Ready to Elevate Your Portfolio?
-          </h2>
-          <p className="text-xl leading-relaxed text-white/90 mb-12 max-w-3xl mx-auto">
-            Partner with a firm that combines institutional discipline, operational expertise, and market insight.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link 
-              to="/contact" 
-              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 inline-block"
-            >
-              Schedule a Consultation
-            </Link>
-            <Link 
-              to="/asset-management" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
