@@ -132,7 +132,7 @@ const Contact = () => {
               CONTACT
             </h1>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-8 sm:mb-10 lg:mb-12 drop-shadow-md">
-              Ready to transform your real estate operations? Let's discuss how HHP Asset Group can help you achieve your goals.
+              Ready to transform your real estate operations? Let's discuss how HHP can help you achieve your goals.
             </p>
           </div>
         </div>
