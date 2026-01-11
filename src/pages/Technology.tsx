@@ -164,55 +164,40 @@ const Technology = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section 
-          className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/ai-hero.jpg)' }}
-        >
-          <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-black">
+          {/* Video Background */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            onLoadedMetadata={(e) => {
+              e.currentTarget.play().catch(() => {
+                // Silently handle autoplay failures
+              });
+            }}
+          >
+            <source src="/images/ai-machine-learning-hero.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-hhp-navy/60 z-0"></div>
           <div className="relative z-10 container-premium">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="hero-title text-white mb-8 drop-shadow-lg">
-                Technology That Moves Real Estate Forward
+              <h1 className="hero-title text-white mb-4 drop-shadow-lg">
+                Technology
               </h1>
-              <p className="text-xl leading-relaxed text-white/90 mb-12 drop-shadow-md">
+            </div>
+          </div>
+        </section>
+
+        {/* Intro Paragraph Section */}
+        <section className="bg-white py-12 sm:py-16">
+          <div className="container-premium">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg sm:text-xl leading-relaxed text-gray-600 text-center">
                 Our proprietary AI stack and analytics frameworks deliver institutional-grade execution—faster decisions, tighter controls, and measurable ROI.
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Link 
-                  to="#technology-pillars" 
-                  className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-                  onClick={() => {
-                    trackButtonClick('explore_technology_cta', 'technology_hero');
-                    trackLinkClick('Explore Technology', '#technology-pillars');
-                  }}
-                >
-                  Explore Technology →
-                </Link>
-                <Link 
-                  to="/contact" 
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-                  onClick={() => {
-                    trackButtonClick('talk_to_hhp_cta', 'technology_hero');
-                    trackLinkClick('Talk to HHP', '/contact');
-                  }}
-                >
-                  Talk to HHP
-                </Link>
-              </div>
-              
-              {/* KPI chips */}
-              <div className="flex flex-wrap justify-center gap-4">
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  2x faster decisions
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  14% OpEx savings
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
-                  22% delinquency reduction
-                </div>
-              </div>
             </div>
           </div>
         </section>
