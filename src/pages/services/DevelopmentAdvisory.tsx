@@ -65,7 +65,7 @@ const DevelopmentAdvisory = () => {
           </h2>
           <div className="flex justify-center">
             <img 
-              src="/images/our-vertically-integrated-approach.png" 
+              src="/images/development-advisory-chart.png" 
               alt="Our Vertically Integrated Approach"
               className="w-full max-w-5xl h-auto"
             />
