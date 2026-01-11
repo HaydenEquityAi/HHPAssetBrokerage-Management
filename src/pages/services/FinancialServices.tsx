@@ -158,8 +158,84 @@ const FinancialServices = () => {
                 </AccordionItem>
               </Accordion>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Service Approach Chart */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container-premium">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+            OUR FINANCIAL SERVICES APPROACH
+          </h2>
+          <div className="flex justify-center">
+            <img 
+              src="/images/our-vertically-integrated-approach.png" 
+              alt="Our Financial Services Approach"
+              className="w-full max-w-5xl h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-Page Split Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px]">
+        {/* LEFT: Large property/building image */}
+        <div className="relative h-[400px] md:h-auto">
+          <img 
+            src="/images/financial-services-hero.jpg" 
+            alt="Financial Services"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* RIGHT: Dark overlay with text and CTA */}
+        <div className="bg-gray-800 text-white flex items-center p-8 sm:p-12 lg:p-16">
+          <div className="max-w-lg">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              FINANCIAL SERVICES
+            </h2>
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              HHP provides real estate–focused financial services designed to support ownership, operational, and transactional decision-making. Our work centers on asset-level analysis, performance transparency, and forward-looking planning.
+            </p>
+            <div className="pt-8 border-t border-gray-600">
+              <h3 className="text-2xl font-bold mb-6 tracking-wide">
+                DISCOVER<br/>WHAT WE OFFER
+              </h3>
+              <Link 
+                to="/contact" 
+                className="inline-block bg-white text-gray-800 px-8 py-3 rounded font-semibold hover:bg-gray-100 transition"
+                onClick={() => {
+                  trackButtonClick('contact_us_cta', 'financial_services_split');
+                  trackLinkClick('Contact Us', '/contact');
+                }}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Work & Who We Work With */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto space-y-16">
             {/* How We Work */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
+              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
+                <li>Defined scope and objectives</li>
+                <li>Transparent assumptions</li>
+                <li>Clear, decision-ready outputs</li>
+                <li>Coordination with CPAs, lenders, and legal advisors as appropriate</li>
+              </ul>
+              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+                Our goal is to support better decisions — not to replace existing professional advisors.
+              </p>
+            </div>
+
+            {/* Who We Work With & How We Differ */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">How We Work</h2>
               <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside">
@@ -247,6 +323,29 @@ const FinancialServices = () => {
                   Clients should consult their independent tax, legal, and financial professionals for matters outside the scope of real estate analysis.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ CTA Section */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="border border-gray-300 rounded-lg my-12 sm:my-16 p-8 sm:p-10">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              <h3 className="text-2xl sm:text-3xl font-bold text-hhp-navy">
+                HAVE MORE QUESTIONS?
+              </h3>
+              <Link 
+                to="/faq" 
+                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-hhp-navy/90 transition flex-shrink-0"
+                onClick={() => {
+                  trackButtonClick('visit_faq_cta', 'financial_services_faq');
+                  trackLinkClick('Visit our FAQ page', '/faq');
+                }}
+              >
+                Visit our FAQ page
+              </Link>
             </div>
           </div>
         </div>

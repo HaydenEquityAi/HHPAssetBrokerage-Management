@@ -169,8 +169,81 @@ const LeasingRepresentation = () => {
                 </AccordionItem>
               </Accordion>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Service Approach Chart */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container-premium">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+            OUR LEASING & REPRESENTATION APPROACH
+          </h2>
+          <div className="flex justify-center">
+            <img 
+              src="/images/our-vertically-integrated-approach.png" 
+              alt="Our Leasing & Representation Approach"
+              className="w-full max-w-5xl h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-Page Split Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px]">
+        {/* LEFT: Large property/building image */}
+        <div className="relative h-[400px] md:h-auto">
+          <img 
+            src="/images/leasing-tenant-representation-hero.webp" 
+            alt="Leasing & Representation"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* RIGHT: Dark overlay with text and CTA */}
+        <div className="bg-gray-800 text-white flex items-center p-8 sm:p-12 lg:p-16">
+          <div className="max-w-lg">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              LEASING & REPRESENTATION
+            </h2>
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              Leasing decisions shape the financial trajectory of an asset for years. HHP approaches leasing as a strategic function — focused on tenant quality, lease economics, and long-term risk mitigation — not just filling space.
+            </p>
+            <div className="pt-8 border-t border-gray-600">
+              <h3 className="text-2xl font-bold mb-6 tracking-wide">
+                DISCOVER<br/>WHAT WE OFFER
+              </h3>
+              <Link 
+                to="/contact" 
+                className="inline-block bg-white text-gray-800 px-8 py-3 rounded font-semibold hover:bg-gray-100 transition"
+                onClick={() => {
+                  trackButtonClick('contact_us_cta', 'leasing_representation_split');
+                  trackLinkClick('Contact Us', '/contact');
+                }}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Our Approach Matters & Who We Work With */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto space-y-16">
             {/* Why Our Approach Matters */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
+              <p className="text-lg leading-relaxed text-hhp-charcoal">
+                Poorly structured leases often create hidden costs, operational friction, and long-term constraints.
+              </p>
+              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
+                Our leasing work is informed by management, advisory, and financial insight — not just deal-making — allowing us to deliver outcomes that support both near-term stability and long-term value.
+              </p>
+            </div>
+
+            {/* Who We Work With & How We Differ */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
               <p className="text-lg leading-relaxed text-hhp-charcoal">
@@ -249,6 +322,29 @@ const LeasingRepresentation = () => {
               <p className="text-lg leading-relaxed text-hhp-charcoal italic">
                 Leasing decisions should support the asset long after the ink dries. Our approach is designed to do exactly that.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ CTA Section */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="border border-gray-300 rounded-lg my-12 sm:my-16 p-8 sm:p-10">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              <h3 className="text-2xl sm:text-3xl font-bold text-hhp-navy">
+                HAVE MORE QUESTIONS?
+              </h3>
+              <Link 
+                to="/faq" 
+                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-hhp-navy/90 transition flex-shrink-0"
+                onClick={() => {
+                  trackButtonClick('visit_faq_cta', 'leasing_representation_faq');
+                  trackLinkClick('Visit our FAQ page', '/faq');
+                }}
+              >
+                Visit our FAQ page
+              </Link>
             </div>
           </div>
         </div>

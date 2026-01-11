@@ -424,7 +424,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title text-hhp-navy mb-6">Technology Advantage</h2>
             <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms like RentalAi streamline operations, reduce errors, and create cost advantages for owners and residents.
+              We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms streamline operations, reduce errors, and create cost advantages for owners and residents.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">

@@ -227,8 +227,11 @@ const Header = () => {
             />
           </Link>
 
+          {/* Spacer - Pushes nav to far right */}
+          <div className="flex-1"></div>
+
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6 ml-auto" role="menubar">
+          <nav className="hidden lg:flex items-center space-x-4 sm:space-x-6" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
@@ -241,43 +244,35 @@ const Header = () => {
                     onMouseEnter={() => handleDropdownEnter(item.name)}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <div className="flex items-center">
-                      <button 
-                        className={`transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight ${
-                          (item.name === 'Services' && isServicesActive) ||
-                          (item.name === 'Asset Types' && isAssetTypesActive)
-                            ? 'text-hhp-navy border-b-2 border-hhp-navy' 
-                            : 'text-hhp-charcoal hover:text-hhp-navy'
-                        }`}
-                        onClick={() => {
-                          // Navigate to main page for Services and Asset Types
-                          if (item.name === 'Services') {
-                            handleMainButtonClick(item.name, '/asset-management');
-                          } else if (item.name === 'Asset Types') {
-                            handleMainButtonClick(item.name, '/asset-types');
-                          } else {
-                            handleDropdownClick(item.name);
-                          }
-                        }}
-                        onKeyDown={(e) => handleKeyDown(e, item.name)}
-                        aria-expanded={activeDropdown === item.name}
-                        aria-haspopup="menu"
-                        aria-controls={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
-                      >
-                        {item.name}
-                      </button>
-                      <button
-                        className="ml-0.5 p-0.5 hover:bg-gray-100 rounded transition-colors duration-200"
-                        onClick={() => handleDropdownClick(item.name)}
-                        aria-label={`Toggle ${item.name} menu`}
-                      >
-                        <ChevronDown 
-                          className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                            activeDropdown === item.name ? 'rotate-180' : ''
-                          }`} 
-                        />
-                      </button>
-                    </div>
+                    <button 
+                      className={`flex items-center gap-1 transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight px-1 sm:px-2 py-1 ${
+                        (item.name === 'Services' && isServicesActive) ||
+                        (item.name === 'Asset Types' && isAssetTypesActive)
+                          ? 'text-hhp-navy border-b-2 border-hhp-navy' 
+                          : 'text-hhp-charcoal hover:text-hhp-navy'
+                      }`}
+                      onClick={() => {
+                        // Navigate to main page for Services and Asset Types
+                        if (item.name === 'Services') {
+                          handleMainButtonClick(item.name, '/asset-management');
+                        } else if (item.name === 'Asset Types') {
+                          handleMainButtonClick(item.name, '/asset-types');
+                        } else {
+                          handleDropdownClick(item.name);
+                        }
+                      }}
+                      onKeyDown={(e) => handleKeyDown(e, item.name)}
+                      aria-expanded={activeDropdown === item.name}
+                      aria-haspopup="menu"
+                      aria-controls={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown 
+                        className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                          activeDropdown === item.name ? 'rotate-180' : ''
+                        }`} 
+                      />
+                    </button>
                     
                     {activeDropdown === item.name && (
                       <div 
