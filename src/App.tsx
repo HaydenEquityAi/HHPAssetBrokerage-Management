@@ -23,6 +23,7 @@ import Technology from "./pages/Technology";
 import About from "./pages/About";
 import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 import Opportunities from "./pages/Opportunities";
 import ResidentLogin from "./pages/ResidentLogin";
 import InvestorPortal from "./pages/InvestorPortal";
@@ -136,6 +137,7 @@ const App = () => (
             <Route path="/insights" element={<Insights />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/opportunities" element={<Opportunities />} />
             <Route path="/resident-login" element={<ResidentLogin />} />
             <Route path="/investor-portal" element={<InvestorPortal />} />
