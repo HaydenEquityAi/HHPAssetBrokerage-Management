@@ -18,15 +18,6 @@ const FinancialServices = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Financial Services
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Financial Clarity for Real Estate Decisions
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-4 drop-shadow-md">
-              HHP provides real estate–focused financial services designed to support ownership, operational, and transactional decision-making. Our work centers on asset-level analysis, performance transparency, and forward-looking planning — not generic financial advice.
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              We help owners understand how their real estate actually performs and how decisions today affect outcomes tomorrow.
-            </p>
           </div>
         </div>
       </section>

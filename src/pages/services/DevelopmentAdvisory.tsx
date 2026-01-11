@@ -17,12 +17,6 @@ const DevelopmentAdvisory = () => {
             <h1 className="hero-title text-white mb-8 drop-shadow-lg">
               Development Advisory
             </h1>
-            <p className="text-xl leading-relaxed text-white/90 mb-8 drop-shadow-md">
-              Strategic Guidance from Concept Through Execution
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-8 drop-shadow-md">
-              HHP provides development advisory services to owners and developers seeking structured insight during the planning, feasibility, and execution phases of commercial real estate projects.
-            </p>
             
             <Link 
               to="/contact" 

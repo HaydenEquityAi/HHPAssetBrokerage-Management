@@ -18,15 +18,6 @@ const AdvisorySiteSelection = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Advisory & Site Selection
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Independent Perspective for High-Impact Decisions
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP provides advisory services to owners, boards, and tenants navigating complex real estate decisions where clarity, structure, and disciplined analysis matter.
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              Our advisory work is designed for situations where the cost of a poor decision is high and independent perspective is essential.
-            </p>
           </div>
         </div>
       </section>

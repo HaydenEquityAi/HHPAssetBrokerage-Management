@@ -18,15 +18,6 @@ const InvestmentCapitalMarkets = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Investment & Capital Markets
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Transaction Strategy Informed by Operations
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP advises owners, investors, and owner-users on acquisitions, dispositions, and strategic transactions with an understanding of how assets perform beyond the closing table.
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              Our work integrates market insight, underwriting discipline, and operational awareness to support decisions that hold up over time — not just at closing.
-            </p>
           </div>
         </div>
       </section>

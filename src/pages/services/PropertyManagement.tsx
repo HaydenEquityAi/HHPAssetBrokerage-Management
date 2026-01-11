@@ -18,12 +18,6 @@ const PropertyManagement = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Property Management
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Disciplined Operations for Commercial Assets
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP provides commercial property management services focused on operational control, financial transparency, and long-term asset performance. Our approach is built for owners who want informed oversight, not reactive management.
-            </p>
           </div>
         </div>
       </section>

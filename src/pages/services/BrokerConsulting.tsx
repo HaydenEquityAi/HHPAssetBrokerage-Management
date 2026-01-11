@@ -18,15 +18,6 @@ const BrokerConsulting = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Broker of Record & Consulting Services
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Regulatory Excellence and Expert Guidance
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP provides integrated Broker of Record services and consulting support for brokerages, ownership groups, and stakeholders navigating regulatory requirements, operational complexity, and organizational transitions.
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              Our approach emphasizes compliance, clarity, and disciplined oversight, delivered without unnecessary bureaucracy or interference.
-            </p>
           </div>
         </div>
       </section>

@@ -18,9 +18,6 @@ const FacilitiesManagement = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Facilities Management
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Disciplined Building Operations for Commercial Assets
-            </p>
             <div className="mt-8">
               <a 
                 href="#core-functions"

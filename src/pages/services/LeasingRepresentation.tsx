@@ -18,15 +18,6 @@ const LeasingRepresentation = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Leasing & Representation
             </h1>
-            <p className="text-xl font-medium text-white/90 mb-6 drop-shadow-md">
-              Stabilization Through Strategy, Not Speed
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              Leasing decisions shape the financial trajectory of an asset for years. Poor tenant selection, weak lease structure, or rushed execution can quietly erode value long after a deal is signed.
-            </p>
-            <p className="text-lg leading-relaxed text-white/90 mb-12 drop-shadow-md">
-              HHP approaches leasing as a strategic function — focused on tenant quality, lease economics, and long-term risk mitigation — not just filling space.
-            </p>
           </div>
         </div>
       </section>
