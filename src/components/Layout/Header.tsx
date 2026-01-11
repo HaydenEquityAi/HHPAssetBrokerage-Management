@@ -29,7 +29,7 @@ const Header = () => {
         { name: 'Investment & Capital Markets', href: '/services/investment-capital-markets' },
         { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection' },
         { name: 'Development Advisory', href: '/services/development-advisory' },
-        { name: 'Broker of Record Services', href: '/services/broker-consulting' },
+        { name: 'Consulting & Strategic Advisory', href: '/services/broker-consulting' },
         { name: 'Financial Services', href: '/services/financial-services' },
         { name: 'Facilities Management', href: '/services/facilities-management' }
       ]
