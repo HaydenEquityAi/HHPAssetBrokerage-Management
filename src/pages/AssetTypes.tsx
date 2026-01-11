@@ -99,7 +99,7 @@ const AssetTypes = () => {
               </p>
               <Link 
                 to="#asset-types" 
-                className="inline-block bg-hhp-navy text-white px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy/90 transition-all duration-300 shadow-elegant"
+                className="inline-block bg-hhp-navy text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition-all duration-300 shadow-elegant"
                 onClick={() => {
                   trackButtonClick('explore_asset_types_cta', 'asset_types_intro');
                   trackLinkClick('Explore Asset Types', '#asset-types');
@@ -135,7 +135,7 @@ const AssetTypes = () => {
                       <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                         {assetType.title}
                       </h3>
-                      <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
+                      <div className="flex items-center text-white font-heading font-semibold tracking-[0.06em] uppercase group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                         <span>Learn More</span>
                         <ArrowRight className="h-4 w-4 ml-2" />
                       </div>
@@ -167,7 +167,7 @@ const AssetTypes = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('consultation_cta', 'asset_types_banner');
                   trackLinkClick('Schedule Consultation', '/contact');
@@ -180,7 +180,7 @@ const AssetTypes = () => {
               </Link>
               <Link 
                 to="/services" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('explore_services_cta', 'asset_types_banner');
                   trackLinkClick('Explore Our Services', '/services');

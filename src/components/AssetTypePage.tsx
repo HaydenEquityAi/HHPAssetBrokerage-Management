@@ -254,7 +254,7 @@ const AssetTypePage = ({
           <div className="text-center mt-12">
             <Link 
               to="/insights"
-              className="bg-hhp-navy text-white px-8 py-4 rounded-2xl font-medium text-lg hover:bg-hhp-navy/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="bg-hhp-navy text-white px-8 py-4 rounded-2xl font-heading font-semibold tracking-[0.06em] uppercase text-lg hover:bg-hhp-navy/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Explore All Insights
               <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -274,7 +274,7 @@ const AssetTypePage = ({
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaTitle}</h2>
           <Link 
             to="/contact"
-            className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+            className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-heading font-semibold tracking-[0.06em] uppercase text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
           >
             Schedule a Consultation
             <ArrowRight className="inline ml-2 h-5 w-5" />

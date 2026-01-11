@@ -230,7 +230,7 @@ const FacilitiesManagement = () => {
               </h3>
               <Link 
                 to="/contact" 
-                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-semibold hover:bg-gray-100 transition"
+                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-heading font-semibold tracking-[0.06em] uppercase hover:bg-gray-100 transition"
                 onClick={() => {
                   trackButtonClick('contact_us_cta', 'facilities_management_split');
                   trackLinkClick('Contact Us', '/contact');
@@ -326,7 +326,7 @@ const FacilitiesManagement = () => {
               </h3>
               <Link 
                 to="/faq" 
-                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-hhp-navy/90 transition flex-shrink-0"
+                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition flex-shrink-0"
                 onClick={() => {
                   trackButtonClick('visit_faq_cta', 'facilities_management_faq');
                   trackLinkClick('Visit our FAQ page', '/faq');
@@ -344,7 +344,7 @@ const FacilitiesManagement = () => {
         <div className="container-premium text-center">
           <Link 
             to="/contact" 
-            className="group inline-flex items-center gap-2 bg-hhp-navy text-white px-8 py-4 rounded-lg font-medium hover:bg-hhp-navy/90 transition-all duration-200 shadow-lg w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+            className="group inline-flex items-center gap-2 bg-hhp-navy text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition-all duration-200 shadow-lg w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             onClick={() => {
               trackButtonClick('discuss_facilities_management_alignment', 'facilities_management_cta');
               trackLinkClick('Discuss Facilities Management Alignment', '/contact');

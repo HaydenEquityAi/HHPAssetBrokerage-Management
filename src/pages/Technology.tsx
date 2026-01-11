@@ -245,7 +245,7 @@ const Technology = () => {
                     {/* CTA */}
                     <Link 
                       to={pillar.href}
-                      className="inline-flex items-center text-hhp-navy font-medium hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:ring-offset-2 rounded"
+                      className="inline-flex items-center text-hhp-navy font-heading font-semibold tracking-[0.06em] uppercase hover:text-hhp-navy/80 transition-colors duration-300 group-hover:translate-x-2 group focus:outline-none focus:ring-2 focus:ring-hhp-navy focus:ring-offset-2 rounded"
                       onClick={() => {
                         trackButtonClick(`learn_more_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');
                         trackLinkClick(`Learn More ${pillar.title}`, pillar.href);
@@ -368,7 +368,7 @@ const Technology = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('request_demo_cta', 'final_cta');
                   trackLinkClick('Request a Demo', '/contact');
@@ -379,7 +379,7 @@ const Technology = () => {
               </Link>
               <Link 
                 to="/technology/ai-platforms" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-flex items-center justify-center w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
                 onClick={() => {
                   trackButtonClick('see_pricing_cta', 'final_cta');
                   trackLinkClick('See Pricing & Licensing', '/technology/ai-platforms');

@@ -64,7 +64,7 @@ const Insights = () => {
             <p className="text-xl leading-relaxed text-white/90 mb-12 drop-shadow-md">
               AI-driven market analysis, case studies, and thought leadership from America's first AI-native real estate firm. Stay ahead with data-driven insights and institutional-grade intelligence.
             </p>
-            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 shadow-elegant">
+            <Link to="/contact" className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant">
               Subscribe to Insights
             </Link>
           </div>
@@ -389,7 +389,7 @@ const Insights = () => {
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-hhp-navy text-white px-6 py-3 rounded-lg font-medium hover:bg-hhp-navy/90 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="bg-hhp-navy text-white px-6 py-3 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                   </button>
@@ -416,13 +416,13 @@ const Insights = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               to="/contact" 
-              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-300 inline-block"
+              className="bg-white text-hhp-navy px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 inline-block"
             >
               Schedule a Consultation
             </Link>
             <Link 
               to="/technology" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white hover:text-hhp-navy transition-all duration-300 inline-block"
             >
               Explore Our Technology
             </Link>

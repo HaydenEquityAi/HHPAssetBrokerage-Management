@@ -377,7 +377,7 @@ const About = () => {
           </p>
           <Link
             to="/opportunities"
-            className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
+            className="inline-block bg-white text-hhp-navy px-6 py-3 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-colors duration-200 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
             aria-label="View Opportunities"
             onClick={() => {
               trackButtonClick('view_opportunities', 'about_join_team');

@@ -285,7 +285,7 @@ const InvestmentCapitalMarkets = () => {
               </h3>
               <Link 
                 to="/contact" 
-                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-semibold hover:bg-gray-100 transition"
+                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-heading font-semibold tracking-[0.06em] uppercase hover:bg-gray-100 transition"
                 onClick={() => {
                   trackButtonClick('contact_us_cta', 'investment_capital_markets_split');
                   trackLinkClick('Contact Us', '/contact');
@@ -418,7 +418,7 @@ const InvestmentCapitalMarkets = () => {
               </h3>
               <Link 
                 to="/faq" 
-                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-hhp-navy/90 transition flex-shrink-0"
+                className="bg-hhp-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition flex-shrink-0"
                 onClick={() => {
                   trackButtonClick('visit_faq_cta', 'investment_capital_markets_faq');
                   trackLinkClick('Visit our FAQ page', '/faq');
