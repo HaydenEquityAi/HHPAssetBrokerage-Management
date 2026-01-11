@@ -163,7 +163,7 @@ const InvestmentCapitalMarkets = () => {
       {/* Service Approach Chart */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container-premium">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+          <h2 className="section-title text-hhp-navy mb-6">
             OUR INVESTMENT & CAPITAL MARKETS APPROACH
           </h2>
           <div className="flex justify-center">
