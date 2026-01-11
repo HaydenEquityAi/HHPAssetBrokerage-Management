@@ -79,7 +79,7 @@ const FacilitiesManagement = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* Engineering & Building Systems */}
                 <AccordionItem value="engineering" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Engineering & Building Systems
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -95,7 +95,7 @@ const FacilitiesManagement = () => {
 
                 {/* Preventive Maintenance & Inspections */}
                 <AccordionItem value="maintenance" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Preventive Maintenance & Inspections
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -111,7 +111,7 @@ const FacilitiesManagement = () => {
 
                 {/* Vendor & Contractor Management */}
                 <AccordionItem value="vendor" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Vendor & Contractor Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -127,7 +127,7 @@ const FacilitiesManagement = () => {
 
                 {/* Safety & Regulatory Compliance */}
                 <AccordionItem value="safety" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Safety & Regulatory Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -143,7 +143,7 @@ const FacilitiesManagement = () => {
 
                 {/* Landscaping & Exterior Maintenance */}
                 <AccordionItem value="landscaping" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Landscaping & Exterior Maintenance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -159,7 +159,7 @@ const FacilitiesManagement = () => {
 
                 {/* Parking & Common Area Management */}
                 <AccordionItem value="parking" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Parking & Common Area Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -175,7 +175,7 @@ const FacilitiesManagement = () => {
 
                 {/* Commercial Cleaning & Janitorial Services */}
                 <AccordionItem value="cleaning" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Commercial Cleaning & Janitorial Services
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">

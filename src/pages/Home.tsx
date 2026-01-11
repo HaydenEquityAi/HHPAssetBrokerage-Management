@@ -97,7 +97,7 @@ const Home = () => {
             <Link 
               to="/services/property-management" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/property-management-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/property-management-picture.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('property_management', 'core_services');
                 trackLinkClick('Property Management', '/services/property-management');
@@ -118,7 +118,7 @@ const Home = () => {
             <Link 
               to="/services/leasing-representation" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/leasing-tenant-representation-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/leasing-representation-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('leasing_representation', 'core_services');
                 trackLinkClick('Leasing & Representation', '/services/leasing-representation');

@@ -46,7 +46,7 @@ const AdvisorySiteSelection = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Site Selection & Relocation Analysis */}
                 <AccordionItem value="site-selection" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Site Selection & Relocation Analysis
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -65,7 +65,7 @@ const AdvisorySiteSelection = () => {
 
                 {/* 2. Market & Feasibility Studies */}
                 <AccordionItem value="feasibility" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Market & Feasibility Studies
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -84,7 +84,7 @@ const AdvisorySiteSelection = () => {
 
                 {/* 3. Portfolio Review & Optimization */}
                 <AccordionItem value="portfolio" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Portfolio Review & Optimization
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -103,7 +103,7 @@ const AdvisorySiteSelection = () => {
 
                 {/* 4. Hold vs. Sell Evaluations */}
                 <AccordionItem value="hold-sell" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Hold vs. Sell Evaluations
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -122,7 +122,7 @@ const AdvisorySiteSelection = () => {
 
                 {/* 5. Strategic Planning Support */}
                 <AccordionItem value="strategic" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Strategic Planning Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -140,7 +140,7 @@ const AdvisorySiteSelection = () => {
 
                 {/* 6. Third-Party Validation & Board Support */}
                 <AccordionItem value="validation" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Third-Party Validation & Board Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">

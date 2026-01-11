@@ -46,7 +46,7 @@ const PropertyManagement = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Financial Oversight & Reporting */}
                 <AccordionItem value="financial" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Financial Oversight & Reporting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -65,7 +65,7 @@ const PropertyManagement = () => {
 
                 {/* 2. Physical Asset Management */}
                 <AccordionItem value="asset" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Physical Asset Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -84,7 +84,7 @@ const PropertyManagement = () => {
 
                 {/* 3. Lease Administration */}
                 <AccordionItem value="lease" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Lease Administration
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -103,7 +103,7 @@ const PropertyManagement = () => {
 
                 {/* 4. Tenant Relations & Issue Resolution */}
                 <AccordionItem value="tenant" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Tenant Relations & Issue Resolution
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -121,7 +121,7 @@ const PropertyManagement = () => {
 
                 {/* 5. Risk Management & Compliance */}
                 <AccordionItem value="risk" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Risk Management & Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -139,7 +139,7 @@ const PropertyManagement = () => {
 
                 {/* 6. Strategic Planning & Ownership Support */}
                 <AccordionItem value="strategic" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Strategic Planning & Ownership Support
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">

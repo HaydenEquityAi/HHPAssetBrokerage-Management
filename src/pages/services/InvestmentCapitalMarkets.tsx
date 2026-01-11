@@ -46,7 +46,7 @@ const InvestmentCapitalMarkets = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Investment Sales Representation */}
                 <AccordionItem value="sales" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Investment Sales Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -65,7 +65,7 @@ const InvestmentCapitalMarkets = () => {
 
                 {/* 2. Acquisition Advisory */}
                 <AccordionItem value="acquisition" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Acquisition Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -84,7 +84,7 @@ const InvestmentCapitalMarkets = () => {
 
                 {/* 3. Owner-User Transactions */}
                 <AccordionItem value="owner-user" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Owner-User Transactions
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -103,7 +103,7 @@ const InvestmentCapitalMarkets = () => {
 
                 {/* 4. Pricing, Valuation & Underwriting */}
                 <AccordionItem value="pricing" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Pricing, Valuation & Underwriting
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -121,7 +121,7 @@ const InvestmentCapitalMarkets = () => {
 
                 {/* 5. Deal Structuring & Negotiation */}
                 <AccordionItem value="structuring" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Deal Structuring & Negotiation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -139,7 +139,7 @@ const InvestmentCapitalMarkets = () => {
 
                 {/* 6. Transaction Management & Execution */}
                 <AccordionItem value="execution" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Transaction Management & Execution
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">

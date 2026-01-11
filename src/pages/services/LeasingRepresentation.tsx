@@ -46,7 +46,7 @@ const LeasingRepresentation = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Market & Asset Positioning */}
                 <AccordionItem value="market" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Market & Asset Positioning
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -65,7 +65,7 @@ const LeasingRepresentation = () => {
 
                 {/* 2. Landlord Representation */}
                 <AccordionItem value="landlord" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Landlord Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -85,7 +85,7 @@ const LeasingRepresentation = () => {
 
                 {/* 3. Tenant Representation */}
                 <AccordionItem value="tenant" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Tenant Representation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -105,7 +105,7 @@ const LeasingRepresentation = () => {
 
                 {/* 4. Lease Structuring & Risk Mitigation */}
                 <AccordionItem value="lease" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Lease Structuring & Risk Mitigation
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -124,7 +124,7 @@ const LeasingRepresentation = () => {
 
                 {/* 5. Execution & Coordination */}
                 <AccordionItem value="execution" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Execution & Coordination
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
@@ -143,7 +143,7 @@ const LeasingRepresentation = () => {
 
                 {/* 6. Integration with Management & Advisory */}
                 <AccordionItem value="integration" className="border-b border-gray-300 py-3">
-                  <AccordionTrigger className="font-heading font-bold text-black uppercase tracking-wide text-xl py-8 hover:no-underline">
+                  <AccordionTrigger className="font-heading font-bold text-gray-600 uppercase tracking-wide text-xl py-8 hover:no-underline">
                     Integration with Management & Advisory
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
