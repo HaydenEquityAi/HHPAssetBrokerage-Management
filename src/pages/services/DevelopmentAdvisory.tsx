@@ -57,6 +57,22 @@ const DevelopmentAdvisory = () => {
         </div>
       </section>
 
+      {/* Service Approach Chart */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container-premium">
+          <h2 className="section-title text-hhp-navy mb-6">
+            OUR DEVELOPMENT ADVISORY APPROACH
+          </h2>
+          <div className="flex justify-center">
+            <img 
+              src="/images/our-vertically-integrated-approach.png" 
+              alt="Our Development Advisory Approach"
+              className="w-full max-w-5xl h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Core Development Advisory Functions */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
@@ -74,12 +90,24 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We assess market conditions to determine whether proposed projects are supportable.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Market demand and absorption analysis</li>
-                      <li>Competitive project review</li>
-                      <li>Use and positioning analysis</li>
-                      <li>Preliminary risk assessment</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market demand and absorption analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Competitive project review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Use and positioning analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Preliminary risk assessment</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -92,12 +120,24 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We evaluate sites based on location, access, constraints, and long-term viability.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Site and location analysis</li>
-                      <li>Access, visibility, and infrastructure considerations</li>
-                      <li>Zoning and use review</li>
-                      <li>Positioning recommendations</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Site and location analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Access, visibility, and infrastructure considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Zoning and use review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Positioning recommendations</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -110,12 +150,24 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support early-stage financial evaluation to test assumptions and identify sensitivities.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>High-level development modeling</li>
-                      <li>Cost and revenue assumptions</li>
-                      <li>Sensitivity and scenario analysis</li>
-                      <li>Capital requirement evaluation</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>High-level development modeling</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Cost and revenue assumptions</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Sensitivity and scenario analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital requirement evaluation</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -128,12 +180,24 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We coordinate with planning professionals and stakeholders during entitlement and pre-development phases.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Coordination with planners, architects, and engineers</li>
-                      <li>Support during entitlement processes</li>
-                      <li>Timeline and process oversight</li>
-                      <li>Risk identification during approvals</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with planners, architects, and engineers</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support during entitlement processes</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Timeline and process oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Risk identification during approvals</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -146,12 +210,24 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide advisory support during execution to help manage risk and maintain alignment.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Advisory support during construction and delivery</li>
-                      <li>Coordination with consultants and third parties</li>
-                      <li>Issue identification and resolution support</li>
-                      <li>Alignment with leasing and operations strategy</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Advisory support during construction and delivery</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with consultants and third parties</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Issue identification and resolution support</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Alignment with leasing and operations strategy</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -164,32 +240,28 @@ const DevelopmentAdvisory = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We ensure development decisions support long-term performance and exit flexibility.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Leasing strategy alignment</li>
-                      <li>Operational readiness considerations</li>
-                      <li>Exit and hold strategy evaluation</li>
-                      <li>Integration with brokerage and advisory services</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Leasing strategy alignment</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Operational readiness considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Exit and hold strategy evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Integration with brokerage and advisory services</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR DEVELOPMENT ADVISORY APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Development Advisory Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>

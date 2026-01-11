@@ -42,6 +42,20 @@ const FinancialServices = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">
+                OUR FINANCIAL SERVICES APPROACH
+              </h2>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/our-vertically-integrated-approach.png" 
+                  alt="Our Financial Services Approach"
+                  className="w-full max-w-5xl h-auto"
+                />
+              </div>
+            </div>
+
             {/* Core Financial Services */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Financial Services</h2>
@@ -57,13 +71,28 @@ const FinancialServices = () => {
                       We evaluate individual assets to provide a clear picture of performance, risks, and opportunities.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Operating income and expense analysis</li>
-                      <li>Cash flow evaluation</li>
-                      <li>Expense normalization and benchmarking</li>
-                      <li>Performance trend analysis</li>
-                      <li>Identification of operational inefficiencies</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Operating income and expense analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Cash flow evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Expense normalization and benchmarking</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Performance trend analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Identification of operational inefficiencies</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -77,13 +106,28 @@ const FinancialServices = () => {
                       We assist owners in building realistic budgets and forward-looking projections grounded in market conditions and operational realities.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Annual operating budgets</li>
-                      <li>Short- and mid-term forecasts</li>
-                      <li>Sensitivity analysis</li>
-                      <li>Capital planning support</li>
-                      <li>Variance analysis and explanation</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Annual operating budgets</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Short- and mid-term forecasts</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Sensitivity analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital planning support</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Variance analysis and explanation</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -97,13 +141,28 @@ const FinancialServices = () => {
                       We provide financial analysis to support acquisitions, dispositions, leasing decisions, and owner-user transactions.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Financial review of opportunities</li>
-                      <li>Assumption validation</li>
-                      <li>Lease impact analysis</li>
-                      <li>Hold vs. sell modeling</li>
-                      <li>Support during due diligence</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial review of opportunities</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Assumption validation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease impact analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Hold vs. sell modeling</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support during due diligence</span>
+                      </div>
+                    </div>
                     <p className="text-base leading-relaxed text-gray-600 mt-3 italic">
                       This service is often integrated with our Investment & Capital Markets and Leasing & Representation work.
                     </p>
@@ -120,12 +179,24 @@ const FinancialServices = () => {
                       We help ownership groups and boards gain clarity through structured, understandable reporting.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Customized reporting formats</li>
-                      <li>Performance summaries for stakeholders</li>
-                      <li>Board-ready financial presentations</li>
-                      <li>Ongoing financial oversight support</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Customized reporting formats</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Performance summaries for stakeholders</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Board-ready financial presentations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Ongoing financial oversight support</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -139,32 +210,28 @@ const FinancialServices = () => {
                       For owners with multiple assets, we provide consolidated views to support portfolio strategy.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-2">Includes:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Portfolio performance reviews</li>
-                      <li>Asset comparison and prioritization</li>
-                      <li>Capital allocation insight</li>
-                      <li>Long-term planning support</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Portfolio performance reviews</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Asset comparison and prioritization</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital allocation insight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Long-term planning support</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR FINANCIAL SERVICES APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Financial Services Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>

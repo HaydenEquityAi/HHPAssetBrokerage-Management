@@ -39,6 +39,20 @@ const LeasingRepresentation = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">
+                OUR LEASING & REPRESENTATION APPROACH
+              </h2>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/our-vertically-integrated-approach.png" 
+                  alt="Our Leasing & Representation Approach"
+                  className="w-full max-w-5xl h-auto"
+                />
+              </div>
+            </div>
+
             {/* Core Leasing & Representation Functions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Leasing & Representation Functions</h2>
@@ -53,13 +67,28 @@ const LeasingRepresentation = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We begin with a clear understanding of the asset's position within its competitive set.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Market and submarket analysis</li>
-                      <li>Competitive property review</li>
-                      <li>Rent positioning and pricing strategy</li>
-                      <li>Concession and incentive evaluation</li>
-                      <li>Assessment of tenant demand and absorption</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market and submarket analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Competitive property review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Rent positioning and pricing strategy</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Concession and incentive evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Assessment of tenant demand and absorption</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -73,13 +102,28 @@ const LeasingRepresentation = () => {
                       We represent owners in the leasing of commercial space with a focus on protecting asset value and supporting long-term performance.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-3">Landlord representation services include:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Leasing strategy development</li>
-                      <li>Marketing coordination and exposure</li>
-                      <li>Tenant qualification and underwriting</li>
-                      <li>Lease negotiation and structuring</li>
-                      <li>Coordination through execution and delivery</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Leasing strategy development</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Marketing coordination and exposure</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Tenant qualification and underwriting</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease negotiation and structuring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination through execution and delivery</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -93,13 +137,28 @@ const LeasingRepresentation = () => {
                       We advise tenants on site selection and lease negotiation with an emphasis on operational fit, cost structure, and long-term flexibility.
                     </p>
                     <p className="text-base font-medium text-gray-600 mb-3">Tenant representation services include:</p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Needs assessment and market evaluation</li>
-                      <li>Site selection and tour coordination</li>
-                      <li>Financial comparison of alternatives</li>
-                      <li>Lease term negotiation</li>
-                      <li>Coordination through occupancy</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Needs assessment and market evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Site selection and tour coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial comparison of alternatives</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease term negotiation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination through occupancy</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -112,13 +171,28 @@ const LeasingRepresentation = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on the details that materially impact long-term outcomes.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Lease term and renewal structure</li>
-                      <li>Expense recovery and escalation analysis</li>
-                      <li>Responsibility allocation and risk exposure</li>
-                      <li>Flexibility and exit considerations</li>
-                      <li>Alignment with ownership objectives</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease term and renewal structure</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Expense recovery and escalation analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Responsibility allocation and risk exposure</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Flexibility and exit considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Alignment with ownership objectives</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -131,13 +205,28 @@ const LeasingRepresentation = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage the leasing process through execution to ensure consistency and accountability.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Coordination with ownership and management</li>
-                      <li>Interface with legal counsel as needed</li>
-                      <li>Timeline management</li>
-                      <li>Documentation oversight</li>
-                      <li>Transition support through occupancy</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with ownership and management</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Interface with legal counsel as needed</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Timeline management</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Documentation oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Transition support through occupancy</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -150,32 +239,28 @@ const LeasingRepresentation = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       Our leasing work is informed by real operational experience.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Alignment with property management strategy</li>
-                      <li>Consideration of maintenance and operational impact</li>
-                      <li>Integration with asset-level financial analysis</li>
-                      <li>Support for broader ownership and portfolio goals</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Alignment with property management strategy</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Consideration of maintenance and operational impact</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Integration with asset-level financial analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support for broader ownership and portfolio goals</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR LEASING & REPRESENTATION APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Leasing & Representation Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>

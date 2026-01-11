@@ -39,6 +39,20 @@ const AdvisorySiteSelection = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">
+                OUR ADVISORY & SITE SELECTION APPROACH
+              </h2>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/our-vertically-integrated-approach.png" 
+                  alt="Our Advisory & Site Selection Approach"
+                  className="w-full max-w-5xl h-auto"
+                />
+              </div>
+            </div>
+
             {/* Core Advisory & Site Selection Functions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Advisory & Site Selection Functions</h2>
@@ -53,13 +67,28 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We assist tenants, owner-users, and organizations in evaluating location options based on operational, financial, and strategic considerations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Needs assessment and criteria development</li>
-                      <li>Market and submarket evaluation</li>
-                      <li>Comparative site analysis</li>
-                      <li>Financial impact assessment</li>
-                      <li>Support through selection and execution</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Needs assessment and criteria development</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market and submarket evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Comparative site analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial impact assessment</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support through selection and execution</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -72,13 +101,28 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We evaluate market conditions and project feasibility to support informed decision-making.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Market demand and supply analysis</li>
-                      <li>Competitive landscape evaluation</li>
-                      <li>Use and positioning analysis</li>
-                      <li>Preliminary financial feasibility</li>
-                      <li>Risk identification and mitigation</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market demand and supply analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Competitive landscape evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Use and positioning analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Preliminary financial feasibility</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Risk identification and mitigation</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -91,13 +135,28 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We work with owners to assess portfolio performance and identify opportunities for improvement.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Asset-level performance review</li>
-                      <li>Portfolio-wide analysis</li>
-                      <li>Capital allocation insight</li>
-                      <li>Identification of underperforming assets</li>
-                      <li>Strategic prioritization</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Asset-level performance review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Portfolio-wide analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital allocation insight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Identification of underperforming assets</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Strategic prioritization</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -110,13 +169,28 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide structured analysis to support ownership decisions around disposition timing.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Performance trend analysis</li>
-                      <li>Market timing considerations</li>
-                      <li>Operational and leasing risk assessment</li>
-                      <li>Scenario modeling</li>
-                      <li>Objective recommendation support</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Performance trend analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market timing considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Operational and leasing risk assessment</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Scenario modeling</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Objective recommendation support</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -129,12 +203,24 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support owners and boards with structured planning around real estate strategy.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Long-term real estate planning</li>
-                      <li>Alignment with business objectives</li>
-                      <li>Capital planning considerations</li>
-                      <li>Integration with brokerage and management insight</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Long-term real estate planning</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Alignment with business objectives</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital planning considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Integration with brokerage and management insight</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -147,32 +233,28 @@ const AdvisorySiteSelection = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide independent analysis to support governance and stakeholder decision-making.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Board-ready presentations</li>
-                      <li>Third-party review and validation</li>
-                      <li>Independent perspective for complex decisions</li>
-                      <li>Support during critical review processes</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Board-ready presentations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Third-party review and validation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Independent perspective for complex decisions</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support during critical review processes</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR ADVISORY & SITE SELECTION APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Advisory & Site Selection Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>

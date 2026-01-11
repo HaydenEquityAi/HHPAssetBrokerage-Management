@@ -39,6 +39,20 @@ const InvestmentCapitalMarkets = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">
+                OUR INVESTMENT & CAPITAL MARKETS APPROACH
+              </h2>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/our-vertically-integrated-approach.png" 
+                  alt="Our Investment & Capital Markets Approach"
+                  className="w-full max-w-5xl h-auto"
+                />
+              </div>
+            </div>
+
             {/* Core Investment & Capital Markets Functions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Investment & Capital Markets Functions</h2>
@@ -53,13 +67,28 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We represent owners in the disposition of commercial assets with a focus on pricing discipline, positioning, and execution.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Asset valuation and pricing strategy</li>
-                      <li>Market positioning and buyer targeting</li>
-                      <li>Marketing and exposure coordination</li>
-                      <li>Offer evaluation and negotiation</li>
-                      <li>Coordination through closing</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Asset valuation and pricing strategy</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market positioning and buyer targeting</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Marketing and exposure coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Offer evaluation and negotiation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination through closing</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -72,13 +101,28 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We advise buyers on the evaluation and acquisition of commercial real estate.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Market and submarket analysis</li>
-                      <li>Financial review and assumption validation</li>
-                      <li>Risk identification and mitigation</li>
-                      <li>Support through due diligence</li>
-                      <li>Transaction structuring and execution</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Market and submarket analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial review and assumption validation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Risk identification and mitigation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support through due diligence</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Transaction structuring and execution</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -91,13 +135,28 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support owner-users acquiring or disposing of real estate with both operational and investment considerations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Site and asset evaluation</li>
-                      <li>Financial comparison of alternatives</li>
-                      <li>Transaction structuring</li>
-                      <li>Lease and occupancy considerations</li>
-                      <li>Coordination through closing and occupancy</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Site and asset evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Financial comparison of alternatives</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Transaction structuring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease and occupancy considerations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination through closing and occupancy</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -110,12 +169,24 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We provide valuation guidance grounded in realistic assumptions and market context.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Income and expense analysis</li>
-                      <li>Comparable sales review</li>
-                      <li>Sensitivity and scenario analysis</li>
-                      <li>Consideration of leasing and operational risk</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Income and expense analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Comparable sales review</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Sensitivity and scenario analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Consideration of leasing and operational risk</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -128,12 +199,24 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on structuring transactions to align risk, economics, and flexibility.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Deal structure evaluation</li>
-                      <li>Negotiation strategy</li>
-                      <li>Coordination with legal and financial advisors</li>
-                      <li>Alignment with ownership objectives</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Deal structure evaluation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Negotiation strategy</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with legal and financial advisors</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Alignment with ownership objectives</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -146,32 +229,28 @@ const InvestmentCapitalMarkets = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage the transaction process from initial strategy through closing.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Timeline and process coordination</li>
-                      <li>Due diligence oversight</li>
-                      <li>Communication management</li>
-                      <li>Closing support</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Timeline and process coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Due diligence oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Communication management</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Closing support</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR INVESTMENT & CAPITAL MARKETS APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Investment & Capital Markets Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>

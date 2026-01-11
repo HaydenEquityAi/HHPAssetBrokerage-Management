@@ -39,6 +39,20 @@ const PropertyManagement = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div>
+              <h2 className="section-title text-hhp-navy mb-6">
+                OUR PROPERTY MANAGEMENT APPROACH
+              </h2>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/our-vertically-integrated-approach.png" 
+                  alt="Our Property Management Approach"
+                  className="w-full max-w-5xl h-auto"
+                />
+              </div>
+            </div>
+
             {/* Core Management Functions */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Core Management Functions</h2>
@@ -53,13 +67,28 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We maintain tight financial controls to provide transparency, predictability, and decision-ready information.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Rent collection and receivables monitoring</li>
-                      <li>Monthly owner financial reporting</li>
-                      <li>Budget preparation and variance analysis</li>
-                      <li>Expense review and cost control</li>
-                      <li>Coordination with ownership accounting and tax advisors</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Rent collection and receivables monitoring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Monthly owner financial reporting</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Budget preparation and variance analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Expense review and cost control</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with ownership accounting and tax advisors</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -72,13 +101,28 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We focus on proactive maintenance and disciplined oversight to preserve asset condition and control long-term costs.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Preventative maintenance planning</li>
-                      <li>Vendor sourcing, bidding, and oversight</li>
-                      <li>Capital improvement coordination</li>
-                      <li>Emergency response protocols</li>
-                      <li>Regular site inspections and condition monitoring</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Preventative maintenance planning</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Vendor sourcing, bidding, and oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital improvement coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Emergency response protocols</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Regular site inspections and condition monitoring</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -91,13 +135,28 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We manage leases as legal and financial instruments, not just documents.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Lease abstraction and administration</li>
-                      <li>Critical date tracking</li>
-                      <li>Rent escalations and reconciliations</li>
-                      <li>Enforcement of lease terms</li>
-                      <li>Coordination with legal and brokerage teams</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease abstraction and administration</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Critical date tracking</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Rent escalations and reconciliations</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Enforcement of lease terms</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with legal and brokerage teams</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -110,12 +169,24 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We prioritize professional, consistent tenant communication to support stability and reduce friction.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Tenant communication and issue resolution</li>
-                      <li>Coordination of service requests</li>
-                      <li>Lease compliance monitoring</li>
-                      <li>Support for renewals and extensions</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Tenant communication and issue resolution</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination of service requests</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lease compliance monitoring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Support for renewals and extensions</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -128,12 +199,24 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We identify and mitigate operational and regulatory risk before issues escalate.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Insurance coordination and compliance tracking</li>
-                      <li>Safety and risk assessments</li>
-                      <li>Regulatory and lease compliance oversight</li>
-                      <li>Documentation and audit support</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Insurance coordination and compliance tracking</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Safety and risk assessments</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Regulatory and lease compliance oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Documentation and audit support</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -146,12 +229,24 @@ const PropertyManagement = () => {
                     <p className="text-lg font-semibold leading-relaxed text-gray-600 mb-4">
                       We support ownership with forward-looking insight beyond day-to-day operations.
                     </p>
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Operating and capital planning support</li>
-                      <li>Performance trend analysis</li>
-                      <li>Hold / sell / reposition input</li>
-                      <li>Coordination with advisory and brokerage services</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Operating and capital planning support</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Performance trend analysis</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Hold / sell / reposition input</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Coordination with advisory and brokerage services</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -163,22 +258,6 @@ const PropertyManagement = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="section-title text-hhp-navy mb-6">
-            OUR PROPERTY MANAGEMENT APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Property Management Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>
