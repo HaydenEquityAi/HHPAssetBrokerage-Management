@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-hhp-navy text-white -mt-px">
       <div className="container-premium pt-0 sm:pt-2 pb-4 sm:pb-6">
-        {/* Main Row: Logo + Navigation + Follow Us */}
+        {/* Top Row: Logo + Navigation */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -16,7 +16,7 @@ const Footer = () => {
             />
           </div>
 
-          {/* Spacer - Pushes nav and Follow Us to right */}
+          {/* Spacer - Pushes nav to right */}
           <div className="flex-1"></div>
 
           {/* Navigation Links */}
@@ -43,9 +43,32 @@ const Footer = () => {
               Investor Portal →
             </Link>
           </nav>
+        </div>
 
-          {/* Follow Us */}
-          <div className="flex-shrink-0">
+        {/* Bottom Row: Contact Info + Follow Us */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8 mb-6 sm:mb-8">
+          {/* Contact Info */}
+          <div className="space-y-3">
+            <div className="flex items-center space-x-2">
+              <Mail className="h-4 w-4 text-white/80 flex-shrink-0" />
+              <a 
+                href="mailto:info@hhpasset.com" 
+                className="text-sm text-white/80 hover:text-white transition-colors min-h-[44px] flex items-center"
+              >
+                info@hhpasset.com
+              </a>
+            </div>
+            
+            <div className="flex items-center space-x-2">
+              <MapPin className="h-4 w-4 text-white/80 flex-shrink-0" />
+              <span className="text-sm text-white/80 min-h-[44px] flex items-center">
+                Tulsa, Oklahoma
+              </span>
+            </div>
+          </div>
+
+          {/* Follow Us - Bottom Right */}
+          <div className="flex-shrink-0 ml-auto lg:ml-0">
             <h3 className="text-sm sm:text-base font-semibold text-white mb-3">Follow Us</h3>
             <div className="flex space-x-4">
               <a 
@@ -66,28 +89,6 @@ const Footer = () => {
               >
                 <Facebook className="h-5 w-5" />
               </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Contact Info Row */}
-        <div className="mb-6 sm:mb-8">
-          <div className="space-y-3">
-            <div className="flex items-center space-x-2">
-              <Mail className="h-4 w-4 text-white/80 flex-shrink-0" />
-              <a 
-                href="mailto:info@hhpasset.com" 
-                className="text-sm text-white/80 hover:text-white transition-colors min-h-[44px] flex items-center"
-              >
-                info@hhpasset.com
-              </a>
-            </div>
-            
-            <div className="flex items-center space-x-2">
-              <MapPin className="h-4 w-4 text-white/80 flex-shrink-0" />
-              <span className="text-sm text-white/80 min-h-[44px] flex items-center">
-                Tulsa, Oklahoma
-              </span>
             </div>
           </div>
         </div>
