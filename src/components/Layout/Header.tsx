@@ -211,7 +211,7 @@ const Header = () => {
       isSticky ? 'sticky top-0 py-2' : 'py-2 sm:py-3'
     }`}>
       <div className="w-full">
-        <div className="flex items-center transition-all duration-300 h-12 md:h-14 pl-4 sm:pl-6 lg:pl-8 xl:pl-12 pr-4 sm:pr-6 lg:pr-8 xl:pr-12">
+        <div className="flex items-center justify-between transition-all duration-300 h-12 md:h-14 pl-4 sm:pl-6 lg:pl-8 xl:pl-12 pr-4 sm:pr-6 lg:pr-8 xl:pr-12">
           {/* Logo - Clickable Home Link */}
           <Link 
             to="/" 
@@ -360,7 +360,7 @@ const Header = () => {
 
           {/* Mobile/Tablet menu button */}
           <button
-            className="lg:hidden p-3 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center ml-auto"
+            className="lg:hidden p-3 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle mobile menu"

@@ -205,13 +205,13 @@ const Technology = () => {
         {/* Technology Pillars Grid */}
         <section id="technology-pillars" className="bg-white section-spacing">
           <div className="container-premium">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-8 -mx-4 sm:mx-0">
               {technologyPillars.map((pillar, index) => {
                 const IconComponent = pillar.icon;
                 return (
                   <div 
                     key={index}
-                    className="premium-card p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2"
+                    className="premium-card p-6 sm:p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group focus-within:ring-2 focus-within:ring-hhp-accent focus-within:ring-offset-2 w-full min-h-[400px] sm:min-h-auto"
                     tabIndex={0}
                     onMouseEnter={() => {
                       trackButtonClick(`tech_pillar_hover_${pillar.title.toLowerCase().replace(/\s+/g, '_')}`, 'technology_pillars');
@@ -272,7 +272,7 @@ const Technology = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-8">
               {howItWorksSteps.map((step, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-hhp-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -300,11 +300,11 @@ const Technology = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 sm:gap-8 -mx-4 sm:mx-0">
               {kpiCards.map((card, index) => {
                 const IconComponent = card.icon;
                 return (
-                  <div key={index} className="premium-card text-center p-8">
+                  <div key={index} className="premium-card text-center p-6 sm:p-8 w-full min-h-[300px] sm:min-h-auto">
                     <div className="icon-accent mx-auto mb-6 w-16 h-16 flex items-center justify-center">
                       <IconComponent className="h-8 w-8" />
                     </div>
