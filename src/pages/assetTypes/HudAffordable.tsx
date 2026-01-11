@@ -78,29 +78,36 @@ const HudAffordable = () => {
       }}
       servicesTitle={"Our Integrated Services for Affordable Housing"}
       
-      // Technology Advantages
+      // Technology Advantages / HHP Advantage
       technologyAdvantages={[
         {
           icon: <Shield className="h-8 w-8 text-white" />,
-          title: "Compliance Automation",
-          description: "Automated tracking and reporting for all HUD requirements including tenant certifications, income verification, and subsidy calculations."
+          title: "Compliance-Driven Operations",
+          description: "Structured compliance workflows embedded into daily operations to support accuracy, consistency, and regulatory adherence across income-restricted housing programs."
         },
         {
           icon: <FileCheck className="h-8 w-8 text-white" />,
-          title: "Audit-Ready Documentation",
-          description: "Digitized file management with automated compliance checks ensuring MOR preparation and seamless audit experiences."
+          title: "Audit & Review Readiness",
+          description: "Disciplined documentation standards and internal review processes designed to support regulatory reviews, lender audits, and ownership reporting requirements."
         },
         {
           icon: <BarChart3 className="h-8 w-8 text-white" />,
-          title: "Subsidy Optimization",
-          description: "Advanced analytics for subsidy utilization tracking, maximizing program benefits while maintaining compliance efficiency."
+          title: "Financial & Affordability Controls",
+          description: "Oversight of rent structures, affordability limits, and reporting designed to maintain financial accuracy while supporting long-term asset sustainability."
         },
         {
           icon: <Users className="h-8 w-8 text-white" />,
-          title: "Resident Portal Integration",
-          description: "Seamless integration between resident services and compliance requirements, streamlining the tenant experience."
+          title: "Resident-Centered Execution",
+          description: "Resident communication and service coordination aligned with program requirements while supporting stable occupancy, responsiveness, and community outcomes."
+        },
+        {
+          icon: <Shield className="h-8 w-8 text-white" />,
+          title: "Owner Accountability & Transparency",
+          description: "Clear reporting, defined responsibilities, and proactive communication providing owners and stakeholders with confidence in day-to-day operations and long-term performance."
         }
       ]}
+      technologyTitle="The HHP Advantage for Affordable Housing"
+      useModernLayout={true}
       
       // Insights
       insights={[

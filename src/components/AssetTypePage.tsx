@@ -36,13 +36,14 @@ interface AssetTypePageProps {
   }; // Optional: custom service card titles
   
   // Technology Advantages
-  technologyAdvantages: Array<{
+  technologyAdvantages?: Array<{
     icon: ReactNode;
     title: string;
     description: string;
   }>;
   technologyTitle?: string; // Optional: defaults to "AI-Driven Advantage for {title}"
   technologySubtitle?: string; // Optional: defaults to "Our proprietary platforms..."
+  useModernLayout?: boolean; // Optional: if true, uses list layout instead of cards
   
   // Insights
   insights: Array<{
@@ -73,6 +74,7 @@ const AssetTypePage = ({
   technologyAdvantages,
   technologyTitle,
   technologySubtitle,
+  useModernLayout,
   insights,
   insightsTitle,
   insightsSubtitle,
@@ -328,28 +330,45 @@ const AssetTypePage = ({
         </div>
       </section>
 
-      {/* Technology & Data Advantage */}
-      <section className="py-20 bg-gray-50">
-        <div className="container-premium">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
-              {technologyTitle || `AI-Driven Advantage for ${title}`}
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {technologyAdvantages.map((advantage, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mx-auto mb-6">
-                  {advantage.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-hhp-navy mb-4">{advantage.title}</h3>
-                <p className="text-hhp-charcoal leading-relaxed">{advantage.description}</p>
+      {/* Technology & Data Advantage / HHP Advantage */}
+      {technologyAdvantages && technologyAdvantages.length > 0 && (
+        <section className="py-20 bg-gray-50">
+          <div className="container-premium">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-hhp-navy mb-6">
+                {technologyTitle || `AI-Driven Advantage for ${title}`}
+              </h2>
+            </div>
+            
+            {useModernLayout ? (
+              <div className="max-w-4xl mx-auto space-y-8">
+                {technologyAdvantages.map((advantage, index) => (
+                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-hhp-navy">
+                    <h3 className="text-2xl font-heading font-bold text-hhp-navy mb-4 uppercase tracking-wide">
+                      {advantage.title}
+                    </h3>
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      {advantage.description}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {technologyAdvantages.map((advantage, index) => (
+                  <div key={index} className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300">
+                    <div className="w-16 h-16 bg-hhp-navy rounded-xl flex items-center justify-center mx-auto mb-6">
+                      {advantage.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-hhp-navy mb-4">{advantage.title}</h3>
+                    <p className="text-hhp-charcoal leading-relaxed">{advantage.description}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Insights & Thought Leadership */}
       <section className="py-20 bg-white">
