@@ -497,16 +497,12 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6 sm:mb-8">
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
-                  Technology
-                </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
                   AI's Impact on Real Estate Workforces
                 </h3>
                 <p className="text-hhp-charcoal mb-4">
                   How automation is reshaping property and brokerage operations.
                 </p>
-                <div className="text-sm text-hhp-charcoal/70 mb-4">Dec 2024</div>
                 <Link 
                   to="/insights" 
                   className="text-hhp-navy font-medium hover:underline"
@@ -522,16 +518,12 @@ const Home = () => {
             
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
-                  Finance
-                </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
                   Capital Market Trends 2025
                 </h3>
                 <p className="text-hhp-charcoal mb-4">
                   Rates remain elevated; secondary markets are emerging winners.
                 </p>
-                <div className="text-sm text-hhp-charcoal/70 mb-4">Oct 2024</div>
                 <Link 
                   to="/insights" 
                   className="text-hhp-navy font-medium hover:underline"
@@ -547,16 +539,12 @@ const Home = () => {
             
             <div className="premium-card">
               <div className="mb-4">
-                <span className="inline-block bg-hhp-accent/10 text-hhp-navy px-3 py-1 rounded-full text-sm font-medium mb-3">
-                  Market Analysis
-                </span>
                 <h3 className="text-xl font-display font-bold text-hhp-navy mb-3">
                   Growth Sectors in Multifamily
                 </h3>
                 <p className="text-hhp-charcoal mb-4">
                   Affordable & workforce housing driving demand and absorption.
                 </p>
-                <div className="text-sm text-hhp-charcoal/70 mb-4">Nov 2024</div>
                 <Link 
                   to="/insights" 
                   className="text-hhp-navy font-medium hover:underline"

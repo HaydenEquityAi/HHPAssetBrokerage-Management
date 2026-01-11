@@ -470,6 +470,32 @@ const BrokerConsulting = () => {
         </div>
       </section>
 
+      {/* Careers Section */}
+      <section className="relative min-h-[400px] sm:min-h-[500px] flex items-center bg-cover bg-center bg-no-repeat">
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/images/consulting-image.webp)' }}
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 container-premium w-full">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center md:text-left">
+              INTERESTED IN WORKING<br/>FOR OUR TEAM?
+            </h2>
+            <Link 
+              to="/contact" 
+              className="bg-white text-hhp-navy px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 flex-shrink-0"
+              onClick={() => {
+                trackButtonClick('submit_resume_cta', 'broker_consulting_careers');
+                trackLinkClick('Submit your resume', '/contact');
+              }}
+            >
+              Submit your resume
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gray-50 py-16">
         <div className="container-premium text-center">
