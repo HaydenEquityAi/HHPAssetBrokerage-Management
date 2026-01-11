@@ -39,7 +39,7 @@ const Header = () => {
       href: '/asset-types',
       submenu: [
         { name: 'Multifamily', href: '/asset-types/multifamily' },
-        { name: 'HUD & Affordable Housing', href: '/asset-types/hud-affordable' },
+        { name: 'Affordable Housing', href: '/asset-types/hud-affordable' },
         { name: 'Office', href: '/asset-types/office' },
         { name: 'Retail', href: '/asset-types/retail' },
         { name: 'Industrial', href: '/asset-types/industrial' },
