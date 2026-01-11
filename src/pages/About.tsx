@@ -243,10 +243,13 @@ const About = () => {
                     {expandedBios.phil && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Phil Ashley serves as Director of Operations, bringing two decades of investment property expertise to HHP's enterprise-level service delivery. His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution across all major asset classes.
+                          Phil Ashley serves as Director of Operations, bringing two decades of investment property and facilities expertise to HHP's enterprise-level service delivery. In addition to his real estate operations background, Phil founded and operated one of the largest commercial cleaning companies in Oklahoma, giving him deep, hands-on experience in large-scale facilities management, vendor oversight, and service execution.
                         </p>
                         <p>
-                          Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across national markets. His systematic approach to property operations and investor relations makes him an invaluable strategic resource for HHP's sophisticated client base nationwide.
+                          His background spans the complete asset lifecycle—from acquisition and performance optimization to value-add execution—across all major asset classes. This dual perspective across property operations and facilities services enables disciplined execution at both the asset and building-services level.
+                        </p>
+                        <p>
+                          Phil combines technical expertise with institutional-grade operational leadership, ensuring consistent performance across portfolios and markets. His systematic approach to property operations, vendor management, and owner communication makes him a critical strategic resource for HHP's clients nationwide.
                         </p>
                       </div>
                     )}
