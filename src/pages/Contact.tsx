@@ -121,13 +121,17 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hhp-navy section-spacing">
-        <div className="container-premium">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/facilities-management-hero-image.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
           <div className="max-w-4xl mx-auto text-center fade-in px-4">
-            <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8">
+            <h1 className="hero-title text-white mb-4 sm:mb-6 lg:mb-8 drop-shadow-lg">
               CONTACT
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-8 sm:mb-10 lg:mb-12">
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 mb-8 sm:mb-10 lg:mb-12 drop-shadow-md">
               Ready to transform your real estate operations? Let's discuss how HHP Asset Group can help you achieve your goals.
             </p>
           </div>
