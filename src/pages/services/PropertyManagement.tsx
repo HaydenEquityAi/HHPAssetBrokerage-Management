@@ -379,7 +379,7 @@ const PropertyManagement = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 container-premium w-full">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center md:text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center md:text-left">
               INTERESTED IN WORKING<br/>FOR OUR TEAM?
             </h2>
             <Link 
