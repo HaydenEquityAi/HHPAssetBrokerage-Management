@@ -172,7 +172,57 @@ const BrokerConsulting = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Mid-Page Split Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px]">
+        {/* LEFT: Large property/building image */}
+        <div className="relative h-[400px] md:h-auto">
+          <img 
+            src="/images/about-us-image.jpg" 
+            alt="Consulting & Strategic Advisory"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* RIGHT: Dark overlay with text and CTA */}
+        <div className="bg-gray-800 text-white flex items-center p-8 sm:p-12 lg:p-16">
+          <div className="max-w-lg">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
+              ABOUT US
+            </h2>
+            <p className="text-lg text-white mb-10 leading-relaxed">
+              HHP Asset Management is an operator-led real estate platform combining 
+              institutional discipline with hands-on execution. We specialize in vertically 
+              integrated asset management, bringing together property management, facilities 
+              operations, financial oversight, and strategic advisory under one integrated 
+              approach.
+            </p>
+            <div className="pt-8 border-t border-gray-500">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-8 tracking-widest text-white">
+                DISCOVER<br/>WHAT WE DO
+              </h3>
+              <Link 
+                to="/contact" 
+                className="inline-block bg-white text-gray-800 px-8 py-4 rounded font-heading font-semibold tracking-[0.06em] uppercase hover:bg-gray-100 transition"
+                onClick={() => {
+                  trackButtonClick('contact_us_cta', 'broker_consulting_split');
+                  trackLinkClick('Contact Us', '/contact');
+                }}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Content Continued */}
+      <section className="bg-white section-spacing">
+        <div className="container-premium">
+          <div className="max-w-6xl mx-auto space-y-16">
             {/* Broker of Record Services */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Broker of Record Services</h2>

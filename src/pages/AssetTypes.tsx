@@ -13,7 +13,7 @@ const AssetTypes = () => {
       href: "/asset-types/multifamily"
     },
     {
-      title: "HUD & Affordable Housing",
+      title: "Affordable Housing",
       proofPoint: "100% HUD audit compliance across three managed communities.",
       image: "/images/affordable-housing-image.jpeg",
       href: "/asset-types/hud-affordable"
