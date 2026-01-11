@@ -191,7 +191,7 @@ const About = () => {
                     {expandedBios.hayden && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Hayden Ashley serves as Managing Principal of HHP Asset Group, where he leads firm strategy, national growth, and platform development across brokerage, property management, and advisory services.
+                          Hayden Ashley serves as Managing Principal of HHP, where he leads firm strategy, national growth, and platform development across brokerage, property management, and advisory services.
                         </p>
                         <p>
                           An operator by background, Hayden oversees HHP's vertically integrated execution model and the development of technology-enabled systems that enhance underwriting discipline, operational consistency, and long-term asset performance.
@@ -286,7 +286,7 @@ const About = () => {
                     {expandedBios.hannah && (
                       <div className="mt-4 space-y-3 text-sm text-hhp-charcoal leading-relaxed">
                         <p>
-                          Hannah Fanning directs client operations at HHP Asset Group, ensuring seamless execution of service standards and administrative oversight across all portfolios nationwide. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
+                          Hannah Fanning directs client operations at HHP, ensuring seamless execution of service standards and administrative oversight across all portfolios nationwide. With a decade of enterprise logistics and communications expertise, she delivers disciplined coordination between owners, residents, and vendors.
                         </p>
                         <p>
                           Her leadership ensures transparent reporting, efficient processes, and client-focused service that align with the institutional standards investors expect from HHP's AI-native platform.
