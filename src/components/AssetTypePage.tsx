@@ -93,14 +93,7 @@ const AssetTypePage = ({
       >
         <div className="absolute inset-0 bg-hhp-navy/40"></div>
         <div className="relative z-10 container-premium text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{title}</h1>
-          <button
-            onClick={scrollToContact}
-            className="bg-white text-hhp-navy px-8 py-4 rounded-2xl font-medium text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-auto max-w-[300px] sm:max-w-none mx-auto sm:mx-0"
-          >
-            {heroButtonText || "Talk to Our Experts"}
-            <ArrowRight className="inline ml-2 h-5 w-5" />
-          </button>
+          <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{title}</h1>
         </div>
       </section>
 
