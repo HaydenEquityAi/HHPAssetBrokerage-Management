@@ -249,31 +249,6 @@ const InvestmentCapitalMarkets = () => {
             </div>
 
             {/* Who We Work With & How We Differ */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">How We Approach Transactions</h2>
-              <ul className="space-y-2 text-lg leading-relaxed text-hhp-charcoal list-disc list-inside mb-4">
-                <li>Clear underwriting assumptions</li>
-                <li>Realistic view of income, expenses, and capital requirements</li>
-                <li>Consideration of operational and leasing risk</li>
-                <li>Objective analysis without pressure or forced outcomes</li>
-              </ul>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
-                We are aligned with long-term decision-making, not transaction volume.
-              </p>
-            </div>
-
-            {/* Why Our Approach Matters */}
-            <div>
-              <h2 className="section-title text-hhp-navy mb-6">Why Our Approach Matters</h2>
-              <p className="text-lg leading-relaxed text-hhp-charcoal">
-                Transactions that ignore operational realities often underperform after closing.
-              </p>
-              <p className="text-lg leading-relaxed text-hhp-charcoal mt-4">
-                Our approach integrates brokerage execution with management and advisory insight, allowing clients to make informed decisions with a clear view of both risk and opportunity.
-              </p>
-            </div>
-
-            {/* Who We Work With & How We Differ */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* Who We Work With */}
               <div>
