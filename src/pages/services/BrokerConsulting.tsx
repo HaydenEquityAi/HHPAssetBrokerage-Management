@@ -16,7 +16,7 @@ const BrokerConsulting = () => {
         <div className="relative z-10 container-premium">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
-              Broker of Record & Consulting Services
+              Broker of Record Services
             </h1>
           </div>
         </div>
