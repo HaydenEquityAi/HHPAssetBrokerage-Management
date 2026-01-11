@@ -22,7 +22,7 @@ const Services = () => {
     },
     {
       title: "Advisory & Site Selection",
-      image: "/images/broker-record-hero.png",
+      image: "/images/advisory-site-selection-image.webp",
       href: "/services/advisory-site-selection"
     },
     {

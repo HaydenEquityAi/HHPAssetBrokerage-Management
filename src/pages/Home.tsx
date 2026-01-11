@@ -160,7 +160,7 @@ const Home = () => {
             <Link 
               to="/services/advisory-site-selection" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0"
-              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/images/advisory-site-selection-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('advisory-site-selection', 'core_services');
                 trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
