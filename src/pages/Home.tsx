@@ -50,7 +50,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link 
                 to="/asset-management" 
-                className="bg-white text-hhp-navy px-6 py-6 sm:px-10 sm:py-10 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[60px] sm:min-h-[80px] flex items-center justify-center text-base sm:text-lg w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
                 onClick={() => {
                   trackButtonClick('explore_services', 'home_hero');
                   trackLinkClick('Explore Services', '/asset-management');
@@ -60,7 +60,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/asset-types" 
-                className="bg-white text-hhp-navy px-6 py-6 sm:px-10 sm:py-10 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[60px] sm:min-h-[80px] flex items-center justify-center text-base sm:text-lg w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
                 onClick={() => {
                   trackButtonClick('explore_asset_types', 'home_hero');
                   trackLinkClick('Explore Asset Types', '/asset-types');
@@ -70,7 +70,7 @@ const Home = () => {
               </Link>
               <Link 
                 to="/technology" 
-                className="bg-white text-hhp-navy px-6 py-6 sm:px-10 sm:py-10 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[60px] sm:min-h-[80px] flex items-center justify-center text-base sm:text-lg w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
+                className="bg-white text-hhp-navy px-5 py-4 sm:px-6 sm:py-5 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[48px] sm:min-h-[56px] flex items-center justify-center text-sm sm:text-base w-auto max-w-[280px] sm:max-w-none mx-auto sm:mx-0 aspect-square sm:aspect-auto"
                 onClick={() => {
                   trackButtonClick('explore_technology', 'home_hero');
                   trackLinkClick('Explore Technology', '/technology');
