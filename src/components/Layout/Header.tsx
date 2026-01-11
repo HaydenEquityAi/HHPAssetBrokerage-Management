@@ -429,8 +429,12 @@ const Header = () => {
                   ) : (
                     <Link
                   to={item.href}
-                  className="block py-3 px-2 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 font-medium min-h-[48px] flex items-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    trackNavigationClick(item.name);
+                    trackLinkClick(item.name, item.href);
+                  }}
                 >
                   {item.name}
                 </Link>
