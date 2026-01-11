@@ -205,13 +205,13 @@ const Home = () => {
               style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
-                trackLinkClick('Broker of Record Services', '/services/broker-consulting');
+                trackLinkClick('Consulting and Strategic Advisory', '/services/broker-consulting');
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
                 <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Broker of Record Services
+                  Consulting and Strategic Advisory
                 </h3>
                 <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Explore Service</span>
