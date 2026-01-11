@@ -5,7 +5,7 @@ const Retail = () => {
   return (
     <AssetTypePage
       // Hero Section
-      heroImage="/images/retail-hero.png"
+      heroImage="/images/retail-image.jpg"
       title="Retail"
       tagline="Driving traffic and value through tailored merchandising and leasing strategies"
       

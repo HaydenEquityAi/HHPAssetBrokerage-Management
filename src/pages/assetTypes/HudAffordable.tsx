@@ -5,7 +5,7 @@ const HudAffordable = () => {
   return (
     <AssetTypePage
       // Hero Section
-      heroImage="/images/hud-hero.jpg"
+      heroImage="/images/affordable-housing-image.jpeg"
       title="HUD & Affordable Housing"
       tagline="Specialized compliance and operations expertise for regulated assets"
       
