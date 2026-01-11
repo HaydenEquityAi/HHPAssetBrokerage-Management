@@ -271,7 +271,7 @@ const DevelopmentAdvisory = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/development-advisory-hero.jpg" 
+            src="/images/about-us-image.jpg" 
             alt="Development Advisory"
             className="absolute inset-0 w-full h-full object-cover"
           />

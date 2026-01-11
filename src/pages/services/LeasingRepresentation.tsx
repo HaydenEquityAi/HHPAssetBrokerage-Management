@@ -270,7 +270,7 @@ const LeasingRepresentation = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/leasing-tenant-representation-hero.webp" 
+            src="/images/about-us-image.jpg" 
             alt="Leasing & Representation"
             className="absolute inset-0 w-full h-full object-cover"
           />

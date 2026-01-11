@@ -205,7 +205,7 @@ const FacilitiesManagement = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/facilities-management-hero-image.jpg" 
+            src="/images/about-us-image.jpg" 
             alt="Facilities Management"
             className="absolute inset-0 w-full h-full object-cover"
           />

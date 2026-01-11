@@ -39,7 +39,7 @@ const AssetTypes = () => {
     {
       title: "Senior Housing & Healthcare",
       proofPoint: "Occupancy recovery 10% faster than market average post-pandemic.",
-      image: "/images/senior-hero.png",
+      image: "/images/senior-housing-image.jpg",
       href: "/asset-types/senior-housing"
     }
   ];

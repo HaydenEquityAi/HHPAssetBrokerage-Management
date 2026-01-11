@@ -260,7 +260,7 @@ const InvestmentCapitalMarkets = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/investment-sales-capital-markets-hero.png" 
+            src="/images/about-us-image.jpg" 
             alt="Investment & Capital Markets"
             className="absolute inset-0 w-full h-full object-cover"
           />

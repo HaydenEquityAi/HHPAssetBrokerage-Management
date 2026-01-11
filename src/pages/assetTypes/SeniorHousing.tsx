@@ -5,7 +5,7 @@ const SeniorHousing = () => {
   return (
     <AssetTypePage
       // Hero Section
-      heroImage="/images/senior-hero.png"
+      heroImage="/images/senior-housing-image.jpg"
       title="Senior Housing"
       tagline="Delivering operational stability and resident-focused care solutions"
       

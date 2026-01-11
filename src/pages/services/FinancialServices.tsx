@@ -241,7 +241,7 @@ const FinancialServices = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/financial-services-hero.jpg" 
+            src="/images/about-us-image.jpg" 
             alt="Financial Services"
             className="absolute inset-0 w-full h-full object-cover"
           />

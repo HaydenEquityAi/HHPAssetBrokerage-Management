@@ -264,7 +264,7 @@ const AdvisorySiteSelection = () => {
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/images/site-selection-hero.jpg" 
+            src="/images/about-us-image.jpg" 
             alt="Advisory & Site Selection"
             className="absolute inset-0 w-full h-full object-cover"
           />
