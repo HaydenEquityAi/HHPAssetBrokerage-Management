@@ -85,13 +85,17 @@ const ResidentLogin = () => {
       </Helmet>
 
       {/* Hero/Header Section */}
-      <section className="bg-hhp-navy text-white py-16 sm:py-20 lg:py-24">
-        <div className="container-premium">
+      <section 
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/resident-login-image.avif)' }}
+      >
+        <div className="absolute inset-0 bg-hhp-navy/60"></div>
+        <div className="relative z-10 container-premium">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 text-white">
+            <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Resident Login
             </h1>
-            <p className="text-lg sm:text-xl text-white/90">
+            <p className="text-lg sm:text-xl text-white/90 drop-shadow-md">
               Access your resident portal
             </p>
           </div>
