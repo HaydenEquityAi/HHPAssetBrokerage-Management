@@ -210,8 +210,8 @@ const Header = () => {
     <header className={`bg-white shadow-subtle relative z-50 transition-all duration-300 ${
       isSticky ? 'sticky top-0 py-2' : 'py-2 sm:py-3'
     }`}>
-      <div className="container-premium">
-        <div className="flex items-center justify-between transition-all duration-300 h-12 md:h-14 px-6 sm:px-8">
+      <div className="w-full">
+        <div className="flex items-center transition-all duration-300 h-12 md:h-14 pl-4 sm:pl-6 lg:pl-8 xl:pl-12 pr-4 sm:pr-6 lg:pr-8 xl:pr-12">
           {/* Logo - Clickable Home Link */}
           <Link 
             to="/" 
@@ -228,7 +228,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 sm:gap-8" role="menubar">
+          <nav className="hidden lg:flex items-center gap-6 sm:gap-8 ml-auto mr-0" role="menubar">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
