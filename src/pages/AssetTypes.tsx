@@ -73,26 +73,13 @@ const AssetTypes = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
-          {/* Video Background */}
-          <video
-            className="absolute inset-0 w-full h-full object-cover z-0"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            onLoadedMetadata={(e) => {
-              e.currentTarget.play().catch(() => {
-                // Silently handle autoplay failures
-              });
-            }}
-          >
-            <source src="/images/real-estate-hero.mp4" type="video/mp4" />
-          </video>
-          
+        <section 
+          className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/images/asset-types-image.webp)' }}
+        >
+          <div className="absolute inset-0 bg-hhp-navy/60"></div>
           <div className="relative z-10 container-premium text-center px-4 sm:px-6">
-            <div className="max-w-4xl mx-auto fade-in">
+            <div className="max-w-4xl mx-auto">
               <h1 className="hero-title text-white mb-4 drop-shadow-lg">
                 Asset Types
               </h1>
