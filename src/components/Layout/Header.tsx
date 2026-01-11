@@ -360,7 +360,7 @@ const Header = () => {
 
           {/* Mobile/Tablet menu button */}
           <button
-            className="lg:hidden p-3 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center"
+            className="lg:hidden p-3 rounded-lg text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-100 transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center ml-auto"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle mobile menu"
