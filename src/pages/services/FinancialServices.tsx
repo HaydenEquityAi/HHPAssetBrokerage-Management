@@ -49,7 +49,7 @@ const FinancialServices = () => {
               </h2>
               <div className="flex justify-center">
                 <img 
-                  src="/images/financial-services-chart.png" 
+                  src="/images/financial-services-graph.png" 
                   alt="Our Vertically Integrated Approach"
                   className="w-full max-w-5xl h-auto"
                 />
