@@ -18,23 +18,6 @@ const FacilitiesManagement = () => {
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
               Facilities Management
             </h1>
-            <div className="mt-8">
-              <a 
-                href="#core-functions"
-                className="group inline-flex items-center gap-2 bg-white text-hhp-navy px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-all duration-200 shadow-lg"
-                onClick={(e) => {
-                  e.preventDefault();
-                  trackButtonClick('explore_service', 'facilities_management_hero');
-                  const element = document.getElementById('core-functions');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-              >
-                Explore Service
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
           </div>
         </div>
       </section>
