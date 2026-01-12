@@ -391,7 +391,7 @@ const FinancialServices = () => {
       </section>
 
       {/* Careers Section */}
-      <section className="relative min-h-[400px] sm:min-h-[500px] flex items-center bg-cover bg-center bg-no-repeat">
+      <section className="relative min-h-[300px] sm:min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(/images/consulting-image.webp)' }}
