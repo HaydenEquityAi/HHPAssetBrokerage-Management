@@ -58,7 +58,7 @@ const Services = () => {
         <div className="relative z-10 container-premium">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="hero-title text-white mb-4 drop-shadow-lg">
-              Our Capabilities
+              Services
             </h1>
           </div>
         </div>
@@ -97,7 +97,7 @@ const Services = () => {
       {/* Core Services Heading */}
       <section className="bg-white py-12 sm:py-16 text-center">
         <div className="container-premium">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hhp-navy tracking-[0.06em] uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading text-hhp-navy tracking-[0.06em] uppercase">
             CORE SERVICES
           </h2>
         </div>
