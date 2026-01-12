@@ -25,7 +25,7 @@ const FacilitiesManagement = () => {
       {/* Core Content */}
       <section className="bg-white section-spacing">
         <div className="container-premium">
-          <div className="max-w-6xl mx-auto space-y-16">
+          <div className="max-w-6xl mx-auto space-y-24">
             {/* Introduction */}
             <div>
               <h2 className="section-title text-hhp-navy mb-6">Introduction</h2>
@@ -40,7 +40,7 @@ const FacilitiesManagement = () => {
             </div>
 
             {/* Philosophy Section */}
-            <div className="mb-8">
+            <div className="mb-12">
               <h2 className="section-title text-hhp-navy mb-6">Our Facilities Management Philosophy</h2>
               <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
@@ -56,7 +56,7 @@ const FacilitiesManagement = () => {
             </div>
 
             {/* Service Approach Chart */}
-            <div className="mb-8">
+            <div className="mb-12">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
                 OUR VERTICALLY INTEGRATED APPROACH
               </h2>
@@ -70,7 +70,7 @@ const FacilitiesManagement = () => {
             </div>
 
             {/* Core Functions Accordion */}
-            <div id="core-functions">
+            <div id="core-functions" className="pt-4">
               <h2 className="section-title text-hhp-navy mb-6">Core Facilities Management Functions</h2>
               
               <Accordion type="single" collapsible className="w-full">
@@ -304,7 +304,7 @@ const FacilitiesManagement = () => {
       </section>
 
       {/* Mid-Page Split Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px]">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] md:min-h-[600px] py-12 sm:py-16 lg:py-20">
         {/* LEFT: Large property/building image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
@@ -347,7 +347,7 @@ const FacilitiesManagement = () => {
       </section>
 
       {/* Who We Work With & How We Differ */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white section-spacing pt-12 sm:pt-16 lg:pt-20">
         <div className="container-premium">
           <div className="max-w-6xl mx-auto space-y-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -420,7 +420,7 @@ const FacilitiesManagement = () => {
       </section>
 
       {/* Careers Section */}
-      <section className="relative min-h-[300px] sm:min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat">
+      <section className="relative min-h-[300px] sm:min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat py-12 sm:py-16">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(/images/consulting-image.webp)' }}
@@ -446,7 +446,7 @@ const FacilitiesManagement = () => {
       </section>
 
       {/* FAQ CTA Section */}
-      <section className="bg-white py-8 sm:py-12">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container-premium">
           <div className="border border-gray-300 rounded-lg my-4 sm:my-6 p-8 sm:p-10">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -469,7 +469,7 @@ const FacilitiesManagement = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
         <div className="container-premium text-center">
           <Link 
             to="/contact" 
