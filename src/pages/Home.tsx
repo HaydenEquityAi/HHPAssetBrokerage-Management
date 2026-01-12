@@ -83,6 +83,20 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Our Approach Section */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className="container-premium">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-hhp-navy mb-6 text-center tracking-[0.06em] uppercase">
+              Our approach
+            </h2>
+            <p className="text-lg sm:text-xl leading-relaxed text-hhp-charcoal text-center">
+              HHP delivers the full lifecycle of commercial real estate services—from acquisitions and development to management, leasing, sales, and strategic advisory—through a vertically integrated platform designed to operate, not just advise. Proprietary technology supports disciplined underwriting, consistent execution, and long-term asset alignment across every engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Core Services Section */}
       <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
