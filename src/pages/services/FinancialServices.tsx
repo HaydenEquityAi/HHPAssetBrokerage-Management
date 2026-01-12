@@ -321,28 +321,28 @@ const FinancialServices = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Commercial property owners</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Partnerships and ownership groups</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Boards and fiduciaries</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Owner-users with investment components</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Clients seeking clarity before major decisions</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
 
               {/* How We Differ */}
@@ -353,24 +353,24 @@ const FinancialServices = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Real estate-focused analysis (not generic financial advice)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Integration with operations, brokerage, and advisory insight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Clear, decision-ready outputs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Support for better decisions without replacing existing advisors</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
 

@@ -153,22 +153,46 @@ const BrokerConsulting = () => {
               <div className="space-y-6 mb-8">
                 <div>
                   <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Engagement Style</h3>
-                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                    <li>Defined scope and objectives</li>
-                    <li>Clear deliverables</li>
-                    <li>Independent, objective perspective</li>
-                    <li>Professional discretion and accountability</li>
-                  </ul>
+                  <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Defined scope and objectives</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Clear deliverables</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Independent, objective perspective</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Professional discretion and accountability</span>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Who Consulting Services Are For</h3>
-                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                    <li>Owners navigating operational or organizational transitions</li>
-                    <li>Boards seeking independent, third-party perspective</li>
-                    <li>Stakeholders managing complex operational challenges</li>
-                    <li>Firms requiring specialized interim support</li>
-                  </ul>
+                  <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Owners navigating operational or organizational transitions</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Boards seeking independent, third-party perspective</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Stakeholders managing complex operational challenges</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Firms requiring specialized interim support</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -384,12 +408,24 @@ const BrokerConsulting = () => {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-display font-semibold text-hhp-navy mb-4">Who Broker of Record Services Are For</h3>
-                  <ul className="space-y-2 text-lg leading-relaxed text-gray-600 list-disc list-inside">
-                    <li>Independent commercial brokerages</li>
-                    <li>Specialty firms and niche practices</li>
-                    <li>Teams exiting national platforms</li>
-                    <li>Brokerages seeking continuity and long-term stability</li>
-                  </ul>
+                  <div className="space-y-2 text-lg leading-relaxed text-gray-600">
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Independent commercial brokerages</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Specialty firms and niche practices</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Teams exiting national platforms</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                      <span>Brokerages seeking continuity and long-term stability</span>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
@@ -411,24 +447,24 @@ const BrokerConsulting = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Independent commercial brokerages</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Owners navigating operational or organizational transitions</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Boards seeking independent, third-party perspective</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Brokerages seeking continuity and long-term stability</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
 
               {/* How We Differ */}
@@ -439,24 +475,24 @@ const BrokerConsulting = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Regulatory-first mindset</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Disciplined, non-intrusive oversight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Integration with brokerage, advisory, and financial insight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Focus on stability, continuity, and long-term outcomes</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
 

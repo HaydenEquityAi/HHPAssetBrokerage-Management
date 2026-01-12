@@ -321,24 +321,24 @@ const DevelopmentAdvisory = () => {
                 </div>
                 <h2 className="section-title text-hhp-navy">Who We Work With</h2>
               </div>
-              <ul className="space-y-3 text-hhp-charcoal">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+              <div className="space-y-3 text-hhp-charcoal">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>First-time developers</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Owner-users pursuing development</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Investors evaluating development risk</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Owners seeking third-party development insight</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             {/* How We Differ */}
@@ -349,24 +349,24 @@ const DevelopmentAdvisory = () => {
                 </div>
                 <h2 className="section-title text-hhp-navy">How We Differ</h2>
               </div>
-              <ul className="space-y-3 text-hhp-charcoal">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+              <div className="space-y-3 text-hhp-charcoal">
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Advisory-only role — no speculative development</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Disciplined, assumption-driven analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Integration with leasing, management, and capital markets insight</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                </div>
+                <div className="flex items-start">
+                  <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                   <span>Clear communication throughout complex processes</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

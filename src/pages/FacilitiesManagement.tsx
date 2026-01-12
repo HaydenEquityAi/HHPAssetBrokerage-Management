@@ -40,7 +40,7 @@ const FacilitiesManagement = () => {
             </div>
 
             {/* Philosophy Section */}
-            <div>
+            <div className="mb-8">
               <h2 className="section-title text-hhp-navy mb-6">Our Facilities Management Philosophy</h2>
               <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
@@ -55,6 +55,20 @@ const FacilitiesManagement = () => {
               </div>
             </div>
 
+            {/* Service Approach Chart */}
+            <div className="mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
+                OUR VERTICALLY INTEGRATED APPROACH
+              </h2>
+              <div className="w-full">
+                <img 
+                  src="/images/facilities-management-chart.png" 
+                  alt="Our Vertically Integrated Approach" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+
             {/* Core Functions Accordion */}
             <div id="core-functions">
               <h2 className="section-title text-hhp-navy mb-6">Core Facilities Management Functions</h2>
@@ -66,13 +80,28 @@ const FacilitiesManagement = () => {
                     Engineering & Building Systems
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Mechanical, electrical, and plumbing system oversight</li>
-                      <li>Preventive maintenance programs</li>
-                      <li>Troubleshooting and repair coordination</li>
-                      <li>Utility monitoring and optimization</li>
-                      <li>Life-safety system inspections and testing</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Mechanical, electrical, and plumbing system oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Preventive maintenance programs</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Troubleshooting and repair coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Utility monitoring and optimization</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Life-safety system inspections and testing</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -82,13 +111,28 @@ const FacilitiesManagement = () => {
                     Preventive Maintenance & Inspections
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Scheduled maintenance planning and execution</li>
-                      <li>Regular building and system inspections</li>
-                      <li>Condition assessments and reporting</li>
-                      <li>Maintenance history tracking</li>
-                      <li>Capital planning support based on condition data</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Scheduled maintenance planning and execution</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Regular building and system inspections</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Condition assessments and reporting</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Maintenance history tracking</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Capital planning support based on condition data</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -98,13 +142,28 @@ const FacilitiesManagement = () => {
                     Vendor & Contractor Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Vendor sourcing and qualification</li>
-                      <li>Bidding and contract negotiation</li>
-                      <li>Work order management and oversight</li>
-                      <li>Quality control and performance monitoring</li>
-                      <li>Vendor relationship management</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Vendor sourcing and qualification</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Bidding and contract negotiation</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Work order management and oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Quality control and performance monitoring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Vendor relationship management</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -114,13 +173,28 @@ const FacilitiesManagement = () => {
                     Safety & Regulatory Compliance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Building code compliance monitoring</li>
-                      <li>Fire safety and life safety system maintenance</li>
-                      <li>ADA compliance oversight</li>
-                      <li>Environmental compliance tracking</li>
-                      <li>Safety inspection coordination</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Building code compliance monitoring</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Fire safety and life safety system maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>ADA compliance oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Environmental compliance tracking</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Safety inspection coordination</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -130,13 +204,28 @@ const FacilitiesManagement = () => {
                     Landscaping & Exterior Maintenance
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Landscaping and grounds maintenance</li>
-                      <li>Exterior building maintenance and repairs</li>
-                      <li>Roofing system oversight</li>
-                      <li>Parking lot and pavement maintenance</li>
-                      <li>Seasonal maintenance coordination</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Landscaping and grounds maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Exterior building maintenance and repairs</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Roofing system oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Parking lot and pavement maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Seasonal maintenance coordination</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -146,13 +235,28 @@ const FacilitiesManagement = () => {
                     Parking & Common Area Management
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Parking lot maintenance and striping</li>
-                      <li>Common area cleaning and maintenance</li>
-                      <li>Signage and wayfinding management</li>
-                      <li>Lighting system maintenance</li>
-                      <li>Access control system oversight</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Parking lot maintenance and striping</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Common area cleaning and maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Signage and wayfinding management</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Lighting system maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Access control system oversight</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
@@ -162,13 +266,28 @@ const FacilitiesManagement = () => {
                     Commercial Cleaning & Janitorial Services
                   </AccordionTrigger>
                   <AccordionContent className="pt-0 pb-8">
-                    <ul className="space-y-2 text-base leading-relaxed text-gray-600 list-disc list-inside ml-4">
-                      <li>Janitorial service coordination and oversight</li>
-                      <li>Cleaning schedule management</li>
-                      <li>Quality control and inspection</li>
-                      <li>Specialty cleaning coordination</li>
-                      <li>Supply management and procurement</li>
-                    </ul>
+                    <div className="space-y-2 text-base leading-relaxed text-gray-600">
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Janitorial service coordination and oversight</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Cleaning schedule management</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Quality control and inspection</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Specialty cleaning coordination</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>Supply management and procurement</span>
+                      </div>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -180,22 +299,6 @@ const FacilitiesManagement = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Approach Chart */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container-premium">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-center mb-8 sm:mb-12 text-hhp-navy tracking-[0.06em] uppercase">
-            OUR FACILITIES MANAGEMENT APPROACH
-          </h2>
-          <div className="flex justify-center">
-            <img 
-              src="/images/our-vertically-integrated-approach.png" 
-              alt="Our Facilities Management Approach"
-              className="w-full max-w-5xl h-auto"
-            />
           </div>
         </div>
       </section>
@@ -256,28 +359,28 @@ const FacilitiesManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">Who We Work With</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Private commercial property owners</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Partnerships and ownership groups</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Boards and associations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Owner-users with operational complexity</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Assets requiring hands-on physical and cleanliness oversight</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
 
               {/* How We Differ */}
@@ -288,28 +391,28 @@ const FacilitiesManagement = () => {
                   </div>
                   <h2 className="section-title text-hhp-navy">How We Differ</h2>
                 </div>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Selective portfolio size to ensure accountability</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Direct oversight — no call-center model</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Proactive maintenance and cleaning standards</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Integrated property management and advisory insight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-hhp-navy mr-3 mt-1 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-start">
+                    <span className="inline-block w-4 h-px bg-gray-600 mt-2.5 mr-3 flex-shrink-0"></span>
                     <span>Clear documentation and transparent reporting</span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
