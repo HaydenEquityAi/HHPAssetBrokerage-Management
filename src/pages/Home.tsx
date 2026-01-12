@@ -276,6 +276,19 @@ const Home = () => {
               </div>
             </Link>
           </div>
+
+          <div className="text-center">
+            <Link 
+              to="/asset-management" 
+              className="btn-hero"
+              onClick={() => {
+                trackButtonClick('view_all_services', 'core_services');
+                trackLinkClick('View All Services', '/asset-management');
+              }}
+            >
+              View All Services →
+            </Link>
+          </div>
         </div>
       </section>
 
