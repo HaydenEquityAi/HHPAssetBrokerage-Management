@@ -441,57 +441,14 @@ const Home = () => {
               We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms streamline operations, reduce errors, and create cost advantages for owners and residents.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-8 mb-6 sm:mb-8 -mx-4 sm:mx-0">
-              {/* AI Platforms Card */}
-              <Link 
-                to="/technology/ai-platforms"
-                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/ai-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-                onClick={() => {
-                  trackButtonClick('ai_platforms', 'technology_advantage');
-                  trackLinkClick('AI Platforms', '/technology/ai-platforms');
-                }}
-              >
-                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">AI Platforms</h3>
-                </div>
-              </Link>
-              
-              {/* Advisory & Analytics Card */}
-              <Link 
-                to="/technology/advisory-analytics"
-                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/advisory-analytics-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-                onClick={() => {
-                  trackButtonClick('advisory_analytics', 'technology_advantage');
-                  trackLinkClick('Advisory & Analytics', '/technology/advisory-analytics');
-                }}
-              >
-                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Advisory & Analytics</h3>
-                </div>
-              </Link>
-              
-              {/* Custom Solutions Card */}
-              <Link 
-                to="/technology/custom-solutions"
-                className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden min-h-[300px] sm:min-h-[340px] md:min-h-[380px] flex flex-col p-0"
-                style={{ backgroundImage: 'url(/images/custom-solutions.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-                onClick={() => {
-                  trackButtonClick('custom_solutions', 'technology_advantage');
-                  trackLinkClick('Custom Solutions', '/technology/custom-solutions');
-                }}
-              >
-                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-                <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 h-full">
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl">Custom Solutions</h3>
-                </div>
-              </Link>
-            </div>
-
-            <Link to="/technology" className="btn-hero">
+            <Link 
+              to="/technology" 
+              className="btn-hero"
+              onClick={() => {
+                trackButtonClick('explore_technology', 'technology_advantage');
+                trackLinkClick('Explore Technology', '/technology');
+              }}
+            >
               Explore Technology
             </Link>
           </div>
