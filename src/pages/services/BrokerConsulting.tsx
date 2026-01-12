@@ -483,14 +483,14 @@ const BrokerConsulting = () => {
               INTERESTED IN WORKING<br/>FOR OUR TEAM?
             </h2>
             <Link 
-              to="/contact" 
+              to="/opportunities" 
               className="bg-white text-hhp-navy px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 flex-shrink-0"
               onClick={() => {
-                trackButtonClick('submit_resume_cta', 'broker_consulting_careers');
-                trackLinkClick('Submit your resume', '/contact');
+                trackButtonClick('view_opportunities_cta', 'broker_consulting_careers');
+                trackLinkClick('View Opportunities', '/opportunities');
               }}
             >
-              Submit your resume
+              View Opportunities
             </Link>
           </div>
         </div>
