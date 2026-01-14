@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -294,17 +294,6 @@ const Contact = () => {
                     <h3 className="font-semibold text-hhp-navy mb-1">Phone</h3>
                     <p className="text-hhp-charcoal">(918) 899-1650</p>
                 
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-hhp-navy/10 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-hhp-navy" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-hhp-navy mb-1">Office</h3>
-                    <p className="text-hhp-charcoal">1617 S Cincinnati Ave, Tulsa, OK 74119</p>
-                    
                   </div>
                 </div>
 
