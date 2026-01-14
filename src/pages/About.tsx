@@ -146,10 +146,7 @@ const About = () => {
             {activeTab === 'people' && (
               <div className="fade-in animate-in fade-in duration-300">
                 <div className="text-center mb-8">
-                  <h2 className="section-title text-hhp-navy mb-4">Leadership Excellence</h2>
-                  <p className="text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto">
-                    Our core team brings together decades of experience in operations, real estate, property management, and client relations to deliver exceptional results.
-                  </p>
+                  <h2 className="section-title text-hhp-navy mb-4">Executive Team</h2>
                 </div>
 
                 {/* Team Grid - 3 Column Layout */}
