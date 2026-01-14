@@ -280,11 +280,11 @@ const PropertyManagement = () => {
               ABOUT US
             </h2>
             <p className="text-lg text-white mb-10 leading-relaxed">
-              HHP Asset Management is an operator-led real estate platform combining 
-              institutional discipline with hands-on execution. We specialize in vertically 
-              integrated asset management, bringing together property management, facilities 
-              operations, financial oversight, and strategic advisory under one integrated 
-              approach.
+              HHP delivers the full lifecycle of commercial real estate services—from 
+              acquisitions and development to management, leasing, sales, and strategic 
+              advisory—through a vertically integrated platform designed to operate, not just 
+              advise. Proprietary technology supports disciplined underwriting, consistent 
+              execution, and long-term asset alignment across every engagement.
             </p>
             <div className="pt-8 border-t border-gray-500">
               <h3 className="text-2xl sm:text-3xl font-bold mb-8 tracking-widest text-white">
