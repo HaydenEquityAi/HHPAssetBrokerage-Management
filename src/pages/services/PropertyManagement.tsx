@@ -23,12 +23,12 @@ const PropertyManagement = () => {
       </section>
 
       {/* Core Content */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="container-premium">
-          <div className="max-w-6xl mx-auto space-y-16">
+          <div className="max-w-7xl mx-auto space-y-10">
             {/* Our Management Philosophy */}
             <div>
-              <h2 className="section-title text-hhp-navy mb-6">Our Management Philosophy</h2>
+              <h2 className="section-title text-hhp-navy mb-4">Our Management Philosophy</h2>
               <div className="space-y-4 text-lg leading-relaxed text-gray-600">
                 <p>
                   Effective property management is not about volume or speed. It is about consistency, accountability, and disciplined execution over time.
@@ -40,8 +40,8 @@ const PropertyManagement = () => {
             </div>
 
             {/* Service Approach Chart */}
-            <div className="mb-8">
-              <h2 className="section-title text-hhp-navy mb-6">
+            <div className="mb-6">
+              <h2 className="section-title text-hhp-navy mb-4">
                 OUR VERTICALLY INTEGRATED APPROACH
               </h2>
               <div className="flex justify-center">
@@ -55,7 +55,7 @@ const PropertyManagement = () => {
 
             {/* Core Management Functions */}
             <div>
-              <h2 className="section-title text-hhp-navy mb-6">Core Management Functions</h2>
+              <h2 className="section-title text-hhp-navy mb-4">Core Management Functions</h2>
               
               <Accordion type="single" collapsible className="w-full">
                 {/* 1. Financial Oversight & Reporting */}
@@ -306,9 +306,9 @@ const PropertyManagement = () => {
       </section>
 
       {/* Who We Work With & How We Differ */}
-      <section className="bg-white section-spacing">
+      <section className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="container-premium">
-          <div className="max-w-6xl mx-auto space-y-16">
+          <div className="max-w-7xl mx-auto space-y-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* Who We Work With */}
               <div>
