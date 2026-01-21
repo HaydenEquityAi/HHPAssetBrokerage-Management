@@ -11,7 +11,6 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   
   // Refs for dropdown containers and click outside detection
-  const customAiRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const assetTypesRef = useRef<HTMLDivElement>(null);
   
@@ -20,32 +19,6 @@ const Header = () => {
 
   // New navigation structure
   const navigation = [
-    {
-      name: 'Custom AI & Development',
-      href: '/technology',
-      submenu: [
-        { 
-          name: 'Full-Stack Custom Systems', 
-          href: '/technology/custom-solutions',
-          description: 'Purpose-built software from database to user interface. Complete stack you own and control.'
-        },
-        { 
-          name: 'AI Intelligence Integration', 
-          href: '/technology/ai-platforms',
-          description: 'Intelligent automation and decision support built into your workflows. Applied where it creates real leverage.'
-        },
-        { 
-          name: 'SaaS Product Development', 
-          href: '/technology',
-          description: 'Building scalable products and platforms. Custom systems that evolve into recurring revenue business assets.'
-        },
-        { 
-          name: 'Custom Enterprise Builds', 
-          href: '/technology/custom-solutions',
-          description: 'Complex, multi-system implementations for organizations operating at scale or in specialized domains.'
-        }
-      ]
-    },
     { name: 'About', href: '/about' },
     {
       name: 'Services',
@@ -84,7 +57,6 @@ const Header = () => {
   };
 
   // Check if current path matches dropdown items
-  const isCustomAiActive = location.pathname.startsWith('/technology');
   const isServicesActive = location.pathname.startsWith('/services');
   const isAssetTypesActive = location.pathname.startsWith('/asset-types');
 
@@ -144,9 +116,7 @@ const Header = () => {
                       case ' ':
                         event.preventDefault();
                         // Navigate to main page for Services and Asset Types
-                        if (dropdownName === 'Custom AI & Development') {
-                          handleMainButtonClick(dropdownName, '/technology');
-                        } else if (dropdownName === 'Services') {
+                        if (dropdownName === 'Services') {
                           handleMainButtonClick(dropdownName, '/services');
                         } else if (dropdownName === 'Asset Types') {
                           handleMainButtonClick(dropdownName, '/asset-types');
@@ -205,8 +175,7 @@ const Header = () => {
       const target = event.target as Node;
       
       // Check if click is outside any dropdown
-      if (customAiRef.current && !customAiRef.current.contains(target) &&
-          servicesRef.current && !servicesRef.current.contains(target) &&
+      if (servicesRef.current && !servicesRef.current.contains(target) &&
           assetTypesRef.current && !assetTypesRef.current.contains(target)) {
         setActiveDropdown(null);
       }
@@ -265,7 +234,6 @@ const Header = () => {
                 {item.submenu ? (
                   <div
                     ref={
-                      item.name === 'Custom AI & Development' ? customAiRef :
                       item.name === 'Services' ? servicesRef :
                       assetTypesRef
                     }
@@ -275,7 +243,6 @@ const Header = () => {
                   >
                     <button 
                       className={`flex items-center gap-1 transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight px-1 sm:px-2 py-1 ${
-                        (item.name === 'Custom AI & Development' && isCustomAiActive) ||
                         (item.name === 'Services' && isServicesActive) ||
                         (item.name === 'Asset Types' && isAssetTypesActive)
                           ? 'text-hhp-navy border-b-2 border-hhp-navy' 
@@ -283,9 +250,7 @@ const Header = () => {
                       }`}
                       onClick={() => {
                         // Navigate to main page for Services and Asset Types
-                        if (item.name === 'Custom AI & Development') {
-                          handleMainButtonClick(item.name, '/technology');
-                        } else if (item.name === 'Services') {
+                        if (item.name === 'Services') {
                           handleMainButtonClick(item.name, '/services');
                         } else if (item.name === 'Asset Types') {
                           handleMainButtonClick(item.name, '/asset-types');
@@ -296,7 +261,7 @@ const Header = () => {
                       onKeyDown={(e) => handleKeyDown(e, item.name)}
                       aria-expanded={activeDropdown === item.name}
                       aria-haspopup="menu"
-                      aria-controls={`${item.name.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}-menu`}
+                      aria-controls={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
                     >
                       <span>{item.name}</span>
                       <ChevronDown 
@@ -308,10 +273,8 @@ const Header = () => {
                     
                     {activeDropdown === item.name && (
                       <div 
-                        id={`${item.name.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}-menu`}
-                        className={`absolute top-full left-0 mt-2 w-auto ${
-                          item.name === 'Custom AI & Development' ? 'min-w-[320px] max-w-[400px]' : 'min-w-max'
-                        } bg-white rounded-lg shadow-premium py-2 sm:py-3 z-50 border border-gray-200`}
+                        id={`${item.name.toLowerCase().replace(' ', '-')}-menu`}
+                        className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white rounded-lg shadow-premium py-2 sm:py-3 z-50 border border-gray-200"
                         role="menu"
                         aria-label={`${item.name} submenu`}
                         onMouseEnter={() => handleDropdownEnter(item.name)}
@@ -324,9 +287,7 @@ const Header = () => {
                             <Link
                               key={subItem.name}
                               to={subItem.href}
-                              className={`block px-3 py-2.5 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group ${
-                                subItem.description ? 'min-h-[60px]' : 'min-h-[36px]'
-                              } leading-tight`}
+                              className="block px-3 py-2 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 transition-colors duration-200 group min-h-[36px] flex items-center leading-tight"
                               role="menuitem"
                               tabIndex={0}
                               onClick={() => {
@@ -337,9 +298,6 @@ const Header = () => {
                               onKeyDown={(e) => handleDropdownKeyDown(e, item.name, index)}
                             >
                               <div className="font-medium text-sm leading-tight">{subItem.name}</div>
-                              {subItem.description && (
-                                <div className="text-xs text-gray-500 mt-1 leading-snug">{subItem.description}</div>
-                              )}
                             </Link>
                           )
                         ))}
@@ -425,10 +383,7 @@ const Header = () => {
                           className="flex-1 py-3 text-left text-hhp-charcoal hover:text-hhp-navy transition-colors duration-200 font-medium min-h-[48px] flex items-center"
                           onClick={() => {
                             // Navigate to main page for Services and Asset Types
-                            if (item.name === 'Custom AI & Development') {
-                              handleMainButtonClick(item.name, '/technology');
-                              setIsMobileMenuOpen(false);
-                            } else if (item.name === 'Services') {
+                            if (item.name === 'Services') {
                               handleMainButtonClick(item.name, '/services');
                               setIsMobileMenuOpen(false);
                             } else if (item.name === 'Asset Types') {
@@ -461,13 +416,10 @@ const Header = () => {
                               <Link
                                 key={subItem.name}
                                 to={subItem.href}
-                                className="block py-2 px-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 min-h-[36px] leading-tight"
+                                className="block py-2 px-3 text-hhp-charcoal hover:text-hhp-navy hover:bg-gray-50 rounded-md transition-colors duration-200 min-h-[36px] flex items-center leading-tight"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
                                 <div className="font-medium text-sm leading-tight">{subItem.name}</div>
-                                {subItem.description && (
-                                  <div className="text-xs text-gray-500 mt-1 leading-snug">{subItem.description}</div>
-                                )}
                               </Link>
                             )
                           ))}
