@@ -276,19 +276,6 @@ const Home = () => {
               </div>
             </Link>
           </div>
-
-          <div className="text-center">
-            <Link 
-              to="/asset-management" 
-              className="btn-hero"
-              onClick={() => {
-                trackButtonClick('view_all_services', 'core_services');
-                trackLinkClick('View All Services', '/asset-management');
-              }}
-            >
-              View All Services →
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -429,44 +416,9 @@ const Home = () => {
               </div>
             </Link>
           </div>
-
-          <div className="text-center">
-            <Link 
-              to="/asset-types" 
-              className="btn-hero"
-              onClick={() => {
-                trackButtonClick('view_all_asset_classes', 'asset_types');
-                trackLinkClick('View All Asset Classes', '/asset-types');
-              }}
-            >
-              View All Asset Classes →
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Technology Advantage Section */}
-      <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
-        <div className="container-premium">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-hhp-navy mb-6">Technology Advantage</h2>
-            <p className="text-xl leading-relaxed text-hhp-charcoal mb-12">
-              We embed automation and AI into every process—leasing, compliance, reporting, and resident experience. Our proprietary platforms streamline operations, reduce errors, and create cost advantages for owners and residents.
-            </p>
-            
-            <Link 
-              to="/technology" 
-              className="btn-hero"
-              onClick={() => {
-                trackButtonClick('explore_technology', 'technology_advantage');
-                trackLinkClick('Explore Technology', '/technology');
-              }}
-            >
-              Explore Technology
-            </Link>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
