@@ -8,17 +8,14 @@ import heroImage from '@/assets/hero-property.jpg';
 const Home = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
-        {/* Fallback Background Image */}
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
-          style={{backgroundImage: 'url(/images/multifamily-hero.jpg)'}}
-        />
-        
-        {/* Video Background */}
+      {/* Hero Section — fixed in viewport, content scrolls over it */}
+      <section
+        className="fixed inset-0 w-full h-screen min-h-[600px] z-0 overflow-hidden bg-black"
+        aria-label="Hero"
+      >
+        {/* Video background — stays fixed */}
         <video
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           loop
           muted
@@ -26,63 +23,69 @@ const Home = () => {
           preload="metadata"
           poster="/images/multifamily-hero.jpg"
           onLoadedMetadata={(e) => {
-            e.currentTarget.play().catch(() => {
-              // Silently handle autoplay failures
-            });
+            e.currentTarget.play().catch(() => {});
           }}
         >
           <source src="/images/HeroHomePageHHP.mp4" type="video/mp4" />
         </video>
-        
-        <div className="relative z-10 container-premium text-center px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-6 sm:mb-8 md:mb-10 flex justify-center">
-              <img 
-                src="/images/hhp-logo-navy-letters.png" 
-                alt="HHP Asset Group" 
-                className="h-18 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto object-contain drop-shadow-lg"
-              />
-            </div>
-            <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-relaxed sm:leading-tight text-white mb-4 sm:mb-5 px-2 -mt-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-              Vertically Integrated and Innovative Commercial Real Estate Solutions
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link 
-                to="/asset-management" 
-                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
-                onClick={() => {
-                  trackButtonClick('explore_services', 'home_hero');
-                  trackLinkClick('Explore Services', '/asset-management');
-                }}
-              >
-                Explore Services
-              </Link>
-              <Link 
-                to="/asset-types" 
-                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
-                onClick={() => {
-                  trackButtonClick('explore_asset_types', 'home_hero');
-                  trackLinkClick('Explore Asset Types', '/asset-types');
-                }}
-              >
-                Explore Asset Types
-              </Link>
-              <Link 
-                to="/technology" 
-                className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
-                onClick={() => {
-                  trackButtonClick('explore_technology', 'home_hero');
-                  trackLinkClick('Explore Technology', '/technology');
-                }}
-              >
-                Explore Technology
-              </Link>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
+        {/* Hero content */}
+        <div className="absolute inset-0 z-20 flex items-center justify-center">
+          <div className="container-premium text-center px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="mb-6 sm:mb-8 md:mb-10 flex justify-center">
+                <img
+                  src="/images/hhp-logo-navy-letters.png"
+                  alt="HHP Asset Group"
+                  className="h-18 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto object-contain drop-shadow-lg"
+                />
+              </div>
+              <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-relaxed sm:leading-tight text-white mb-4 sm:mb-5 px-2 -mt-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                Vertically Integrated and Innovative Commercial Real Estate Solutions
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                <Link
+                  to="/asset-management"
+                  className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
+                  onClick={() => {
+                    trackButtonClick('explore_services', 'home_hero');
+                    trackLinkClick('Explore Services', '/asset-management');
+                  }}
+                >
+                  Explore Services
+                </Link>
+                <Link
+                  to="/asset-types"
+                  className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
+                  onClick={() => {
+                    trackButtonClick('explore_asset_types', 'home_hero');
+                    trackLinkClick('Explore Asset Types', '/asset-types');
+                  }}
+                >
+                  Explore Asset Types
+                </Link>
+                <Link
+                  to="/technology"
+                  className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
+                  onClick={() => {
+                    trackButtonClick('explore_technology', 'home_hero');
+                    trackLinkClick('Explore Technology', '/technology');
+                  }}
+                >
+                  Explore Technology
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Spacer so content starts below viewport — hero stays fixed behind */}
+      <div className="relative z-0 h-screen min-h-[600px] w-full" aria-hidden="true" />
+
+      {/* Content that scrolls up over the fixed hero */}
+      <div className="relative z-30">
       {/* Our Approach Section */}
       <section className="bg-white py-12 sm:py-16">
         <div className="container-premium">
@@ -419,6 +422,7 @@ const Home = () => {
         </div>
       </section>
 
+      </div>
     </Layout>
   );
 };
