@@ -31,7 +31,7 @@ const Home = () => {
             });
           }}
         >
-          <source src="/images/Subtle_Hero_Background_Animation_Generated%20%281%29.mp4" type="video/mp4" />
+          <source src={`/images/${encodeURIComponent('Gen-4 Generate a 10-second cinematic video matching this exact cityscape image A mid-sized American city skyline during golden hour sunset showing the precise architectural composition visible in the (1).mp4')}`} type="video/mp4" />
         </video>
         
         <div className="relative z-10 container-premium text-center px-4 sm:px-6">

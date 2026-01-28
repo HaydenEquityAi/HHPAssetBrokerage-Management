@@ -266,7 +266,6 @@ const Insights = () => {
                   <FileText className="h-8 w-8 icon-accent" />
                   <div>
                     <h3 className="text-lg font-display font-semibold text-hhp-navy">A Modern Real Estate Operating Model</h3>
-                    <p className="text-sm text-hhp-charcoal">By Hayden Ashley • 2025</p>
                   </div>
                 </div>
                 <p className="text-hhp-charcoal mb-4">
@@ -284,7 +283,6 @@ const Insights = () => {
                   <TrendingUp className="h-8 w-8 icon-accent" />
                   <div>
                     <h3 className="text-lg font-display font-semibold text-hhp-navy">Leasing Strategy in a Normalized Market</h3>
-                    <p className="text-sm text-hhp-charcoal">By Jenni Pollard • 2025</p>
                   </div>
                 </div>
                 <p className="text-hhp-charcoal mb-4">
@@ -302,7 +300,6 @@ const Insights = () => {
                   <CheckCircle className="h-8 w-8 icon-accent" />
                   <div>
                     <h3 className="text-lg font-display font-semibold text-hhp-navy">Managing Risk in HUD Housing</h3>
-                    <p className="text-sm text-hhp-charcoal">By Phil Ashley • 2025</p>
                   </div>
                 </div>
                 <p className="text-hhp-charcoal mb-4">
@@ -320,7 +317,6 @@ const Insights = () => {
                   <BarChart3 className="h-8 w-8 icon-accent" />
                   <div>
                     <h3 className="text-lg font-display font-semibold text-hhp-navy">The Future of Real Estate Operations</h3>
-                    <p className="text-sm text-hhp-charcoal">By Hannah Fanning • 2025</p>
                   </div>
                 </div>
                 <p className="text-hhp-charcoal mb-4">
