@@ -60,14 +60,20 @@ const Header = () => {
   const isServicesActive = location.pathname.startsWith('/services');
   const isAssetTypesActive = location.pathname.startsWith('/asset-types');
 
-  // Sticky header effect
+  // Sticky header effect (throttled with rAF)
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsSticky(scrollTop > 20);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsSticky(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

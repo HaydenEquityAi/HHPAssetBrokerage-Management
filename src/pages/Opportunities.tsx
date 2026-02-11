@@ -170,13 +170,13 @@ const Opportunities = () => {
             <p className="mt-6 text-base text-hhp-charcoal">
               Or email us at{' '}
               <a
-                href="mailto:careers@hhpassetgroup.com"
+                href="mailto:careers@hhpasset.com"
                 className="text-hhp-navy hover:underline"
                 onClick={() => {
-                  trackLinkClick('Email Careers', 'mailto:careers@hhpassetgroup.com');
+                  trackLinkClick('Email Careers', 'mailto:careers@hhpasset.com');
                 }}
               >
-                careers@hhpassetgroup.com
+                careers@hhpasset.com
               </a>
             </p>
           </div>

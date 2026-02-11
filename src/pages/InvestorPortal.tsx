@@ -87,7 +87,7 @@ const InvestorPortal = () => {
       {/* Hero/Header Section */}
       <section 
         className="relative min-h-[400px] sm:min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat py-16 sm:py-20 lg:py-24"
-        style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)' }}
+        style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.webp)' }}
       >
         <div className="absolute inset-0 bg-hhp-navy/60"></div>
         <div className="relative z-10 container-premium">

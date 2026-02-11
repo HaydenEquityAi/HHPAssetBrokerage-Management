@@ -10,7 +10,7 @@ const InvestmentCapitalMarkets = () => {
       {/* Hero Section */}
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)' }}
+        style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.webp)' }}
       >
         <div className="absolute inset-0 bg-hhp-navy/60"></div>
         <div className="relative z-10 container-premium">
@@ -46,7 +46,7 @@ const InvestmentCapitalMarkets = () => {
               </h2>
               <div className="flex justify-center">
                 <img 
-                  src="/images/investment-capital-markets-chart.png" 
+                  src="/images/investment-capital-markets-chart.webp" 
                   alt="Our Vertically Integrated Approach"
                   className="w-full max-w-5xl h-auto"
                 />

@@ -62,7 +62,7 @@ const FacilitiesManagement = () => {
               </h2>
               <div className="w-full">
                 <img 
-                  src="/images/facilities-management-chart.png" 
+                  src="/images/facilities-management-chart.webp" 
                   alt="Our Vertically Integrated Approach" 
                   className="w-full h-auto object-contain"
                 />

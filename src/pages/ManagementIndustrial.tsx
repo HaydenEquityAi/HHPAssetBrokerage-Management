@@ -112,7 +112,7 @@ const ManagementIndustrial = () => {
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/industrial-hero.png)' }}
+          style={{ backgroundImage: 'url(/images/industrial-hero.webp)' }}
         />
         <div className="absolute inset-0 bg-hhp-navy/40" />
         

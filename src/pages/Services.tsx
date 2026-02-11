@@ -17,7 +17,7 @@ const Services = () => {
     },
     {
       title: "Investment & Capital Markets",
-      image: "/images/investment-sales-capital-markets-hero.png",
+      image: "/images/investment-sales-capital-markets-hero.webp",
       href: "/services/investment-capital-markets"
     },
     {
@@ -32,7 +32,7 @@ const Services = () => {
     },
     {
       title: "Consulting & Strategic Advisory",
-      image: "/images/broker-record-hero.png",
+      image: "/images/broker-record-hero.webp",
       href: "/services/broker-consulting"
     },
     {
@@ -86,7 +86,7 @@ const Services = () => {
           </h2>
           <div className="w-full">
             <img 
-              src="/images/vertically-integrated-approach-chart.png" 
+              src="/images/vertically-integrated-approach-chart.webp" 
               alt="Our Vertically Integrated Approach" 
               className="w-full h-auto object-contain"
             />

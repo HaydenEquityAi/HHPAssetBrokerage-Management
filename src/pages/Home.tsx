@@ -156,7 +156,7 @@ const Home = () => {
             <Link 
               to="/services/investment-capital-markets" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('investment_capital_markets', 'core_services');
                 trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
@@ -219,7 +219,7 @@ const Home = () => {
             <Link 
               to="/services/broker-consulting" 
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/broker-record-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+              style={{ backgroundImage: 'url(/images/broker-record-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
                 trackButtonClick('broker_consulting', 'core_services');
                 trackLinkClick('Consulting and Strategic Advisory', '/services/broker-consulting');
