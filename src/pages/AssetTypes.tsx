@@ -60,15 +60,15 @@ const AssetTypes = () => {
         <meta property="og:title" content="HHP Asset Group | Asset Types We Serve" />
         <meta property="og:description" content="Explore HHP's expertise across Multifamily, HUD & Affordable, Office, Retail, Industrial, and Senior Housing—powered by AI, analytics, and institutional execution." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hhpassetgroup.com/asset-types" />
-        <meta property="og:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
-        <link rel="canonical" href="https://hhpassetgroup.com/asset-types" />
+        <meta property="og:url" content="https://hhpasset.com/asset-types" />
+        <meta property="og:image" content="https://hhpasset.com/images/hhp-logo.png" />
+        <link rel="canonical" href="https://hhpasset.com/asset-types" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="HHP Asset Group | Asset Types We Serve" />
         <meta name="twitter:description" content="Explore HHP's expertise across Multifamily, HUD & Affordable, Office, Retail, Industrial, and Senior Housing." />
-        <meta name="twitter:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
+        <meta name="twitter:image" content="https://hhpasset.com/images/hhp-logo.png" />
       </Helmet>
 
       <Layout>

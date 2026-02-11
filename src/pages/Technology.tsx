@@ -151,15 +151,15 @@ const Technology = () => {
         <meta property="og:title" content="HHP Asset Group | Technology" />
         <meta property="og:description" content="Explore HHP's Technology: AI Platforms, Advisory & Analytics, and Custom Solutions that deliver measurable performance, faster decisions, and institutional-grade execution." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hhpassetgroup.com/technology" />
-        <meta property="og:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
-        <link rel="canonical" href="https://hhpassetgroup.com/technology" />
+        <meta property="og:url" content="https://hhpasset.com/technology" />
+        <meta property="og:image" content="https://hhpasset.com/images/hhp-logo.png" />
+        <link rel="canonical" href="https://hhpasset.com/technology" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="HHP Asset Group | Technology" />
         <meta name="twitter:description" content="Explore HHP's Technology: AI Platforms, Advisory & Analytics, and Custom Solutions." />
-        <meta name="twitter:image" content="https://hhpassetgroup.com/images/hhp-logo.png" />
+        <meta name="twitter:image" content="https://hhpasset.com/images/hhp-logo.png" />
       </Helmet>
 
       <Layout>

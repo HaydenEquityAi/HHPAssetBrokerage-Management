@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://hhpassetgroup.com/sitemap.xml
+Sitemap: https://hhpasset.com/sitemap.xml
