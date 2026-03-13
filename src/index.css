@@ -162,20 +162,20 @@
   }
 
   .container-premium {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1rem;
   }
 
   @media (min-width: 640px) {
     .container-premium {
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container-premium {
-      padding: 0 2rem;
+      padding: 0 1.5rem;
     }
   }
 
