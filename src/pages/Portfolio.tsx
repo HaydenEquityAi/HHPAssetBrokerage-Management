@@ -210,7 +210,7 @@ const Portfolio = () => {
                     {selectedProp.status}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-white/70 text-base">
+                <div className="flex items-center gap-2 text-white/70 text-lg">
                   <MapPin className="w-3.5 h-3.5" />
                   {selectedProp.address}
                 </div>
@@ -223,20 +223,20 @@ const Portfolio = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Type</span>
-                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.type}</p>
+                    <span className="text-base text-hhp-charcoal/50 uppercase tracking-wider">Type</span>
+                    <p className="text-lg font-bold text-hhp-navy mt-1">{selectedProp.type}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Units</span>
-                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.units}</p>
+                    <span className="text-base text-hhp-charcoal/50 uppercase tracking-wider">Units</span>
+                    <p className="text-lg font-bold text-hhp-navy mt-1">{selectedProp.units}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Bedrooms</span>
-                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.beds}</p>
+                    <span className="text-base text-hhp-charcoal/50 uppercase tracking-wider">Bedrooms</span>
+                    <p className="text-lg font-bold text-hhp-navy mt-1">{selectedProp.beds}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Bathrooms</span>
-                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.baths}</p>
+                    <span className="text-base text-hhp-charcoal/50 uppercase tracking-wider">Bathrooms</span>
+                    <p className="text-lg font-bold text-hhp-navy mt-1">{selectedProp.baths}</p>
                   </div>
                 </div>
               </div>
@@ -245,11 +245,11 @@ const Portfolio = () => {
               <div className="px-6 mb-6">
                 <h3 className="text-base font-semibold text-hhp-navy uppercase tracking-wider mb-3">Contact</h3>
                 <div className="space-y-3">
-                  <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-base font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                  <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-lg font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
                     <Phone className="w-5 h-5 text-hhp-accent" />
                     {selectedProp.phone}
                   </a>
-                  <a href={`mailto:${selectedProp.email}`} className="flex items-center gap-3 text-base font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                  <a href={`mailto:${selectedProp.email}`} className="flex items-center gap-3 text-lg font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
                     <Mail className="w-5 h-5 text-hhp-accent" />
                     {selectedProp.email}
                   </a>
@@ -261,14 +261,14 @@ const Portfolio = () => {
                 <div className="flex flex-col gap-3">
                   <Link
                     to="/contact"
-                    className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-base hover:bg-hhp-navy/90 transition-colors text-center"
+                    className="bg-hhp-navy text-white px-6 py-4 rounded font-semibold text-lg hover:bg-hhp-navy/90 transition-colors text-center"
                     onClick={() => { trackButtonClick('property_detail_contact', 'portfolio'); }}
                   >
                     Contact About This Property
                   </Link>
                   <Link
                     to="/services/property-management"
-                    className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-base hover:bg-hhp-navy hover:text-white transition-colors text-center"
+                    className="border border-hhp-navy text-hhp-navy px-6 py-4 rounded font-semibold text-lg hover:bg-hhp-navy hover:text-white transition-colors text-center"
                     onClick={() => { trackButtonClick('property_detail_services', 'portfolio'); }}
                   >
                     Learn About Our Management
@@ -310,19 +310,19 @@ const Portfolio = () => {
                       <div className="p-4 bg-white">
                         <div className="flex items-start gap-2 mb-3">
                           <MapPin className="h-3.5 w-3.5 text-hhp-accent flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-hhp-charcoal">{property.address}</span>
+                          <span className="text-base text-hhp-charcoal">{property.address}</span>
                         </div>
-                        <div className="flex gap-6 text-sm">
+                        <div className="flex gap-6 text-base">
                           <div>
-                            <span className="text-hhp-charcoal/40 uppercase tracking-wider">Type</span>
+                            <span className="text-hhp-charcoal/60 uppercase tracking-wider">Type</span>
                             <p className="font-bold text-hhp-navy mt-0.5">{property.type}</p>
                           </div>
                           <div>
-                            <span className="text-hhp-charcoal/40 uppercase tracking-wider">Units</span>
+                            <span className="text-hhp-charcoal/60 uppercase tracking-wider">Units</span>
                             <p className="font-bold text-hhp-navy mt-0.5">{property.units}</p>
                           </div>
                           <div>
-                            <span className="text-hhp-charcoal/40 uppercase tracking-wider">Beds</span>
+                            <span className="text-hhp-charcoal/60 uppercase tracking-wider">Beds</span>
                             <p className="font-bold text-hhp-navy mt-0.5">{property.beds}</p>
                           </div>
                         </div>
@@ -334,18 +334,18 @@ const Portfolio = () => {
 
               {/* CTA */}
               <div className="border-t border-gray-200 p-6">
-                <p className="font-heading text-base text-hhp-navy mb-3 tracking-wide uppercase">Interested in adding your property?</p>
+                <p className="font-heading text-lg text-hhp-navy mb-3 tracking-wide uppercase">Interested in adding your property?</p>
                 <div className="flex gap-3">
                   <Link
                     to="/contact"
-                    className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy/90 transition-colors"
+                    className="bg-hhp-navy text-white px-7 py-3.5 rounded font-semibold text-sm hover:bg-hhp-navy/90 transition-colors"
                     onClick={() => { trackButtonClick('portfolio_cta_consultation', 'portfolio'); trackLinkClick('Request a Consultation', '/contact'); }}
                   >
                     Request a Consultation
                   </Link>
                   <Link
                     to="/services/property-management"
-                    className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy hover:text-white transition-colors"
+                    className="border border-hhp-navy text-hhp-navy px-7 py-3.5 rounded font-semibold text-sm hover:bg-hhp-navy hover:text-white transition-colors"
                     onClick={() => { trackButtonClick('portfolio_cta_services', 'portfolio'); trackLinkClick('Our Services', '/services/property-management'); }}
                   >
                     Our Services

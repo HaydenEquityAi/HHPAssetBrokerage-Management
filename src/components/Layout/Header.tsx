@@ -33,7 +33,7 @@ const Header = () => {
       ]
     },
     { name: 'Technology', href: '/technology' },
-    { name: 'Portfolio', href: '/portfolio' }
+    { name: 'Properties', href: '/portfolio' }
   ];
 
   // Contact as primary CTA
