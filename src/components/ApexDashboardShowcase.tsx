@@ -17,11 +17,11 @@ const ApexDashboardShowcase = () => {
               <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#C8952E' }} />
               AI-Native Property Management
             </div>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight tracking-wide uppercase">
+            <h2 className="section-title text-white mb-6">
               Institutional Intelligence.<br />
               <span style={{ color: '#C8952E' }}>Every Asset Optimized.</span>
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed text-gray-400 mb-10 max-w-lg">
+            <p className="text-lg sm:text-xl leading-relaxed text-gray-400 mb-10 max-w-lg">
               Our proprietary APEX platform combines institutional-grade underwriting with AI-powered operations to deliver owner outcomes that traditional management can't match.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

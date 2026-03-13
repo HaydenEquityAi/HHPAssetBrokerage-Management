@@ -41,12 +41,15 @@ const DisciplinesSection = () => {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white relative z-30">
       <div className="container-premium">
-        <div className="section-tag-gold mb-4">What We Do</div>
-        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8" style={{ backgroundColor: 'rgba(200,149,46,0.15)', border: '1px solid rgba(200,149,46,0.25)', color: '#C8952E' }}>
+          <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#C8952E' }} />
+          What We Do
+        </div>
+        <h2 className="section-title text-hhp-navy mb-6">
           Three Disciplines.<br />
           One Integrated Platform.
         </h2>
-        <p className="text-base sm:text-lg text-gray-500 max-w-2xl mb-12 sm:mb-16 leading-relaxed">
+        <p className="text-lg sm:text-xl leading-relaxed text-hhp-charcoal max-w-3xl mb-12 sm:mb-16">
           We don't list tasks — we deliver outcomes. Every service line is powered by APEX and built around the metrics that actually matter to owners.
         </p>
 
@@ -54,7 +57,7 @@ const DisciplinesSection = () => {
           {disciplines.map((d, i) => (
             <div key={i} className="discipline-card bg-hhp-navy rounded-xl p-8 sm:p-10">
               <span className="card-number">{d.number}</span>
-              <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-white mb-4 relative z-10">
+              <h3 className="font-heading font-semibold text-xl sm:text-2xl text-white mb-4 relative z-10 tracking-wide uppercase">
                 {d.title}
               </h3>
               <p className="text-sm leading-relaxed text-gray-300 mb-6 relative z-10">
