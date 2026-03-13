@@ -42,28 +42,28 @@ const Home = () => {
                 />
               </div>
               <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-relaxed sm:leading-tight text-white mb-4 sm:mb-5 px-2 -mt-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                Vertically Integrated and Innovative Commercial Real Estate Solutions
+                AI-Native Asset & Property Management
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link
-                  to="/asset-management"
+                  to="/services/property-management"
                   className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
                   onClick={() => {
                     trackButtonClick('explore_services', 'home_hero');
-                    trackLinkClick('Explore Services', '/asset-management');
+                    trackLinkClick('Explore Services', '/services/property-management');
                   }}
                 >
                   Explore Services
                 </Link>
                 <Link
-                  to="/asset-types"
+                  to="/contact"
                   className="bg-white text-hhp-navy px-4 py-2.5 sm:px-6 sm:py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-white/90 transition-all duration-300 shadow-elegant min-h-[40px] sm:min-h-[48px] flex items-center justify-center text-xs sm:text-sm w-auto max-w-[240px] sm:max-w-none mx-auto sm:mx-0"
                   onClick={() => {
-                    trackButtonClick('explore_asset_types', 'home_hero');
-                    trackLinkClick('Explore Asset Types', '/asset-types');
+                    trackButtonClick('contact_us', 'home_hero');
+                    trackLinkClick('Contact Us', '/contact');
                   }}
                 >
-                  Explore Asset Types
+                  Contact Us
                 </Link>
                 <Link
                   to="/technology"
@@ -94,7 +94,7 @@ const Home = () => {
               Our approach
             </h2>
             <p className="text-lg sm:text-xl leading-relaxed text-hhp-charcoal text-center">
-              HHP delivers the full lifecycle of commercial real estate services—from acquisitions and development to management, leasing, sales, and strategic advisory—through a vertically integrated platform designed to operate, not just advise. Proprietary technology supports disciplined underwriting, consistent execution, and long-term asset alignment across every engagement.
+              HHP pairs AI-native technology with experienced property operators to manage, maintain, and optimize real estate assets. Our proprietary platforms automate routine workflows, surface actionable insights, and keep owners informed in real time—so properties run leaner, residents are served faster, and every decision is backed by data.
             </p>
           </div>
         </div>
@@ -106,13 +106,13 @@ const Home = () => {
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Core Services</h2>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-hhp-charcoal max-w-3xl mx-auto px-4">
-              Comprehensive solutions across the full real estate lifecycle — from property management to capital markets.
+              AI-powered operations across property management, facilities, and financial services — built to perform, not just report.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 -mx-4 sm:mx-0">
-            <Link 
-              to="/services/property-management" 
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 -mx-4 sm:mx-0">
+            <Link
+              to="/services/property-management"
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[4/5] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
               style={{ backgroundImage: 'url(/images/property-management-picture.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
@@ -132,113 +132,8 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link 
-              to="/services/leasing-representation" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/leasing-representation-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('leasing_representation', 'core_services');
-                trackLinkClick('Leasing & Representation', '/services/leasing-representation');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Leasing & Representation
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/investment-capital-markets" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/investment-sales-capital-markets-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('investment_capital_markets', 'core_services');
-                trackLinkClick('Investment & Capital Markets', '/services/investment-capital-markets');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Investment & Capital Markets
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/advisory-site-selection" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/advisory-site-selection-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('advisory-site-selection', 'core_services');
-                trackLinkClick('Advisory & Site Selection', '/services/advisory-site-selection');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Advisory & Site Selection
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/development-advisory" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/development-advisory-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('development_advisory', 'core_services');
-                trackLinkClick('Development Advisory', '/services/development-advisory');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Development Advisory
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/broker-consulting" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/broker-record-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('broker_consulting', 'core_services');
-                trackLinkClick('Consulting and Strategic Advisory', '/services/broker-consulting');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Consulting and Strategic Advisory
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Explore Service</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/services/financial-services" 
+            <Link
+              to="/services/financial-services"
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
               style={{ backgroundImage: 'url(/images/financial-services-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
@@ -258,8 +153,8 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link 
-              to="/services/facilities-management" 
+            <Link
+              to="/services/facilities-management"
               className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
               style={{ backgroundImage: 'url(/images/facilities-management-hero-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
               onClick={() => {
@@ -288,7 +183,7 @@ const Home = () => {
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="section-title text-hhp-navy mb-4 sm:mb-6">Asset Types We Serve</h2>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-hhp-navy max-w-3xl mx-auto px-4">
-              Deep expertise across six major commercial real estate asset sectors.
+              Specialized management across housing asset classes where AI-driven operations make the biggest impact.
             </p>
           </div>
           
@@ -327,69 +222,6 @@ const Home = () => {
               <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
                 <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
                   Affordable Housing
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/asset-types/office" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/office-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('office', 'asset_types');
-                trackLinkClick('Office', '/asset-types/office');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Office
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/asset-types/retail" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/retail-image.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('retail', 'asset_types');
-                trackLinkClick('Retail', '/asset-types/retail');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Retail
-                </h3>
-                <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </div>
-              </div>
-            </Link>
-
-            <Link 
-              to="/asset-types/industrial" 
-              className="premium-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden aspect-[3/4] sm:aspect-auto min-h-[500px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col p-0 w-full"
-              style={{ backgroundImage: 'url(/images/industrial-image.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
-              onClick={() => {
-                trackButtonClick('industrial', 'asset_types');
-                trackLinkClick('Industrial', '/asset-types/industrial');
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-all duration-300" />
-              <div className="relative z-10 flex flex-col items-start justify-end text-left p-4 sm:p-6 h-full">
-                <h3 className="text-white font-semibold text-xl sm:text-2xl md:text-3xl mb-3 text-left">
-                  Industrial
                 </h3>
                 <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300 text-base sm:text-lg text-left">
                   <span>Learn More</span>

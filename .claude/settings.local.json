@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/Hayde/OneDrive/Documents/HHP\\\\ Website/HHPAssetBrokerage-Management-1/src/pages/*.tsx | tail -1)"
+    ]
+  }
+}

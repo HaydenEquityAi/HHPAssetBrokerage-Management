@@ -25,28 +25,15 @@ const Header = () => {
       href: '/services',
       submenu: [
         { name: 'Property Management', href: '/services/property-management' },
-        { name: 'Leasing & Representation', href: '/services/leasing-representation' },
-        { name: 'Investment & Capital Markets', href: '/services/investment-capital-markets' },
-        { name: 'Advisory & Site Selection', href: '/services/advisory-site-selection' },
-        { name: 'Development Advisory', href: '/services/development-advisory' },
-        { name: 'Consulting & Strategic Advisory', href: '/services/broker-consulting' },
+        { name: 'Facilities Management', href: '/services/facilities-management' },
         { name: 'Financial Services', href: '/services/financial-services' },
-        { name: 'Facilities Management', href: '/services/facilities-management' }
-      ]
-    },
-    {
-      name: 'Asset Types',
-      href: '/asset-types',
-      submenu: [
         { name: 'Multifamily', href: '/asset-types/multifamily' },
-        { name: 'Affordable Housing', href: '/asset-types/hud-affordable' },
-        { name: 'Office', href: '/asset-types/office' },
-        { name: 'Retail', href: '/asset-types/retail' },
-        { name: 'Industrial', href: '/asset-types/industrial' },
-        { name: 'Senior Housing', href: '/asset-types/senior-housing' }
+        { name: 'Senior Housing', href: '/asset-types/senior-housing' },
+        { name: 'Affordable Housing', href: '/asset-types/hud-affordable' }
       ]
     },
-    { name: 'Insights', href: '/insights' }
+    { name: 'Technology', href: '/technology' },
+    { name: 'Portfolio', href: '/portfolio' }
   ];
 
   // Contact as primary CTA
@@ -57,8 +44,7 @@ const Header = () => {
   };
 
   // Check if current path matches dropdown items
-  const isServicesActive = location.pathname.startsWith('/services');
-  const isAssetTypesActive = location.pathname.startsWith('/asset-types');
+  const isServicesActive = location.pathname.startsWith('/services') || location.pathname.startsWith('/asset-types');
 
   // Sticky header effect (throttled with rAF)
   useEffect(() => {
@@ -124,8 +110,6 @@ const Header = () => {
                         // Navigate to main page for Services and Asset Types
                         if (dropdownName === 'Services') {
                           handleMainButtonClick(dropdownName, '/services');
-                        } else if (dropdownName === 'Asset Types') {
-                          handleMainButtonClick(dropdownName, '/asset-types');
                         } else {
                           handleDropdownClick(dropdownName);
                         }
@@ -249,8 +233,7 @@ const Header = () => {
                   >
                     <button 
                       className={`flex items-center gap-1 transition-colors duration-200 font-medium text-xs sm:text-sm leading-tight px-1 sm:px-2 py-1 ${
-                        (item.name === 'Services' && isServicesActive) ||
-                        (item.name === 'Asset Types' && isAssetTypesActive)
+                        (item.name === 'Services' && isServicesActive)
                           ? 'text-hhp-navy border-b-2 border-hhp-navy' 
                           : 'text-hhp-charcoal hover:text-hhp-navy'
                       }`}
@@ -258,8 +241,6 @@ const Header = () => {
                         // Navigate to main page for Services and Asset Types
                         if (item.name === 'Services') {
                           handleMainButtonClick(item.name, '/services');
-                        } else if (item.name === 'Asset Types') {
-                          handleMainButtonClick(item.name, '/asset-types');
                         } else {
                           handleDropdownClick(item.name);
                         }
@@ -391,9 +372,6 @@ const Header = () => {
                             // Navigate to main page for Services and Asset Types
                             if (item.name === 'Services') {
                               handleMainButtonClick(item.name, '/services');
-                              setIsMobileMenuOpen(false);
-                            } else if (item.name === 'Asset Types') {
-                              handleMainButtonClick(item.name, '/asset-types');
                               setIsMobileMenuOpen(false);
                             } else {
                               toggleMobileAccordion(item.name);

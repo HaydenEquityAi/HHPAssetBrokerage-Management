@@ -24,14 +24,14 @@ const Footer = () => {
             <Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
               About
             </Link>
-            <Link to="/asset-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
+            <Link to="/services/property-management" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
               Services
             </Link>
-            <Link to="/asset-types" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
-              Asset Types
+            <Link to="/technology" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
+              Technology
             </Link>
-            <Link to="/insights" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
-              Insights
+            <Link to="/portfolio" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
+              Portfolio
             </Link>
             <Link to="/opportunities" className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap py-2 min-h-[44px] flex items-center">
               Opportunities
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Bar - Copyright */}
         <div className="border-t border-white/20 pt-4 sm:pt-6 pb-0">
           <p className="text-xs sm:text-sm text-white/70 text-center">
-            © 2024 HHP Asset Group. All rights reserved.
+            © 2026 HHP Asset Group. All rights reserved.
           </p>
         </div>
       </div>
