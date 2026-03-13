@@ -130,48 +130,27 @@ const Portfolio = () => {
 
       map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
-      // Single cluster marker for all co-located properties
-      const markerEl = document.createElement('div');
-      markerEl.style.width = '40px';
-      markerEl.style.height = '40px';
-      markerEl.style.borderRadius = '50%';
-      markerEl.style.backgroundColor = '#0A2342';
-      markerEl.style.border = '3px solid #C8952E';
-      markerEl.style.cursor = 'pointer';
-      markerEl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
-      markerEl.style.display = 'flex';
-      markerEl.style.alignItems = 'center';
-      markerEl.style.justifyContent = 'center';
-      markerEl.style.transition = 'transform 0.2s';
-      const markerLabel = document.createElement('span');
-      markerLabel.style.color = '#C8952E';
-      markerLabel.style.fontSize = '13px';
-      markerLabel.style.fontWeight = '800';
-      markerLabel.textContent = '3';
-      markerEl.appendChild(markerLabel);
-      markerEl.addEventListener('mouseenter', () => { markerEl.style.transform = 'scale(1.15)'; });
-      markerEl.addEventListener('mouseleave', () => { markerEl.style.transform = 'scale(1)'; });
-      markerEl.addEventListener('click', () => {
-        setDetailOpen(false);
-        setSelectedProperty(null);
+      // Built-in marker — eliminates CSS drift on zoom
+      const marker = new mapboxgl.Marker({ color: '#0A2342', scale: 1.2 })
+        .setLngLat([-95.3078362685698, 36.29323680677572])
+        .addTo(map);
+
+      marker.getElement().style.cursor = 'pointer';
+      marker.getElement().addEventListener('click', () => {
         popupsRef.current.forEach((p) => p.remove());
-        const popup = new mapboxgl.Popup({ offset: 25, closeButton: true, maxWidth: '280px' })
+        const popup = new mapboxgl.Popup({ offset: 25, closeButton: true, maxWidth: '300px' })
           .setLngLat([-95.3078362685698, 36.29323680677572])
           .setHTML(
             '<div style="font-family:sans-serif;padding:8px 4px;">' +
-            '<div style="font-size:15px;font-weight:700;color:#0A2342;margin-bottom:4px;">HHP Managed Properties</div>' +
-            '<div style="font-size:12px;color:#666;margin-bottom:6px;">901 SE 9th Street, Pryor, OK 74361</div>' +
-            '<div style="font-size:12px;color:#0A2342;font-weight:600;">3 Properties &middot; 85 Units</div>' +
-            '<div style="font-size:11px;color:#16A34A;font-weight:600;margin-top:4px;">&#9679; All Active</div>' +
+            '<div style="font-size:16px;font-weight:700;color:#0A2342;margin-bottom:4px;">HHP Managed Properties</div>' +
+            '<div style="font-size:13px;color:#666;margin-bottom:6px;">901 SE 9th Street, Pryor, OK 74361</div>' +
+            '<div style="font-size:13px;color:#0A2342;font-weight:600;">3 Properties · 85 Units</div>' +
+            '<div style="font-size:12px;color:#16A34A;font-weight:600;margin-top:4px;">● All Active</div>' +
             '</div>'
           )
-          .addTo(mapRef.current);
+          .addTo(map);
         popupsRef.current = [popup];
       });
-
-      new mapboxgl.Marker(markerEl)
-        .setLngLat([-95.3078362685698, 36.29323680677572])
-        .addTo(map);
 
       mapRef.current = map;
     };
@@ -225,13 +204,13 @@ const Portfolio = () => {
               {/* Property banner */}
               <div className="bg-hhp-navy mx-6 rounded-lg p-6 mb-6" style={{ borderBottom: '3px solid #C8952E' }}>
                 <div className="flex items-center justify-between mb-2">
-                  <h2 className="font-heading font-bold text-white text-xl tracking-wide uppercase">{selectedProp.name}</h2>
+                  <h2 className="font-heading font-bold text-white text-2xl tracking-wide uppercase">{selectedProp.name}</h2>
                   <span className="flex items-center gap-1.5 text-xs font-semibold text-green-400">
                     <span className="h-2 w-2 rounded-full bg-green-400 inline-block" />
                     {selectedProp.status}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-white/70 text-sm">
+                <div className="flex items-center gap-2 text-white/70 text-base">
                   <MapPin className="w-3.5 h-3.5" />
                   {selectedProp.address}
                 </div>
@@ -239,32 +218,32 @@ const Portfolio = () => {
 
               {/* Overview */}
               <div className="px-6 mb-6">
-                <h3 className="text-sm font-semibold text-hhp-navy uppercase tracking-wider mb-3">Overview</h3>
-                <p className="text-sm text-hhp-charcoal/70 leading-relaxed mb-6">{selectedProp.description}</p>
+                <h3 className="text-base font-semibold text-hhp-navy uppercase tracking-wider mb-3">Overview</h3>
+                <p className="text-base text-hhp-charcoal/70 leading-relaxed mb-6">{selectedProp.description}</p>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Type</span>
-                    <p className="text-sm font-bold text-hhp-navy mt-1">{selectedProp.type}</p>
+                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Type</span>
+                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.type}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Units</span>
-                    <p className="text-sm font-bold text-hhp-navy mt-1">{selectedProp.units}</p>
+                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Units</span>
+                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.units}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Bedrooms</span>
-                    <p className="text-sm font-bold text-hhp-navy mt-1">{selectedProp.beds}</p>
+                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Bedrooms</span>
+                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.beds}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Bathrooms</span>
-                    <p className="text-sm font-bold text-hhp-navy mt-1">{selectedProp.baths}</p>
+                    <span className="text-sm text-hhp-charcoal/50 uppercase tracking-wider">Bathrooms</span>
+                    <p className="text-base font-bold text-hhp-navy mt-1">{selectedProp.baths}</p>
                   </div>
                 </div>
               </div>
 
               {/* Contact */}
               <div className="px-6 mb-6">
-                <h3 className="text-sm font-semibold text-hhp-navy uppercase tracking-wider mb-3">Contact</h3>
+                <h3 className="text-base font-semibold text-hhp-navy uppercase tracking-wider mb-3">Contact</h3>
                 <div className="space-y-3">
                   <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-base font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
                     <Phone className="w-5 h-5 text-hhp-accent" />
@@ -282,14 +261,14 @@ const Portfolio = () => {
                 <div className="flex flex-col gap-3">
                   <Link
                     to="/contact"
-                    className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy/90 transition-colors text-center"
+                    className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-base hover:bg-hhp-navy/90 transition-colors text-center"
                     onClick={() => { trackButtonClick('property_detail_contact', 'portfolio'); }}
                   >
                     Contact About This Property
                   </Link>
                   <Link
                     to="/services/property-management"
-                    className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy hover:text-white transition-colors text-center"
+                    className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-base hover:bg-hhp-navy hover:text-white transition-colors text-center"
                     onClick={() => { trackButtonClick('property_detail_services', 'portfolio'); }}
                   >
                     Learn About Our Management
@@ -301,8 +280,8 @@ const Portfolio = () => {
             /* List View */
             <div>
               <div className="p-6 pb-3">
-                <h2 className="font-heading text-lg font-bold text-hhp-navy tracking-wide uppercase mb-1">Managed Properties</h2>
-                <p className="text-sm text-hhp-charcoal/50">({properties.length}) Results Found</p>
+                <h2 className="font-heading text-xl font-bold text-hhp-navy tracking-wide uppercase mb-1">Managed Properties</h2>
+                <p className="text-base text-hhp-charcoal/50">({properties.length}) Results Found</p>
               </div>
 
               <div className="px-6 pb-6">
@@ -319,7 +298,7 @@ const Portfolio = () => {
                       <div className="bg-hhp-navy px-4 py-3 flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <Building2 className="h-4 w-4 text-white/60" />
-                          <h3 className="font-heading font-bold text-white text-sm tracking-wide uppercase">{property.name}</h3>
+                          <h3 className="font-heading font-bold text-white text-base tracking-wide uppercase">{property.name}</h3>
                         </div>
                         <span className="flex items-center gap-1 text-[10px] font-semibold text-green-400">
                           <span className="h-1.5 w-1.5 rounded-full bg-green-400 inline-block" />
@@ -331,20 +310,20 @@ const Portfolio = () => {
                       <div className="p-4 bg-white">
                         <div className="flex items-start gap-2 mb-3">
                           <MapPin className="h-3.5 w-3.5 text-hhp-accent flex-shrink-0 mt-0.5" />
-                          <span className="text-xs text-hhp-charcoal">{property.address}</span>
+                          <span className="text-sm text-hhp-charcoal">{property.address}</span>
                         </div>
-                        <div className="flex gap-6 text-xs">
+                        <div className="flex gap-6 text-sm">
                           <div>
                             <span className="text-hhp-charcoal/40 uppercase tracking-wider">Type</span>
-                            <p className="font-semibold text-hhp-navy mt-0.5">{property.type}</p>
+                            <p className="font-bold text-hhp-navy mt-0.5">{property.type}</p>
                           </div>
                           <div>
                             <span className="text-hhp-charcoal/40 uppercase tracking-wider">Units</span>
-                            <p className="font-semibold text-hhp-navy mt-0.5">{property.units}</p>
+                            <p className="font-bold text-hhp-navy mt-0.5">{property.units}</p>
                           </div>
                           <div>
                             <span className="text-hhp-charcoal/40 uppercase tracking-wider">Beds</span>
-                            <p className="font-semibold text-hhp-navy mt-0.5">{property.beds}</p>
+                            <p className="font-bold text-hhp-navy mt-0.5">{property.beds}</p>
                           </div>
                         </div>
                       </div>
@@ -355,18 +334,18 @@ const Portfolio = () => {
 
               {/* CTA */}
               <div className="border-t border-gray-200 p-6">
-                <p className="font-heading text-sm text-hhp-navy mb-3 tracking-wide uppercase">Interested in adding your property?</p>
+                <p className="font-heading text-base text-hhp-navy mb-3 tracking-wide uppercase">Interested in adding your property?</p>
                 <div className="flex gap-3">
                   <Link
                     to="/contact"
-                    className="bg-hhp-navy text-white px-5 py-2.5 rounded font-semibold text-xs hover:bg-hhp-navy/90 transition-colors"
+                    className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy/90 transition-colors"
                     onClick={() => { trackButtonClick('portfolio_cta_consultation', 'portfolio'); trackLinkClick('Request a Consultation', '/contact'); }}
                   >
                     Request a Consultation
                   </Link>
                   <Link
                     to="/services/property-management"
-                    className="border border-hhp-navy text-hhp-navy px-5 py-2.5 rounded font-semibold text-xs hover:bg-hhp-navy hover:text-white transition-colors"
+                    className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy hover:text-white transition-colors"
                     onClick={() => { trackButtonClick('portfolio_cta_services', 'portfolio'); trackLinkClick('Our Services', '/services/property-management'); }}
                   >
                     Our Services
