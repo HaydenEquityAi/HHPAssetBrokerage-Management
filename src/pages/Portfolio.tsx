@@ -17,6 +17,8 @@ const Portfolio = () => {
   const mapRef = useRef<any>(null);
 
   useEffect(() => {
+    if (!MAPBOX_TOKEN) return;
+
     // Load Mapbox CSS
     if (!document.getElementById('mapbox-css')) {
       const link = document.createElement('link');
@@ -88,9 +90,9 @@ const Portfolio = () => {
   return (
     <Layout>
       {/* Full-screen map + property list */}
-      <div className="flex flex-col lg:flex-row" style={{ minHeight: 'calc(100vh - 80px)' }}>
+      <div className="flex flex-col lg:flex-row" style={{ height: 'calc(100vh - 80px)' }}>
         {/* Map */}
-        <div className="w-full lg:w-3/5 min-h-[400px] lg:min-h-0 relative bg-gray-100">
+        <div className="w-full lg:w-3/5 relative bg-gray-100" style={{ minHeight: '600px' }}>
           <div ref={mapContainer} className="absolute inset-0" />
         </div>
 
