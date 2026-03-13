@@ -38,8 +38,8 @@ const Portfolio = () => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
         style: 'mapbox://styles/mapbox/light-v11',
-        center: [-95.3058, 36.2985],
-        zoom: 15,
+        center: [-95.3022, 36.2944],
+        zoom: 16,
       });
 
       map.addControl(new mapboxgl.NavigationControl(), 'top-right');
@@ -63,7 +63,7 @@ const Portfolio = () => {
       );
 
       new mapboxgl.Marker(markerEl)
-        .setLngLat([-95.3058, 36.2985])
+        .setLngLat([-95.3022, 36.2944])
         .setPopup(popup)
         .addTo(map);
 
