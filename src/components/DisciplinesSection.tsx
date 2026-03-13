@@ -39,7 +39,7 @@ const disciplines = [
 
 const DisciplinesSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="container-premium">
         <div className="section-tag-gold mb-4">What We Do</div>
         <h2 className="font-garamond text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
