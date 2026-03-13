@@ -1,7 +1,11 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+
+// Replace with your Mapbox public token from https://account.mapbox.com/
+const MAPBOX_TOKEN = 'pk.YOUR_MAPBOX_TOKEN_HERE';
 
 const properties = [
   {
@@ -28,73 +32,128 @@ const properties = [
 ];
 
 const Portfolio = () => {
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<any>(null);
+  const [mapLoaded, setMapLoaded] = useState(false);
+
+  const isPlaceholderToken = MAPBOX_TOKEN === 'pk.YOUR_MAPBOX_TOKEN_HERE';
+
+  useEffect(() => {
+    if (isPlaceholderToken) return;
+
+    // Load Mapbox CSS
+    const cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css';
+    document.head.appendChild(cssLink);
+
+    // Load Mapbox JS
+    const script = document.createElement('script');
+    script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js';
+    script.onload = () => {
+      if (!mapContainerRef.current || mapRef.current) return;
+
+      const mapboxgl = (window as any).mapboxgl;
+      mapboxgl.accessToken = MAPBOX_TOKEN;
+
+      const map = new mapboxgl.Map({
+        container: mapContainerRef.current,
+        style: 'mapbox://styles/mapbox/light-v11',
+        center: [-95.3097, 36.3045],
+        zoom: 14,
+      });
+
+      mapRef.current = map;
+
+      map.on('load', () => {
+        setMapLoaded(true);
+      });
+
+      // Add marker
+      const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+        '<strong>HHP Managed Properties</strong><br/>901 SE 9th Street, Pryor, OK 74361'
+      );
+
+      new mapboxgl.Marker({ color: '#0A2342' })
+        .setLngLat([-95.3097, 36.3045])
+        .setPopup(popup)
+        .addTo(map);
+
+      map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      if (mapRef.current) {
+        mapRef.current.remove();
+        mapRef.current = null;
+      }
+      cssLink.remove();
+      script.remove();
+    };
+  }, [isPlaceholderToken]);
+
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="bg-hhp-navy py-16 sm:py-20 lg:py-24">
-        <div className="container-premium text-center px-4 sm:px-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading text-white mb-4 sm:mb-6 tracking-[0.06em] uppercase">
-            Our Portfolio
-          </h1>
-          <p className="text-lg sm:text-xl leading-relaxed text-white/80 max-w-3xl mx-auto">
-            AI-native property management across senior housing communities — delivering smarter operations, better resident experiences, and stronger asset performance.
-          </p>
-        </div>
-      </section>
-
-      {/* Map + Property List */}
-      <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="container-premium px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
-            {/* Map */}
-            <div className="lg:col-span-3 rounded-lg overflow-hidden shadow-elegant">
-              <iframe
-                title="Portfolio Map — Pryor, Oklahoma"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225!2d-95.3097!3d36.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b7e1f5c5c5c5c5%3A0x0!2s901+SE+9th+St%2C+Pryor%2C+OK+74361!5e0!3m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '600px' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="min-h-[400px] lg:min-h-[600px]"
-              />
+      {/* Map + Property List — full viewport */}
+      <div
+        className="flex flex-col lg:flex-row"
+        style={{ height: 'calc(100vh - 80px)' }}
+      >
+        {/* Map */}
+        <div className="lg:w-3/5 min-h-[400px] lg:min-h-0 relative">
+          {isPlaceholderToken ? (
+            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+              <p className="text-gray-500 text-sm">Map loading — Mapbox token required</p>
             </div>
+          ) : (
+            <div ref={mapContainerRef} className="w-full h-full" />
+          )}
+        </div>
 
-            {/* Property Cards */}
-            <div className="lg:col-span-2 flex flex-col gap-6">
-              {properties.map((property) => (
-                <div
-                  key={property.name}
-                  className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-elegant transition-shadow duration-300 p-6 flex-1"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-lg sm:text-xl font-heading font-bold text-hhp-navy">{property.name}</h3>
-                    <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
-                      <span className="h-2.5 w-2.5 rounded-full bg-green-500 inline-block" />
-                      {property.status}
-                    </span>
+        {/* Property List */}
+        <div className="lg:w-2/5 bg-white overflow-y-auto p-6">
+          <p className="text-sm text-gray-500 mb-4">({properties.length}) Properties Found</p>
+
+          <div className="flex flex-col gap-4">
+            {properties.map((property) => (
+              <div
+                key={property.name}
+                className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-elegant transition-all duration-300 overflow-hidden border-l-4 border-l-transparent hover:border-l-[#C8952E]"
+              >
+                {/* Navy banner */}
+                <div className="bg-hhp-navy h-16 rounded-t-lg flex items-center justify-center px-4">
+                  <h3 className="text-white font-heading font-bold text-lg tracking-wide">{property.name}</h3>
+                </div>
+
+                {/* Card body */}
+                <div className="p-5 space-y-3">
+                  <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
+                    <span className="h-2.5 w-2.5 rounded-full bg-green-500 inline-block" />
+                    {property.status}
+                  </span>
+
+                  <div className="flex items-start gap-2 text-hhp-charcoal">
+                    <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">{property.address}</span>
                   </div>
-                  <div className="space-y-3 text-hhp-charcoal">
-                    <div className="flex items-start gap-2">
-                      <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{property.address}</span>
-                    </div>
-                    <div className="flex items-center justify-between text-sm">
+
+                  <div className="grid grid-cols-2 gap-3 text-sm text-hhp-charcoal">
+                    <div>
                       <span className="text-hhp-charcoal/70">Type</span>
-                      <span className="font-medium">{property.type}</span>
+                      <p className="font-medium">{property.type}</p>
                     </div>
-                    <div className="flex items-center justify-between text-sm">
+                    <div>
                       <span className="text-hhp-charcoal/70">Units</span>
-                      <span className="font-medium">{property.units}</span>
+                      <p className="font-medium">{property.units}</p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* CTA Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
