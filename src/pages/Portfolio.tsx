@@ -6,21 +6,21 @@ import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 const properties = [
   {
     name: 'Mayor Wallis Manor',
-    location: 'Pryor, OK',
+    address: '901 SE 9th Street, Pryor, OK 74361',
     type: 'Senior Housing',
     units: 31,
     status: 'Active',
   },
   {
     name: 'Venture Villa I',
-    location: 'Pryor, OK',
+    address: '901 SE 9th Street, Pryor, OK 74361',
     type: 'Senior Housing',
     units: 24,
     status: 'Active',
   },
   {
     name: 'Venture Villa II',
-    location: 'Pryor, OK',
+    address: '901 SE 9th Street, Pryor, OK 74361',
     type: 'Senior Housing',
     units: 30,
     status: 'Active',
@@ -42,80 +42,55 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="bg-white py-12 sm:py-16">
-        <div className="container-premium px-4 sm:px-6">
-          <div className="rounded-lg overflow-hidden shadow-elegant" style={{ minHeight: '400px' }}>
-            <iframe
-              title="Portfolio Map — Pryor, Oklahoma"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25800!2d-95.3161!3d36.3084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000"
-              width="100%"
-              height="400"
-              style={{ border: 0, minHeight: '400px' }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Property Cards */}
+      {/* Map + Property List */}
       <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="container-premium px-4 sm:px-6">
-          <h2 className="section-title text-hhp-navy mb-8 sm:mb-12 text-center">Managed Properties</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {properties.map((property) => (
-              <div
-                key={property.name}
-                className="bg-white rounded-lg shadow-subtle hover:shadow-elegant transition-shadow duration-300 p-6 sm:p-8"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl sm:text-2xl font-heading text-hhp-navy">{property.name}</h3>
-                  <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
-                    <span className="h-2.5 w-2.5 rounded-full bg-green-500 inline-block" />
-                    {property.status}
-                  </span>
-                </div>
-                <div className="space-y-2 text-hhp-charcoal">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0" />
-                    <span className="text-sm">{property.location}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-hhp-charcoal/70">Type</span>
-                    <span className="font-medium">{property.type}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-hhp-charcoal/70">Units</span>
-                    <span className="font-medium">{property.units}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
+            {/* Map */}
+            <div className="lg:col-span-3 rounded-lg overflow-hidden shadow-elegant">
+              <iframe
+                title="Portfolio Map — Pryor, Oklahoma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225!2d-95.3097!3d36.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b7e1f5c5c5c5c5%3A0x0!2s901+SE+9th+St%2C+Pryor%2C+OK+74361!5e0!3m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '600px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="min-h-[400px] lg:min-h-[600px]"
+              />
+            </div>
 
-      {/* Stats Bar */}
-      <section className="bg-hhp-navy py-10 sm:py-12">
-        <div className="container-premium px-4 sm:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
-            <div>
-              <p className="text-3xl sm:text-4xl font-heading text-white font-bold">85</p>
-              <p className="text-sm sm:text-base text-white/70 mt-1">Total Units</p>
-            </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-heading text-white font-bold">3</p>
-              <p className="text-sm sm:text-base text-white/70 mt-1">Properties</p>
-            </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-heading text-white font-bold">1</p>
-              <p className="text-sm sm:text-base text-white/70 mt-1">State</p>
-            </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-heading text-white font-bold tracking-wide">Growing</p>
-              <p className="text-sm sm:text-base text-white/70 mt-1">Status</p>
+            {/* Property Cards */}
+            <div className="lg:col-span-2 flex flex-col gap-6">
+              {properties.map((property) => (
+                <div
+                  key={property.name}
+                  className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-elegant transition-shadow duration-300 p-6 flex-1"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-lg sm:text-xl font-heading font-bold text-hhp-navy">{property.name}</h3>
+                    <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
+                      <span className="h-2.5 w-2.5 rounded-full bg-green-500 inline-block" />
+                      {property.status}
+                    </span>
+                  </div>
+                  <div className="space-y-3 text-hhp-charcoal">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">{property.address}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-hhp-charcoal/70">Type</span>
+                      <span className="font-medium">{property.type}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-hhp-charcoal/70">Units</span>
+                      <span className="font-medium">{property.units}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -124,11 +99,8 @@ const Portfolio = () => {
       {/* CTA Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container-premium text-center px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading text-hhp-navy mb-4 sm:mb-6 tracking-[0.06em] uppercase">
-            Partner With Us
-          </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-hhp-charcoal max-w-2xl mx-auto mb-8">
-            Whether you own a single property or an entire portfolio, our AI-native management platform is built to scale with you.
+          <p className="text-lg sm:text-xl leading-relaxed text-hhp-charcoal max-w-2xl mx-auto mb-8">
+            Interested in adding your property to the platform?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
