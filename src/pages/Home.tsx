@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, HeadphonesIcon, Bot, Target, DollarSign, FileText, Globe, Shield, Home as HomeIcon, ShoppingBag, Factory, Heart, Settings, MapPin, Handshake } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import ApexPlatformSection from '@/components/ApexPlatformSection';
+import DisciplinesSection from '@/components/DisciplinesSection';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 
@@ -99,6 +101,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <ApexPlatformSection />
+      <DisciplinesSection />
 
       {/* Core Services Section */}
       <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">

@@ -640,3 +640,64 @@
     }
   }
 }
+
+/* ─── AI-Native Repositioning Styles ─── */
+.font-garamond { font-family: 'EB Garamond', Georgia, serif; }
+.font-dm { font-family: 'DM Sans', -apple-system, sans-serif; }
+.text-hhp-gold { color: #C8952E; }
+.bg-hhp-gold { background-color: #C8952E; }
+
+.section-tag-gold {
+  font-size: 11px;
+  font-weight: 600;
+  color: #C8952E;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.platform-card-hover {
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.platform-card-hover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: #C8952E;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+  transform-origin: left;
+}
+.platform-card-hover:hover::before { transform: scaleX(1); }
+.platform-card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(10,35,66,0.08); }
+
+.status-badge-live {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  background: rgba(74,222,128,0.1); color: #16A34A;
+}
+.status-badge-coming {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  background: rgba(200,149,46,0.1); color: #C8952E;
+}
+
+.discipline-card {
+  position: relative;
+  overflow: hidden;
+}
+.discipline-card .card-number {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 72px;
+  font-weight: 500;
+  color: rgba(200,149,46,0.08);
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
