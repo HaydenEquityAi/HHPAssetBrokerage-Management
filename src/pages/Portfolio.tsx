@@ -1,191 +1,166 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight, Building2 } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
-// Replace with your Mapbox public token from https://account.mapbox.com/
-const MAPBOX_TOKEN = 'pk.YOUR_MAPBOX_TOKEN_HERE';
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || '';
 
 const properties = [
-  {
-    name: 'Mayor Wallis Manor',
-    address: '901 SE 9th Street, Pryor, OK 74361',
-    type: 'Senior Housing',
-    units: 31,
-    status: 'Active',
-  },
-  {
-    name: 'Venture Villa I',
-    address: '901 SE 9th Street, Pryor, OK 74361',
-    type: 'Senior Housing',
-    units: 24,
-    status: 'Active',
-  },
-  {
-    name: 'Venture Villa II',
-    address: '901 SE 9th Street, Pryor, OK 74361',
-    type: 'Senior Housing',
-    units: 30,
-    status: 'Active',
-  },
+  { name: 'Mayor Wallis Manor', address: '901 SE 9th Street, Pryor, OK 74361', type: 'Senior Housing', units: 31, status: 'Active' },
+  { name: 'Venture Villa I', address: '901 SE 9th Street, Pryor, OK 74361', type: 'Senior Housing', units: 24, status: 'Active' },
+  { name: 'Venture Villa II', address: '901 SE 9th Street, Pryor, OK 74361', type: 'Senior Housing', units: 30, status: 'Active' },
 ];
 
 const Portfolio = () => {
-  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
-  const [mapLoaded, setMapLoaded] = useState(false);
-
-  const isPlaceholderToken = MAPBOX_TOKEN === 'pk.YOUR_MAPBOX_TOKEN_HERE';
 
   useEffect(() => {
-    if (isPlaceholderToken) return;
-
     // Load Mapbox CSS
-    const cssLink = document.createElement('link');
-    cssLink.rel = 'stylesheet';
-    cssLink.href = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css';
-    document.head.appendChild(cssLink);
+    if (!document.getElementById('mapbox-css')) {
+      const link = document.createElement('link');
+      link.id = 'mapbox-css';
+      link.rel = 'stylesheet';
+      link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css';
+      document.head.appendChild(link);
+    }
 
     // Load Mapbox JS
-    const script = document.createElement('script');
-    script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js';
-    script.onload = () => {
-      if (!mapContainerRef.current || mapRef.current) return;
-
+    const loadMap = () => {
+      if (!mapContainer.current || mapRef.current) return;
       const mapboxgl = (window as any).mapboxgl;
-      mapboxgl.accessToken = MAPBOX_TOKEN;
+      if (!mapboxgl) return;
 
+      mapboxgl.accessToken = MAPBOX_TOKEN;
       const map = new mapboxgl.Map({
-        container: mapContainerRef.current,
+        container: mapContainer.current,
         style: 'mapbox://styles/mapbox/light-v11',
         center: [-95.3097, 36.3045],
-        zoom: 14,
+        zoom: 15,
       });
 
-      mapRef.current = map;
-
-      map.on('load', () => {
-        setMapLoaded(true);
-      });
+      map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
       // Add marker
+      const markerEl = document.createElement('div');
+      markerEl.style.width = '32px';
+      markerEl.style.height = '32px';
+      markerEl.style.borderRadius = '50%';
+      markerEl.style.backgroundColor = '#0A2342';
+      markerEl.style.border = '3px solid #C8952E';
+      markerEl.style.cursor = 'pointer';
+      markerEl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+
       const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        '<strong>HHP Managed Properties</strong><br/>901 SE 9th Street, Pryor, OK 74361'
+        '<div style="font-family:sans-serif;padding:4px 0;">' +
+        '<strong style="font-size:14px;color:#0A2342;">HHP Managed Properties</strong><br/>' +
+        '<span style="font-size:12px;color:#666;">901 SE 9th Street<br/>Pryor, OK 74361</span><br/>' +
+        '<span style="font-size:11px;color:#16A34A;font-weight:600;">● 3 Properties · 85 Units</span>' +
+        '</div>'
       );
 
-      new mapboxgl.Marker({ color: '#0A2342' })
+      new mapboxgl.Marker(markerEl)
         .setLngLat([-95.3097, 36.3045])
         .setPopup(popup)
         .addTo(map);
 
-      map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+      mapRef.current = map;
     };
-    document.head.appendChild(script);
+
+    if ((window as any).mapboxgl) {
+      loadMap();
+    } else {
+      const script = document.createElement('script');
+      script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js';
+      script.onload = loadMap;
+      document.head.appendChild(script);
+    }
 
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
       }
-      cssLink.remove();
-      script.remove();
     };
-  }, [isPlaceholderToken]);
+  }, []);
 
   return (
     <Layout>
-      {/* Map + Property List — full viewport */}
-      <div
-        className="flex flex-col lg:flex-row"
-        style={{ height: 'calc(100vh - 80px)' }}
-      >
+      {/* Full-screen map + property list */}
+      <div className="flex flex-col lg:flex-row" style={{ minHeight: 'calc(100vh - 80px)' }}>
         {/* Map */}
-        <div className="lg:w-3/5 min-h-[400px] lg:min-h-0 relative">
-          {isPlaceholderToken ? (
-            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-              <p className="text-gray-500 text-sm">Map loading — Mapbox token required</p>
-            </div>
-          ) : (
-            <div ref={mapContainerRef} className="w-full h-full" />
-          )}
+        <div className="w-full lg:w-3/5 min-h-[400px] lg:min-h-0 relative bg-gray-100">
+          <div ref={mapContainer} className="absolute inset-0" />
         </div>
 
         {/* Property List */}
-        <div className="lg:w-2/5 bg-white overflow-y-auto p-6">
-          <p className="text-sm text-gray-500 mb-4">({properties.length}) Properties Found</p>
+        <div className="w-full lg:w-2/5 bg-white overflow-y-auto">
+          <div className="p-6 sm:p-8">
+            <p className="text-sm text-hhp-charcoal/60 mb-6 font-medium">({properties.length}) Properties Found</p>
 
-          <div className="flex flex-col gap-4">
-            {properties.map((property) => (
-              <div
-                key={property.name}
-                className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-elegant transition-all duration-300 overflow-hidden border-l-4 border-l-transparent hover:border-l-[#C8952E]"
+            <div className="flex flex-col gap-5">
+              {properties.map((property) => (
+                <div
+                  key={property.name}
+                  className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-elegant transition-all duration-300 hover:border-l-4 hover:border-l-[#C8952E]"
+                >
+                  {/* Navy banner */}
+                  <div className="bg-hhp-navy px-5 py-4 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Building2 className="h-5 w-5 text-white/70" />
+                      <h3 className="font-heading font-bold text-white text-base sm:text-lg tracking-wide uppercase">{property.name}</h3>
+                    </div>
+                    <span className="flex items-center gap-1.5 text-xs font-semibold text-green-400">
+                      <span className="h-2 w-2 rounded-full bg-green-400 inline-block" />
+                      {property.status}
+                    </span>
+                  </div>
+
+                  {/* Card body */}
+                  <div className="p-5 bg-white">
+                    <div className="flex items-start gap-2 mb-4">
+                      <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-hhp-charcoal">{property.address}</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Type</span>
+                        <p className="text-sm font-semibold text-hhp-navy mt-0.5">{property.type}</p>
+                      </div>
+                      <div>
+                        <span className="text-xs text-hhp-charcoal/50 uppercase tracking-wider">Units</span>
+                        <p className="text-sm font-semibold text-hhp-navy mt-0.5">{property.units}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA inside the right column */}
+          <div className="border-t border-gray-200 p-6 sm:p-8 mt-4">
+            <p className="text-base sm:text-lg font-heading text-hhp-navy mb-4 tracking-wide uppercase">Interested in adding your property?</p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                to="/contact"
+                className="bg-hhp-navy text-white px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy/90 transition-colors text-center"
+                onClick={() => { trackButtonClick('portfolio_cta_consultation', 'portfolio'); trackLinkClick('Request a Consultation', '/contact'); }}
               >
-                {/* Navy banner */}
-                <div className="bg-hhp-navy h-16 rounded-t-lg flex items-center justify-center px-4">
-                  <h3 className="text-white font-heading font-bold text-lg tracking-wide">{property.name}</h3>
-                </div>
-
-                {/* Card body */}
-                <div className="p-5 space-y-3">
-                  <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
-                    <span className="h-2.5 w-2.5 rounded-full bg-green-500 inline-block" />
-                    {property.status}
-                  </span>
-
-                  <div className="flex items-start gap-2 text-hhp-charcoal">
-                    <MapPin className="h-4 w-4 text-hhp-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">{property.address}</span>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3 text-sm text-hhp-charcoal">
-                    <div>
-                      <span className="text-hhp-charcoal/70">Type</span>
-                      <p className="font-medium">{property.type}</p>
-                    </div>
-                    <div>
-                      <span className="text-hhp-charcoal/70">Units</span>
-                      <p className="font-medium">{property.units}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                Request a Consultation
+              </Link>
+              <Link
+                to="/services/property-management"
+                className="border border-hhp-navy text-hhp-navy px-6 py-3 rounded font-semibold text-sm hover:bg-hhp-navy hover:text-white transition-colors text-center"
+                onClick={() => { trackButtonClick('portfolio_cta_services', 'portfolio'); trackLinkClick('Learn About Our Services', '/services/property-management'); }}
+              >
+                Our Services
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* CTA Section */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="container-premium text-center px-4 sm:px-6">
-          <p className="text-lg sm:text-xl leading-relaxed text-hhp-charcoal max-w-2xl mx-auto mb-8">
-            Interested in adding your property to the platform?
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-hhp-navy text-white px-6 py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/90 transition-all duration-300 shadow-elegant min-h-[48px] flex items-center justify-center text-sm"
-              onClick={() => {
-                trackButtonClick('request_consultation', 'portfolio_cta');
-                trackLinkClick('Request a Consultation', '/contact');
-              }}
-            >
-              Request a Consultation
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Link>
-            <Link
-              to="/services/property-management"
-              className="bg-white text-hhp-navy border-2 border-hhp-navy px-6 py-3 rounded-none font-heading font-semibold tracking-[0.06em] uppercase hover:bg-hhp-navy/5 transition-all duration-300 min-h-[48px] flex items-center justify-center text-sm"
-              onClick={() => {
-                trackButtonClick('learn_services', 'portfolio_cta');
-                trackLinkClick('Learn About Our Services', '/services/property-management');
-              }}
-            >
-              Learn About Our Services
-            </Link>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
