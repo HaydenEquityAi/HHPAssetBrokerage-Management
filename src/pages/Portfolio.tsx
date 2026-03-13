@@ -92,12 +92,12 @@ const Portfolio = () => {
       {/* Full-screen map + property list */}
       <div className="flex flex-col lg:flex-row" style={{ height: 'calc(100vh - 80px)' }}>
         {/* Map */}
-        <div className="w-full lg:w-3/5 relative bg-gray-100" style={{ minHeight: '600px' }}>
-          <div ref={mapContainer} className="absolute inset-0" />
+        <div className="w-full lg:w-3/5 relative bg-gray-100 h-[400px] lg:h-full">
+          <div ref={mapContainer} className="absolute inset-0 w-full h-full" />
         </div>
 
         {/* Property List */}
-        <div className="w-full lg:w-2/5 bg-white overflow-y-auto">
+        <div className="w-full lg:w-2/5 bg-white overflow-y-auto h-auto lg:h-full">
           <div className="p-6 sm:p-8">
             <p className="text-sm text-hhp-charcoal/60 mb-6 font-medium">({properties.length}) Properties Found</p>
 
