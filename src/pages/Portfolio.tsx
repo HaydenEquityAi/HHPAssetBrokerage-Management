@@ -57,7 +57,6 @@ const properties = [
 const Portfolio = () => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
-  const markersRef = useRef<any[]>([]);
   const popupsRef = useRef<any[]>([]);
   const [selectedProperty, setSelectedProperty] = useState<string | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
@@ -131,48 +130,48 @@ const Portfolio = () => {
 
       map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
-      // Add markers for each property (visually offset via CSS margins)
-      const cssOffsets = [
-        { marginLeft: '-20px', marginTop: '-20px' },
-        { marginLeft: '20px', marginTop: '-5px' },
-        { marginLeft: '0px', marginTop: '15px' },
-      ];
-
-      properties.forEach((property, i) => {
-        const markerEl = document.createElement('div');
-        markerEl.style.width = '28px';
-        markerEl.style.height = '28px';
-        markerEl.style.borderRadius = '50%';
-        markerEl.style.backgroundColor = '#0A2342';
-        markerEl.style.border = '3px solid #C8952E';
-        markerEl.style.cursor = 'pointer';
-        markerEl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
-        markerEl.style.transition = 'transform 0.2s';
-        markerEl.style.marginLeft = cssOffsets[i].marginLeft;
-        markerEl.style.marginTop = cssOffsets[i].marginTop;
-        markerEl.addEventListener('mouseenter', () => { markerEl.style.transform = 'scale(1.2)'; });
-        markerEl.addEventListener('mouseleave', () => { markerEl.style.transform = 'scale(1)'; });
-        markerEl.addEventListener('click', () => { openDetail(property); });
-
-        // Add unit count label
-        const label = document.createElement('div');
-        label.style.position = 'absolute';
-        label.style.top = '50%';
-        label.style.left = '50%';
-        label.style.transform = 'translate(-50%, -50%)';
-        label.style.color = '#C8952E';
-        label.style.fontSize = '10px';
-        label.style.fontWeight = '800';
-        label.textContent = String(property.units);
-        markerEl.style.position = 'relative';
-        markerEl.appendChild(label);
-
-        const marker = new mapboxgl.Marker(markerEl)
+      // Single cluster marker for all co-located properties
+      const markerEl = document.createElement('div');
+      markerEl.style.width = '40px';
+      markerEl.style.height = '40px';
+      markerEl.style.borderRadius = '50%';
+      markerEl.style.backgroundColor = '#0A2342';
+      markerEl.style.border = '3px solid #C8952E';
+      markerEl.style.cursor = 'pointer';
+      markerEl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+      markerEl.style.display = 'flex';
+      markerEl.style.alignItems = 'center';
+      markerEl.style.justifyContent = 'center';
+      markerEl.style.transition = 'transform 0.2s';
+      const markerLabel = document.createElement('span');
+      markerLabel.style.color = '#C8952E';
+      markerLabel.style.fontSize = '13px';
+      markerLabel.style.fontWeight = '800';
+      markerLabel.textContent = '3';
+      markerEl.appendChild(markerLabel);
+      markerEl.addEventListener('mouseenter', () => { markerEl.style.transform = 'scale(1.15)'; });
+      markerEl.addEventListener('mouseleave', () => { markerEl.style.transform = 'scale(1)'; });
+      markerEl.addEventListener('click', () => {
+        setDetailOpen(false);
+        setSelectedProperty(null);
+        popupsRef.current.forEach((p) => p.remove());
+        const popup = new mapboxgl.Popup({ offset: 25, closeButton: true, maxWidth: '280px' })
           .setLngLat([-95.3078362685698, 36.29323680677572])
-          .addTo(map);
-
-        markersRef.current.push(marker);
+          .setHTML(
+            '<div style="font-family:sans-serif;padding:8px 4px;">' +
+            '<div style="font-size:15px;font-weight:700;color:#0A2342;margin-bottom:4px;">HHP Managed Properties</div>' +
+            '<div style="font-size:12px;color:#666;margin-bottom:6px;">901 SE 9th Street, Pryor, OK 74361</div>' +
+            '<div style="font-size:12px;color:#0A2342;font-weight:600;">3 Properties &middot; 85 Units</div>' +
+            '<div style="font-size:11px;color:#16A34A;font-weight:600;margin-top:4px;">&#9679; All Active</div>' +
+            '</div>'
+          )
+          .addTo(mapRef.current);
+        popupsRef.current = [popup];
       });
+
+      new mapboxgl.Marker(markerEl)
+        .setLngLat([-95.3078362685698, 36.29323680677572])
+        .addTo(map);
 
       mapRef.current = map;
     };
@@ -267,12 +266,12 @@ const Portfolio = () => {
               <div className="px-6 mb-6">
                 <h3 className="text-sm font-semibold text-hhp-navy uppercase tracking-wider mb-3">Contact</h3>
                 <div className="space-y-3">
-                  <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-sm text-hhp-charcoal hover:text-hhp-navy transition-colors">
-                    <Phone className="w-4 h-4 text-hhp-accent" />
+                  <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-base font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                    <Phone className="w-5 h-5 text-hhp-accent" />
                     {selectedProp.phone}
                   </a>
-                  <a href={`mailto:${selectedProp.email}`} className="flex items-center gap-3 text-sm text-hhp-charcoal hover:text-hhp-navy transition-colors">
-                    <Mail className="w-4 h-4 text-hhp-accent" />
+                  <a href={`mailto:${selectedProp.email}`} className="flex items-center gap-3 text-base font-medium text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                    <Mail className="w-5 h-5 text-hhp-accent" />
                     {selectedProp.email}
                   </a>
                 </div>
