@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Building2, ArrowRight, X, ChevronLeft, Home } from 'lucide-react';
+import { MapPin, Building2, ArrowRight, X, ChevronLeft, Home, Phone, Mail } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 
@@ -18,6 +18,8 @@ const properties = [
     beds: '1 BD',
     baths: '1 BA',
     coords: [-95.3078362685698, 36.29323680677572],
+    phone: '(918) 825-1250',
+    email: 'mwm@hhpasset.com',
     description: 'A 31-unit HUD Section 202 senior housing community providing affordable, supportive housing for elderly residents in Pryor, Oklahoma.',
   },
   {
@@ -31,6 +33,8 @@ const properties = [
     beds: '1 BD',
     baths: '1 BA',
     coords: [-95.3078362685698, 36.29323680677572],
+    phone: '(918) 825-1250',
+    email: 'mwm@hhpasset.com',
     description: 'A 24-unit HUD Section 202 senior housing community located on the Pryor campus, serving elderly residents through the PRAC program.',
   },
   {
@@ -44,6 +48,8 @@ const properties = [
     beds: '1 BD',
     baths: '1 BA',
     coords: [-95.3078362685698, 36.29323680677572],
+    phone: '(918) 825-1250',
+    email: 'mwm@hhpasset.com',
     description: 'A 30-unit HUD Section 202 senior housing community, the newest addition to the Pryor campus with modern amenities for senior residents.',
   },
 ];
@@ -125,11 +131,11 @@ const Portfolio = () => {
 
       map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
-      // Add markers for each property (slightly offset so they don't stack exactly)
-      const offsets = [
-        [-95.30825, 36.29345],
-        [-95.30750, 36.29310],
-        [-95.30785, 36.29280],
+      // Add markers for each property (visually offset via CSS margins)
+      const cssOffsets = [
+        { marginLeft: '-20px', marginTop: '-20px' },
+        { marginLeft: '20px', marginTop: '-5px' },
+        { marginLeft: '0px', marginTop: '15px' },
       ];
 
       properties.forEach((property, i) => {
@@ -142,6 +148,8 @@ const Portfolio = () => {
         markerEl.style.cursor = 'pointer';
         markerEl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
         markerEl.style.transition = 'transform 0.2s';
+        markerEl.style.marginLeft = cssOffsets[i].marginLeft;
+        markerEl.style.marginTop = cssOffsets[i].marginTop;
         markerEl.addEventListener('mouseenter', () => { markerEl.style.transform = 'scale(1.2)'; });
         markerEl.addEventListener('mouseleave', () => { markerEl.style.transform = 'scale(1)'; });
         markerEl.addEventListener('click', () => { openDetail(property); });
@@ -160,7 +168,7 @@ const Portfolio = () => {
         markerEl.appendChild(label);
 
         const marker = new mapboxgl.Marker(markerEl)
-          .setLngLat(offsets[i])
+          .setLngLat([-95.3078362685698, 36.29323680677572])
           .addTo(map);
 
         markersRef.current.push(marker);
@@ -195,14 +203,14 @@ const Portfolio = () => {
         <div className="w-full lg:w-3/5 relative bg-gray-100 h-[400px] lg:h-full">
           <div ref={mapContainer} className="absolute inset-0 w-full h-full" />
           {/* Results count overlay */}
-          <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg px-4 py-2">
+          <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg px-4 py-2 border-l-4 border-l-[#C8952E]">
             <span className="text-sm font-semibold text-hhp-navy">({properties.length}) Properties</span>
             <span className="text-sm text-hhp-charcoal/60 ml-1">· Pryor, OK</span>
           </div>
         </div>
 
         {/* Right Panel */}
-        <div className="w-full lg:w-2/5 bg-white overflow-y-auto h-auto lg:h-full border-l border-gray-200">
+        <div className="w-full lg:w-2/5 bg-white overflow-y-auto h-auto lg:h-full border-l border-gray-200 border-t-[3px] border-t-[#C8952E]">
 
           {/* Detail View */}
           {detailOpen && selectedProp ? (
@@ -216,7 +224,7 @@ const Portfolio = () => {
               </button>
 
               {/* Property banner */}
-              <div className="bg-hhp-navy mx-6 rounded-lg p-6 mb-6">
+              <div className="bg-hhp-navy mx-6 rounded-lg p-6 mb-6" style={{ borderBottom: '3px solid #C8952E' }}>
                 <div className="flex items-center justify-between mb-2">
                   <h2 className="font-heading font-bold text-white text-xl tracking-wide uppercase">{selectedProp.name}</h2>
                   <span className="flex items-center gap-1.5 text-xs font-semibold text-green-400">
@@ -255,6 +263,21 @@ const Portfolio = () => {
                 </div>
               </div>
 
+              {/* Contact */}
+              <div className="px-6 mb-6">
+                <h3 className="text-sm font-semibold text-hhp-navy uppercase tracking-wider mb-3">Contact</h3>
+                <div className="space-y-3">
+                  <a href={`tel:${selectedProp.phone}`} className="flex items-center gap-3 text-sm text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                    <Phone className="w-4 h-4 text-hhp-accent" />
+                    {selectedProp.phone}
+                  </a>
+                  <a href={`mailto:${selectedProp.email}`} className="flex items-center gap-3 text-sm text-hhp-charcoal hover:text-hhp-navy transition-colors">
+                    <Mail className="w-4 h-4 text-hhp-accent" />
+                    {selectedProp.email}
+                  </a>
+                </div>
+              </div>
+
               {/* CTA */}
               <div className="px-6 pb-8">
                 <div className="flex flex-col gap-3">
@@ -289,8 +312,8 @@ const Portfolio = () => {
                     <div
                       key={property.id}
                       onClick={() => openDetail(property)}
-                      className={`border rounded-lg overflow-hidden shadow-sm hover:shadow-elegant transition-all duration-300 cursor-pointer ${
-                        selectedProperty === property.id ? 'border-[#C8952E] border-l-4' : 'border-gray-200 hover:border-[#C8952E]'
+                      className={`border-l-4 border-l-[#C8952E] border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-elegant transition-all duration-300 cursor-pointer ${
+                        selectedProperty === property.id ? 'border-[#C8952E]' : 'hover:border-[#C8952E]'
                       }`}
                     >
                       {/* Navy header */}
