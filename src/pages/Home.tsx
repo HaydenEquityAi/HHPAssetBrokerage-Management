@@ -103,10 +103,6 @@ const Home = () => {
         </div>
       </section>
 
-      <ApexDashboardShowcase />
-      <DisciplinesSection />
-      <ApexPlatformSection />
-
       {/* Core Services Section */}
       <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <div className="container-premium">
@@ -260,6 +256,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <ApexDashboardShowcase />
+      <DisciplinesSection />
+      <ApexPlatformSection />
 
       </div>
     </Layout>
