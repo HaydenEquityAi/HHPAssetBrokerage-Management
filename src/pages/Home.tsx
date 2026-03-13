@@ -3,8 +3,6 @@ import { CheckCircle, Users, Zap, TrendingUp, ArrowRight, Building2, BarChart3, 
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import ApexPlatformSection from '@/components/ApexPlatformSection';
-import DisciplinesSection from '@/components/DisciplinesSection';
-import ApexDashboardShowcase from '@/components/ApexDashboardShowcase';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 
@@ -257,8 +255,6 @@ const Home = () => {
         </div>
       </section>
 
-      <ApexDashboardShowcase />
-      <DisciplinesSection />
       <ApexPlatformSection />
 
       </div>

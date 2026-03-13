@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { Bot, BarChart3, Settings, ArrowRight, CheckCircle, TrendingUp, DollarSign, Clock, Zap } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
+import ApexDashboardShowcase from '@/components/ApexDashboardShowcase';
+import DisciplinesSection from '@/components/DisciplinesSection';
 import { Helmet } from 'react-helmet-async';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -201,6 +203,9 @@ const Technology = () => {
             </div>
           </div>
         </section>
+
+        <ApexDashboardShowcase />
+        <DisciplinesSection />
 
         {/* Technology Pillars Grid */}
         <section id="technology-pillars" className="bg-white section-spacing">
