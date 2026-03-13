@@ -4,6 +4,7 @@ import Layout from '@/components/Layout/Layout';
 import { trackButtonClick, trackLinkClick } from '@/utils/analytics';
 import ApexPlatformSection from '@/components/ApexPlatformSection';
 import DisciplinesSection from '@/components/DisciplinesSection';
+import ApexDashboardShowcase from '@/components/ApexDashboardShowcase';
 import commercialImage from '@/assets/commercial-building.webp';
 import heroImage from '@/assets/hero-property.jpg';
 
@@ -102,8 +103,9 @@ const Home = () => {
         </div>
       </section>
 
-      <ApexPlatformSection />
+      <ApexDashboardShowcase />
       <DisciplinesSection />
+      <ApexPlatformSection />
 
       {/* Core Services Section */}
       <section className="bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
