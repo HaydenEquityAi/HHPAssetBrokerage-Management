@@ -39,10 +39,10 @@ const disciplines = [
 
 const DisciplinesSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section className="py-16 sm:py-20 lg:py-24 bg-white relative z-30">
       <div className="container-premium">
         <div className="section-tag-gold mb-4">What We Do</div>
-        <h2 className="font-garamond text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
           Three Disciplines.<br />
           One Integrated Platform.
         </h2>
@@ -54,7 +54,7 @@ const DisciplinesSection = () => {
           {disciplines.map((d, i) => (
             <div key={i} className="discipline-card bg-hhp-navy rounded-xl p-8 sm:p-10">
               <span className="card-number">{d.number}</span>
-              <h3 className="font-garamond text-2xl sm:text-3xl font-semibold text-white mb-4 relative z-10">
+              <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-white mb-4 relative z-10">
                 {d.title}
               </h3>
               <p className="text-sm leading-relaxed text-gray-300 mb-6 relative z-10">

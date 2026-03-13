@@ -41,10 +41,10 @@ const platformCapabilities = [
 
 const ApexPlatformSection = () => {
   return (
-    <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
+    <section className="bg-gray-50 py-16 sm:py-20 lg:py-24 relative z-30">
       <div className="container-premium">
         <div className="section-tag-gold mb-4">Our Proprietary AI Platform</div>
-        <h2 className="font-garamond text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-medium text-hhp-navy mb-5 leading-tight">
           APEX: The AI Operating System<br className="hidden sm:block" />
           Behind Every Property
         </h2>
@@ -60,7 +60,7 @@ const ApexPlatformSection = () => {
                 <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: 'rgba(200,149,46,0.12)' }}>
                   <Icon className="w-5 h-5" style={{ color: '#C8952E' }} />
                 </div>
-                <h3 className="font-garamond text-xl sm:text-2xl font-semibold text-hhp-navy mb-3">
+                <h3 className="font-heading text-xl sm:text-2xl font-semibold text-hhp-navy mb-3">
                   {cap.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-500 mb-5">
